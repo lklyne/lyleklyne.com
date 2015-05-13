@@ -1,0 +1,65 @@
+# Basics
+title:     Squarespace & Wordpress
+short:     Template based web design for clients and friends.
+description:
+  A mobile prototype for peer-to-peer sharing of locally grown food.
+published: true
+category:  web design
+project_url:	   /portfolio/squarespace-wordpress
+previous_url: /portfolio/reasons-to-go-outside
+next_url: /portfolio/cropcircle
+website: 
+image:
+  url:        /images/projects/wpsp/thumb.jpg
+  bg_url:     /images/projects/wpsp/bg.jpg
+  logo_url:   /images/projects/wpsp/header.png
+  title:   Reasons to Go Outside
+  alt:     RTGO
+layout:    project
+
+# Custom Post
+problem:   |
+  ###Problem:  
+  It can be difficult to source affordable, locally produced food. 
+  Also, food grown in personal gardens frequently must be harvested 
+  all at once, creating excess.
+solution:  |
+  ###Solution:  
+  A local, peer-to-peer economy that allows people to trade food grown in urban gardens.
+tools_used: |
+
+result: |
+  ###Result:
+  An interactive mobile prototype demonstrating primary user flows and interactions.
+
+project: |
+  ##Squarespace:
+
+  ####Phoebe Flanigan
+  Original logo and website design for an independent radio producer. A simple website that
+  clearly communicates her past work, direction, and personal narrative.
+
+  The website can be viewed live at [phoebeflanigan.com](http://phoebeflanigan.com).
+
+  ![Screen 1](../../../images/projects/wpsp/pf1.jpg)
+  ![Screen 2](../../../images/projects/wpsp/pf2.jpg)
+  ![Screen 3](../../../images/projects/wpsp/pf3.jpg)
+
+  ###Tools used:
+  - Illustrator
+  - Squarespace
+
+
+  ##Wordpress:
+
+  ####James Whistles Guitar Solos
+  Website design for James, who whistles the guitar solos in classic songs. 
+
+  The website can be viewed live at [jameswhistlesguitarsolos.com](http://jameswhistlesguitarsolos.com).
+
+  ![Screen 1](../../../images/projects/wpsp/jw1.jpg)
+  ![Screen 2](../../../images/projects/wpsp/jw2.jpg)  
+
+  ###Tools used:
+  - Wordpress
+

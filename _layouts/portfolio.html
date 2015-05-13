@@ -1,0 +1,109 @@
+---
+layout: default
+title: Portfolio
+---
+
+
+<div class="container">
+  <!-- Hide Nav 
+  <nav>
+    <ul>
+        <li id="all">All</li>
+        <li id="web">Web</li>
+        <li id="mobile">Mobile</li>
+        <li id="visual">Visual</li>
+    </ul>
+  </nav>
+-->
+        
+    <section class="work">
+        
+    {% for project in page.projects %}
+    <a href="{{ site.url }}{{project[1].project_url }}">
+      <figure class="{{ project[1].category }}">
+          
+              <img src="..{{ project[1].image.url }}" alt="" />
+                <dl>
+                <dt class="portfolio-item-title">{{ project[1].title }}</dt>
+                  <dd class="portfolio-item-title">- {{ project[1].category }} -</dd>
+            
+      </figure> 
+      </a>
+    {% endfor %}
+
+
+
+
+      
+      <!--
+        <figure class="web">
+          <a href="#">
+            <img src="../images/1.jpg" alt="" />
+
+            <dl>
+              <dt>Client</dt>
+                <dd>Self</dd>
+              <dt>Role</dt>
+                <dd>Web</dd> 
+            </dl>
+          </a>  
+        </figure> 
+
+        <figure class="mobile">
+          <a href="#">
+            <img src="../images/2.jpg" alt="" />
+            <dl>
+              <dt>Client</dt>
+                <dd>Self</dd>
+              <dt>Role</dt>
+                <dd>Mobile</dd>  
+            </dl>
+          </a>  
+        </figure> 
+
+        <figure class="visual">
+          <a href="#">
+            <img src="../images/3.jpg" alt="" />
+            <dl>
+              <dt>Client</dt>
+                <dd>Self</dd>
+              <dt>Role</dt>
+                <dd>Logo</dd> 
+            </dl>
+          </a>  
+        </figure> 
+
+        <figure class="visual">
+          <a href="#">
+            <img src="../images/kitten.jpg" alt="" />
+            <dl>
+              <dt>Client</dt>
+                <dd>Self</dd>
+              <dt>Role</dt>
+                <dd>Logo</dd> 
+            </dl>
+          </a>  
+        </figure> 
+
+      </section>
+
+-->
+
+      
+<!--
+  <ul id="projects">
+    {% for project in page.projects %}
+      <li class="project span5">
+        <a href="/portfolio/{{ project[0] }}">
+          {% if project[1].image %}
+            <img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />
+          {% endif %}
+
+          <p>{{ project[1].short }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+-->
+
+</div>

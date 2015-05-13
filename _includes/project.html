@@ -1,0 +1,83 @@
+---
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="{% if site.animated %}animated fade-in-down{% endif %}">
+  <div class="site-wrap">
+    {% include header.html %}
+
+    <div class="project-header" style="background: url('{{ page.image.url }}') no-repeat 50% 50% fixed;">
+      <div>
+        <div class="center">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        <!-- begin {{ content }} -->
+
+        <div class="post-header mb2">
+          <h1>{{ page.title }}</h1>
+          
+
+          {% if page.website %}
+            <div class="website"><a href="{{ page.website }}">{{ page.website }}</a></div>
+          {% endif %}
+        </div>
+
+        {% if page.endorsements %}
+          <div id="endorsements" class="span16">
+            <h3>What {{ page.title }} had to say about us:</h3>
+            {% for endorsement in page.endorsements %}
+              <blockquote>
+                {{ endorsement.body }}
+                <small>{{ endorsement.from }}, {{ endorsement.role }}</small>
+              </blockquote>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <article class="post-content">
+
+          <!-- Problem, solution, tools used, result -->
+          {% if page.problem %}
+              <div>
+                <p>{{ page.problem | markdownify }}</p>
+                <p>{{ page.solution | markdownify }}</p>
+              </div>
+            </article>
+          {% endif %}
+
+          {% if page.tools_used %}
+              <div>
+                <p>{{ page.tools_used | markdownify }}</p>
+              </div>
+            </article>
+          {% endif %}
+
+          {% if page.result %}
+              <div>
+                <p>{{ page.result | markdownify }}</p>
+              </div>
+          {% endif %}
+
+          <!-- Main body of project -->
+          {% if page.body %}
+              <div>
+                <p>{{ page.body | markdownify }}</p>
+              </div>
+          {% endif %}
+
+        </article>
+
+        <!-- end {{ content }} -->
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>

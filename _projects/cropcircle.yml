@@ -1,0 +1,47 @@
+# Basics
+title:     Cropcircle
+short:     Mobile prototype for local community based food sharing.
+description:
+  A mobile prototype for peer-to-peer sharing of locally grown food.
+published: true
+category:  mobile ux
+project_url:	   /portfolio/cropcircle
+previous_url: /portfolio/squarespace-wordpress
+next_url: /portfolio/ikea-mobile-concept
+website:
+image:
+  url:        /images/projects/cropcircle/cs_thumb.jpg
+  bg_url:     /images/projects/cropcircle/cs_bg.jpg
+  logo_url:   /images/projects/cropcircle/cs_header.png
+  title:   cropcircle
+  alt:     cropcircle
+layout:    project
+
+# Custom Post
+
+project: |
+  ###Project:
+  Sourcing locally produced food at an affordable price can be challenging. 
+  Why not work with your neighbors? 
+  I envisioned a mobile platform to facilitate this process:
+  a local, peer-to-peer economy that 
+  allows people to trade food grown in urban gardens.
+
+  ###Tools used:
+  - Pen and paper
+  - Omnigraffle
+  - Photoshop
+  - Axure RP
+
+body: |
+  ###Wireframes:
+  ![Screen 1](../../../images/projects/cropcircle/cs1.jpg)
+  ![Screen 2](../../../images/projects/cropcircle/cs2.jpg)
+
+  ###User Flow:
+  ![Screen 3](../../../images/projects/cropcircle/cs3.jpg)
+
+  ###Screens:  
+  ![Screen 2](../../../images/projects/cropcircle/cs5.jpg)
+  ![Screen 3](../../../images/projects/cropcircle/cs6.jpg)  
+  ![Screen 3](../../../images/projects/cropcircle/cs7.jpg)

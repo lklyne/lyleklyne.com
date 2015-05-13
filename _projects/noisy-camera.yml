@@ -1,0 +1,47 @@
+# Basics
+title:     Noisy Camera
+short:     Mobile prototype for a camera to get somethings attention.
+description:
+  A mobile prototype for a camera to get somethings attention.
+published: true
+category:  mobile ux
+project_url:	   /portfolio/noisy-camera
+previous_url: /portfolio/ikea-mobile-concept
+next_url: /portfolio/reasons-to-go-outside
+website:
+image:
+  url:        /images/projects/noisycamera/nc0.jpg
+  bg_url:     /images/projects/noisycamera/nc_bg.jpg
+  logo_url:   /images/projects/noisycamera/nc_header.png
+  title:   Noisy Camera
+  alt:     Noisy Camera
+layout:    project
+
+# Custom Post
+
+project: |
+  ###Project:
+  I thought it would be fun to design a camera that made some 
+  noise before snapping a picture, in hopes of having a more attentive subject. 
+  I focused on designing an interface that allows the user to trigger a 
+  sound as many times as necessary then quickly transition to taking a picture.
+
+  I ultimately settled on a sound bar along either side of the capture 
+  button, allowing the user to drag their finger back and forth until 
+  they are ready to take a picture. When the moment arrives, they can 
+  drag their finger to the capture button to take the shot. This enables 
+  the user to trigger and capture with a single finger, using a gesture 
+  that does not require multiple taps.
+
+  ###Tools used:
+  - Omnigraffle
+  - Sketch
+  
+body: |
+  ###Camera UI:
+  ![Screen 1](../../../images/projects/noisycamera/nc2.jpg)
+
+  ###Interactions:
+  ![Screen 1](../../../images/projects/noisycamera/nc1.jpg)
+  ![Screen 2](../../../images/projects/noisycamera/nc3.jpg)
+  ![Screen 3](../../../images/projects/noisycamera/nc4.jpg)  

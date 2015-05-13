@@ -1,0 +1,35 @@
+# Site settings
+title:       Lyle Klyne
+email:       lyle.klyne@gmail.com
+author:      Lyle Klyne
+description: "Design, development, photography, and documenting the process."
+baseurl:     ""
+url:        "http://localhost:4000"
+
+# Google analytics
+google_analytics:
+
+# Optional features
+animated:           false
+show_related_posts: false
+show_post_footers:  false
+
+# Social icons
+show_social_icons: true
+github_username: 
+twitter_username: lyleklyne
+dribbble_username: lyleklyne
+instagram_username: lyleklyne
+google_plus_id:
+linkedin_username:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Build settings
+markdown:     kramdown
+permalink:    /blog/:title/
+paginate:     3
+destination: _site/blog
+sass:
+  compressed: true
