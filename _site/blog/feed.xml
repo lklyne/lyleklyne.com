@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lyle Klyne</title>
-    <description>Design, development, photography, and documenting the process.</description>
+    <description>Design, development, and documenting the process.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Oh hey, world!</title>
-        <description>&lt;p&gt;&lt;strong&gt;This is long overdue.&lt;/strong&gt; For years, I have been making things, both digital and physical, and it’s time to make this process transparent. I’ve been reluctant to do so for some time. Partly because I’m hesitant to overshare, but also because it can be scary to put something you made out into the wild. &lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;This is long overdue.&lt;/strong&gt; For years, I have been making things, both digital and physical, and it’s time to make this process transparent. I’ve been reluctant to do so for some time. Partly because I’m hesitant to overshare, but also because it can be scary to put something you made out into the wild.&lt;/p&gt;
 
 &lt;p&gt;Although I believe the first is a legitimate concern, the later is not. From now on I will document my learning process here. I hope that this is personally beneficial and keeps me accountable, but I also hope it helps others in a similar position.&lt;/p&gt;
 
-&lt;p&gt;This website will focus specifically on digital creation, placing special emphasis on usability design. I will illuminate my path towards designing and building digital products: the resources I use, the people I talk to, the struggles I encounter, as well as what I create. &lt;/p&gt;
+&lt;p&gt;This website will focus specifically on digital creation, placing special emphasis on usability design. I will illuminate my path towards designing and building digital products: the resources I use, the people I talk to, the struggles I encounter, as well as what I create.&lt;/p&gt;
 
 &lt;p&gt;Documenting this process will be two-fold. My portfolio will showcase design process as well as finished products, and my blog will focus on ideas, concepts, and resources. I will try to keep the tangential musings on adventure, philosophy and unrelated projects to a minimum, although some mention of these things will undoubtedly sneak in.&lt;/p&gt;
 
