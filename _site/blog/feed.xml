@@ -2,9 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lyle Klyne</title>
-    <description>Design, development, and documenting the process.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Design, development, documenting the process.</description>
+    <link>http://lyleklyne.com/</link>
+    <atom:link href="http://lyleklyne.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Design School</title>
+        <description>&lt;p&gt;&lt;strong&gt;Major update:&lt;/strong&gt; I will be attending the University of Washington this fall to pursue a &lt;a href=&quot;http://mhcid.washington.edu/&quot;&gt;Masters in Human-Computer Interaction and Design&lt;/a&gt;. The program is quite new, I will be a part of only the third cohort, but it draws curriculum from several well-established schools at UW. My classmates have quite diverse backgrounds, and I’m expecting to learn a great deal from students and faculty alike.&lt;/p&gt;
+
+&lt;p&gt;Up until this point, I have taken the shotgun approach to learning. A smattering of books, blogs, online classes, learning from friends, trial and error, and trial by fire. I love learning this way and place a high value on being self-taught and proactive, but I know I thrive with a structured curriculum and a support network. For this reason, higher education is something I’ve been considering for a long time. After a lot of research I think this program will be an ideal next step, and I couldn’t be more excited!&lt;/p&gt;
+
+&lt;p&gt;In other news, my friends over at the &lt;a href=&quot;http://facebook.com/foodisfree&quot;&gt;Food is Free Project&lt;/a&gt; began using a logo I designed for them. They open sourced the logo design to their social network last year, and I’m pleased to say that they will be using my design moving forward. I added the final design as well as my iterative process to my portfolio. Feel free to check it out &lt;a href=&quot;/portfolio/logo-food-is-free/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m working on several freelance jobs as well as some personal projects at the moment. My goal is to spend the summer honing programming and interactive prototyping chops to strengthen my toolbelt before entering graduate school. I’ve been learning &lt;a href=&quot;http://www.pixate.com/&quot;&gt;Pixate&lt;/a&gt; and &lt;a href=&quot;https://facebook.github.io/origami/&quot;&gt;Origami&lt;/a&gt; for prototyping; I’m taking an introductory Computer Science course, and creating a typeface as well.&lt;/p&gt;
+
+&lt;p&gt;More updates are coming soon! In the meantime feel free to check out homework for the CS class and the source code for this website, which I recently published on &lt;a href=&quot;http://github.com/lklyne&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 May 2015 04:42:19 -0700</pubDate>
+        <link>http://lyleklyne.com/blog/design-school/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/blog/design-school/</guid>
+      </item>
     
       <item>
         <title>Oh hey, world!</title>
@@ -21,8 +38,8 @@
 &lt;p&gt;Thanks for reading and please stay tuned.&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
-        <link>http://localhost:4000/blog/oh-hey-world/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/oh-hey-world/</guid>
+        <link>http://lyleklyne.com/blog/oh-hey-world/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/blog/oh-hey-world/</guid>
       </item>
     
   </channel>

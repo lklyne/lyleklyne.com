@@ -2,9 +2,11 @@
 title:       Lyle Klyne
 email:       lyle.klyne@gmail.com
 author:      Lyle Klyne
-description: "Design, development, and documenting the process."
+description: "Design, development, documenting the process."
 baseurl:     ""
-url:        "http://localhost:4000"
+
+# Change this to live site URL before posting
+url:        "http://lyleklyne.com"
 
 # Google analytics
 google_analytics: 
