@@ -16,4 +16,4 @@ In other news, my friends over at the [Food is Free Project](http://facebook.com
 
 I’m working on several freelance jobs as well as some personal projects at the moment. My goal is to spend the summer honing programming and interactive prototyping chops to strengthen my toolbelt before entering graduate school. I’ve been learning [Pixate](http://www.pixate.com/) and [Origami](https://facebook.github.io/origami/) for prototyping; I’m taking an introductory Computer Science course, and creating a typeface as well. 
 
-More updates are coming soon! In the meantime feel free to check out homework for the CS class and the source code for this website, which I recently published on [GitHub](http://github.com/lklyne).
+More updates are coming soon!

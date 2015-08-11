@@ -851,7 +851,8 @@ h6,
 .social-icons a.fa {
   padding: 0.5em;
   opacity: 0.8;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: -2em; }
 
 .social-icons a.fa:hover {
   opacity: 1; }
@@ -1008,7 +1009,7 @@ h6,
 
 .project-header-container {
   margin-top: 2rem;
-  height: 36rem;
+  height: 28rem;
   width: 100%;
   background-position: center;
   -webkit-background-size: cover;
@@ -1317,9 +1318,6 @@ nav ul li:last-child:after {
   .container {
     width: 104%;
     -webkit-transform: translateZ(0); }
-
-  p a {
-    font-size: 1.08rem; }
 
   .h1,
   h1 {
