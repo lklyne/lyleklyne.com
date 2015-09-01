@@ -1,5 +1,89 @@
 @charset "UTF-8";
 
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/aleo_bold/Aleo-Bold-webfont.eot');
+    src: url('../fonts/aleo_bold/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo_bold/Aleo-Bold-webfont.woff') format('woff'),
+         url('../fonts/aleo_bold/Aleo-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/aleo_bold/Aleo-Bold-webfont.svg#aleobold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/aleo_bolditalic/Aleo-BoldItalic-webfont.eot');
+    src: url('../fonts/aleo_bolditalic/Aleo-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo_bolditalic/Aleo-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/aleo_bolditalic/Aleo-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/aleo_bolditalic/Aleo-BoldItalic-webfont.svg#aleobolditalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/aleo_light/Aleo-Light-webfont.eot');
+    src: url('../fonts/aleo_light/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo_light/Aleo-Light-webfont.woff') format('woff'),
+         url('../fonts/aleo_light/Aleo-Light-webfont.ttf') format('truetype'),
+         url('../fonts/aleo_light/Aleo-Light-webfont.svg#aleolight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/aleo_lightitalic/Aleo-LightItalic-webfont.eot');
+    src: url('../fonts/aleo_lightitalic/Aleo-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo_lightitalic/Aleo-LightItalic-webfont.woff') format('woff'),
+         url('../fonts/aleo_lightitalic/Aleo-LightItalic-webfont.ttf') format('truetype'),
+         url('../fonts/aleo_lightitalic/Aleo-LightItalic-webfont.svg#aleolightitalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/aleo_regular/Aleo-Regular-webfont.eot');
+    src: url('../fonts/aleo_regular/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo_regular/Aleo-Regular-webfont.woff') format('woff'),
+         url('../fonts/aleo_regular/Aleo-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/aleo_regular/Aleo-Regular-webfont.svg#aleoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/aleo_regularitalic/Aleo-Italic-webfont.eot');
+    src: url('../fonts/aleo_regularitalic/Aleo-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo_regularitalic/Aleo-Italic-webfont.woff') format('woff'),
+         url('../fonts/aleo_regularitalic/Aleo-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/aleo_regularitalic/Aleo-Italic-webfont.svg#aleoitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+
+
 /********************
 
   Main SCSS styles 
@@ -8,7 +92,8 @@
 *********************/
 
 body {
-  font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "aleo", "PT Serif", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.02rem;
 }
 
 html, body {
@@ -21,7 +106,7 @@ img {
 
 .site-wrap {
   min-height: 100%;
-  margin-bottom: -120px;
+  margin-bottom: -200px;
 }
 
 .site-wrap:after {
@@ -30,7 +115,7 @@ img {
 }
 
 .footer, .site-wrap:after {
-  height: 120px;
+  height: 200px;
 }
 
 body {
@@ -40,6 +125,12 @@ body {
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+  .p,
+  p,
+  li {
+    font-weight: 300;
+  }
 
 .gist,
 .gist .highlight .p {
@@ -61,7 +152,7 @@ body {
 }
 
 .site-header nav a {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #666;
 }
 
@@ -243,33 +334,45 @@ blockquote {
   padding: 1.43em;
   font-style: italic;
   margin-left: 2em;
+  margin-bottom: 4rem;
 
 }
 
 blockquote footer {
-  font-size: 1rem;
-  font-style: normal;
+  font-size: 1.5rem;
+  font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;  font-style: normal;
   background-color: #fff;
-  padding-top: 2rem;
+  padding-top: 1rem;
   color: #7a7a7a;
   display: block;
+  float: right;
   border-color: transparent;
 }
 
+/*
 blockquote:before {
-  color: #333;
+  color: #7a7a7a;
   content: "“";
   font-family: "Georgia", serif;
   font-size: 3em;
   line-height: 0.5em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+  margin-right: 0em;
+  margin-left: -0.7em;
+  vertical-align: -0.2em;
 }
-
+/*
+blockquote:after {
+  color: #333;
+  content: "”";
+  font-family: "Georgia", serif;
+  font-size: 3em;
+  line-height: 0.5em;
+  margin-right: 0em;
+  vertical-align: -0.2em;
+} */
 
 blockquote p {
   font-size: 2rem;
-  margin-left: 1rem;
   display: inline;
 }
 
@@ -286,7 +389,7 @@ h5,
 h6,
 .h6 {
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.2;
   margin: 1em 0 0.5em;
 }
@@ -694,9 +797,10 @@ nav ul li:last-child:after {
   .p,
   p,
   li {
-    font-size: 1.25rem;
+    font-size: 1.40rem;
     line-height: 1.8;
   }
+
 
   .small {
     font-size: 1rem;
@@ -704,6 +808,7 @@ nav ul li:last-child:after {
 
   .post-link .post-title {
     margin-top: 0.5em;
+    font-weight: 900;
   }
 
   .posts .post {
@@ -904,100 +1009,7 @@ nav ul li:last-child:after {
 
 
 
-/* Mega Screens 
-@media screen and (min-width: 100em) {
-  .measure {
-    max-width: 62rem;
-  }
 
-  img {
-    max-height: 100%;
-  }
-
-  .work figure dl {
-    font-size: 1.5rem;
-    padding-top: 23%;
-    line-height: 2;
-  }
-
-  .work figure dl dt {
-    font-size: 1.6rem;
-  }
-  .work dt .portfolio-item-title {
-    line-height: 1.2;
-  }
-
-  nav ul li {
-    font-size: 1.3rem;
-  }
-  .site-header  {
-    font-size: 1.6rem;
-  }
-
-  .site-header nav a {
-  font-size: 1.15rem;
-  }
-
-  .project-header-container {
-    height: 40rem;
-  }
-
-  // Large text for mega screens
-
-  .h1,
-  h1 {
-    font-size: 5.1rem;
-  }
-
-  .h2,
-  h2 {
-    font-size: 3.8rem;
-  }
-
-  .h3,
-  h3 {
-    font-size: 2.95rem;
-  }
-
-  .h4,
-  h4 {
-    font-size: 2.32rem;
-  }
-
-  body {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1.3rem;
-  }
-
-  p a {
-    font-size: 1.1rem;
-  }
-
-  .posts .post-meta {
-    padding-bottom: .2em;
-  }
-
-  .post-link .post-title {
-    margin-top: .125em;
-  }
-
-  .posts .post {
-    margin-bottom: 2.666em;
-    padding-bottom: 1.333em;
-    border-bottom: thin solid #f3f3f3;
-  }
-
-  .posts .post:last-child {
-    border-bottom: none;
-    margin-bottom: .666em;
-    padding-bottom: 0;
-  }
-}
-
-*/
 
 @charset "UTF-8";
 

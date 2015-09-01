@@ -19,3 +19,5 @@ Documenting this process will be two-fold. My portfolio will showcase design pro
 Like my kinesthetic approach to learning design and development, while writing this blog I will learn by doing. My initial goals are to establish some themes and recurring topics, as well as a schedule for posts. I feel like doing that last bit is especially important. __In order to be successful in any occupation, you have to produce when you are burned out, uninspired, and ready to quit.__ If anything I hope that this project urges me to do just that.
 
  Thanks for reading and please stay tuned.
+
+ <a class="center" href="http://lyleklyne.com/#blog">> Back to the blog</a>

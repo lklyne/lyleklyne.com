@@ -9,7 +9,7 @@ baseurl:     ""
 url:        "http://lyleklyne.com"
 
 # Google analytics
-google_analytics: 
+google_analytics: UA-60172340-1
 
 # Optional features
 animated:           false
@@ -32,6 +32,6 @@ flattr_button:
 markdown:     kramdown
 permalink:    /blog/:title/
 paginate:     3
-destination: _site/blog
+destination: _site/
 sass:
   compressed: true

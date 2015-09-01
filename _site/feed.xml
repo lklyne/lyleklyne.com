@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lyle Klyne</title>
+    <description>Design, development, documenting the process.</description>
+    <link>http://lyleklyne.com/</link>
+    <atom:link href="http://lyleklyne.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Making Sausages (Blogs)</title>
+        <description>&lt;p class=&quot;regular&quot;&gt;
+&lt;strong&gt;An  overview of how I built this website&lt;/strong&gt; and some of the resources I consulted during construction. In this post I’ll talk about using the &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;&lt;/a&gt; blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what’s coming next for this website.
+&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
+
+&lt;p&gt;I fixed the front logo/menu for mobile devices! This was relatively easy, but it involved some grunt work making everything line up with &lt;a href=&quot;http://tumult.com/hype/&quot;&gt;Tumult Hype’s&lt;/a&gt; adaptive-layouts, as well as wrestling with what seem to be some strange glitches in Hype.&lt;/p&gt;
+
+&lt;p&gt;With this small hurdle cleared it seems like a fitting time to talk about how I built this site – to give a behind the scenes look into how I made this little sausage. This website has gone through several iterations. Initially, it was just a rotating background image with a logo. It looked nice but had no content (a major problem). I quickly solved this with (several) Wordpress websites, but these felt clunky and left a lot to be desired.&lt;/p&gt;
+
+&lt;h2 id=&quot;platform&quot;&gt;Platform&lt;/h2&gt;
+&lt;p&gt;I searched for a platform that was easy to update and scale yet fast and flexible. Wordpress has far outgrown its roots as a CMS and blogging platform resulting in significant bloat. Other options like &lt;a href=&quot;http://cargocollective.com/&quot;&gt;Cargo Collective&lt;/a&gt; and &lt;a href=&quot;http://squarespace.com&quot;&gt;Squarespace&lt;/a&gt; are faster yet lack the level customizability I wanted.&lt;/p&gt;
+
+&lt;p&gt;After some research I settled on &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, a blogging platform built on Ruby. Jekyll generates static HTML pages that don’t rely on database requests. It’s blazing fast and completely flexible. It also afforded the opportunity to cut my teeth Shopify’s Liquid and get more comfortable with Terminal and Github.&lt;/p&gt;
+
+&lt;h2 id=&quot;construction&quot;&gt;Construction&lt;/h2&gt;
+&lt;p&gt;I separated the website into three sections. A landing page that houses the blog roll after the fold, a portfolio section, and a simple about me section. The blogroll is baked-in to Jekyll and required little setup.&lt;/p&gt;
+
+&lt;p&gt;The front page features five rotating images that I took with my iPhone. I had the images, CSS, and Javascript for rotation ready to go from version 1.0, but I wanted to incorporate some interactivity into the logo. The menu I discussed at the beginning of this post provides this interactivity. It serves as a gateway to the rest of the site, and slowly shifts opacity in hopes of enticing the user to click on it. I built it with &lt;a href=&quot;http://tumult.com/hype/&quot;&gt;Tumult Hype 3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/splash.jpg&quot; alt=&quot;Portfolio Titles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For the portfolio, I used (surprise surprise) the &lt;a href=&quot;https://github.com/flatterline/jekyll-plugins&quot;&gt;Jekyll portfolio plugin&lt;/a&gt; written by Flatterline (now called &lt;a href=&quot;http://velocitylabs.io/&quot;&gt;Velocity Labs&lt;/a&gt;). They created a plugin that allowed me to style custom HTML and CSS templates for the portfolio page and individual items, which autogenerate as I add new projects. &lt;strong&gt;Cool!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This section still needs some CSS fine tuning. The necessity to hover to see project titles is less than ideal on desktop and useless on mobile. I’m looking for an elegant solution:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/portfolio-hover.jpg&quot; alt=&quot;Portfolio Titles Hover Problem&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, the titles and navigation on individual projects are inconsistant. &lt;strike&gt;This will be an easy fix:&lt;/strike&gt; Fixed!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/portfolio-controls.jpg&quot; alt=&quot;Portfolio Controls Problem&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;type--color&quot;&gt;Type &amp;amp; Color&lt;/h2&gt;
+
+&lt;p&gt;For the type, I decided to stick with free web fonts. A &lt;a href=&quot;http://www.smashingmagazine.com/2014/03/taking-a-second-look-at-free-fonts/&quot;&gt;Smashing Magazine&lt;/a&gt; article states that “free fonts don’t have a good reputation, and often they are knock-offs of thoroughly crafted, already established typefaces.” In many cases, this is true, and this is obviously a strong deterrent for using them, but there is quality among the rough.&lt;/p&gt;
+
+&lt;p&gt;I found these resources especially useful for typography basics:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://practicaltypography.com/typography-in-ten-minutes.html&quot;&gt;Typography in Ten Minutes&lt;/a&gt; by Matthew Butterick&lt;br /&gt;
+— A brief yet solid foundation in typography. There is also an in-depth, free ebook if you want to go more in depth.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.typewolf.com/&quot;&gt;Typewolf&lt;/a&gt;&lt;br /&gt;
+ — An excellent reference for quality typefaces and font pairings. It’s also great to see how other people set type with the “Web Fonts in the Wild” section.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://incredibletypes.com&quot;&gt;Incredible Types&lt;/a&gt;&lt;br /&gt;
+— Good inspiration.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;headings&quot;&gt;Headings&lt;/h3&gt;
+&lt;p&gt;The headings are set with &lt;a href=&quot;https://www.google.com/fonts/specimen/Lato&quot;&gt;Lato&lt;/a&gt;, a free and widely used Google Webfont. Lato was designed to be transparent (lacking distinguishing characteristics) at smaller font sizes but have some originality at larger sizes with friendly and rounded forms. The large, ultra-bold headings used in this site highlight these originalities. Lato was part of the Pixyll template in addition to being a Google Webfont so implementation was a total breeze.&lt;/p&gt;
+
+&lt;h3 id=&quot;body&quot;&gt;Body&lt;/h3&gt;
+&lt;p&gt;Lato has a free companion font to Lato called &lt;a href=&quot;https://www.behance.net/gallery/aleo-free-font-family/8018673&quot;&gt;Aleo&lt;/a&gt;. I wanted a clean serif that was readable at smaller sizes, and so Aleo was an easy choice. I increased character spacing 0.02 &lt;em&gt;rem&lt;/em&gt;, set the body margins to 44 &lt;em&gt;rem&lt;/em&gt;, and font size to 1.4 &lt;em&gt;rem&lt;/em&gt;. This yields breathable and readable copy with roughly 70 characters per line.&lt;/p&gt;
+
+&lt;p&gt;The implementation was more difficult for Aleo as it is not a Google Webfont. I’m hosting the web fonts locally using separate versions of Aleo to achieve true &lt;strong&gt;bold&lt;/strong&gt; and &lt;em&gt;italics&lt;/em&gt;. I found these articles helpful in understanding how to do this:&lt;/p&gt;
+
+&lt;p&gt;Metal Toad:&lt;br /&gt;
+&lt;a href=&quot;http://www.metaltoad.com/blog/how-use-font-face-avoid-faux-italic-and-bold-browser-styles&quot;&gt;How to use @font-face to avoid faux-italic and bold browser styles&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Smashing Magazine:&lt;br /&gt;
+&lt;a href=&quot;http://www.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/&quot;&gt;Setting Weights And Styles With The @font-face Declaration&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h3&gt;
+&lt;p&gt;Blockquotes required some streamlining and styling from their Pixyll roots. They are nice now, so lets take them for a spin:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    Today you are You, that is truer than true. There is no one alive who is Youer than You.
+   &lt;/p&gt;
+  &lt;footer&gt;&lt;cite title=&quot;Dr. Suess&quot;&gt;— Dr. Suess&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;color&quot;&gt;Color&lt;/h3&gt;
+&lt;p&gt;The accent color used througout the site is &lt;a href=&quot;https://en.wikipedia.org/wiki/International_Klein_Blue&quot;&gt;International Klein Blue&lt;/a&gt;. It was developed by Yves Klein, who worked directly with a chemist to create this brilliant blue in the 1950’s. I feel the resulting monochrome painting highlights this collaboration while idiolizing the tools of creation. I like that, and I feel a kinship with Yves because we share a last name (albeit a different spelling). It’s also damn pretty on screens, although nothing like the canvas.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/klein-blue.jpg&quot; alt=&quot;Portfolio Titles&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;Whats Next?&lt;/h2&gt;
+
+&lt;p&gt;This is an ongoing project. Here are some of the next steps.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;CSS refinement&lt;br /&gt;
+— The styling improvements to the Portfolio addressed above.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Adding a “Lab” section&lt;br /&gt;
+— This will be a catch all for works in progress and freebies to download.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Blog and Portfolio updates&lt;br /&gt;
+— As learning and projects progress.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Implement a search bar&lt;br /&gt;
+— If the site gets big enough.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“Read More” button on blog&lt;br /&gt;
+— Right now I’m doing post preview manually – it would be great to automate it and add a “Read More” button.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;center&quot; href=&quot;http://lyleklyne.com/#blog&quot;&gt;&amp;gt; Back to the blog&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 14 Aug 2015 04:42:19 -0700</pubDate>
+        <link>http://lyleklyne.com/blog/making-sausages/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/blog/making-sausages/</guid>
+      </item>
+    
+      <item>
+        <title>Design School</title>
+        <description>&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; I will be attending the University of Washington this fall to pursue a &lt;a href=&quot;http://mhcid.washington.edu/&quot;&gt;Masters in Human-Computer Interaction and Design&lt;/a&gt;. The program is quite new, I will be a part of only the third cohort, but it draws curriculum from several well-established schools at UW. My classmates have quite diverse backgrounds, and I’m expecting to learn a great deal from students and faculty alike.&lt;/p&gt;
+
+&lt;p&gt;Up until this point, I have taken the shotgun approach to learning. A smattering of books, blogs, online classes, learning from friends, trial and error, and trial by fire. I love learning this way and place a high value on being self-taught and proactive, but I know I thrive with a structured curriculum and a support network. For this reason, higher education is something I’ve been considering for a long time. After a lot of research I think this program will be an ideal next step, and I couldn’t be more excited!&lt;/p&gt;
+
+&lt;p&gt;In other news, my friends over at the &lt;a href=&quot;http://facebook.com/foodisfree&quot;&gt;Food is Free Project&lt;/a&gt; began using a logo I designed for them. They open sourced the logo design to their social network last year, and I’m pleased to say that they will be using my design moving forward. I added the final design as well as my iterative process to my portfolio. Feel free to check it out &lt;a href=&quot;/portfolio/logo-food-is-free/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m working on several freelance jobs as well as some personal projects at the moment. My goal is to spend the summer honing programming and interactive prototyping chops to strengthen my toolbelt before entering graduate school. I’ve been learning &lt;a href=&quot;http://www.pixate.com/&quot;&gt;Pixate&lt;/a&gt; and &lt;a href=&quot;https://facebook.github.io/origami/&quot;&gt;Origami&lt;/a&gt; for prototyping; I’m taking an introductory Computer Science course, and creating a typeface as well.&lt;/p&gt;
+
+&lt;p&gt;More updates are coming soon!&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;center&quot; href=&quot;http://lyleklyne.com/#blog&quot;&gt;&amp;gt; Back to the blog&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 May 2015 04:42:19 -0700</pubDate>
+        <link>http://lyleklyne.com/blog/design-school/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/blog/design-school/</guid>
+      </item>
+    
+      <item>
+        <title>Oh hey, world!</title>
+        <description>&lt;p&gt;&lt;strong&gt;This is long overdue.&lt;/strong&gt; For years, I have been making things, both digital and physical, and it’s time to make this process transparent. I’ve been reluctant to do so for some time. Partly because I’m hesitant to overshare, but also because it can be scary to put something you made out into the wild.&lt;/p&gt;
+
+&lt;p&gt;Although I believe the first is a legitimate concern, the later is not. From now on I will document my learning process here. I hope that this is personally beneficial and keeps me accountable, but I also hope it helps others in a similar position.&lt;/p&gt;
+
+&lt;p&gt;This website will focus specifically on digital creation, placing special emphasis on usability design. I will illuminate my path towards designing and building digital products: the resources I use, the people I talk to, the struggles I encounter, as well as what I create.&lt;/p&gt;
+
+&lt;p&gt;Documenting this process will be two-fold. My portfolio will showcase design process as well as finished products, and my blog will focus on ideas, concepts, and resources. I will try to keep the tangential musings on adventure, philosophy and unrelated projects to a minimum, although some mention of these things will undoubtedly sneak in.&lt;/p&gt;
+
+&lt;p&gt;Like my kinesthetic approach to learning design and development, while writing this blog I will learn by doing. My initial goals are to establish some themes and recurring topics, as well as a schedule for posts. I feel like doing that last bit is especially important. &lt;strong&gt;In order to be successful in any occupation, you have to produce when you are burned out, uninspired, and ready to quit.&lt;/strong&gt; If anything I hope that this project urges me to do just that.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading and please stay tuned.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;center&quot; href=&quot;http://lyleklyne.com/#blog&quot;&gt;&amp;gt; Back to the blog&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
+        <link>http://lyleklyne.com/blog/oh-hey-world/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/blog/oh-hey-world/</guid>
+      </item>
+    
+  </channel>
+</rss>
