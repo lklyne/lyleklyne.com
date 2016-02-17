@@ -3,8 +3,8 @@
   <channel>
     <title>Lyle Klyne</title>
     <description>Design, development, documenting the process.</description>
-    <link>http://lyleklyne.com/</link>
-    <atom:link href="http://lyleklyne.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Making Sausages (Blogs)</title>
@@ -123,8 +123,8 @@
 
 </description>
         <pubDate>Fri, 14 Aug 2015 04:42:19 -0700</pubDate>
-        <link>http://lyleklyne.com/blog/making-sausages/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/blog/making-sausages/</guid>
+        <link>http://localhost:4000/blog/making-sausages/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/making-sausages/</guid>
       </item>
     
       <item>
@@ -142,8 +142,8 @@
 &lt;p&gt;&lt;a class=&quot;center&quot; href=&quot;http://lyleklyne.com/#blog&quot;&gt;&amp;gt; Back to the blog&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 May 2015 04:42:19 -0700</pubDate>
-        <link>http://lyleklyne.com/blog/design-school/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/blog/design-school/</guid>
+        <link>http://localhost:4000/blog/design-school/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/design-school/</guid>
       </item>
     
       <item>
@@ -163,8 +163,8 @@
 &lt;p&gt;&lt;a class=&quot;center&quot; href=&quot;http://lyleklyne.com/#blog&quot;&gt;&amp;gt; Back to the blog&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
-        <link>http://lyleklyne.com/blog/oh-hey-world/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/blog/oh-hey-world/</guid>
+        <link>http://localhost:4000/blog/oh-hey-world/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/oh-hey-world/</guid>
       </item>
     
   </channel>

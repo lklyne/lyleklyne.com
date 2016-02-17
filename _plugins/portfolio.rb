@@ -66,7 +66,7 @@ module Jekyll
     end
 
     def write_project_index(site, path, name)
-      project = ProjectIndex.new(site, site.source, "/portfolio/#{name}", path)
+      project = ProjectIndex.new(site, site.source, "/portfolio/#{name[4..-1]}", path)
 
       if project.data['published']
         project.render(site.layouts, site.site_payload)

@@ -1,0 +1,39 @@
+# Basics
+title:     Ikea Mobile Concept
+short:     Mobile prototype for local community based food sharing.
+description:
+  A mobile prototype for peer-to-peer sharing of locally grown food.
+published: true
+category:  mobile ux
+project_url:	   /portfolio/ikea-mobile-concept
+previous_url: /portfolio/cropcircle
+next_url: /portfolio/logo-food-is-free
+website:
+image:
+  url:        /images/projects/ikea/ik0.jpg
+  bg_url:     /images/projects/ikea/ik_bg.jpg
+  logo_url:   /images/projects/ikea/ik_header.png
+  title:   Ikea
+  alt:     Ikea
+layout:    project
+
+# Custom Post
+
+project: |
+  ###Project:
+  Ikea is scary. In this project, I imagined a smartphone 
+  app tailored to the in-store shopping experience. It's focused on three actions: browsing products,
+  compiling a list of desired items, and finding them in the warehouse. 
+
+  ###Tools used:
+  - Pen and paper
+  - Omnigraffle
+  - Axure RP
+  - Photoshop
+
+body: |
+  ###Interactions:
+  ![Screen 1](../../../images/projects/ikea/ik1.jpg)
+  ![Screen 1](../../../images/projects/ikea/ik2.jpg)
+  ![Screen 2](../../../images/projects/ikea/ik3.jpg)
+  ![Screen 3](../../../images/projects/ikea/ik4.jpg)  

@@ -1,0 +1,39 @@
+# Basics
+title:     Coffee Basics
+short:     Animated website to show the lifecycle of a coffee bean.
+description:
+  Animated website to show the lifecycle of a coffee bean.
+published: true
+category:  animation
+project_url:	   /portfolio/coffee-basics
+previous_url: /portfolio/squarespace-wordpress
+next_url: /portfolio/cropcircle
+website:
+image:
+  url:        /images/projects/coffeebasics/cb_thumb.jpg
+  bg_url:     /images/projects/coffeebasics/cb_background.jpg
+  logo_url:   /images/projects/coffeebasics/cb_header.png
+  title:   coffee-lifecycle
+  alt:     coffee-lifecycle
+layout:    project
+
+# Custom Post
+
+project: |
+  ###Project:
+  When I interviewed for a summer internship at [Instrument](http://www.instrument.com/), they asked
+  applicants to create something using one of their two mantras. 
+  I selected "make the complex simple" and decided to make an animated site 
+  that shows the lifecycle of a coffee bean. At each step, I provide a brief overview of
+  how flavor is affected. 
+
+  Here it is: [Coffee Basics](animation)
+
+  ###Tools used:
+  - Tumult Hype
+
+
+body: |
+  <div id="test_hype_container" style="position:relative;overflow:hidden;width:100%;height:100%;">
+    <script type="text/javascript" charset="utf-8" src="../test.hyperesources/test_hype_generated_script.js?69281"></script>
+  </div>
