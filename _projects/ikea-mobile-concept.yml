@@ -20,19 +20,19 @@ layout:    project
 # Custom Post
 
 project: |
-  ###Project:
+  ### Project:
   Ikea is scary. In this project, I imagined a smartphone 
   app tailored to the in-store shopping experience. It's focused on three actions: browsing products,
   compiling a list of desired items, and finding them in the warehouse. 
 
-  ###Tools used:
+  ### Tools used:
   - Pen and paper
   - Omnigraffle
   - Axure RP
   - Photoshop
 
 body: |
-  ###Interactions:
+  ### Interactions:
   ![Screen 1](../../../images/projects/ikea/ik1.jpg)
   ![Screen 1](../../../images/projects/ikea/ik2.jpg)
   ![Screen 2](../../../images/projects/ikea/ik3.jpg)
