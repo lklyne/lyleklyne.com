@@ -20,7 +20,7 @@ layout:    project
 # Custom Post
 
 project: |
-  ###Project:
+  ### Project:
   I thought it would be fun to design a camera that made some 
   noise before snapping a picture, in hopes of having a more attentive subject. 
   I focused on designing an interface that allows the user to trigger a 
@@ -33,15 +33,15 @@ project: |
   the user to trigger and capture with a single finger, using a gesture 
   that does not require multiple taps.
 
-  ###Tools used:
+  ### Tools used:
   - Omnigraffle
   - Sketch
   
 body: |
-  ###Camera UI:
+  ### Camera UI:
   ![Screen 1](../../../images/projects/noisycamera/nc2.jpg)
 
-  ###Interactions:
+  ### Interactions:
   ![Screen 1](../../../images/projects/noisycamera/nc1.jpg)
   ![Screen 2](../../../images/projects/noisycamera/nc3.jpg)
   ![Screen 3](../../../images/projects/noisycamera/nc4.jpg)  

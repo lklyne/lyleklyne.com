@@ -21,7 +21,7 @@ layout:    project
 
 
 project: |
-  ###Project:
+  ### Project:
   Some good friends took it upon themselves to visit every park in Seattle, WA.
   It turns out there are a lot of them, and when they finished they made a [lovely book](http://www.amazon.com/Reasons-Go-Outside-Seattle-Project/dp/0692203192/ref=sr_1_1?ie=UTF8&qid=1424413668&sr=8-1&keywords=reasons+to+go+outside) 
   documenting their experience.
@@ -29,7 +29,7 @@ project: |
   [Lola Migas](lolamigas.com), who designed the book, mocked up an accompanying website that I agreed to build. 
   I used [Bootstrap](http://getbootstrap.com/) for the layout and [PayPal](http://paypal.com) for the e-commerce.
 
-  ###Tools used:
+  ### Tools used:
   - Sublime Text
   - Bootstrap
   - JQuery

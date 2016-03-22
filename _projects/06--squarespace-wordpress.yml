@@ -19,23 +19,23 @@ layout:    project
 
 # Custom Post
 problem:   |
-  ###Problem:  
+  ### Problem:  
   It can be difficult to source affordable, locally produced food. 
   Also, food grown in personal gardens frequently must be harvested 
   all at once, creating excess.
 solution:  |
-  ###Solution:  
+  ### Solution:  
   A local, peer-to-peer economy that allows people to trade food grown in urban gardens.
 tools_used: |
 
 result: |
-  ###Result:
+  ### Result:
   An interactive mobile prototype demonstrating primary user flows and interactions.
 
 project: |
-  ##Squarespace:
+  ## Squarespace:
 
-  ####Phoebe Flanigan
+  #### Phoebe Flanigan
   Original logo and website design for an independent radio producer. A simple website that
   clearly communicates her past work, direction, and personal narrative.
 
@@ -45,14 +45,14 @@ project: |
   ![Screen 2](../../../images/projects/wpsp/pf2.jpg)
   ![Screen 3](../../../images/projects/wpsp/pf3.jpg)
 
-  ###Tools used:
+  ### Tools used:
   - Illustrator
   - Squarespace
 
 
   ##Wordpress:
 
-  ####James Whistles Guitar Solos
+  #### James Whistles Guitar Solos
   Website design for James, who whistles the guitar solos in classic songs. 
 
   The website can be viewed live at [jameswhistlesguitarsolos.com](http://jameswhistlesguitarsolos.com).
@@ -60,6 +60,6 @@ project: |
   ![Screen 1](../../../images/projects/wpsp/jw1.jpg)
   ![Screen 2](../../../images/projects/wpsp/jw2.jpg)  
 
-  ###Tools used:
+  ### Tools used:
   - Wordpress
 

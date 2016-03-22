@@ -1,8 +1,8 @@
 # Basics
 title:     Coffee Basics
-short:     Animated website to show the lifecycle of a coffee bean.
+short:       Animation showing the lifecycle of a coffee bean.
 description:
-  Animated website to show the lifecycle of a coffee bean.
+  Animation showing the lifecycle of a coffee bean.
 published: true
 category:  animation
 project_url:	   /portfolio/coffee-basics
@@ -20,7 +20,7 @@ layout:    project
 # Custom Post
 
 project: |
-  ###Project:
+  ### Project:
   When I interviewed for a summer internship at [Instrument](http://www.instrument.com/), they asked
   applicants to create something using one of their two mantras. 
   I selected "make the complex simple" and decided to make an animated site 
@@ -29,7 +29,7 @@ project: |
 
   Here it is: [Coffee Basics](animation)
 
-  ###Tools used:
+  ### Tools used:
   - Tumult Hype
 
 

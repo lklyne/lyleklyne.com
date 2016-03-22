@@ -20,28 +20,28 @@ layout:    project
 # Custom Post
 
 project: |
-  ###Project:
+  ### Project:
   Sourcing locally produced food at an affordable price can be challenging. 
   Why not work with your neighbors? 
   I envisioned a mobile platform to facilitate this process:
   a local, peer-to-peer economy that 
   allows people to trade food grown in urban gardens.
 
-  ###Tools used:
+  ### Tools used:
   - Pen and paper
   - Omnigraffle
   - Photoshop
   - Axure RP
 
 body: |
-  ###Wireframes:
+  ### Wireframes:
   ![Screen 1](../../../images/projects/cropcircle/cs1.jpg)
   ![Screen 2](../../../images/projects/cropcircle/cs2.jpg)
 
-  ###User Flow:
+  ### User Flow:
   ![Screen 3](../../../images/projects/cropcircle/cs3.jpg)
 
-  ###Screens:  
+  ### Screens:  
   ![Screen 2](../../../images/projects/cropcircle/cs5.jpg)
   ![Screen 3](../../../images/projects/cropcircle/cs6.jpg)  
   ![Screen 3](../../../images/projects/cropcircle/cs7.jpg)
