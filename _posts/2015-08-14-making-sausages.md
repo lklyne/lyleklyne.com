@@ -9,7 +9,7 @@ categories:
 ---
 
 <p class='regular' markdown='1'>
-**An  overview of how I built this website** and some of the resources I consulted during construction. In this post I'll talk about using the [**Jekyll**](http://jekyllrb.com/) blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what's coming next for this website.**
+ **An  overview of how I built this website** and some of the resources I consulted during construction. In this post I'll talk about using the [**Jekyll**](http://jekyllrb.com/) blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what's coming next for this website.
 </p>
 
 <p class="center"> * * * </p>

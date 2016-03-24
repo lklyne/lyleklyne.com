@@ -23,7 +23,12 @@
     <!-- Javascript -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
-    <script type="text/javascript" src="/js/rand.bg.js"></script>  
+    <script type="text/javascript" src="/js/rand.bg.js"></script> 
+    <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
+    <script type="text/javascript" src="/js/html2canvas.js"></script>  
+    <script type="text/javascript" src="/js/html2canvas.svg.js"></script>  
+    <script type="text/javascript" src="/js/StackBlur.js"></script>  
+  
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
         <![endif]-->
@@ -51,11 +56,11 @@
     </script>
 </head>
 
-<body class="animated fade-in-down">
+<body class="">
   <div class="site-wrap">
 
     
-        <div id="frontBleedImg" class="fader splash-img randbg">
+        <div id="frontBleedImg" class="fader splash-img randbg bg-cover">
           <!-- <div class="front-menu-container"> -->
             
             <!-- Hype code goes here -->
@@ -73,19 +78,21 @@
   			<a name="blog">
   		</div>
       <div class="hiddenHeader">
-  		<header class="site-header px2 px-responsive">
-  <div class="mt2 wrap">
+  		<header class="site-header px2 px-responsive blurheader">
+  <div class="mt1 wrap">
     <div class="measure">
-      <a href="http://localhost:4000" class="site-title">Lyle Klyne</a>
-      <nav class="site-nav right">
-        <a href="/about/">About</a>
+   		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
+      	<a href="http://localhost:4000" class="site-title">Lyle Klyne</a>
+      	<nav class="site-nav right">
+        	<a href="/about/">About</a>
 <a class="scroll" href="/#blog">Blog</a>
 <a href="/lab/">Lab</a>
 <a href="/portfolio/">Portfolio</a>
 
 
-      </nav>
-      <div class="clearfix"></div>
+      	</nav>
+      
+      	<div class="clearfix"></div>
     </div>
   </div>
 </header>
@@ -98,26 +105,42 @@
   <div class="posts">
     
       <div class="post">
-        <a href="/blog/making-sausages/" class="post-link">
-          <h3 class="h2 post-title">Making Sausages (Blogs)</h3>
-          <p class="post-meta">Aug 14, 2015</p>
-          <p class="post-summary"><b>An  overview of how I built this website</b> and some of the resources I consulted during construction. In this post I'll talk about using the Jekyll blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what's coming next for this website.</p>
+        <a href="/blog/laser-cutting/" class="post-link">
+          <h3 class="h2 post-title">Laser Cutting</h3>
+          <p class="post-meta">Mar 6, 2016</p>
+          <p class="post-summary">Laser Cutting is a quick way of bringing an idea into the physical world. I'll talk about my process of laser cutting a simple iPhone stand.</p>
         </a>
       </div>
     
       <div class="post">
-        <a href="/blog/design-school/" class="post-link">
-          <h3 class="h2 post-title">Design School</h3>
-          <p class="post-meta">May 28, 2015</p>
-          <p class="post-summary"><b>Update:</b> I will be attending the University of Washington this fall to pursue a Masters in Human-Computer Interaction and Design. The program is quite new...</p>
+        <a href="/blog/physical-computing-prototyping/" class="post-link">
+          <h3 class="h2 post-title">Physical Computational Prototyping</h3>
+          <p class="post-meta">Mar 3, 2016</p>
+          <p class="post-summary">This post covers my introduction to Arduino and physical computing. I did five simple builds to learn the basics of Arduino and where to find development resources.</p>
         </a>
       </div>
     
       <div class="post">
-        <a href="/blog/oh-hey-world/" class="post-link">
-          <h3 class="h2 post-title">Oh hey, world!</h3>
-          <p class="post-meta">Feb 24, 2015</p>
-          <p class="post-summary">This is long overdue. For years, I have been making things, both digital and physical, and it’s time to make this process transparent. I’ve been reluctant to do so for some time. Partly because...</p>
+        <a href="/blog/model-prototyping/" class="post-link">
+          <h3 class="h2 post-title">Model Prototyping</h3>
+          <p class="post-meta">Feb 11, 2016</p>
+          <p class="post-summary">I created three model prototypes for shower control systems. The goal was to create a control a physical and digital control system in the style of the OXO brand.</p>
+        </a>
+      </div>
+    
+      <div class="post">
+        <a href="/blog/wizard-of-oz/" class="post-link">
+          <h3 class="h2 post-title">Behavioral Prototyping</h3>
+          <p class="post-meta">Jan 28, 2016</p>
+          <p class="post-summary">A group project designed to prototype a in car gesture control system in a short period of time with limited resources. The following study and documentation was done in collaboration with Yitao Wang and Rickie Xie.</p>
+        </a>
+      </div>
+    
+      <div class="post">
+        <a href="/blog/one-bus-away/" class="post-link">
+          <h3 class="h2 post-title">Video Prototyping</h3>
+          <p class="post-meta">Jan 21, 2016</p>
+          <p class="post-summary">One Bus Away is a transportation app that provides up-to-date information about bus times. This post covers the process of making a short product video that demonstrates some of its functionality.</p>
         </a>
       </div>
     
@@ -130,7 +153,7 @@
   </div>
   <div class="right">
     
-      <span class="pagination-item disabled">Older</span>
+      <a class="pagination-item" href="/page2/">Older</a>
     
   </div>
 </div>
@@ -176,8 +199,8 @@
 </div>
 <div class="clearfix"></div>
 
-        Hand-made by Lyle Klyne.<br>
-        Powered by <a href="http://jekyllrb.com/">Jekyll</a>,  ☕️ , and grit.
+        Created by Lyle Klyne.<br>
+        All rights reserved.
       
       </small>
     </div>
@@ -216,8 +239,72 @@ count: 5
     });          
 });
 
+/* Smooth scroll to point on page */
 
+$(document).ready(function(){
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
 
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+});
+
+/* Sticky nav */
+
+$('.site-header').stickThis(); 
+
+/* Frosted glass 
+
+$(function () {
+                html2canvas($("body"), {
+                    onrendered: function (canvas) {
+                        $(".blurheader").append(canvas);
+                        $("canvas").attr("id", "canvas");
+                        stackBlurCanvasRGB(
+                            'canvas',
+                        0,
+                        0,
+                        $("canvas").width(),
+                        $("canvas").height(),
+                        20);
+                    }
+                });
+                vv = setTimeout(function () {
+                    $("site-header").show();
+                    clearTimeout(vv);
+                }, 200);
+            });
+
+            $(window).scroll(function () {
+                $("canvas").css(
+                    "-webkit-transform",
+                    "translatey(-" + $(window).scrollTop() + "px)");
+            });
+
+            window.onresize = function () {
+                $("canvas").width($(window).width());
+            };
+
+            $(document).bind('touchmove', function () {
+                $("canvas").css(
+                    "-webkit-transform",
+                    "translatey(-" + $(window).scrollTop() + "px)");
+            });
+
+            $(document).bind('touchend', function () {
+                $("canvas").css(
+                    "-webkit-transform",
+                    "translatey(-" + $(window).scrollTop() + "px)");
+            });
+
+            */
 
 </script>
 

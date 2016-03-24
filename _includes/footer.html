@@ -4,8 +4,8 @@
       <small>
         {% if site.show_social_icons %}
         {% include social_links.html %}
-        Hand-made by Lyle Klyne.<br>
-        Powered by <a href="http://jekyllrb.com/">Jekyll</a>,  ☕️ , and grit.
+        Created by Lyle Klyne.<br>
+        All rights reserved.
       {% endif %}
       </small>
     </div>
@@ -44,7 +44,71 @@ count: 5
     });          
 });
 
+/* Smooth scroll to point on page */
 
+$(document).ready(function(){
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
 
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+});
+
+/* Sticky nav */
+
+$('.site-header').stickThis(); 
+
+/* Frosted glass 
+
+$(function () {
+                html2canvas($("body"), {
+                    onrendered: function (canvas) {
+                        $(".blurheader").append(canvas);
+                        $("canvas").attr("id", "canvas");
+                        stackBlurCanvasRGB(
+                            'canvas',
+                        0,
+                        0,
+                        $("canvas").width(),
+                        $("canvas").height(),
+                        20);
+                    }
+                });
+                vv = setTimeout(function () {
+                    $("site-header").show();
+                    clearTimeout(vv);
+                }, 200);
+            });
+
+            $(window).scroll(function () {
+                $("canvas").css(
+                    "-webkit-transform",
+                    "translatey(-" + $(window).scrollTop() + "px)");
+            });
+
+            window.onresize = function () {
+                $("canvas").width($(window).width());
+            };
+
+            $(document).bind('touchmove', function () {
+                $("canvas").css(
+                    "-webkit-transform",
+                    "translatey(-" + $(window).scrollTop() + "px)");
+            });
+
+            $(document).bind('touchend', function () {
+                $("canvas").css(
+                    "-webkit-transform",
+                    "translatey(-" + $(window).scrollTop() + "px)");
+            });
+
+            */
 
 </script>

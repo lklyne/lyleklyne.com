@@ -7,9 +7,596 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Laser Cutting</title>
+        <description>&lt;p class=&quot;regular&quot;&gt;
+	Laser Cutting is a quick way of bringing an idea into the physical world. I’ll talk about my process of laser cutting a simple iPhone stand.
+&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
+
+&lt;h2 id=&quot;cell-phone-stand&quot;&gt;Cell Phone Stand&lt;/h2&gt;
+&lt;p&gt;I wanted a stand that was versatile —- product that could be placed on a desk for simple viewing and used to film prototypes. The assignment called for the use of mat board. Although this is a practical building material, I decided to create my stand using birch. As I wanted the  final product to be simple, durable, and easily portable, and birch was ideal for this.&lt;/p&gt;
+
+&lt;p&gt;One of my primary goals was to design a phone stand that would pack down to as few pieces as possible. This would ensure that set up time was minimal and transportation was easy. A simple notched design was what I discovered to be the best solution to this goal. Additionally, the stand needed to allow the charging cable and headphones to be plugged in while the phone was resting in portrait position.&lt;/p&gt;
+
+&lt;p&gt;Another goal was to create a stand that would help amplify sound when the phone was resting on it. I explored several options, but I ultimately settled on a stand with a hole for the iPhone speaker and a bent base to push the sound towards the user. I also included holes for the headphone jack and charging cord.&lt;/p&gt;
+
+&lt;p&gt;Finally, I wanted the stand to function in both portrait and landscape position, so I aimed to create a back that would not protrude above the phone in landscape position but would remain sturdy in portrait position.&lt;/p&gt;
+
+&lt;h4 id=&quot;sketches&quot;&gt;Sketches&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/laser-sketches.jpg&quot; alt=&quot;Phone Stand Sketches&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;first-iteration&quot;&gt;First Iteration&lt;/h3&gt;
+&lt;p&gt;The first stand had no bend in the wood and was unstable. I began by sketching a scale version, measuring it, and cutting it from birch. The initial attempt left the device too top heavy with a viewing angle that was tilted too far away from the user.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v1-01.jpg&quot; alt=&quot;Phone Stand V1&quot; /&gt;
+&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v1-02.jpg&quot; alt=&quot;Phone Stand V1&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;second-iteration&quot;&gt;Second Iteration&lt;/h3&gt;
+
+&lt;p&gt;The second iteration had a curved base achieved through a pattern of hairline cuts all the way through the wood. The iPhone was still top heavy and wanted to slide off the stand in portrait mode. Landscape mode worked well, although I wanted the device to be well balanced in both positions. Also, the wood did not bend as much as I had hoped for.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v2-01.jpg&quot; alt=&quot;Phone Stand V2&quot; /&gt;
+&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v2-02.jpg&quot; alt=&quot;Phone Stand V2&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;third--final-iteration&quot;&gt;Third &amp;amp; Final Iteration&lt;/h3&gt;
+
+&lt;p&gt;For the third iteration, I tightened the distance between the cuts and increased their number to make the bend longer and more flexible. To prevent the phone from slipping off, I etched a groove on the ledge, allowing the stand to grip the phone when placed in portrait mode. I also included a groove in the back to wrap a charging cord around.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-01.jpg&quot; alt=&quot;Phone Stand V3&quot; /&gt;
+&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-02.jpg&quot; alt=&quot;Phone Stand V3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The weight of the phone causes the wood to bend, acting as a scoop for the iPhone’s sound output.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-03.jpg&quot; alt=&quot;Phone Stand V3&quot; /&gt;
+&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-04.jpg&quot; alt=&quot;Phone Stand V3&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;closing-thoughts&quot;&gt;Closing Thoughts&lt;/h2&gt;
+&lt;p&gt;I was please with the simplicity and functionality of the final product. What began as a basic design for a straightforward task actually became quite refined after several iterations. I found that as much as I could plan, a lot of my improvements were not realized until I actually cut something out and was able to hold it in my hand and use it. Because of the speed of laser cutting, this designing in this way is absolutely doable.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Mar 2016 02:50:13 -0800</pubDate>
+        <link>http://localhost:4000/blog/laser-cutting/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/laser-cutting/</guid>
+      </item>
+    
+      <item>
+        <title>Physical Computational Prototyping</title>
+        <description>&lt;p class=&quot;regular&quot;&gt;
+	This post covers my introduction to Arduino and physical computing. I did five simple builds to learn the basics of Arduino as well as explore where to find development resources. This post will provide brief walkthroughs, sources, and documentation of each of the five builds. I’ll also include some commentary about the build process, and what I found surprising.
+&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
+
+&lt;h2 id=&quot;arduino&quot;&gt;Arduino&lt;/h2&gt;
+&lt;p&gt;Arduino is an open-source prototyping platform thats designed for accessiblity. The board can read inputs from varios digital and analog sensors as well as talk to the internet. The board can act on this input by turning on a light, a motor, or making a post online. They are a powerful prototyping tool because they are cheap, easy-to-use, and relatively powerful.&lt;/p&gt;
+
+&lt;h2 id=&quot;photocell&quot;&gt;01: Photocell&lt;/h2&gt;
+&lt;p&gt;The  first task is a simple photocell that delivers an analog reading of the ambient light. The circuit is quite simple. This was fun to play with, and I can imagine some great applications for the photo cell on its own, but coupled with a laser it could be a powerful tool. To create the build, I consulted the extensive &lt;a href=&quot;https://learn.adafruit.com/photocells/using-a-photocell&quot;&gt;Adafruit Photocell tutorial&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was surprised at how well calibrated the photocell was to indoor light levels. Directly under a light bulb, the analog reading was around 900. Placing my  finger over the sensor caused this reading to drop to around 300, but I had expected a greater drop. It wasn’t until I placed an opaque bag over the sensor that I was able to get it below 100.&lt;/p&gt;
+
+&lt;h3 id=&quot;diagram&quot;&gt;Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-diagram.gif&quot; alt=&quot;Joystick Sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sketch-code&quot;&gt;Sketch Code&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+int photocellReading;     // the analog reading from the sensor divider
+void setup(void) {
+  // Send debugging information via the Serial monitor
+  Serial.begin(9600);   
+}
+ 
+void loop(void) {
+  photocellReading = analogRead(photocellPin);  
+ 
+  Serial.print(&quot;Analog reading = &quot;);
+  Serial.println(photocellReading);     // the raw analog reading
+
+  // Wait 0.5 seconds between each reading
+  delay(500);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;output&quot;&gt;Output&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-output.png&quot; alt=&quot;PHotocell Output&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;hall-effect-sensor&quot;&gt;02: Hall Effect Sensor&lt;/h2&gt;
+&lt;p&gt;The hall effect sensor has the ability to detect if a magnet is present. When the output voltage of the Hall Effect Sensor is high, there is a magnet present. With my build, this translated to a binary output, with 1 being no magnet present and a 0 indicating a magnetic field.
+I can imagine quite a few uses for this, including a sensor that determines if a door open is open or closed, or a speedometer on a bike wheel.&lt;/p&gt;
+
+&lt;p&gt;The example code was modified and simplied from the &lt;a href=&quot;http://www.hobbytronics.co.uk/arduino-tutorial11-hall-effect&quot;&gt;Hobby Electronics Hall Effect Tutorial&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;diagram-1&quot;&gt;Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-diagram.jpg&quot; alt=&quot;Hall Effect Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sketch-code-1&quot;&gt;Sketch Code&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int hallPin = 12;    
+int hallState = 0;      
+void setup() {
+    
+  // initialize the hall effect sensor pin as an input:
+  pinMode(hallPin, INPUT);    
+  Serial.begin(9600); 
+}
+
+void loop(){
+  // read the state of the hall effect sensor:
+  hallState = digitalRead(hallPin);
+
+  // print out the 0 or 1 to the console
+  Serial.println(hallState);
+  delay(500);
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;output-1&quot;&gt;Output&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-output.png&quot; alt=&quot;Joystick Sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;disco-countdown&quot;&gt;03: Disco Countdown&lt;/h2&gt;
+&lt;p&gt;For the third task I created an “interesting” combination of flashing lights using three independently controlled LEDs. I used two green LEDs and two RGB LEDs to create a countdown effect. The green LEDs alternate at an increasingly rapid rate.
+After a short period of time  flashing rapidly, the two RGB LEDs fade through all colors. I was surprised by how easy to control the RGB LEDs, and hope to put them to greater use for further projects.&lt;/p&gt;
+
+&lt;p&gt;Initially I was trying to handle the countdown with a for loop. Although this appeared to make sense, I found myself trying to establish timing through trial and error. It was difficult to have the iterating integer drop quickly enough without hitting a negative, something that would cause the green LEDs to remain illuminated and never enter disco mode. This was obviously a tragedy, and I was stuck until a classmate suggested a while loop.&lt;/p&gt;
+
+&lt;p&gt;The code for blinking LEDs was modi ed from the Arduino “Blink” tutorial, and the code for a smooth fade between colors was modified from &lt;a href=&quot;http://yaab-arduino.blogspot.com/2015/01/ rgb-led-fading-colors-arduino.html&quot;&gt;this blog post&lt;/a&gt;. The schematic was (obviously) hand drawn.&lt;/p&gt;
+
+&lt;h3 id=&quot;diagram-2&quot;&gt;Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-diagram.jpg&quot; alt=&quot;Disco Countdown Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sketch-code-2&quot;&gt;Sketch Code&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
+#define GREEN_PIN 10   // where the green pin is connected to
+#define BLUE_PIN 11    // where the blue pin is connected to
+#define DELAY 1       // 2ms internal delay; increase for slower fades
+#define SPEED 20       // change the speed of the countdown
+int startSpeed = 1000;
+
+void setup() {
+
+  // variables for the disco ball
+  pinMode(GREEN_PIN, OUTPUT);
+  pinMode(BLUE_PIN, OUTPUT);
+  pinMode(RED_PIN, OUTPUT);
+
+  // variables for the countdown
+  pinMode(12, OUTPUT);
+  pinMode(8, OUTPUT);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  analogWrite(RED_PIN, 255);
+  analogWrite(GREEN_PIN, 255);
+  analogWrite(BLUE_PIN, 255);
+
+  while (startSpeed &amp;gt; 8) {
+
+    // for (int i = 0; i &amp;lt; 20; i++)
+    // int delaySpeed = 500 - (50 + SPEED * i);
+    startSpeed = startSpeed / 2;
+    digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(startSpeed);              // wait for a second
+    digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+    delay(startSpeed);
+    digitalWrite(12, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(startSpeed);              // wait for a second
+    digitalWrite(12, LOW);    // turn the LED off by making the voltage LOW
+    delay(startSpeed);
+    Serial.println(startSpeed);
+
+    startSpeed = startSpeed - 7;
+  }
+
+  // infinate party mode
+  while (true) {
+    for (int i = 0; i &amp;lt; 10; i++) {
+      // fade from green to red
+      for (int i = 0; i &amp;lt; 255; i++) {
+        analogWrite(RED_PIN, i);
+        analogWrite(GREEN_PIN, 255 - i);
+        analogWrite(BLUE_PIN, 0);
+        delay(DELAY);
+      }
+
+      // fade from red to blue
+      for (int i = 0; i &amp;lt; 255; i++) {
+        analogWrite(RED_PIN, 255 - i);
+        analogWrite(GREEN_PIN, 0);
+        analogWrite(BLUE_PIN, i);
+        delay(DELAY);
+      }
+
+      // fade from blue to green
+      for (int i = 0; i &amp;lt; 255; i++) {
+        analogWrite(RED_PIN, 0);
+        analogWrite(GREEN_PIN, i);
+        analogWrite(BLUE_PIN, 255 - i);
+        delay(DELAY);
+      }
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;output-2&quot;&gt;Output&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-output.png&quot; alt=&quot;Disco Countdown Output&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;light-dimmer-switch&quot;&gt;04: Light Dimmer Switch&lt;/h2&gt;
+
+&lt;p&gt;The goal of this project was to create an LED that could be dimmed with a potentiometer using pulse width modulation (PWM). The &lt;a href=&quot;https://www.arduino.cc/en/Tutorial/PWM&quot;&gt;arduino.cc PWM tutorial&lt;/a&gt; was crucial to my understanding of this concept and building the sketch. In short, by turning an LED on and off at rapid intervals, it can trick the human eye into seeing a fade in brightness. I was suprised at how effective this was and how easy it was to setup.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.arduino.cc/en/tutorial/potentiometer&quot;&gt;Potentiometer tutorial on arduino.cc&lt;/a&gt; was also crucial to my understanding of this sketch. I found it partularly useful that their example code indicated why the resulting analog output had to be divided by 4 in order to be an effective method of control.&lt;/p&gt;
+
+&lt;h3 id=&quot;diagram-3&quot;&gt;Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-diagram.png&quot; alt=&quot;Light Dimmer Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sketch-code-3&quot;&gt;Sketch Code&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
+int brightness = 0;    // how bright the LED is
+int fadeAmount = 5;    // how many points to fade the LED by
+int analogPin = 3;   // potentiometer connected to analog pin 3
+int val = 0;         // variable to store the read value
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // declare pin 9 to be an output:
+  pinMode(led, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // 
+  val = analogRead(analogPin);   // read the input pin
+
+  // set the brightness of pin 9:
+  analogWrite(led, brightness);
+
+  // change the brightness for next time through the loop:
+  brightness = val / 4;
+
+  // reverse the direction of the fading at the ends of the fade:
+  if (brightness == 0 || brightness == 255) {
+    fadeAmount = -fadeAmount ;
+  }
+  // wait for 30 milliseconds to see the dimming effect
+  delay(30);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;output-3&quot;&gt;Output&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-output.png&quot; alt=&quot;Light Dimmer Output&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;doorbell&quot;&gt;05: Doorbell&lt;/h2&gt;
+
+&lt;p&gt;The doorbell I created is more akin to a morse code messenger than an actual doorbell. It’s quite simple. When the button is pressed, the buzzer emits a tone, when it is not pressed, the buzzer does not. I had a more diffcult time getting this one set up, partly due to an error on the &lt;a href=&quot;http://mbeded.blogspot.com/2012/04/controlling- buzzer-with-push-button.html&quot;&gt;tutorial&lt;/a&gt; I found. I began troubleshooting this error by disconnecting the buzzer and logging the button status to the console. It was working as expected. Ultimately I discovered the issue was an improperly wired buzzer as well as an issue with my code.&lt;/p&gt;
+
+&lt;h3 id=&quot;diagram-4&quot;&gt;Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-diagram.jpg&quot; alt=&quot;Buzzer Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sketch-code-4&quot;&gt;Sketch Code&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int buttonPin = 2;    
+const int buzzerPin =  3;      
+
+
+int buttonState = 0;         
+
+void setup() {
+  
+  pinMode(buzzerPin, OUTPUT); 
+       
+  pinMode(buttonPin, INPUT);     
+}
+
+void loop(){
+
+  buttonState = digitalRead(buttonPin);
+  
+ if (buttonState == HIGH) {     
+    tone(buzzerPin, 300);  
+  } 
+  else {
+    noTone(buzzerPin); 
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;output-4&quot;&gt;Output&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-output.png&quot; alt=&quot;Buzzer Output&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 03 Mar 2016 02:50:13 -0800</pubDate>
+        <link>http://localhost:4000/blog/physical-computing-prototyping/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/physical-computing-prototyping/</guid>
+      </item>
+    
+      <item>
+        <title>Model Prototyping</title>
+        <description>&lt;p class=&quot;regular&quot;&gt;
+	I created three model prototypes for shower control systems. The goal was to create a physical and digital control system in the style of the OXO brand.
+&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;h3 id=&quot;selection&quot;&gt;Selection&lt;/h3&gt;
+&lt;p&gt;For this project, I had the option of creating an immersion blender, a stud finder, or a shower controller. I focused on creating a shower control system, partly because I think it provides some unique design constraints related to use in soapy water, but also because it is so frequently used. Immersion blenders and stud finders are no doubt practical tools, but they are not typically used on a daily basis. I’m also less familiar with how both work.&lt;/p&gt;
+
+&lt;h3 id=&quot;constraints&quot;&gt;Constraints&lt;/h3&gt;
+&lt;p&gt;The design brief came with some set constraints. The product had to have a volume equivalent of 4 x 4 x 2 inches. The weight was suggested to be approximately 0.75 pounds. It had to be wall mounted. It had to have a digital display with settings for temperature, volume, and valve control. Additionally, it had to be easy to use when visibility and dexterity were compromised.
+I found this last constraint to be especially compelling. As the assignment was designed to practice prototyping physical objects, I felt that designing an object that could be used with soapy hands and eyes closed to be a quality design challenge.&lt;/p&gt;
+
+&lt;h3 id=&quot;goals&quot;&gt;Goals&lt;/h3&gt;
+&lt;p&gt;I sought to create three different control schemes that, once learned, could be manipulated easily and precisely with one’s eyes closed. My assumption was that the most used controls would be for adjusting temperature and flow. In an effort to simplify the design as much as possible, I omitted any On/Off  switch and included this functionality into the  flow controller. For my final design I settled on a joystick model that would use the X and Y, a set of horizontal sliders, and a large dial that, when depressed, would toggle between flow and temperature controls.&lt;/p&gt;
+
+&lt;h2 id=&quot;prototypes&quot;&gt;Prototypes&lt;/h2&gt;
+&lt;p&gt;There are many benefits to a well-designed physical device: actions are memorable, precisely modified without visual feedback, and satisfying. I sought to combine these with digital luxuries not currently provided in shower control systems: user presets, curved adjustment of temperature, a digital screen for info about time and weather, a digital thermometer, and a flow rate monitor. Since this assignment was focused on building a physical prototype, I my energy was on testing form and ergonomics, and how these interact with the control schema, as opposed to the digital interface itself. As a result, the digital UI is represented via low fidelity sticky notes. Instead of going in depth into user presets and, these sticky notes just list temperature and time. With that being said, all designs incorporate a digital display and could easily handle these additional features.&lt;/p&gt;
+
+&lt;h3 id=&quot;joystick&quot;&gt;Joystick&lt;/h3&gt;
+&lt;p&gt;The joystick was designed to control temperature on the X axis and flow on the Y axis. In an effort to make it easily accessible, the off action is placed in the center of the device. This creates another advantage in that both cold and hot can be quickly accessed when turning the shower on. The box shaped controller is designed to be placed lower on the wall so that you can see the top and front of the box easily. The top of the box includes a digital display that can be glanced at to get relevant information such as flow rate and current temperature.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/joystick.jpg&quot; alt=&quot;Joystick Sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sliders&quot;&gt;Sliders&lt;/h3&gt;
+
+&lt;p&gt;The slider is similar to the joystick model except that the X and Y axises have been broken and both placed along the X axis. The goal further simplify the control by employing the left-to-right, less-to-more analogy. Although I believe this design was successful in that regard, since the two sliders are identical it could be difficult to distinguish between them with soapy, closed eyes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/sliders.jpg&quot; alt=&quot;Sliders Sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;knob&quot;&gt;Knob&lt;/h3&gt;
+&lt;p&gt;This design is very similar to the &lt;a href=&quot;https://nest.com/?alt=1&quot;&gt;Nest thermostat system&lt;/a&gt; applied to shower control. I sought to make a knob that incorporated two actions, twisting and pushing. The twisting would utilize a digital indicator to mark position, and the pushing would be used to toggle modes and turn the shower on and off. I felt the knob was the most compelling idea because of its simplicity and power. The final prototype had a surprisingly pleasing feeling when you pushed it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/knob.jpg&quot; alt=&quot;Knob Sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;builds&quot;&gt;Builds&lt;/h3&gt;
+
+&lt;p&gt;The joystick was built with matboard, a rubber band to allow the joystick to move, and an Allen wrench with a wooden button glued to the top. The slider prototype used a foam core with pins to simulate the sliders.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/joy-slide-photos.png&quot; alt=&quot;Knob Sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The knob was built with laser cut mat board that was etched to allow it to bend in a circle. An alligator clip was used at the bottom to give a springy feeling when you pushed down on the nob, and several pieces of wood and crumpled tin foil were added to give the product more weight. I used colored construction paper and interchangeable sticky notes to create the interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/knob-photos.png&quot; alt=&quot;Knob Sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;user-test--reflections&quot;&gt;User Test &amp;amp; Reflections&lt;/h2&gt;
+
+&lt;p&gt;The user test was very simple. I tested the knob with one individual and gave them task-based instructions but no detailed walk through. The task list was to set the water temperature, turn the water on, turn the temperature up, turn the temperature down, switch to the tub, and turn the water off. The participant completed all the tasks easily with minimal guidance. The only thing I did not expect, was the participant did the press-and-hold action for less time than expected.&lt;/p&gt;
+
+&lt;p&gt;After the test, the participant said they liked how the knob felt and enjoyed the button press action. They said they would be excited to try it out and looked forward to it being sturdy enough to “whack strongly” to turn on and off. The participant also mentioned that they were distracted by the UI and the fact that it was not constantly changing. This was an oversight on my part, as I made sticky notes to represent some screens but not others.&lt;/p&gt;
+
+&lt;p&gt;For future testing, I think it would be better to either make all or none of the screens change. The participant also remarked that the physical placement of the indicator arrow was distracting tot them. This was designed to be a digital component, but I created a physical representation of it on the prototype.&lt;/p&gt;
+
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+	&lt;iframe src=&quot;https://player.vimeo.com/video/155089378&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 11 Feb 2016 02:50:13 -0800</pubDate>
+        <link>http://localhost:4000/blog/model-prototyping/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/model-prototyping/</guid>
+      </item>
+    
+      <item>
+        <title>Behavioral Prototyping</title>
+        <description>&lt;p class=&quot;regular&quot;&gt;
+	A group project designed to prototype a in car gesture control system in a short period of time with limited resources. I participated in ideation and concept development, created the “driving simulator,” and served as record-keeper during the test. The following study and documentation was done in collaboration with Yitao Wang and Rickie Xie.
+&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
+
+&lt;h3 id=&quot;notes-on-behavioral-prototyping&quot;&gt;Notes on Behavioral Prototyping&lt;/h3&gt;
+&lt;p&gt;Behavioral prototyping, or the Wizard of Oz experiment, is commonly used in the design process to evaluate a perceived autonomous computer system, operated by a human behind the scene. As part of the iterative design process, this technique enables designers to build a relatively inexpensive prototype with limited resources. As a result, we can evaluate a system effectively with low to mixed-fidelity prototype by presenting the interaction in the desired context.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-1-background&quot;&gt;Part 1: Background&lt;/h2&gt;
+
+&lt;h3 id=&quot;scenario&quot;&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;The goal of our experiment was to simulate a driving experience in which a driver interacts with an in-car music entertainment system (or “infotainment”) via hand gestures. We created a 3D gesture user interface for the vehicle audio component of the system. The interface included a set of simple gesture interactions enabling the driver to focus their attention on the road.&lt;/p&gt;
+
+&lt;p&gt;We decided to focus on what we estimated to be the most commonly used actions in streaming music playback: start, stop, pause, next song, previous song, volume up, and volume down. We considered including liking, disliking and saving a song to the music library, yet ultimately decided that this would risk over complicating the study, added difficulty for our “Wizard,” and increased the chance of error.&lt;/p&gt;
+
+&lt;p&gt;Additionally, we considered allowing the user to switch between play modes such as shuffling or repeating their playlist or a single, but we determined that this would require the listener to have a pre-existing relationship with the music they were listening to. This was something that we were unable to account for in this study.&lt;/p&gt;
+
+&lt;h3 id=&quot;gestural-interface&quot;&gt;Gestural Interface&lt;/h3&gt;
+&lt;p&gt;We created these gestures based on the traditional 2D touch interface for a media player as well as the current practice of industry leaders such as BMW and Google. Since a gesture-based interface allows the user to simulate the experience of interacting with a physical object intuitively and naturally, we revised our gestures to represent the physical interaction. For instance, we used the action of swiping from right to left to augment the reality when a user is physically pushing an item to the previous position of a queue.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/gesture-language.png&quot; alt=&quot;Gestural Interface Language&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;part-2-test-setup&quot;&gt;Part 2: Test Setup&lt;/h2&gt;
+
+&lt;h4 id=&quot;infotainment-system&quot;&gt;Infotainment System&lt;/h4&gt;
+&lt;p&gt;Due to safety and time constraints, we did not have access to a real car or a legitimate driving simulator. Since we still wanted to test gestures related to a driving experience, we created a rudimentary driving simulator at a library workspace. Our initial plan was to have the participants play a racing game to distract them and better simulate a driving experience. We looked into several options for games, but because we did not have a gaming console, we were confined to finding a free driving simulator or racing game for Apple’s Operating System. Most of the games we found were too complicated and would have required the user’s full attention. In addition, all of the racing games we found required two hands to play, one for direction control and the other for a throttle. This would have prevented the user from having a free hand for the gesture control system.&lt;/p&gt;
+
+&lt;h4 id=&quot;simulator&quot;&gt;Simulator&lt;/h4&gt;
+&lt;p&gt;The simulator consisted of a large TV displaying first person video of a car driving, a fake wheel and infotainment dashboard, and two independent Bluetooth speakers that were hidden within the “car”. One speaker was paired with the computer playing the driving video, and played ambient sounds of driving. This audio was run throughout the entire test. The other speaker was paired with a different computer with Spotify installed, and was used to play music and was controlled by our “Wizard of Oz.”.&lt;/p&gt;
+
+&lt;h4 id=&quot;planning&quot;&gt;Planning&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/00-planning.JPG&quot; alt=&quot;Planning the simulator and car&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;layout&quot;&gt;Layout&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/room-diagram.jpg&quot; alt=&quot;Room Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;the-car&quot;&gt;The “Car”&lt;/h4&gt;
+
+&lt;p&gt;The “car” included a fake yet rotatable driver’s wheel, as well as a center console with fake climate control and stereo.I built it using two cardboard boxes, a frisbee glued to the lid of a plastic jar with a screw-on lid, construction paper with a hand drawn UI, duct tape, gorilla glue, and black spray paint. A GoPro was mounted inside the “car” that pointed at the participant. The participant was told that the GoPro was connected to a computer via wifi which was capturing and processing their gestures. In actuality, the camera was just used to get another perspective of the participant to better aid the wizard.&lt;/p&gt;
+
+&lt;h4 id=&quot;beginnings-of-the-steering-column&quot;&gt;Beginnings of the steering column&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/01-peanut.jpg&quot; alt=&quot;Peanut Butter wheel&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;beginnings-of-the-dashboard&quot;&gt;Beginnings of the dashboard&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/02-box.jpg&quot; alt=&quot;Room Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;beginnings-of-the-wheel&quot;&gt;Beginnings of the wheel&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/03-frisbee.jpg&quot; alt=&quot;Room Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;mounted--painted-wheel&quot;&gt;Mounted &amp;amp; painted wheel&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/04-wheel.jpg&quot; alt=&quot;Room Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-tasks&quot;&gt;The Tasks&lt;/h2&gt;
+
+&lt;p&gt;We created a sequence of tasks that allowed the participants to interact with the system using all designed gestures. This included learning and using the gestures. However, as we rehearsed the tasks by acting as either “the Dorothy” or “the Wizard” of our scenario, we quickly realized that we needed to add a stage for calibrating the system. By running through this fake calibration system, we hoped to further the illusion that this was in fact a computer system and not controlled by a human. We utilized text to speech features in Microsoft Excel to provide system feedback during the calibration (“I did not get that.” “Got it!” “Calibration Ready.”).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Here are the tasks:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Activate the system&lt;/li&gt;
+  &lt;li&gt;Turn up the volume&lt;/li&gt;
+  &lt;li&gt;Go to the next song (3 times)&lt;/li&gt;
+  &lt;li&gt;Pause&lt;/li&gt;
+  &lt;li&gt;Go to the prev song&lt;/li&gt;
+  &lt;li&gt;Turn down the volume&lt;/li&gt;
+  &lt;li&gt;Stop the system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;During the experiment, the facilitator provided oral instruction for the participant on which task that they would need to perform. The order of the tasks were adjusted based on the actual performance of each participant. We also included a task that allowed the participant to control the system without instruction.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-3-analysis&quot;&gt;Part 3: Analysis&lt;/h2&gt;
+
+&lt;h3 id=&quot;effectiveness-of-concealing-the-wizard&quot;&gt;Effectiveness of concealing “The Wizard”&lt;/h3&gt;
+&lt;p&gt;We recruited three participants to test our gesture interface. As we were still relatively unpracticed with the manipulation of our prototype during our first user test, there were a few minor errors (delayed response to gestures and switching to an incorrect song) that ultimately blew our cover. The participant finished the test without making comments about these gestures, however there were very clear moments of confusion on their behalf. At the end of the test, before we had a chance to make our big reveal, the participant asked if we were manipulating the prototype from the laptops around by hand.&lt;/p&gt;
+
+&lt;p&gt;An added factor that allowed the participant to come to this decision, was the fact that the mounted GoPro designed to pickup the user’s gestures was flashing a record light, making it especially conspicuous.&lt;/p&gt;
+
+&lt;p&gt;The second and third tests went significantly smoother. We disabled the record light on the dashboard GoPro and executed the music transitions much more fluidly. As a result, the final two participants stated that they had complete faith in the system and its ability to register their gestures. Interestingly, despite the fact that the first subject understood the inner workings of the prototype, and the second and third did not, they all provided quality feedback with many similarities regarding the design of the gesture interface.&lt;/p&gt;
+
+&lt;h3 id=&quot;effectiveness-of-the-physical-prototype-and-scenario&quot;&gt;Effectiveness of the physical prototype and scenario&lt;/h3&gt;
+&lt;p&gt;The driving simulator that hinted at the driving experience without actually giving participants control of the car, this allowed them to better imagine the scenario in which they would be used, but still place the majority of their attention on the music control gestures. For a first round of testing, this ended up being mostly fine. The only exception was when the final participant remarked that he was mildly frightened by the fact that he could not control the car, and gripped the steering wheel with both hands and looked at the screen whenever he was not asked to perform a gesture.&lt;/p&gt;
+
+&lt;h3 id=&quot;user-feedback&quot;&gt;User Feedback&lt;/h3&gt;
+
+&lt;h4 id=&quot;volume&quot;&gt;Volume&lt;/h4&gt;
+&lt;p&gt;All of the users responded positively to the volume up and down commands. They mentioned that they felt intuitive and easy to control. One of the participants likened the action to the scroll wheel on an ipod. The second user had a moment of difficulty with the volume controls and only did a semi-circle wave to change the volume using the palm of their hand, rather than making continuous swirling action until achieved the desirable volume level. The “Wizard” responded by making a minute volume adjustment, at which point the participant corrected the action.&lt;/p&gt;
+
+&lt;h4 id=&quot;previous-and-next-song&quot;&gt;Previous and next song&lt;/h4&gt;
+&lt;p&gt;This was a big pain point for the participants. We initially had difficulty figuring out how to map the swiping. Should moving your hand from right to left go to the next song or previous? This is a difficult one to represent in a 3D gesture user interface, especially considering scroll directions operate differently on different systems and were flipped by Apple in 2011. Also, it is difficult to apply an action that users are very accustomed to on a 2D screen to a 3D space. All of the users expressed confusion on which way to move their hands to advance and go back with their song choice.&lt;/p&gt;
+
+&lt;p&gt;One of the users flipped the directions completely, and we chose to “recognize” the incorrect gesture instead of breaking the fluidity of the experiment by interrupting them.
+Two out of three users mentioned that they felt it was awkward to advance to the next song because by preparing to make the gesture for next song, they inadvertently did the gesture for previous song – if their right hand was placed on the steering, they first had to move it across the sensor to the left before beginning the gesture for next song, they felt this was too similar to the gesture for going back to the previous song.&lt;/p&gt;
+
+&lt;h4 id=&quot;play-and-pause&quot;&gt;Play and pause&lt;/h4&gt;
+&lt;p&gt;The play and pause gestures had mostly positive results. Users remarked that they were mostly intuitive and had little difficulty remembering them. The pause gesture was universally regarded the best gesture, with all participants completing it with zero errors. The only issue expressed by participants was that it felt cumbersome to have two separate gestures for both play and pause.&lt;/p&gt;
+
+&lt;h3 id=&quot;takeaways-moving-forward&quot;&gt;Takeaways moving forward&lt;/h3&gt;
+&lt;p&gt;As we learned in this exercise, creating a high fidelity experience can generate effective insights even with low fidelity of the prototype. With the appropriate set of tasks and instructions, we can engage the participants with high efficiency, and make modification to the design quickly.
+With behavioral prototyping, we were able to evaluate our gestures and determine which ones were ineffective. For instance, in a future study we would iterate on the advance/previous gesture and try a thumb-right/thumb-left. This iteration might potentially prevent the two gesture interface interfere with one and another. The participants also showed interested in customizing the gesture interface, something that would be well within the feasibility of behavioural prototyping. For future tests, it would also be important to include additional features such as different play modes (shuffle and repeat).&lt;/p&gt;
+
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+	&lt;iframe src=&quot;https://player.vimeo.com/video/153469958&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 28 Jan 2016 03:50:13 -0800</pubDate>
+        <link>http://localhost:4000/blog/wizard-of-oz/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/wizard-of-oz/</guid>
+      </item>
+    
+      <item>
+        <title>Video Prototyping</title>
+        <description>&lt;p class=&quot;regular&quot;&gt;
+	One Bus Away is a transportation app that provides up-to-date information about bus times. This post covers the process of making a short product video that demonstrates some of its functionality.
+&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
+
+&lt;h2 id=&quot;considerations&quot;&gt;Considerations&lt;/h2&gt;
+&lt;p&gt;There are other use cases for OneBusAway, especially related to planning ones route before departure. For this video, I chose not to focus on these cases. I felt that creating a moment of crisis and allowing OneBusAway to come to the rescue provides a more dramatic and engaging storyline. Knowing how the app functions in a crisis allows the viewer to infer more typical use cases, and it is hopefully clear that the crisis could have been averted by using the app in the first place.&lt;/p&gt;
+
+&lt;h2 id=&quot;storyline&quot;&gt;Storyline&lt;/h2&gt;
+&lt;p&gt;The video storyline follows a bus traveler who has somewhere to be, misses his bus, and unbeknownst to him, the following bus is delayed. After some trepidation, the traveler consults OneBusAway and discovers the delay. He uses OneBusAway to find an alternate route with a bus that will be arriving soon, and quickly relocates. He successfully catches the other bus, and makes it home in a timely fashion to take his dog for a walk.&lt;/p&gt;
+
+&lt;h2 id=&quot;storyboard&quot;&gt;Storyboard&lt;/h2&gt;
+&lt;p&gt;I began by conceptualizing the story arc and then outlining the specific shots needed in a story board. Even though I didn’t stick to the storyboard completely while shooting, having it as a general guide was quite helpful. Specifically, it allowed me to not shoot the entire scene in order and get all the shots from specific vantage points in one take.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/one-bus-away/storyboard1.jpg&quot; alt=&quot;Storyboard Part 1&quot; /&gt;
+&lt;img src=&quot;/images/blog/one-bus-away/storyboard2.jpg&quot; alt=&quot;Storyboard Part 2&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;reflections&quot;&gt;Reflections&lt;/h2&gt;
+
+&lt;h4 id=&quot;quality&quot;&gt;Quality&lt;/h4&gt;
+
+&lt;p&gt;I’m generally satisfied with the quality of the video. However, the changing light at the end of the video detracts from the overall quality. (This was difficult to avoid shooting during a Seattle winter.) Even after some color correction, color grading, and exposure post production, the final shots of the video leave a lot to be desired due to their darkness. The saving grace is the changing time of day helps add to the storyline, however I was ill-equipped to be shooting at night. Also, the shot of the protaganist getting off the bus was rushed and impromptu. I filmed him getting on the bus, and then ran to the next stop in time to capture his exit. As a result, the shot was poorly framed and out of focus. Better planning could have remedied this problem.&lt;/p&gt;
+
+&lt;h4 id=&quot;audio&quot;&gt;Audio&lt;/h4&gt;
+
+&lt;p&gt;The audio played a critical role in understandability. I chose an upbeat song and made equalization edits and timing rearrangements so it would fit the video and help establish mood. The intro music sets the theme. The relocation montage has a separate music motif designed to create a sense of urgency, and the resolution switches back to a more positive and upbeat vocal section of the song. In an effort to make the narration as understandable as possible, the entire song was equalized to to make space for vocal narration. The audio is compressed, equalized, and processed with a de esser plugin.&lt;/p&gt;
+
+&lt;h4 id=&quot;narration&quot;&gt;Narration&lt;/h4&gt;
+
+&lt;p&gt;This was the first time I’ve added audio narration to a
+video of this nature, and I found writing copy that was simultaneously compelling and non-vapid to be one of the more difficult tasks. Additionally, writing and editing the narration so that it fit in with the overall story arc and flow was quite a challenge. I don’t believe I succeeded completely because as there are large gaps with no narration and others where the narration feels rushed.&lt;/p&gt;
+
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+	&lt;iframe src=&quot;https://player.vimeo.com/video/152670298&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 21 Jan 2016 03:50:13 -0800</pubDate>
+        <link>http://localhost:4000/blog/one-bus-away/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/one-bus-away/</guid>
+      </item>
+    
+      <item>
+        <title>Paper Prototyping</title>
+        <description>&lt;p class=&quot;regular&quot;&gt;
+	My process creating a paper prototype for a vibration-based message service. Simple phrases are converted into learnable vibration combinations that you can feel. The prototype pairs a wearable device (Apple watch) with a mobile application. This post includes notes about the design process as well as a short video demonstrating the prototype.
+&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
+
+&lt;h2 id=&quot;goal&quot;&gt;Goal&lt;/h2&gt;
+&lt;p&gt;The goal of this project was to explore paper prototyping. I set out to prototype a messaging system that conveyed short bits of information using vibrations similar to &lt;a href=&quot;https://en.wikipedia.org/wiki/Morse_code&quot;&gt;Morse code&lt;/a&gt;. Once the user learned the haptic language, they would know what a message said without looking at their device.&lt;/p&gt;
+
+&lt;p&gt;This has some cool implications — a user could receive a message while in a meeting or driving and know what it said without the distraction of looking at their device. This service could also be beneficial to non-sighted or vision impaired users.&lt;/p&gt;
+
+&lt;h2 id=&quot;prototype&quot;&gt;Prototype&lt;/h2&gt;
+&lt;p&gt;I created two prototypes, which consisted of a cardboard Apple Watch iPhone. Each had a piece of velcro allowing for screens to be quickly attached and interchanged as the user interacts with the prototypes. This allowed rapid prototyping of multiple screens and easy modification in the event a screen needed to be replaced. Haptic feedback was simulated by tapping a pencil on the prototype. The vibration patterns would have a learning curve, which was not be tested in this study.&lt;/p&gt;
+
+&lt;h4 id=&quot;devices&quot;&gt;Devices&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/morse-messenger/prototype.jpg&quot; alt=&quot;Morse Messenger - Prototypes&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;flow&quot;&gt;Flow&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/morse-messenger/sketch-flow.jpg&quot; alt=&quot;Morse Messenger - App Flow&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+	&lt;iframe src=&quot;https://player.vimeo.com/video/151871871&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;  
+&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 13 Jan 2016 22:42:19 -0800</pubDate>
+        <link>http://localhost:4000/blog/morse-messenger/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/morse-messenger/</guid>
+      </item>
+    
+      <item>
         <title>Making Sausages (Blogs)</title>
         <description>&lt;p class=&quot;regular&quot;&gt;
-&lt;strong&gt;An  overview of how I built this website&lt;/strong&gt; and some of the resources I consulted during construction. In this post I’ll talk about using the &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;&lt;/a&gt; blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what’s coming next for this website.**
+ &lt;strong&gt;An  overview of how I built this website&lt;/strong&gt; and some of the resources I consulted during construction. In this post I’ll talk about using the &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;&lt;/a&gt; blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what’s coming next for this website.
 &lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;

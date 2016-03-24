@@ -695,15 +695,34 @@ li {
 
 .site-header {
   text-align: center;
-  margin-left: 0; }
+  margin-left: 0;
+  padding-top: .1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  background: -webkit-linear-gradient(white, white, rgba(255, 255, 255, 0.01));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, white, rgba(255, 255, 255, 0.01));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, white, rgba(255, 255, 255, 0.01));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, white, rgba(255, 255, 255, 0.01));
+  /* Standard syntax */ }
+
+.site-header site-nav {
+  margin-bottom: 1rem; }
 
 .site-header a {
   color: #333;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .086rem;
+  font-size: .9rem;
   font-weight: 300; }
 
 .site-header nav a {
-  font-size: 1.1rem;
-  color: #666; }
+  font-size: .75rem;
+  letter-spacing: .086rem;
+  color: #666;
+  text-transform: uppercase; }
 
 .site-header nav a:hover {
   color: #444;
@@ -715,13 +734,19 @@ li {
 
 .site-nav {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 3.4rem; }
 
 .site-header a:hover,
 .posts .post a:hover .post-meta,
 .posts .post a:hover .post-title,
 .posts .post a:hover .post-summary {
   opacity: 0.88; }
+
+.site-header-logo {
+  margin-right: 1rem;
+  margin-left: -2rem;
+  max-width: 1rem; }
 
 .post-summary {
   margin-top: 1.05em; }
@@ -831,7 +856,8 @@ pre, code {
   font-family: Menlo, Monaco, "Courier New", monospace; }
 
 code {
-  color: #7a7a7a; }
+  color: #7a7a7a;
+  font-size: .75rem; }
 
 pre {
   padding: 1.125em;
@@ -905,7 +931,7 @@ h6,
 
 .social-icons {
   padding: 0.5em 0 0 0;
-  font-size: 1.25rem;
+  font-size: .9rem;
   width: 100%; }
 
 .social-icons a.fa {
@@ -970,40 +996,26 @@ h6,
     opacity: 0; }
   to {
     opacity: 1; } }
-.randbg {
-  background: url("../../../images/bg/0.jpg") no-repeat center center fixed;
+.bg-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.randbg {
+  background: url("../../../images/bg/0.jpg") no-repeat center center fixed; }
 
 .randbg.bg1 {
-  background: url("../../../images/bg/1.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background: url("../../../images/bg/1.jpg") no-repeat center center fixed; }
 
 .randbg.bg2 {
-  background: url("../../../images/bg/2.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background: url("../../../images/bg/2.jpg") no-repeat center center fixed; }
 
 .randbg.bg3 {
-  background: url("../../../images/bg/3.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background: url("../../../images/bg/3.jpg") no-repeat center center fixed; }
 
 .randbg.bg4 {
-  background: url("../../../images/bg/5.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background: url("../../../images/bg/5.jpg") no-repeat center center fixed; }
 
 #frontbleedImg {
   z-index: -500; }
@@ -1052,6 +1064,22 @@ h6,
   border-bottom: 2px solid #fff;
   box-shadow: 0 2px 2px -2px #000; }
 
+/* Video Player responsiveness */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  margin: 2rem;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 /********************
 
   Portfolio CSS styles 
@@ -1080,13 +1108,17 @@ h6,
 
 .project-title img {
   line-height: 30rem;
-  color: #fff; }
+  color: #fff;
+  -webkit-animation: fadein .3s ease-in-out;
+  -moz-animation: fadein .3s ease-in-out;
+  -ms-animation: fadein .3s ease-in-out;
+  -o-animation: fadein .3s ease-in-out;
+  animation: fadein .3s ease-in-out; }
 
 .project-title {
   color: #fff;
-  font-size: 3rem;
   padding-top: 2rem;
-  text-shadow: 0px 2px #000000;
+  text-shadow: 2px 2px 50px #000000;
   max-width: 40rem;
   margin: 0 auto; }
 
@@ -1103,52 +1135,6 @@ h6,
 .portfolio-nav-top a {
   color: #fff; }
 
-/* List Styles 
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin:  0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    cursor: pointer;
-    margin-right: 1rem;
-    color: #666;
-    font-size: 1rem;
-    font-weight: 300;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    -ms-transition: 0.3s;
-}
-
-nav ul li:hover {
-    color: #000;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-nav ul li:after {
-    margin-left: 1rem;
-    content: '/';
-    color: #bbb;
-}
- 
-nav ul li:hover:after {
-    color: #bbb;
-}
-
-nav ul li:last-child:after {
-    content: '';
-}
-
-*/
 /* Thumbnail Styles */
 .work {
   margin: 2em 0;
@@ -1200,7 +1186,8 @@ nav ul li:last-child:after {
   opacity: 1; }
 
 .work figure dl dt {
-  font-family: 'Merriweather';
+  font-family: "aleo", "PT Serif", Georgia, "Times New Roman", serif;
+  font-size: 3rem;
   font-size: 1em;
   color: #333;
   padding-top: 12%;
@@ -1208,7 +1195,8 @@ nav ul li:last-child:after {
 
 .work figure dl dd {
   margin-left: 0;
-  color: #333; }
+  color: #333;
+  font-weight: lighter; }
 
 .current {
    /*
@@ -1295,7 +1283,10 @@ nav ul li:last-child:after {
     padding-bottom: 0; }
 
   nav ul li {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  .project-header-container {
+    height: 22rem; } }
 /* Small/mobile screens */
 @media screen and (max-width: 48em) {
   .site-header {
@@ -1309,7 +1300,7 @@ nav ul li:last-child:after {
     float: left;
     text-align: center;
     margin-top: 0.666em;
-    margin-bottom: 1.333em; }
+    margin-bottom: 3.4em; }
 
   .front-logo {
     padding-bottom: 3rem;
@@ -1362,7 +1353,13 @@ nav ul li:last-child:after {
     margin-right: 4%; }
 
   .work figure dl {
-    font-size: .8em; } }
+    font-size: .8em; }
+
+  .project-title h1 {
+    margin-top: 0rem; }
+
+  .project-header-container {
+    height: 20rem; } }
 /* Tiny Screens */
 @media screen and (max-width: 32em) {
   .work figure {
@@ -1376,6 +1373,9 @@ nav ul li:last-child:after {
 
   .project-header-container {
     height: 20rem; }
+
+  .project-title h1 {
+    margin-top: 0rem; }
 
   .portfolio-nav-top {
     margin-top: 0; }
@@ -1433,7 +1433,13 @@ nav ul li:last-child:after {
 
   footer:after {
     content: "";
-    display: block; } }
+    display: block; }
+
+  .project-header-container {
+    height: 28rem; }
+
+  .project-title h1 {
+    margin-top: 0rem; } }
 /* #Clearing */
 /* Self Clearing Goodness */
 .container:after {
