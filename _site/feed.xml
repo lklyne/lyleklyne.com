@@ -9,7 +9,7 @@
       <item>
         <title>Laser Cutting</title>
         <description>&lt;p class=&quot;regular&quot;&gt;
-	Laser Cutting is a quick way of bringing an idea into the physical world. I’ll talk about my process of laser cutting a simple iPhone stand.
+	Laser cutting is a quick way of bringing an idea into the physical world. I’ll talk about my process of designing and cutting a simple iPhone stand.
 &lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
@@ -463,7 +463,7 @@ I found this last constraint to be especially compelling. As the assignment was 
   &lt;li&gt;Turn up the volume&lt;/li&gt;
   &lt;li&gt;Go to the next song (3 times)&lt;/li&gt;
   &lt;li&gt;Pause&lt;/li&gt;
-  &lt;li&gt;Go to the prev song&lt;/li&gt;
+  &lt;li&gt;Go to the previous song&lt;/li&gt;
   &lt;li&gt;Turn down the volume&lt;/li&gt;
   &lt;li&gt;Stop the system&lt;/li&gt;
 &lt;/ul&gt;
@@ -498,7 +498,7 @@ Two out of three users mentioned that they felt it was awkward to advance to the
 
 &lt;h3 id=&quot;takeaways-moving-forward&quot;&gt;Takeaways moving forward&lt;/h3&gt;
 &lt;p&gt;As we learned in this exercise, creating a high fidelity experience can generate effective insights even with low fidelity of the prototype. With the appropriate set of tasks and instructions, we can engage the participants with high efficiency, and make modification to the design quickly.
-With behavioral prototyping, we were able to evaluate our gestures and determine which ones were ineffective. For instance, in a future study we would iterate on the advance/previous gesture and try a thumb-right/thumb-left. This iteration might potentially prevent the two gesture interface interfere with one and another. The participants also showed interested in customizing the gesture interface, something that would be well within the feasibility of behavioural prototyping. For future tests, it would also be important to include additional features such as different play modes (shuffle and repeat).&lt;/p&gt;
+With behavioral prototyping, we were able to evaluate our gestures and determine which ones were ineffective. For instance, in a future study we would iterate on the advance/previous gesture and try a thumb-right/thumb-left. This iteration might potentially prevent the two gesture interface interfere with one and another. The participants also showed interested in customizing the gesture interface, something that would be well within the feasibility of behavioral prototyping. For future tests, it would also be important to include additional features such as different play modes (shuffle and repeat).&lt;/p&gt;
 
 &lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
 
@@ -573,7 +573,7 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;p&gt;This has some cool implications — a user could receive a message while in a meeting or driving and know what it said without the distraction of looking at their device. This service could also be beneficial to non-sighted or vision impaired users.&lt;/p&gt;
 
 &lt;h2 id=&quot;prototype&quot;&gt;Prototype&lt;/h2&gt;
-&lt;p&gt;I created two prototypes, which consisted of a cardboard Apple Watch iPhone. Each had a piece of velcro allowing for screens to be quickly attached and interchanged as the user interacts with the prototypes. This allowed rapid prototyping of multiple screens and easy modification in the event a screen needed to be replaced. Haptic feedback was simulated by tapping a pencil on the prototype. The vibration patterns would have a learning curve, which was not be tested in this study.&lt;/p&gt;
+&lt;p&gt;I created two prototypes, which consisted of a cardboard Apple Watch iPhone. Each had a piece of Velcro allowing for screens to be quickly attached and interchanged as the user interacts with the prototypes. This allowed rapid prototyping of multiple screens and easy modification in the event a screen needed to be replaced. Haptic feedback was simulated by tapping a pencil on the prototype. The vibration patterns would have a learning curve, which was not be tested in this study.&lt;/p&gt;
 
 &lt;h4 id=&quot;devices&quot;&gt;Devices&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/morse-messenger/prototype.jpg&quot; alt=&quot;Morse Messenger - Prototypes&quot; /&gt;&lt;/p&gt;

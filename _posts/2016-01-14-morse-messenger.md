@@ -23,7 +23,7 @@ This has some cool implications — a user could receive a message while in a me
 
 
 ## Prototype
-I created two prototypes, which consisted of a cardboard Apple Watch iPhone. Each had a piece of velcro allowing for screens to be quickly attached and interchanged as the user interacts with the prototypes. This allowed rapid prototyping of multiple screens and easy modification in the event a screen needed to be replaced. Haptic feedback was simulated by tapping a pencil on the prototype. The vibration patterns would have a learning curve, which was not be tested in this study.
+I created two prototypes, which consisted of a cardboard Apple Watch iPhone. Each had a piece of Velcro allowing for screens to be quickly attached and interchanged as the user interacts with the prototypes. This allowed rapid prototyping of multiple screens and easy modification in the event a screen needed to be replaced. Haptic feedback was simulated by tapping a pencil on the prototype. The vibration patterns would have a learning curve, which was not be tested in this study.
 
 #### Devices
 ![Morse Messenger - Prototypes](/images/blog/morse-messenger/prototype.jpg)

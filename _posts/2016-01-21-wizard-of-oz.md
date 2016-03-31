@@ -76,7 +76,7 @@ We created a sequence of tasks that allowed the participants to interact with th
 - Turn up the volume
 - Go to the next song (3 times)
 - Pause
-- Go to the prev song
+- Go to the previous song
 - Turn down the volume
 - Stop the system
 
@@ -113,7 +113,7 @@ The play and pause gestures had mostly positive results. Users remarked that the
 
 ### Takeaways moving forward
 As we learned in this exercise, creating a high fidelity experience can generate effective insights even with low fidelity of the prototype. With the appropriate set of tasks and instructions, we can engage the participants with high efficiency, and make modification to the design quickly.
-With behavioral prototyping, we were able to evaluate our gestures and determine which ones were ineffective. For instance, in a future study we would iterate on the advance/previous gesture and try a thumb-right/thumb-left. This iteration might potentially prevent the two gesture interface interfere with one and another. The participants also showed interested in customizing the gesture interface, something that would be well within the feasibility of behavioural prototyping. For future tests, it would also be important to include additional features such as different play modes (shuffle and repeat).
+With behavioral prototyping, we were able to evaluate our gestures and determine which ones were ineffective. For instance, in a future study we would iterate on the advance/previous gesture and try a thumb-right/thumb-left. This iteration might potentially prevent the two gesture interface interfere with one and another. The participants also showed interested in customizing the gesture interface, something that would be well within the feasibility of behavioral prototyping. For future tests, it would also be important to include additional features such as different play modes (shuffle and repeat).
 
 
 ## Video

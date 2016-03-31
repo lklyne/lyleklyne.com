@@ -697,15 +697,12 @@ li {
   text-align: center;
   margin-left: 0;
   padding-top: .1rem;
-  background-color: rgba(255, 255, 255, 0.95);
-  background: -webkit-linear-gradient(white, white, rgba(255, 255, 255, 0.01));
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(white, white, rgba(255, 255, 255, 0.01));
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(white, white, rgba(255, 255, 255, 0.01));
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(white, white, rgba(255, 255, 255, 0.01));
-  /* Standard syntax */ }
+  background-color: rgba(255, 255, 255, 0.98);
+  /*
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01));
+  background: -o-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01)); 
+  background: -moz-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01)); 
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01));  */ }
 
 .site-header site-nav {
   margin-bottom: 1rem; }
@@ -722,12 +719,13 @@ li {
   font-size: .75rem;
   letter-spacing: .086rem;
   color: #666;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-bottom: .2rem; }
 
 .site-header nav a:hover {
   color: #444;
   opacity: 1;
-  border-bottom: 2px solid #555; }
+  border-bottom: 1px solid #555; }
 
 .site-nav a + a {
   margin-left: 1.5em; }
@@ -735,7 +733,7 @@ li {
 .site-nav {
   margin: 0;
   padding: 0;
-  margin-bottom: 3.4rem; }
+  padding-bottom: 1rem; }
 
 .site-header a:hover,
 .posts .post a:hover .post-meta,
@@ -877,7 +875,7 @@ blockquote {
   margin-bottom: 4rem; }
 
 blockquote footer {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
   font-style: normal;
   background-color: #fff;
@@ -885,7 +883,8 @@ blockquote footer {
   color: #7a7a7a;
   display: block;
   float: right;
-  border-color: transparent; }
+  border-color: transparent;
+  text-align: right; }
 
 /*
 blockquote:before {
@@ -1080,6 +1079,22 @@ h6,
   width: 100%;
   height: 100%; }
 
+/* Page navigation */
+.page-navigation {
+  font-size: 1rem;
+  display: block;
+  width: auto;
+  overflow: hidden; }
+
+.page-navigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0; }
+
+.page-navigation .next {
+  text-align: right; }
+
 /********************
 
   Portfolio CSS styles 
@@ -1096,7 +1111,6 @@ h6,
   text-align: center; }
 
 .project-header-container {
-  margin-top: 2rem;
   height: 26rem;
   width: 100%;
   background-position: center;
@@ -1118,7 +1132,7 @@ h6,
 .project-title {
   color: #fff;
   padding-top: 2rem;
-  text-shadow: 2px 2px 50px #000000;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
   max-width: 40rem;
   margin: 0 auto; }
 
@@ -1300,7 +1314,7 @@ h6,
     float: left;
     text-align: center;
     margin-top: 0.666em;
-    margin-bottom: 3.4em; }
+    margin-bottom: 1.333em; }
 
   .front-logo {
     padding-bottom: 3rem;

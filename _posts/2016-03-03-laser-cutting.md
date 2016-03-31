@@ -2,7 +2,7 @@
 layout:     post
 title:      Laser Cutting
 date:       2016-03-06 10:50:13
-summary:    Laser Cutting is a quick way of bringing an idea into the physical world. I'll talk about my process of laser cutting a simple iPhone stand.
+summary:    Laser cutting is a quick way of bringing an idea into the physical world. I'll talk about my process of designing and cutting a simple iPhone stand.
 categories: 
 - prototyping
 - process
@@ -10,7 +10,7 @@ categories:
 ---
 
 <p class='regular' markdown='1'>
-	Laser Cutting is a quick way of bringing an idea into the physical world. I'll talk about my process of laser cutting a simple iPhone stand.
+	Laser cutting is a quick way of bringing an idea into the physical world. I'll talk about my process of designing and cutting a simple iPhone stand.
 </p>
 
 <p class="center"> * * * </p>
