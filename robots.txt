@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow:/images/
+Disallow:/portfolio/
+Disallow:/blog/

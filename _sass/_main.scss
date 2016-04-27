@@ -490,29 +490,44 @@ h6,
     to   { opacity: 1; }
 }
 
-.bg-cover {
+
+
+.randbg {
+  background: url('../../../images/bg/0.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.randbg {
-  background: url('../../../images/bg/0.jpg') no-repeat center center fixed;
-}
-
 .randbg.bg1 {
   background: url('../../../images/bg/1.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .randbg.bg2 {
   background: url('../../../images/bg/2.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .randbg.bg3 {
   background: url('../../../images/bg/3.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .randbg.bg4 {
   background: url('../../../images/bg/5.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #frontbleedImg {
