@@ -8,7 +8,7 @@
     <meta name="description" content="<b>An  overview of how I built this website</b> and some of the resources I consulted during construction. In this post I'll talk about using the Jekyll blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what's coming next for this website.">
     <meta name="author" content="Lyle Klyne">
     <meta name="keywords" content="blog, web-development">
-    <link rel="canonical" href="http://localhost:4000/blog/making-sausages/">
+    <link rel="canonical" href="http://lyleklyne.com/blog/making-sausages/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
@@ -40,7 +40,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Making Sausages (Blogs)">
     <meta property="og:description" content="Design, development, documenting the process.">
-    <meta property="og:url" content="http://localhost:4000/blog/making-sausages/">
+    <meta property="og:url" content="http://lyleklyne.com/blog/making-sausages/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -62,7 +62,7 @@
   <div class="mt1 wrap">
     <div class="measure">
    		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
-      	<a href="http://localhost:4000" class="site-title">Lyle Klyne</a>
+      	<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
       	<nav class="site-nav right">
         	<a href="/about/">About</a>
 <a class="scroll" href="/#blog">Blog</a>
@@ -213,11 +213,11 @@
 <!-- Next and previous posts -->
 <div class="page-navigation">
    
-    <a class="prev" href="">« Previous: Design School</a>
+    <a class="prev" href="/blog/design-school/">« Previous: Design School</a>
   
 
   
-      <a class="next" href="">Next: Paper Prototyping &raquo;</a>
+      <a class="next" href="/blog/morse-messenger/">Next: Paper Prototyping &raquo;</a>
   
 </div>
 
@@ -305,70 +305,24 @@ count: 5
 
 /* Smooth scroll to point on page */
 
-$(document).ready(function(){
-  $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
-
-      var target = this.hash;
-      var $target = $(target);
-
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
-          window.location.hash = target;
-      });
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
   });
 });
 
 /* Sticky nav */
 
 $('.site-header').stickThis(); 
-
-/* Frosted glass 
-
-$(function () {
-                html2canvas($("body"), {
-                    onrendered: function (canvas) {
-                        $(".blurheader").append(canvas);
-                        $("canvas").attr("id", "canvas");
-                        stackBlurCanvasRGB(
-                            'canvas',
-                        0,
-                        0,
-                        $("canvas").width(),
-                        $("canvas").height(),
-                        20);
-                    }
-                });
-                vv = setTimeout(function () {
-                    $("site-header").show();
-                    clearTimeout(vv);
-                }, 200);
-            });
-
-            $(window).scroll(function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            window.onresize = function () {
-                $("canvas").width($(window).width());
-            };
-
-            $(document).bind('touchmove', function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            $(document).bind('touchend', function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            */
 
 </script>
 

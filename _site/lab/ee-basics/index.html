@@ -9,7 +9,7 @@
     <meta name="description" content="Design, development, documenting the process.">
     <meta name="author" content="Lyle Klyne">
     
-    <link rel="canonical" href="http://localhost:4000/lab/ee-basics/">
+    <link rel="canonical" href="http://lyleklyne.com/lab/ee-basics/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
@@ -41,7 +41,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Coffee Basics">
     <meta property="og:description" content="Animated website to show the lifecycle of a coffee bean.">
-    <meta property="og:url" content="http://localhost:4000/lab/ee-basics/">
+    <meta property="og:url" content="http://lyleklyne.com/lab/ee-basics/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -63,7 +63,7 @@
   <div class="mt1 wrap">
     <div class="measure">
    		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
-      	<a href="http://localhost:4000" class="site-title">Lyle Klyne</a>
+      	<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
       	<nav class="site-nav right">
         	<a href="/about/">About</a>
 <a class="scroll" href="/#blog">Blog</a>
@@ -92,24 +92,23 @@
         
         <div class="social-icons">
           <div class="center portfolio-nav-top">
-            <a class="fa fa-chevron-left fa-2x" alt="Previous Project" href=""></a>
-            <a class="fa fa-chevron-down fa-2x" alt="View Project" href="#content"></a>
-            <a class="fa fa-chevron-right fa-2x" alt="Next Project" href=""></a>
+            <a class="fa fa-chevron-left fa-2x" alt="Previous Project" href="http://lyleklyne.com/portfolio/squarespace-wordpress"></a>
+            <a class="fa fa-chevron-down fa-2x" rel="relativeanchor" alt="View Project" href="#content"></a>
+            <a class="fa fa-chevron-right fa-2x" alt="Next Project" href="http://lyleklyne.com/portfolio/cropcircle"></a>
           </div>
         </div>
-          <!-- <a href="http://localhost:4000/#project"><img class="arrow-down absolute-center block" src="../../../images/arrow-down.png"></a> -->
-          <A NAME="content"></a>
-      </div>
+          <!-- <a href="http://lyleklyne.com/#project"><img class="arrow-down absolute-center block" src="../../../images/arrow-down.png"></a> -->      </div>
     </div>
 
 
-    
+              <A NAME="content"></a>
+
     <div class="post p2 p-responsive wrap" role="main">
       <a name="project"></a>
       <div class="measure">
         <!-- begin  -->
         <div class="post-header mb2">
-          
+
 
           
         </div>
@@ -117,6 +116,7 @@
         
 
         <article class="post-content">
+
 
           <!-- Problem, solution, tools used, result 
           
@@ -156,10 +156,11 @@ how flavor is affected.</p>
         -->
           
         <div class="social-icons">
+            
           <div class="center">
-            <a class="fa fa-arrow-circle-left fa-2x" href="http://localhost:4000/portfolio/squarespace-wordpress"></a>
-            <a class="fa fa-times-circle fa-2x" href="#top"></a>
-            <a class="fa fa-arrow-circle-right fa-2x" href="http://localhost:4000/portfolio/cropcircle"></a>
+            <a class="fa fa-chevron-left fa-2x" href="http://lyleklyne.com/portfolio/squarespace-wordpress"></a>
+            <a class="fa fa-times fa-2x" href="http://lyleklyne.com/portfolio"></a>
+            <a class="fa fa-chevron-right fa-2x" href="http://lyleklyne.com/portfolio/cropcircle"></a>
           </div>
         </div>
         </article>
@@ -246,70 +247,24 @@ count: 5
 
 /* Smooth scroll to point on page */
 
-$(document).ready(function(){
-  $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
-
-      var target = this.hash;
-      var $target = $(target);
-
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
-          window.location.hash = target;
-      });
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
   });
 });
 
 /* Sticky nav */
 
 $('.site-header').stickThis(); 
-
-/* Frosted glass 
-
-$(function () {
-                html2canvas($("body"), {
-                    onrendered: function (canvas) {
-                        $(".blurheader").append(canvas);
-                        $("canvas").attr("id", "canvas");
-                        stackBlurCanvasRGB(
-                            'canvas',
-                        0,
-                        0,
-                        $("canvas").width(),
-                        $("canvas").height(),
-                        20);
-                    }
-                });
-                vv = setTimeout(function () {
-                    $("site-header").show();
-                    clearTimeout(vv);
-                }, 200);
-            });
-
-            $(window).scroll(function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            window.onresize = function () {
-                $("canvas").width($(window).width());
-            };
-
-            $(document).bind('touchmove', function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            $(document).bind('touchend', function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            */
 
 </script>
 

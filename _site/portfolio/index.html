@@ -8,7 +8,7 @@
     <meta name="description" content="Design, development, documenting the process.">
     <meta name="author" content="Lyle Klyne">
     
-    <link rel="canonical" href="http://localhost:4000/portfolio/">
+    <link rel="canonical" href="http://lyleklyne.com/portfolio/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
@@ -40,7 +40,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Portfolio">
     <meta property="og:description" content="Design, development, documenting the process.">
-    <meta property="og:url" content="http://localhost:4000/portfolio/">
+    <meta property="og:url" content="http://lyleklyne.com/portfolio/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -62,7 +62,7 @@
   <div class="mt1 wrap">
     <div class="measure">
    		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
-      	<a href="http://localhost:4000" class="site-title">Lyle Klyne</a>
+      	<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
       	<nav class="site-nav right">
         	<a href="/about/">About</a>
 <a class="scroll" href="/#blog">Blog</a>
@@ -95,7 +95,18 @@
     <section class="work">
         
     
-    <a href="http://localhost:4000/portfolio/relink">
+    <a href="http://lyleklyne.com/portfolio/daydream">
+      <figure class="physical prototyping">
+          
+              <img src="../images/projects/daydream/daydream-thumb.jpg" alt="" />
+                <dl>
+                <dt class="portfolio-item-title">Daydream</dt>
+                  <dd class="portfolio-item-title">- physical prototyping -</dd>
+            
+      </figure> 
+      </a>
+    
+    <a href="http://lyleklyne.com/portfolio/relink">
       <figure class="interaction design">
           
               <img src="../images/projects/relink/relink_thumb.png" alt="" />
@@ -106,7 +117,7 @@
       </figure> 
       </a>
     
-    <a href="http://localhost:4000/portfolio/cropcircle">
+    <a href="http://lyleklyne.com/portfolio/cropcircle">
       <figure class="mobile ux">
           
               <img src="../images/projects/cropcircle/cs_thumb.jpg" alt="" />
@@ -117,18 +128,18 @@
       </figure> 
       </a>
     
-    <a href="http://localhost:4000/portfolio/logo-food-is-free">
+    <a href="http://lyleklyne.com/portfolio/logo-food-is-free">
       <figure class="logo design">
           
               <img src="../images/projects/fif/thumb.jpg" alt="" />
                 <dl>
-                <dt class="portfolio-item-title">Food is Free Project</dt>
+                <dt class="portfolio-item-title">Food is Free Logo</dt>
                   <dd class="portfolio-item-title">- logo design -</dd>
             
       </figure> 
       </a>
     
-    <a href="http://localhost:4000/portfolio/noisy-camera">
+    <a href="http://lyleklyne.com/portfolio/noisy-camera">
       <figure class="mobile ux">
           
               <img src="../images/projects/noisycamera/nc0.jpg" alt="" />
@@ -139,7 +150,7 @@
       </figure> 
       </a>
     
-    <a href="http://localhost:4000/portfolio/reasons-to-go-outside">
+    <a href="http://lyleklyne.com/portfolio/reasons-to-go-outside">
       <figure class="web development">
           
               <img src="../images/projects/rtgo/rtgo0.jpg" alt="" />
@@ -150,7 +161,7 @@
       </figure> 
       </a>
     
-    <a href="http://localhost:4000/portfolio/squarespace-wordpress">
+    <a href="http://lyleklyne.com/portfolio/squarespace-wordpress">
       <figure class="web design">
           
               <img src="../images/projects/wpsp/thumb.jpg" alt="" />
@@ -223,6 +234,16 @@
       
 <!--
   <ul id="projects">
+    
+      <li class="project span5">
+        <a href="/portfolio/45--daydream">
+          
+            <img src="/images/projects/daydream/daydream-thumb.jpg" title="cropcircle" alt="cropcircle" />
+          
+
+          <p>A fexible, human-focused lighting array for commercial spaces.</p>
+        </a>
+      </li>
     
       <li class="project span5">
         <a href="/portfolio/50--relink">
@@ -369,70 +390,24 @@ count: 5
 
 /* Smooth scroll to point on page */
 
-$(document).ready(function(){
-  $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
-
-      var target = this.hash;
-      var $target = $(target);
-
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
-          window.location.hash = target;
-      });
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
   });
 });
 
 /* Sticky nav */
 
 $('.site-header').stickThis(); 
-
-/* Frosted glass 
-
-$(function () {
-                html2canvas($("body"), {
-                    onrendered: function (canvas) {
-                        $(".blurheader").append(canvas);
-                        $("canvas").attr("id", "canvas");
-                        stackBlurCanvasRGB(
-                            'canvas',
-                        0,
-                        0,
-                        $("canvas").width(),
-                        $("canvas").height(),
-                        20);
-                    }
-                });
-                vv = setTimeout(function () {
-                    $("site-header").show();
-                    clearTimeout(vv);
-                }, 200);
-            });
-
-            $(window).scroll(function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            window.onresize = function () {
-                $("canvas").width($(window).width());
-            };
-
-            $(document).bind('touchmove', function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            $(document).bind('touchend', function () {
-                $("canvas").css(
-                    "-webkit-transform",
-                    "translatey(-" + $(window).scrollTop() + "px)");
-            });
-
-            */
 
 </script>
 

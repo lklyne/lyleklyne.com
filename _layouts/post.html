@@ -26,13 +26,13 @@ layout: default
 <!-- Next and previous posts -->
 <div class="page-navigation">
    {% if page.previous.url %}
-    <a class="prev" href="{{page.previous_url}}">« Previous: {{page.previous.title}}</a>
+    <a class="prev" href="{{page.previous.url}}">« Previous: {{page.previous.title}}</a>
   {% else %}
     <a class="prev"></a>
   {% endif %}
 
   {% if page.next.url %}
-      <a class="next" href="{{page.next_url}}">Next: {{page.next.title}} &raquo;</a>
+      <a class="next" href="{{page.next.url}}">Next: {{page.next.title}} &raquo;</a>
   {% endif %}
 </div>
 

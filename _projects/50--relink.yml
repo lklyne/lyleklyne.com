@@ -6,8 +6,8 @@ description:
 published: true
 category:  interaction design
 project_url:	   /portfolio/relink
-previous_url: /portfolio/squarespace-wordpress
-next_url: /portfolio/ikea-mobile-concept
+previous_url: /portfolio/daydream
+next_url: /portfolio/cropcircle
 website:
 image:
   url:        /images/projects/relink/relink_thumb.png
@@ -106,4 +106,49 @@ body: |
   - Livescribe focuses mainly on interaction with a blank slate, not textbooks or other printed material.  
 
   - Livescribe also does not fully embrace the potential of a classroom-based learning environment by fostering interactivity.
+
+  ## Design
+
+  We began to design our own pen that would fit perfectly in the classroom and reading environment. The first step was to storyboard out hero scenario. 
+
+   ![Storyboard](../../../images/projects/relink/storyboard.jpg)
+
+  This breaks down into four specific tasks. 
+  1. Creation of artifacts (notes, diagrams) within the text.
+  2. Marking and highlighting information within the text.
+  3. Interacting with new media types within the text.
+  4. Reviewing, organizing, and searching captured information. 
+
+   ![Scenarios](../../../images/projects/relink/scenarios.jpg)
+
+  Feedback was identified as a crucial aspect of the design. In addition to providing feedback via a nearby device, we opted to include an LED on the tip of the pen to reinsure the user that their notes and actions were being recorded.
+
+   ![Scenarios](../../../images/projects/relink/pen-sketch.jpg)
+
+  ### Gestural Language
+
+  We developed our gesture set through user studies. The study included four college students or recent graduates. The first step involved asking participants to take notes as they usually would with a pen. For the second step, we asked participants to imagine they had a smart pen and perform certain actions. We consolidated similarities in the gestures into a unified gesture set.
+
+  1. Highlight: underline
+  2. Highlight large block: brackets
+  3. Highlight important: star
+  4. Tag: hashtag + tag
+  5. Definte: touch + hold
+  6. Interact: touch icon
+
+  ![Gestures](../../../images/projects/relink/gestures.jpg)
+
+  ### Interface
+  For the companion app, we wanted information to be viewable in two views: overlayed on the textbook as it was captured, as well as in a consolidated view. 
+
+  ![Interface](../../../images/projects/relink/interface01.png)
+
+
+  ## Video
+  <div class="videoWrapper">
+    <iframe src="https://player.vimeo.com/video/158553554" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+
+
+
 
