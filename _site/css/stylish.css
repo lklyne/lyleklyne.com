@@ -1151,17 +1151,6 @@ h6,
   color: #fff; }
 
 /* Thumbnail Styles */
-.grow {
-  transition: all .2s ease-in-out; }
-
-.grow:hover {
-  transform: scale(1.04); }
-
-.work {
-  margin: 2em 0;
-  display: table;
-  text-align: center; }
-
 .work figure {
   float: left;
   margin-top: 3%;
@@ -1523,6 +1512,17 @@ Copyright (c) 2014 Daniel Eden
   flex-wrap: wrap;
   margin: -10px; }
 
+.work img {
+  flex: 0 auto;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.work:hover ~ .description {
+  opacity: 1; }
+
 .box {
   width: 200px;
   height: 200px;
@@ -1533,24 +1533,14 @@ Copyright (c) 2014 Daniel Eden
   overflow: hidden;
   transform: translate3d(0, 100, 0);
   margin: 10px;
-  flex: 1 auto; }
+  flex: 1 auto;
+  background: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
 
-.wave {
-  opacity: 0;
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  width: 500px;
-  height: 500px;
-  margin-left: -250px;
-  margin-top: -250px;
-  transform-origin: 50% 48%;
-  border-radius: 43%;
-  margin: 1em;
-  transition: opacity .5s ease-out;
-  -moz-transition: opacity .5s ease-out;
-  -webkit-transition: opacity .5s ease-out;
-  -o-transition: opacity .5s ease-out; }
+.box:hover ~ .work img {
+  margin-top: -64px; }
 
 .featured {
   width: 60%; }
@@ -1560,11 +1550,11 @@ Copyright (c) 2014 Daniel Eden
   width: 31%; }
 
 .box.grow .wave {
-  animation: drift-out 3000ms linear; }
+  animation: drift-out 3000ms linear, fade-wave-out 300ms linear; }
 .box.grow .wave.-two {
-  animation: drift-out 5000ms linear; }
+  animation: drift-out 5000ms linear, fade-wave-out 300ms linear; }
 .box.grow .wave.-three {
-  animation: drift-out 2500ms linear; }
+  animation: drift-out 2500ms linear, fade-wave-out 300ms linear; }
 
 .box.grow:hover .wave {
   animation: fade-wave 3000ms linear, drift 3000ms infinite linear; }
@@ -1573,6 +1563,10 @@ Copyright (c) 2014 Daniel Eden
 .box.grow:hover .wave.-three {
   animation: fade-wave 3000ms linear, drift 2500ms infinite linear; }
 
+.wave.-two:hover {
+  opacity: .1;
+  background: yellow; }
+
 .box:after {
   content: '';
   display: block;
@@ -1580,24 +1574,38 @@ Copyright (c) 2014 Daniel Eden
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #ee88aa, rgba(221, 238, 255, 0) 80%, rgba(255, 255, 255, 0.5));
   z-index: 11;
-  transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0);
+  border-radius: 5px; }
 
 .title {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  line-height: 300px;
-  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  left: 15px;
+  top: 15px;
+  z-index: 1;
+  text-align: left;
   transform: translate3d(0, 0, 0);
   color: white;
-  text-transform: uppercase;
-  letter-spacing: .4em;
   font-size: 24px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  text-indent: .3em; }
+  margin-right: 15px; }
+
+.description {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  left: 15px;
+  top: 45px;
+  z-index: 1;
+  text-align: left;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  font-size: 18px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+  opacity: 0.2; }
 
 @keyframes drift {
   from {
@@ -1611,14 +1619,14 @@ Copyright (c) 2014 Daniel Eden
     transform: rotate(360deg); } }
 @keyframes fade-wave {
   from {
-    opacity: 0; }
+    opacity: 0.4; }
   from {
     opacity: 0.4; } }
 @keyframes fade-wave-out {
   from {
     opacity: 0.4; }
   from {
-    opacity: 0; } }
+    opacity: 0.4; } }
 /* Solarized Light
 
 For use with Jekyll and Pygments

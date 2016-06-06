@@ -30,46 +30,53 @@ title: Portfolio
       </a>
       -->
 
+      {% for project in site.projects %}
+
+      {% endfor %}
       <div class='box grow'>
         <div class='wave -one'></div>
         <div class='wave -two'></div>
         <div class='wave -three'></div>
-        <div class='title'>Capacities</div>
+        <img src="http://placekitten.com/g/128/128" alt="" />
+        <div class='title'>Really Important Project</div>
       </div>
 
       <div class='box grow featured'>
         <div class='wave -one'></div>
         <div class='wave -two'></div>
         <div class='wave -three'></div>
-        <div class='title'>Capacities</div>
+        <div class='title'>Most Important Project</div>
+        <div class='description'> This project is really really really important. This is a great project. My did it all self. Fuu bar bang buzz.</div>
+
+      </div>
+
+      <div class='box grow' style="background: black">
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+        <div class='title'>Project Three</div>
+        <div class='description'>This is a great project. My did it all self. Fuu bar bang buzz.</div>
       </div>
 
       <div class='box grow'>
         <div class='wave -one'></div>
         <div class='wave -two'></div>
         <div class='wave -three'></div>
-        <div class='title'>Capacities</div>
+        <div class='title'>Project Four</div>
       </div>
 
       <div class='box grow'>
         <div class='wave -one'></div>
         <div class='wave -two'></div>
         <div class='wave -three'></div>
-        <div class='title'>Capacities</div>
+        <div class='title'>Project 5</div>
       </div>
 
       <div class='box grow'>
         <div class='wave -one'></div>
         <div class='wave -two'></div>
         <div class='wave -three'></div>
-        <div class='title'>Capacities</div>
-      </div>
-
-      <div class='box grow'>
-        <div class='wave -one'></div>
-        <div class='wave -two'></div>
-        <div class='wave -three'></div>
-        <div class='title'>Capacities</div>
+        <div class='title'>Project Six</div>
       </div>
         
     {% for project in site.projects %}
@@ -135,8 +142,8 @@ title: Portfolio
 
 -->
 
-      
-<!--
+      <!--
+
   <ul id="projects">
     {% for project in page.projects %}
       <li class="project span5">
