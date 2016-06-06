@@ -1102,7 +1102,7 @@ h6,
 
 *********************/
 .container {
-  width: 104%;
+  width: 100%;
   margin: 2em 0;
   -webkit-transform: translateZ(0); }
 
@@ -1111,14 +1111,17 @@ h6,
   text-align: center; }
 
 .project-header-container {
-  height: 26rem;
+  height: 30%;
   width: 100%;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .project-title img {
   line-height: 30rem;
@@ -1131,10 +1134,8 @@ h6,
 
 .project-title {
   color: #fff;
-  padding-top: 2rem;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-  max-width: 40rem;
-  margin: 0 auto; }
+  max-width: 40rem; }
 
 .project-title-img {
   display: block;
@@ -1150,6 +1151,12 @@ h6,
   color: #fff; }
 
 /* Thumbnail Styles */
+.grow {
+  transition: all .2s ease-in-out; }
+
+.grow:hover {
+  transform: scale(1.04); }
+
 .work {
   margin: 2em 0;
   display: table;
@@ -1399,7 +1406,7 @@ h6,
 /* Desktop/large Screens */
 @media screen and (min-width: 64em) {
   .container {
-    width: 104%;
+    width: 100%;
     -webkit-transform: translateZ(0); }
 
   .h1,
@@ -1510,30 +1517,108 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px) translate3d(0, 0, 0);
-    -ms-transform: translateY(-20px) translate3d(0, 0, 0);
-    transform: translateY(-20px) translate3d(0, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0) translate3d(0, 0, 0);
-    -ms-transform: translateY(0) translate3d(0, 0, 0);
-    transform: translateY(0) translate3d(0, 0, 0); } }
-.fade-in-down {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown; }
+/* begin copy and paste for codepen */
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px; }
 
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  background: #fbfcee;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 100, 0);
+  margin: 10px;
+  flex: 1 auto; }
+
+.wave {
+  opacity: 0;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  margin: 1em;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out; }
+
+.featured {
+  width: 60%; }
+
+.last {
+  flex: none;
+  width: 31%; }
+
+.box.grow .wave {
+  animation: drift-out 3000ms linear; }
+.box.grow .wave.-two {
+  animation: drift-out 5000ms linear; }
+.box.grow .wave.-three {
+  animation: drift-out 2500ms linear; }
+
+.box.grow:hover .wave {
+  animation: fade-wave 3000ms linear, drift 3000ms infinite linear; }
+.box.grow:hover .wave.-two {
+  animation: fade-wave 3000ms linear, drift 5000ms infinite linear; }
+.box.grow:hover .wave.-three {
+  animation: fade-wave 3000ms linear, drift 2500ms infinite linear; }
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ee88aa, rgba(221, 238, 255, 0) 80%, rgba(255, 255, 255, 0.5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0); }
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-indent: .3em; }
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg); }
+  from {
+    transform: rotate(360deg); } }
+@keyframes drift-out {
+  from {
+    transform: rotate(0deg); }
+  from {
+    transform: rotate(360deg); } }
+@keyframes fade-wave {
+  from {
+    opacity: 0; }
+  from {
+    opacity: 0.4; } }
+@keyframes fade-wave-out {
+  from {
+    opacity: 0.4; }
+  from {
+    opacity: 0; } }
 /* Solarized Light
 
 For use with Jekyll and Pygments

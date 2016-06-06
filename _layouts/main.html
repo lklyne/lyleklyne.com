@@ -6,7 +6,7 @@
 
     {% if paginator.previous_page %}
     {% else %}
-        <div id="frontBleedImg" class="fader splash-img randbg bg-cover">
+        <div id="frontBleedImg" class="fader splash-img randbg bg-cover">jekyll
           <!-- <div class="front-menu-container"> -->
             
             <!-- Hype code goes here -->
@@ -19,20 +19,35 @@
       </div>
 {% endif %}
 
-<div class="front"
-  		<div class="clearfix">
-  			<a name="blog">
-  		</div>
-      <div class="hiddenHeader">
-  		{% include header.html %}
-      </div>
-	    <div class="post p2 p-responsive wrap" role="main">
-	    
-	      <div class="measure">
+<div class="front">
+    <div class="clearfix">
+        <a name="blog">
+    </div>
+    <div class="hiddenHeader">
+        {% include header.html %}
+    </div>
+
+    <section class="work">
+
+        {% for project in page.projects %}
+        <a href="{{ site.url }}{{project[1].project_url }}">
+            <figure class="{{ project[1].category }} grow">
+
+                <img src="..{{ project[1].image.url }}" alt="" />
+                <dl>
+                    <dt class="portfolio-item-title">{{ project[1].title }}</dt>
+                    <dd class="portfolio-item-title">- {{ project[1].category }} -</dd>
+
+            </figure>
+        </a>
+        {% endfor %}
+    </section>
+
+    <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
 	        {{ content }}
-	      </div>
-	    </div>
-	</div>
+        </div>
+    </div>
 </div>
 
   {% include footer.html %}

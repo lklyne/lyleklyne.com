@@ -15,21 +15,67 @@ title: Portfolio
     </ul>
   </nav>
 -->
-        
+
     <section class="work">
-        
-    {% for project in page.projects %}
-    <a href="{{ site.url }}{{project[1].project_url }}">
-      <figure class="{{ project[1].category }}">
-          
-              <img src="..{{ project[1].image.url }}" alt="" />
-                <dl>
-                <dt class="portfolio-item-title">{{ project[1].title }}</dt>
-                  <dd class="portfolio-item-title">- {{ project[1].category }} -</dd>
-            
-      </figure> 
+
+      <!--
+      <a href="{{ site.url }}{{project[1].project_url }}">
+        <figure class="{{ project[1].category }} grow">
+          <img src="..{{ project[1].image.url }}" alt="" />
+          <dl>
+            <dt class="portfolio-item-title">{{ project[1].title }}</dt>
+            <dd class="portfolio-item-title">- {{ project[1].category }} -</dd>
+
+        </figure>
       </a>
+      -->
+
+      <div class='box grow'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+        <div class='title'>Capacities</div>
+      </div>
+
+      <div class='box grow featured'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+        <div class='title'>Capacities</div>
+      </div>
+
+      <div class='box grow'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+        <div class='title'>Capacities</div>
+      </div>
+
+      <div class='box grow'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+        <div class='title'>Capacities</div>
+      </div>
+
+      <div class='box grow'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+        <div class='title'>Capacities</div>
+      </div>
+
+      <div class='box grow'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+        <div class='title'>Capacities</div>
+      </div>
+        
+    {% for project in site.projects %}
+
     {% endfor %}
+    </section>
 
 
 
