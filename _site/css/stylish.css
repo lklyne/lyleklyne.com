@@ -952,6 +952,14 @@ h6,
   @lyleklyne
 
 ********************/
+.profile-pic {
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  position: relative;
+  margin-left: -100px; }
+
 .splash-img {
   height: 100%;
   height: 100vh;
@@ -1514,14 +1522,18 @@ Copyright (c) 2014 Daniel Eden
 
 .work img {
   flex: 0 auto;
+  margin-right: -2.5rem;
+  margin-bottom: -2.5rem;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
-.work:hover ~ .description {
-  opacity: 1; }
+.image-bg img {
+  transform: scale(1) !important;
+  margin: 0 !important;
+  opacity: 1 !important; }
 
 .box {
   width: 200px;
@@ -1537,10 +1549,34 @@ Copyright (c) 2014 Daniel Eden
   background: cornflowerblue;
   display: flex;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: center; }
 
-.box:hover ~ .work img {
-  margin-top: -64px; }
+.box:hover {
+  box-shadow: 0 6px 36px rgba(0, 0, 0, 0.3); }
+
+.box img {
+  opacity: 1;
+  transform: scale(0.75) rotate(0deg); }
+
+.box:hover img {
+  opacity: 0.5;
+  transform: scale(0.4) rotate(-15deg);
+  -webkit-transform: scale(0.4) rotate(-15deg);
+  margin-right: 0rem;
+  margin-bottom: -7rem; }
+
+.box .description {
+  transition: all .2s ease;
+  opacity: 0; }
+
+.box:hover .description {
+  opacity: 1; }
+
+.grow {
+  transition: all .2s ease; }
+
+.grow:hover {
+  transform: scale(1.05); }
 
 .featured {
   width: 60%; }
@@ -1549,23 +1585,40 @@ Copyright (c) 2014 Daniel Eden
   flex: none;
   width: 31%; }
 
-.box.grow .wave {
-  animation: drift-out 3000ms linear, fade-wave-out 300ms linear; }
-.box.grow .wave.-two {
-  animation: drift-out 5000ms linear, fade-wave-out 300ms linear; }
-.box.grow .wave.-three {
-  animation: drift-out 2500ms linear, fade-wave-out 300ms linear; }
+/*
+.box.grow {
+  .wave {
+    animation: drift-out 3000ms linear, fade-wave-out 300ms linear;
+  }
 
-.box.grow:hover .wave {
-  animation: fade-wave 3000ms linear, drift 3000ms infinite linear; }
-.box.grow:hover .wave.-two {
-  animation: fade-wave 3000ms linear, drift 5000ms infinite linear; }
-.box.grow:hover .wave.-three {
-  animation: fade-wave 3000ms linear, drift 2500ms infinite linear; }
+  .wave.-two {
+    animation: drift-out 5000ms linear, fade-wave-out 300ms linear;
+  }
+
+  .wave.-three {
+    animation: drift-out 2500ms linear, fade-wave-out 300ms linear;
+
+  }
+}
+
+.box.grow:hover {
+  .wave {
+    animation: fade-wave 3000ms linear, drift 3000ms infinite linear;
+  }
+
+  .wave.-two {
+    animation: fade-wave 3000ms linear, drift 5000ms infinite linear;
+  }
+
+  .wave.-three {
+    animation: fade-wave 3000ms linear, drift 2500ms infinite linear;
+  }
+}
 
 .wave.-two:hover {
   opacity: .1;
-  background: yellow; }
+  background: yellow;
+}
 
 .box:after {
   content: '';
@@ -1576,8 +1629,8 @@ Copyright (c) 2014 Daniel Eden
   height: 100%;
   z-index: 11;
   transform: translate3d(0, 0, 0);
-  border-radius: 5px; }
-
+  border-radius: 5px;
+} */
 .title {
   position: absolute;
   font-family: 'Lato', sans-serif;
@@ -1603,30 +1656,35 @@ Copyright (c) 2014 Daniel Eden
   transform: translate3d(0, 0, 0);
   color: white;
   font-size: 18px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   margin-right: 15px;
   opacity: 0.2; }
 
+/*
 @keyframes drift {
-  from {
-    transform: rotate(0deg); }
-  from {
-    transform: rotate(360deg); } }
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+
+}
+
 @keyframes drift-out {
-  from {
-    transform: rotate(0deg); }
-  from {
-    transform: rotate(360deg); } }
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+
+}
+
 @keyframes fade-wave {
-  from {
-    opacity: 0.4; }
-  from {
-    opacity: 0.4; } }
+
+  from { opacity: 0.4; }
+  from { opacity: 0.4; }
+}
+
 @keyframes fade-wave-out {
-  from {
-    opacity: 0.4; }
-  from {
-    opacity: 0.4; } }
+
+  from { opacity: 0.4; }
+  from { opacity: 0.4; }
+}
+*/
 /* Solarized Light
 
 For use with Jekyll and Pygments

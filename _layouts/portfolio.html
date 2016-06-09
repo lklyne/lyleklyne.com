@@ -33,20 +33,17 @@ title: Portfolio
       {% for project in site.projects %}
 
       {% endfor %}
-      <div class='box grow'>
-        <div class='wave -one'></div>
-        <div class='wave -two'></div>
-        <div class='wave -three'></div>
-        <img src="http://placekitten.com/g/128/128" alt="" />
-        <div class='title'>Really Important Project</div>
+      <div class='box grow ui-shot'>
+        <img src="../images/projects/spex/spex-ui-lg.png" class="grow-big" alt="" />
+        <div class='title'>Spex</div>
+        <div class='description'> Mobile app to manage media recorded from a wearable camera.</div>
+
       </div>
 
-      <div class='box grow featured'>
-        <div class='wave -one'></div>
-        <div class='wave -two'></div>
-        <div class='wave -three'></div>
-        <div class='title'>Most Important Project</div>
-        <div class='description'> This project is really really really important. This is a great project. My did it all self. Fuu bar bang buzz.</div>
+      <div class='box grow featured image-bg'>
+        <img src="../images/projects/daydream/final-03.jpg" class="grow-big" alt="" />
+        <div class='title'>Daydream</div>
+        <div class='description'> A physical prototype exploring adaptive lighting for commercial spaces.</div>
 
       </div>
 
@@ -158,5 +155,11 @@ title: Portfolio
     {% endfor %}
   </ul>
 -->
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      {{ content }}
+    </div>
+  </div>
 
 </div>
