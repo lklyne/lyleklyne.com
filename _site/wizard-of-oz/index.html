@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lyle Klyne &#8211; Behavioral Prototyping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A group project designed to prototype a in car gesture control system in a short period of time with limited resources. The following study and documentation was done in collaboration with Yitao Wang and Rickie Xie.">
+    <meta name="author" content="Lyle Klyne">
+    <meta name="keywords" content="blog, prototyping, process">
+    <link rel="canonical" href="http://lyleklyne.com/wizard-of-oz/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/stylish.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- Javascript -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/js/js.js"></script>
+    <script type="text/javascript" src="/js/rand.bg.js"></script> 
+    <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
+    <script type="text/javascript" src="/js/html2canvas.js"></script>  
+    <script type="text/javascript" src="/js/html2canvas.svg.js"></script>  
+    <script type="text/javascript" src="/js/StackBlur.js"></script>  
+  
+    <!--[if lt IE 9]>
+            <script src="../js/html5shiv.js"></script>
+        <![endif]-->
+
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Behavioral Prototyping">
+    <meta property="og:description" content="Design, development, documenting the process.">
+    <meta property="og:url" content="http://lyleklyne.com/wizard-of-oz/">
+    <meta property="og:site_name" content="Lyle Klyne">
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-60172340-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive blurheader">
+  <div class="mt1 wrap">
+    <div class="measure">
+   		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
+      	<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
+      	<nav class="site-nav right">
+        	<a href="/about/">About</a>
+<a class="scroll" href="/blog">Blog</a>
+<a href="/">Work</a>
+
+
+      	</nav>
+      
+      	<div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Behavioral Prototyping</h1>
+  <span class="post-meta">Jan 28, 2016</span><br>
+  
+  <span class="post-meta small">12 minute read</span>
+</div>
+
+<article class="post-content">
+  <p class="regular">
+	A group project designed to prototype a in car gesture control system in a short period of time with limited resources. I participated in ideation and concept development, created the “driving simulator,” and served as record-keeper during the test. The following study and documentation was done in collaboration with Yitao Wang and Rickie Xie.
+</p>
+
+<p class="center"> * * * </p>
+
+<h3 id="notes-on-behavioral-prototyping">Notes on Behavioral Prototyping</h3>
+<p>Behavioral prototyping, or the Wizard of Oz experiment, is commonly used in the design process to evaluate a perceived autonomous computer system, operated by a human behind the scene. As part of the iterative design process, this technique enables designers to build a relatively inexpensive prototype with limited resources. As a result, we can evaluate a system effectively with low to mixed-fidelity prototype by presenting the interaction in the desired context.</p>
+
+<h2 id="part-1-background">Part 1: Background</h2>
+
+<h3 id="scenario">Scenario</h3>
+<p>The goal of our experiment was to simulate a driving experience in which a driver interacts with an in-car music entertainment system (or “infotainment”) via hand gestures. We created a 3D gesture user interface for the vehicle audio component of the system. The interface included a set of simple gesture interactions enabling the driver to focus their attention on the road.</p>
+
+<p>We decided to focus on what we estimated to be the most commonly used actions in streaming music playback: start, stop, pause, next song, previous song, volume up, and volume down. We considered including liking, disliking and saving a song to the music library, yet ultimately decided that this would risk over complicating the study, added difficulty for our “Wizard,” and increased the chance of error.</p>
+
+<p>Additionally, we considered allowing the user to switch between play modes such as shuffling or repeating their playlist or a single, but we determined that this would require the listener to have a pre-existing relationship with the music they were listening to. This was something that we were unable to account for in this study.</p>
+
+<h3 id="gestural-interface">Gestural Interface</h3>
+<p>We created these gestures based on the traditional 2D touch interface for a media player as well as the current practice of industry leaders such as BMW and Google. Since a gesture-based interface allows the user to simulate the experience of interacting with a physical object intuitively and naturally, we revised our gestures to represent the physical interaction. For instance, we used the action of swiping from right to left to augment the reality when a user is physically pushing an item to the previous position of a queue.</p>
+
+<p><img src="/images/blog/wizard-of-oz/gesture-language.png" alt="Gestural Interface Language" /></p>
+
+<h2 id="part-2-test-setup">Part 2: Test Setup</h2>
+
+<h4 id="infotainment-system">Infotainment System</h4>
+<p>Due to safety and time constraints, we did not have access to a real car or a legitimate driving simulator. Since we still wanted to test gestures related to a driving experience, we created a rudimentary driving simulator at a library workspace. Our initial plan was to have the participants play a racing game to distract them and better simulate a driving experience. We looked into several options for games, but because we did not have a gaming console, we were confined to finding a free driving simulator or racing game for Apple’s Operating System. Most of the games we found were too complicated and would have required the user’s full attention. In addition, all of the racing games we found required two hands to play, one for direction control and the other for a throttle. This would have prevented the user from having a free hand for the gesture control system.</p>
+
+<h4 id="simulator">Simulator</h4>
+<p>The simulator consisted of a large TV displaying first person video of a car driving, a fake wheel and infotainment dashboard, and two independent Bluetooth speakers that were hidden within the “car”. One speaker was paired with the computer playing the driving video, and played ambient sounds of driving. This audio was run throughout the entire test. The other speaker was paired with a different computer with Spotify installed, and was used to play music and was controlled by our “Wizard of Oz.”.</p>
+
+<h4 id="planning">Planning</h4>
+<p><img src="/images/blog/wizard-of-oz/00-planning.JPG" alt="Planning the simulator and car" /></p>
+
+<h4 id="layout">Layout</h4>
+<p><img src="/images/blog/wizard-of-oz/room-diagram.jpg" alt="Room Diagram" /></p>
+
+<h4 id="the-car">The “Car”</h4>
+
+<p>The “car” included a fake yet rotatable driver’s wheel, as well as a center console with fake climate control and stereo.I built it using two cardboard boxes, a frisbee glued to the lid of a plastic jar with a screw-on lid, construction paper with a hand drawn UI, duct tape, gorilla glue, and black spray paint. A GoPro was mounted inside the “car” that pointed at the participant. The participant was told that the GoPro was connected to a computer via wifi which was capturing and processing their gestures. In actuality, the camera was just used to get another perspective of the participant to better aid the wizard.</p>
+
+<h4 id="beginnings-of-the-steering-column">Beginnings of the steering column</h4>
+<p><img src="/images/blog/wizard-of-oz/01-peanut.jpg" alt="Peanut Butter wheel" /></p>
+
+<h4 id="beginnings-of-the-dashboard">Beginnings of the dashboard</h4>
+<p><img src="/images/blog/wizard-of-oz/02-box.jpg" alt="Room Diagram" /></p>
+
+<h4 id="beginnings-of-the-wheel">Beginnings of the wheel</h4>
+<p><img src="/images/blog/wizard-of-oz/03-frisbee.jpg" alt="Room Diagram" /></p>
+
+<h4 id="mounted--painted-wheel">Mounted &amp; painted wheel</h4>
+<p><img src="/images/blog/wizard-of-oz/04-wheel.jpg" alt="Room Diagram" /></p>
+
+<h2 id="the-tasks">The Tasks</h2>
+
+<p>We created a sequence of tasks that allowed the participants to interact with the system using all designed gestures. This included learning and using the gestures. However, as we rehearsed the tasks by acting as either “the Dorothy” or “the Wizard” of our scenario, we quickly realized that we needed to add a stage for calibrating the system. By running through this fake calibration system, we hoped to further the illusion that this was in fact a computer system and not controlled by a human. We utilized text to speech features in Microsoft Excel to provide system feedback during the calibration (“I did not get that.” “Got it!” “Calibration Ready.”).</p>
+
+<p><strong>Here are the tasks:</strong></p>
+
+<ul>
+  <li>Activate the system</li>
+  <li>Turn up the volume</li>
+  <li>Go to the next song (3 times)</li>
+  <li>Pause</li>
+  <li>Go to the previous song</li>
+  <li>Turn down the volume</li>
+  <li>Stop the system</li>
+</ul>
+
+<p>During the experiment, the facilitator provided oral instruction for the participant on which task that they would need to perform. The order of the tasks were adjusted based on the actual performance of each participant. We also included a task that allowed the participant to control the system without instruction.</p>
+
+<h2 id="part-3-analysis">Part 3: Analysis</h2>
+
+<h3 id="effectiveness-of-concealing-the-wizard">Effectiveness of concealing “The Wizard”</h3>
+<p>We recruited three participants to test our gesture interface. As we were still relatively unpracticed with the manipulation of our prototype during our first user test, there were a few minor errors (delayed response to gestures and switching to an incorrect song) that ultimately blew our cover. The participant finished the test without making comments about these gestures, however there were very clear moments of confusion on their behalf. At the end of the test, before we had a chance to make our big reveal, the participant asked if we were manipulating the prototype from the laptops around by hand.</p>
+
+<p>An added factor that allowed the participant to come to this decision, was the fact that the mounted GoPro designed to pickup the user’s gestures was flashing a record light, making it especially conspicuous.</p>
+
+<p>The second and third tests went significantly smoother. We disabled the record light on the dashboard GoPro and executed the music transitions much more fluidly. As a result, the final two participants stated that they had complete faith in the system and its ability to register their gestures. Interestingly, despite the fact that the first subject understood the inner workings of the prototype, and the second and third did not, they all provided quality feedback with many similarities regarding the design of the gesture interface.</p>
+
+<h3 id="effectiveness-of-the-physical-prototype-and-scenario">Effectiveness of the physical prototype and scenario</h3>
+<p>The driving simulator that hinted at the driving experience without actually giving participants control of the car, this allowed them to better imagine the scenario in which they would be used, but still place the majority of their attention on the music control gestures. For a first round of testing, this ended up being mostly fine. The only exception was when the final participant remarked that he was mildly frightened by the fact that he could not control the car, and gripped the steering wheel with both hands and looked at the screen whenever he was not asked to perform a gesture.</p>
+
+<h3 id="user-feedback">User Feedback</h3>
+
+<h4 id="volume">Volume</h4>
+<p>All of the users responded positively to the volume up and down commands. They mentioned that they felt intuitive and easy to control. One of the participants likened the action to the scroll wheel on an ipod. The second user had a moment of difficulty with the volume controls and only did a semi-circle wave to change the volume using the palm of their hand, rather than making continuous swirling action until achieved the desirable volume level. The “Wizard” responded by making a minute volume adjustment, at which point the participant corrected the action.</p>
+
+<h4 id="previous-and-next-song">Previous and next song</h4>
+<p>This was a big pain point for the participants. We initially had difficulty figuring out how to map the swiping. Should moving your hand from right to left go to the next song or previous? This is a difficult one to represent in a 3D gesture user interface, especially considering scroll directions operate differently on different systems and were flipped by Apple in 2011. Also, it is difficult to apply an action that users are very accustomed to on a 2D screen to a 3D space. All of the users expressed confusion on which way to move their hands to advance and go back with their song choice.</p>
+
+<p>One of the users flipped the directions completely, and we chose to “recognize” the incorrect gesture instead of breaking the fluidity of the experiment by interrupting them.
+Two out of three users mentioned that they felt it was awkward to advance to the next song because by preparing to make the gesture for next song, they inadvertently did the gesture for previous song – if their right hand was placed on the steering, they first had to move it across the sensor to the left before beginning the gesture for next song, they felt this was too similar to the gesture for going back to the previous song.</p>
+
+<h4 id="play-and-pause">Play and pause</h4>
+<p>The play and pause gestures had mostly positive results. Users remarked that they were mostly intuitive and had little difficulty remembering them. The pause gesture was universally regarded the best gesture, with all participants completing it with zero errors. The only issue expressed by participants was that it felt cumbersome to have two separate gestures for both play and pause.</p>
+
+<h3 id="takeaways-moving-forward">Takeaways moving forward</h3>
+<p>As we learned in this exercise, creating a high fidelity experience can generate effective insights even with low fidelity of the prototype. With the appropriate set of tasks and instructions, we can engage the participants with high efficiency, and make modification to the design quickly.
+With behavioral prototyping, we were able to evaluate our gestures and determine which ones were ineffective. For instance, in a future study we would iterate on the advance/previous gesture and try a thumb-right/thumb-left. This iteration might potentially prevent the two gesture interface interfere with one and another. The participants also showed interested in customizing the gesture interface, something that would be well within the feasibility of behavioral prototyping. For future tests, it would also be important to include additional features such as different play modes (shuffle and repeat).</p>
+
+<h2 id="video">Video</h2>
+
+<div class="videoWrapper">
+	<iframe src="https://player.vimeo.com/video/153469958" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+</article>
+
+
+
+
+<!-- Next and previous posts -->
+<div class="page-navigation">
+   
+    <a class="prev" href="/one-bus-away/">« Previous: Video Prototyping</a>
+  
+
+  
+      <a class="next" href="/model-prototyping/">Next: Model Prototyping &raquo;</a>
+  
+</div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        
+        <div class="social-icons">
+  <div class="center">
+    
+
+    <!--
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    -->
+
+    
+      <a class="fa fa-twitter fa-2x" href="https://twitter.com/lyleklyne"></a>
+    
+    
+    
+      <a class="fa fa-instagram fa-2x" href="https://instagram.com/lyleklyne"></a>
+    
+    
+    
+      <a class="fa fa-envelope-o fa-2x" href="mailto:lyle.klyne@gmail.com"></a>
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+        Created by Lyle Klyne.<br>
+        All rights reserved.
+      
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Google Analytics script -->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-60172340-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+<!-- Main JS -->
+<script type="text/javascript">
+
+/* Call randbg jquery plugin for random background image */
+$(".randbg").RandBG({
+ClassPrefix: "bg",
+count: 5
+});
+
+/* Fade out header on scroll */
+
+  $(window).scroll(function() {
+    $(".fader").css({
+    'opacity' : 1-(($(this).scrollTop())/ ($(window).height() -75) )
+    });          
+});
+
+/* Smooth scroll to point on page */
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+
+/* Sticky nav */
+
+$('.site-header').stickThis(); 
+
+</script>
+
+</body>
+</html>

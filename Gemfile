@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'jekyll'
+gem 'jekyll', '2.5.3'
 gem 'guard'
 gem 'guard-jekyll-plus'
 gem 'guard-livereload'

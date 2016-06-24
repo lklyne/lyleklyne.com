@@ -4,48 +4,34 @@
 <body class="{% if site.animated %}animated fade-in-down{% endif %}">
   <div class="site-wrap">
 
-    {% if paginator.previous_page %}
-    {% else %}
-        <div id="frontBleedImg" class="fader splash-img randbg bg-cover">jekyll
-          <!-- <div class="front-menu-container"> -->
-            
-            <!-- Hype code goes here -->
-              <div id="menu_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">
-    <script type="text/javascript" charset="utf-8" src="menu.hyperesources/menu_hype_generated_script.js?77322"></script>
-  </div
-            <!-- end Hype code -->
+    <!--{% if paginator.previous_page %}-->
+    <!--{% else %}-->
+        <!--<div id="frontBleedImg" class="fader splash-img randbg bg-cover">-->
+          <!--&lt;!&ndash; <div class="front-menu-container"> &ndash;&gt;-->
+            <!--&lt;!&ndash; Hype code goes here &ndash;&gt;-->
+            <!--<div id="menu_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">-->
+                <!--<script type="text/javascript" charset="utf-8" src="menu.hyperesources/menu_hype_generated_script.js?77322"></script>-->
+            <!--</div-->
+            <!--&lt;!&ndash; end Hype code &ndash;&gt;-->
 
-        <!-- </div> -->
-      </div>
-{% endif %}
+        <!--&lt;!&ndash; </div> &ndash;&gt;-->
+      <!--</div>-->
+    <!--{% endif %}-->
 
 <div class="front">
     <div class="clearfix">
         <a name="blog">
     </div>
+
     <div class="hiddenHeader">
         {% include header.html %}
     </div>
 
-    <section class="work">
-
-        {% for project in page.projects %}
-        <a href="{{ site.url }}{{project[1].project_url }}">
-            <figure class="{{ project[1].category }} grow">
-
-                <img src="..{{ project[1].image.url }}" alt="" />
-                <dl>
-                    <dt class="portfolio-item-title">{{ project[1].title }}</dt>
-                    <dd class="portfolio-item-title">- {{ project[1].category }} -</dd>
-
-            </figure>
-        </a>
-        {% endfor %}
-    </section>
-
     <div class="post p2 p-responsive wrap" role="main">
         <div class="measure">
-	        {{ content }}
+
+            {{ content }}
+
         </div>
     </div>
 </div>

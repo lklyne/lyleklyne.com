@@ -6,7 +6,7 @@ description: "Design, development, documenting the process."
 baseurl:     ""
 
 # Change this to live site URL before posting
-url:        "http://localhost:4000"
+url:        "http://lyleklyne.com"
 
 # Google analytics
 google_analytics: UA-60172340-1
@@ -30,7 +30,7 @@ flattr_button:
 
 # Build settings
 markdown:     kramdown
-permalink:    /blog/:title/
+permalink:    /:title/
 paginate:     5
 destination: _site/
 sass:
@@ -38,4 +38,5 @@ sass:
 
 
 # Gems
-gems: [jekyll-paginate]
+gems:
+  [jekyll-paginate]

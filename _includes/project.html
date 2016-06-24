@@ -42,34 +42,7 @@
 
         <article class="post-content">
 
-          <!-- Problem, solution, tools used, result -->
-          {% if page.problem %}
-              <div>
-                <p>{{ page.problem | markdownify }}</p>
-                <p>{{ page.solution | markdownify }}</p>
-              </div>
-            </article>
-          {% endif %}
-
-          {% if page.tools_used %}
-              <div>
-                <p>{{ page.tools_used | markdownify }}</p>
-              </div>
-            </article>
-          {% endif %}
-
-          {% if page.result %}
-              <div>
-                <p>{{ page.result | markdownify }}</p>
-              </div>
-          {% endif %}
-
-          <!-- Main body of project -->
-          {% if page.body %}
-              <div>
-                <p>{{ page.body | markdownify }}</p>
-              </div>
-          {% endif %}
+          {{ post.content }}
 
         </article>
 

@@ -5,9 +5,9 @@ permalink: /about/
 ---
  
 
-I consider myself a researcher, a developer, and a designer with an affinity for distilling complexity. My background in International Relations lead to a fascination with design as a method for bringing people together and solving humanitarian problems.
+I’m Lyle Klyne, a product and interaction designer with an understanding of how people from different cultures interact and connect. I identify and resolve complex needs through simple design, leveraging my background in visual and interactive design with an empathetic understanding of software development. 
 
-Seeking inspiration in the natural world, old and emerging technology, and people’s stories, I’m an “experience-gatherer” by nature. My background includes fine arts, sound design, international policy, web development, and a master’s degree in Human-Computer Interaction + Design ([MHCI+D](http://mhcid.washington.edu/)). I aim to create ethical products with both purpose and reach.
+My background includes fine arts, sound design, international policy, web development, and a master’s degree in HCI + Design. I aim to create ethical products with both purpose and reach, and if they can make people smile, even better.
 
 Nice to meet you,
 

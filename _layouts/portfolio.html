@@ -18,27 +18,36 @@ title: Portfolio
 
     <section class="work">
 
-      <!--
-      <a href="{{ site.url }}{{project[1].project_url }}">
-        <figure class="{{ project[1].category }} grow">
-          <img src="..{{ project[1].image.url }}" alt="" />
-          <dl>
-            <dt class="portfolio-item-title">{{ project[1].title }}</dt>
-            <dd class="portfolio-item-title">- {{ project[1].category }} -</dd>
 
-        </figure>
-      </a>
-      -->
 
-      {% for project in site.projects %}
 
-      {% endfor %}
+      <!--{% for project in site.projects %}-->
+      <!--<a href="{{ site.url }}{{project[1].project_url }}">-->
+        <!--<div class="{{ project[1].category }} box grow ui-shot">-->
+          <!--<img src="..{{ project[1].image.url }}" alt="" />-->
+          <!--<dl>-->
+            <!--<dt class="portfolio-item-title">{{ project[1].title }}</dt>-->
+            <!--<dd class="portfolio-item-title">- {{ project[1].category }} -</dd>-->
+
+        <!--</div>-->
+      <!--</a>-->
+
+      <!--{% endfor %}-->
+
+
       <div class='box grow ui-shot'>
         <img src="../images/projects/spex/spex-ui-lg.png" class="grow-big" alt="" />
         <div class='title'>Spex</div>
         <div class='description'> Mobile app to manage media recorded from a wearable camera.</div>
-
       </div>
+
+      <a href="/relink">
+      <div class='box grow ui-shot'>
+        <img src="../images/projects/spex/spex-ui-lg.png" class="grow-big" alt="" />
+        <div class='title'>Relink</div>
+        <div class='description'> Mobile app to manage media recorded from a wearable camera.</div>
+      </div>
+      </a>
 
       <div class='box grow featured image-bg'>
         <img src="../images/projects/daydream/final-03.jpg" class="grow-big" alt="" />
@@ -47,34 +56,34 @@ title: Portfolio
 
       </div>
 
-      <div class='box grow' style="background: black">
-        <div class='wave -one'></div>
-        <div class='wave -two'></div>
-        <div class='wave -three'></div>
-        <div class='title'>Project Three</div>
-        <div class='description'>This is a great project. My did it all self. Fuu bar bang buzz.</div>
-      </div>
+      <!--<div class='box grow' style="background: black">-->
+        <!--<div class='wave -one'></div>-->
+        <!--<div class='wave -two'></div>-->
+        <!--<div class='wave -three'></div>-->
+        <!--<div class='title'>Project Three</div>-->
+        <!--<div class='description'>This is a great project. My did it all self. Fuu bar bang buzz.</div>-->
+      <!--</div>-->
 
-      <div class='box grow'>
-        <div class='wave -one'></div>
-        <div class='wave -two'></div>
-        <div class='wave -three'></div>
-        <div class='title'>Project Four</div>
-      </div>
+      <!--<div class='box grow'>-->
+        <!--<div class='wave -one'></div>-->
+        <!--<div class='wave -two'></div>-->
+        <!--<div class='wave -three'></div>-->
+        <!--<div class='title'>Project Four</div>-->
+      <!--</div>-->
 
-      <div class='box grow'>
-        <div class='wave -one'></div>
-        <div class='wave -two'></div>
-        <div class='wave -three'></div>
-        <div class='title'>Project 5</div>
-      </div>
+      <!--<div class='box grow'>-->
+        <!--<div class='wave -one'></div>-->
+        <!--<div class='wave -two'></div>-->
+        <!--<div class='wave -three'></div>-->
+        <!--<div class='title'>Project 5</div>-->
+      <!--</div>-->
 
-      <div class='box grow'>
-        <div class='wave -one'></div>
-        <div class='wave -two'></div>
-        <div class='wave -three'></div>
-        <div class='title'>Project Six</div>
-      </div>
+      <!--<div class='box grow'>-->
+        <!--<div class='wave -one'></div>-->
+        <!--<div class='wave -two'></div>-->
+        <!--<div class='wave -three'></div>-->
+        <!--<div class='title'>Project Six</div>-->
+      <!--</div>-->
         
     {% for project in site.projects %}
 
