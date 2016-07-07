@@ -9,10 +9,11 @@
     <meta name="description" content="Design, development, documenting the process.">
     <meta name="author" content="Lyle Klyne">
     <meta name="keywords" content="portfolio, blog, web-development">
-    <link rel="canonical" href="http://lyleklyne.com/canvas/">
+    <link rel="canonical" href="localhost:4000/canvas/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
+    <link href="/css/zoom.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
@@ -24,11 +25,14 @@
     <!-- Javascript -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
-    <script type="text/javascript" src="/js/rand.bg.js"></script> 
+
     <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
-    <script type="text/javascript" src="/js/html2canvas.js"></script>  
-    <script type="text/javascript" src="/js/html2canvas.svg.js"></script>  
-    <script type="text/javascript" src="/js/StackBlur.js"></script>  
+    <script type="text/javascript" src="/js/transition.js"></script>
+    <script type="text/javascript" src="/js/zoom.min.js"></script>
+
+    <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
+    <!--<script type="text/javascript" src="/js/html2canvas.svg.js"></script>-->
+    <!--&lt;!&ndash;<script type="text/javascript" src="/js/StackBlur.js"></script>  &ndash;&gt;-->
   
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
@@ -41,7 +45,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Canvas">
     <meta property="og:description" content="A web re-design of the popular Learning Management System.">
-    <meta property="og:url" content="http://lyleklyne.com/canvas/">
+    <meta property="og:url" content="localhost:4000/canvas/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -59,27 +63,28 @@
 
 <body class="">
   <div class="site-wrap">
-    <header class="site-header px2 px-responsive blurheader">
-  <div class="mt1 wrap">
-    <div class="measure">
-   		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
-      	<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
-      	<nav class="site-nav right">
-        	<a href="/about/">About</a>
-<a class="scroll" href="/blog">Blog</a>
-<a href="/">Work</a>
+    
+<div class="header">
+	<header class="site-header px2 px-responsive">
+	  <div class="mt1 wrap">
+		<div class="measure">
+			<div class="fixed-header">
+				<a href="localhost:4000" class="site-title">Lyle Klyne</a>
+				<nav class="site-nav right">
+					<a href="/">Work</a>
+<a href="/blog">Blog</a>
+<a href="/about/">About</a>
 
-
-      	</nav>
-      
-      	<div class="clearfix"></div>
-    </div>
-  </div>
-</header>
-
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	  </div>
+	</header>
+</div>
 
     
-    <div class="project-header-container fader" style="background-image:url();background-color: #F87D09;">
+    <div class="project-header-container" style="background-image:url();background-color: #F87D09;">
       <div class="project-header">
         <div class="project-title post-header mb2">
           <h1>Canvas</h1>
@@ -87,7 +92,9 @@
         </div>
 
         
-          <img src="/images/projects/canvas/canvas-mockup.png" class="project-hero center" alt="Canvas hero image" />
+        <div class="project-hero-container">
+        <img src="/images/projects/canvas/canvas-mockup.png" class="project-hero center" alt="Canvas hero image" data-action="zoom"/>
+        </div>
         
       </div>
 
@@ -100,14 +107,17 @@
     <div class="post p2 p-responsive wrap" role="main">
       <a name="project"></a>
       <div class="measure">
-        <!-- begin <h2 id="problem">Problem</h2>
+        <!-- begin <h5 id="process">Process</h5>
+<p><img src="../../../images/projects/canvas/process-standard.png" alt="Canvas Process" data-action="zoom" /></p>
+
+<h2 id="problem">Problem</h2>
 <p>Canvas lacks continuity, clarity and flexibility. How can the experience be improved for students and teachers?</p>
 
 <h4 id="background">Background</h4>
 <p>Canvas is a learning management system (LMS)  that supports student and teacher education needs. For students, it provides a means to access course information and interact with their teacher and classmates. It meets organizational needs by supporting single-sign in (you are able to log in with your school id) and being FERPA compliant (it meets privacy standards set by the U.S. Board of education). Although the platform is owned by Instructure, it allows implementation of open-source modules, meaning that institutions can build custom tools and plugins and share them with a broader community.</p>
 
 <h4 id="system-map">System Map</h4>
-<p><img src="../../../images/projects/canvas/system-map-white.png" alt="System Map - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/system-map-white.png" alt="Canvas System Map" data-action="zoom" /></p>
 
 <h2 id="research--evaluation">Research &amp; Evaluation</h2>
 
@@ -126,6 +136,8 @@
 <h4 id="student--teacher-interviews">Student &amp; Teacher Interviews</h4>
 
 <p>I also spoke two graduate students who use Canvas for their academics and a senior professor who has been using Canvas since it was initially implemented. For one of the students and the professor I conducted a semi-structured interview to understand how they use Canvas and any pain points they encounter. With another student, I used a modified card sort to understand their opinions on value and frustration regarding various Canvas features.</p>
+
+<p><img src="../../../images/projects/canvas/card-sort.jpg" alt="Canvas Card Sort" data-action="zoom" /></p>
 
 <h4 id="heuristic-analysis">Heuristic Analysis</h4>
 
@@ -147,7 +159,7 @@
 
 <p>To illustrate how strongly leveraged this drop down menu is, I created a diagram of the current information architecture through a site map.</p>
 
-<p><img src="../../../images/projects/canvas/site-map-white.png" alt="Site Map - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/site-map-white.png" alt="Canvas Site Map" data-action="zoom" /></p>
 
 <h2 id="ideation">Ideation</h2>
 
@@ -163,27 +175,28 @@
 <h4 id="user-flow">User Flow</h4>
 <p>To understand different communication channels a Canvas user must navigate while submitting an assignment, I created this user flow to better understand the process.</p>
 
-<p><img src="../../../images/projects/canvas/user-flow.png" alt="Sketches - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/user-flow.png" alt="Canvas User Flow" data-action="zoom" /></p>
 
 <h4 id="sketches">Sketches</h4>
-<p><img src="../../../images/projects/canvas/canvas-sketches.png" alt="Sketches - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/canvas-sketches.png" alt="Canvas Sketches" data-action="zoom" /></p>
 
 <h2 id="wireframing--testing">Wireframing &amp; Testing</h2>
 
 <p>After clarifying the features I wanted to add and their underlying goals, I mocked-up some wireframes and put them into a clickable Invision prototype. I guerrilla tested the prototype with friends, classmates, and strangers.</p>
 
 <h4 id="feedback">Feedback</h4>
-<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Wireframes - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
 
 <h2 id="final-comp">Final Comp</h2>
 
 <p>I built upon the card-based system outlined in the wireframes to develop an interaction model 
 that would be customizable and modular. The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications. Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content. On single pages, these modules allow the user to interact with other students and teachers through in-line discussion.</p>
 
-<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
 
 <h4 id="animation">Animation</h4>
 
@@ -227,14 +240,17 @@ that would be customizable and modular. The front dashboard organizes courses by
         </div>
 
         <article class="post-content">
-            <h2 id="problem">Problem</h2>
+            <h5 id="process">Process</h5>
+<p><img src="../../../images/projects/canvas/process-standard.png" alt="Canvas Process" data-action="zoom" /></p>
+
+<h2 id="problem">Problem</h2>
 <p>Canvas lacks continuity, clarity and flexibility. How can the experience be improved for students and teachers?</p>
 
 <h4 id="background">Background</h4>
 <p>Canvas is a learning management system (LMS)  that supports student and teacher education needs. For students, it provides a means to access course information and interact with their teacher and classmates. It meets organizational needs by supporting single-sign in (you are able to log in with your school id) and being FERPA compliant (it meets privacy standards set by the U.S. Board of education). Although the platform is owned by Instructure, it allows implementation of open-source modules, meaning that institutions can build custom tools and plugins and share them with a broader community.</p>
 
 <h4 id="system-map">System Map</h4>
-<p><img src="../../../images/projects/canvas/system-map-white.png" alt="System Map - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/system-map-white.png" alt="Canvas System Map" data-action="zoom" /></p>
 
 <h2 id="research--evaluation">Research &amp; Evaluation</h2>
 
@@ -253,6 +269,8 @@ that would be customizable and modular. The front dashboard organizes courses by
 <h4 id="student--teacher-interviews">Student &amp; Teacher Interviews</h4>
 
 <p>I also spoke two graduate students who use Canvas for their academics and a senior professor who has been using Canvas since it was initially implemented. For one of the students and the professor I conducted a semi-structured interview to understand how they use Canvas and any pain points they encounter. With another student, I used a modified card sort to understand their opinions on value and frustration regarding various Canvas features.</p>
+
+<p><img src="../../../images/projects/canvas/card-sort.jpg" alt="Canvas Card Sort" data-action="zoom" /></p>
 
 <h4 id="heuristic-analysis">Heuristic Analysis</h4>
 
@@ -274,7 +292,7 @@ that would be customizable and modular. The front dashboard organizes courses by
 
 <p>To illustrate how strongly leveraged this drop down menu is, I created a diagram of the current information architecture through a site map.</p>
 
-<p><img src="../../../images/projects/canvas/site-map-white.png" alt="Site Map - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/site-map-white.png" alt="Canvas Site Map" data-action="zoom" /></p>
 
 <h2 id="ideation">Ideation</h2>
 
@@ -290,27 +308,28 @@ that would be customizable and modular. The front dashboard organizes courses by
 <h4 id="user-flow">User Flow</h4>
 <p>To understand different communication channels a Canvas user must navigate while submitting an assignment, I created this user flow to better understand the process.</p>
 
-<p><img src="../../../images/projects/canvas/user-flow.png" alt="Sketches - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/user-flow.png" alt="Canvas User Flow" data-action="zoom" /></p>
 
 <h4 id="sketches">Sketches</h4>
-<p><img src="../../../images/projects/canvas/canvas-sketches.png" alt="Sketches - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/canvas-sketches.png" alt="Canvas Sketches" data-action="zoom" /></p>
 
 <h2 id="wireframing--testing">Wireframing &amp; Testing</h2>
 
 <p>After clarifying the features I wanted to add and their underlying goals, I mocked-up some wireframes and put them into a clickable Invision prototype. I guerrilla tested the prototype with friends, classmates, and strangers.</p>
 
 <h4 id="feedback">Feedback</h4>
-<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Wireframes - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
 
 <h2 id="final-comp">Final Comp</h2>
 
 <p>I built upon the card-based system outlined in the wireframes to develop an interaction model 
 that would be customizable and modular. The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications. Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content. On single pages, these modules allow the user to interact with other students and teachers through in-line discussion.</p>
 
-<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
 
 <h4 id="animation">Animation</h4>
 
@@ -325,18 +344,52 @@ that would be customizable and modular. The front dashboard organizes courses by
 
         </article>
 
+        <section class="work">
+
+          <a href="/spex" class="normal">
+            <div class='title'><p>>Spex</p</div>
+          </a>
+
+          <a href="/canvas" class="normal">
+            <div class='title'>Canvas</div>
+          </a>
+
+          <a href="/food-is-free" class="normal">
+            <div class='title'>Food Is Free</div>
+          </a>
+
+
+          <a href="/relink" class="featured">
+            <div class='title'>Relink</div>
+          </a>
+
+          <a href="/daydream" class="featured">
+            <div class='title'>Daydream</div>
+          </a>
+
+
+          <!--<a href="/natural-disasters" class="full-width">-->
+            <!--<div class='title'>Natural Disaster Response</div>-->
+          <!--</a>-->
+
+        </section>
+
         
 
 
 
-        <!-- end <h2 id="problem">Problem</h2>
+
+        <!-- end <h5 id="process">Process</h5>
+<p><img src="../../../images/projects/canvas/process-standard.png" alt="Canvas Process" data-action="zoom" /></p>
+
+<h2 id="problem">Problem</h2>
 <p>Canvas lacks continuity, clarity and flexibility. How can the experience be improved for students and teachers?</p>
 
 <h4 id="background">Background</h4>
 <p>Canvas is a learning management system (LMS)  that supports student and teacher education needs. For students, it provides a means to access course information and interact with their teacher and classmates. It meets organizational needs by supporting single-sign in (you are able to log in with your school id) and being FERPA compliant (it meets privacy standards set by the U.S. Board of education). Although the platform is owned by Instructure, it allows implementation of open-source modules, meaning that institutions can build custom tools and plugins and share them with a broader community.</p>
 
 <h4 id="system-map">System Map</h4>
-<p><img src="../../../images/projects/canvas/system-map-white.png" alt="System Map - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/system-map-white.png" alt="Canvas System Map" data-action="zoom" /></p>
 
 <h2 id="research--evaluation">Research &amp; Evaluation</h2>
 
@@ -355,6 +408,8 @@ that would be customizable and modular. The front dashboard organizes courses by
 <h4 id="student--teacher-interviews">Student &amp; Teacher Interviews</h4>
 
 <p>I also spoke two graduate students who use Canvas for their academics and a senior professor who has been using Canvas since it was initially implemented. For one of the students and the professor I conducted a semi-structured interview to understand how they use Canvas and any pain points they encounter. With another student, I used a modified card sort to understand their opinions on value and frustration regarding various Canvas features.</p>
+
+<p><img src="../../../images/projects/canvas/card-sort.jpg" alt="Canvas Card Sort" data-action="zoom" /></p>
 
 <h4 id="heuristic-analysis">Heuristic Analysis</h4>
 
@@ -376,7 +431,7 @@ that would be customizable and modular. The front dashboard organizes courses by
 
 <p>To illustrate how strongly leveraged this drop down menu is, I created a diagram of the current information architecture through a site map.</p>
 
-<p><img src="../../../images/projects/canvas/site-map-white.png" alt="Site Map - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/site-map-white.png" alt="Canvas Site Map" data-action="zoom" /></p>
 
 <h2 id="ideation">Ideation</h2>
 
@@ -392,27 +447,28 @@ that would be customizable and modular. The front dashboard organizes courses by
 <h4 id="user-flow">User Flow</h4>
 <p>To understand different communication channels a Canvas user must navigate while submitting an assignment, I created this user flow to better understand the process.</p>
 
-<p><img src="../../../images/projects/canvas/user-flow.png" alt="Sketches - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/user-flow.png" alt="Canvas User Flow" data-action="zoom" /></p>
 
 <h4 id="sketches">Sketches</h4>
-<p><img src="../../../images/projects/canvas/canvas-sketches.png" alt="Sketches - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/canvas-sketches.png" alt="Canvas Sketches" data-action="zoom" /></p>
 
 <h2 id="wireframing--testing">Wireframing &amp; Testing</h2>
 
 <p>After clarifying the features I wanted to add and their underlying goals, I mocked-up some wireframes and put them into a clickable Invision prototype. I guerrilla tested the prototype with friends, classmates, and strangers.</p>
 
 <h4 id="feedback">Feedback</h4>
-<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Wireframes - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Wireframes - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
 
 <h2 id="final-comp">Final Comp</h2>
 
 <p>I built upon the card-based system outlined in the wireframes to develop an interaction model 
 that would be customizable and modular. The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications. Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content. On single pages, these modules allow the user to interact with other students and teachers through in-line discussion.</p>
 
-<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" /></p>
+<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
 
 <h4 id="animation">Animation</h4>
 
@@ -489,40 +545,12 @@ ga('send', 'pageview');
 <!-- Main JS -->
 <script type="text/javascript">
 
-/* Call randbg jquery plugin for random background image */
-$(".randbg").RandBG({
-ClassPrefix: "bg",
-count: 5
-});
-
-/* Fade out header on scroll */
-
-  $(window).scroll(function() {
-    $(".fader").css({
-    'opacity' : 1-(($(this).scrollTop())/ ($(window).height() -75) )
-    });          
-});
-
-/* Smooth scroll to point on page */
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
-      }
-    }
-  });
-});
-
-/* Sticky nav */
-
-$('.site-header').stickThis(); 
+  if (location.pathname !== '/') {
+    $("a[href*='" + location.pathname + "']").addClass("active");
+  } else {
+    var home = document.getElementById("home").getElementsByTagName('a')[0];
+    home.className = 'active';
+  }
 
 </script>
 

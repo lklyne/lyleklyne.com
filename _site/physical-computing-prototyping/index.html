@@ -8,10 +8,11 @@
     <meta name="description" content="This post covers my introduction to Arduino and physical computing. I did five simple builds to learn the basics of Arduino and where to find development resources.">
     <meta name="author" content="Lyle Klyne">
     <meta name="keywords" content="blog, prototyping, process, physical">
-    <link rel="canonical" href="http://lyleklyne.com/physical-computing-prototyping/">
+    <link rel="canonical" href="localhost:4000/physical-computing-prototyping/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
+    <link href="/css/zoom.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
@@ -23,11 +24,14 @@
     <!-- Javascript -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
-    <script type="text/javascript" src="/js/rand.bg.js"></script> 
+
     <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
-    <script type="text/javascript" src="/js/html2canvas.js"></script>  
-    <script type="text/javascript" src="/js/html2canvas.svg.js"></script>  
-    <script type="text/javascript" src="/js/StackBlur.js"></script>  
+    <script type="text/javascript" src="/js/transition.js"></script>
+    <script type="text/javascript" src="/js/zoom.min.js"></script>
+
+    <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
+    <!--<script type="text/javascript" src="/js/html2canvas.svg.js"></script>-->
+    <!--&lt;!&ndash;<script type="text/javascript" src="/js/StackBlur.js"></script>  &ndash;&gt;-->
   
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
@@ -40,7 +44,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Physical Computational Prototyping">
     <meta property="og:description" content="Design, development, documenting the process.">
-    <meta property="og:url" content="http://lyleklyne.com/physical-computing-prototyping/">
+    <meta property="og:url" content="localhost:4000/physical-computing-prototyping/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -58,24 +62,25 @@
 
 <body class="">
   <div class="site-wrap">
-    <header class="site-header px2 px-responsive blurheader">
-  <div class="mt1 wrap">
-    <div class="measure">
-   		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
-      	<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
-      	<nav class="site-nav right">
-        	<a href="/about/">About</a>
-<a class="scroll" href="/blog">Blog</a>
-<a href="/">Work</a>
+    
+<div class="header">
+	<header class="site-header px2 px-responsive">
+	  <div class="mt1 wrap">
+		<div class="measure">
+			<div class="fixed-header">
+				<a href="localhost:4000" class="site-title">Lyle Klyne</a>
+				<nav class="site-nav right">
+					<a href="/">Work</a>
+<a href="/blog">Blog</a>
+<a href="/about/">About</a>
 
-
-      	</nav>
-      
-      	<div class="clearfix"></div>
-    </div>
-  </div>
-</header>
-
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	  </div>
+	</header>
+</div>
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
@@ -86,7 +91,7 @@
   <h1>Physical Computational Prototyping</h1>
   <span class="post-meta">Mar 3, 2016</span><br>
   
-  <span class="post-meta small">9 minute read</span>
+  <span class="post-meta small">10 minute read</span>
 </div>
 
 <article class="post-content">
@@ -110,7 +115,7 @@
 
 <h3 id="sketch-code">Sketch Code</h3>
 
-<pre><code>int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+<div class="highlighter-rouge"><pre class="highlight"><code>int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
 int photocellReading;     // the analog reading from the sensor divider
 void setup(void) {
   // Send debugging information via the Serial monitor
@@ -127,6 +132,7 @@ void loop(void) {
   delay(500);
 }
 </code></pre>
+</div>
 
 <h3 id="output">Output</h3>
 <p><img src="/images/blog/physical-computing/photocell-output.png" alt="PHotocell Output" /></p>
@@ -143,7 +149,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 <h3 id="sketch-code-1">Sketch Code</h3>
 
-<pre><code>const int hallPin = 12;    
+<div class="highlighter-rouge"><pre class="highlight"><code>const int hallPin = 12;    
 int hallState = 0;      
 void setup() {
     
@@ -162,6 +168,7 @@ void loop(){
 
 }
 </code></pre>
+</div>
 
 <h3 id="output-1">Output</h3>
 <p><img src="/images/blog/physical-computing/hall-effect-output.png" alt="Joystick Sketch" /></p>
@@ -180,7 +187,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 <h3 id="sketch-code-2">Sketch Code</h3>
 
-<pre><code>#define RED_PIN 9      // where the red pin is connected to
+<div class="highlighter-rouge"><pre class="highlight"><code>#define RED_PIN 9      // where the red pin is connected to
 #define GREEN_PIN 10   // where the green pin is connected to
 #define BLUE_PIN 11    // where the blue pin is connected to
 #define DELAY 1       // 2ms internal delay; increase for slower fades
@@ -255,6 +262,7 @@ void loop() {
   }
 }
 </code></pre>
+</div>
 
 <h3 id="output-2">Output</h3>
 <p><img src="/images/blog/physical-computing/disco-output.png" alt="Disco Countdown Output" /></p>
@@ -271,7 +279,7 @@ void loop() {
 
 <h3 id="sketch-code-3">Sketch Code</h3>
 
-<pre><code>int led = 9;           // the PWM pin the LED is attached to
+<div class="highlighter-rouge"><pre class="highlight"><code>int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 int analogPin = 3;   // potentiometer connected to analog pin 3
@@ -302,6 +310,7 @@ void loop() {
   delay(30);
 }
 </code></pre>
+</div>
 
 <h3 id="output-3">Output</h3>
 <p><img src="/images/blog/physical-computing/dimmer-output.png" alt="Light Dimmer Output" /></p>
@@ -316,7 +325,7 @@ void loop() {
 
 <h3 id="sketch-code-4">Sketch Code</h3>
 
-<pre><code>const int buttonPin = 2;    
+<div class="highlighter-rouge"><pre class="highlight"><code>const int buttonPin = 2;    
 const int buzzerPin =  3;      
 
 
@@ -341,6 +350,7 @@ void loop(){
   }
 }
 </code></pre>
+</div>
 
 <h3 id="output-4">Output</h3>
 <p><img src="/images/blog/physical-computing/buzzer-output.png" alt="Buzzer Output" /></p>
@@ -430,40 +440,12 @@ ga('send', 'pageview');
 <!-- Main JS -->
 <script type="text/javascript">
 
-/* Call randbg jquery plugin for random background image */
-$(".randbg").RandBG({
-ClassPrefix: "bg",
-count: 5
-});
-
-/* Fade out header on scroll */
-
-  $(window).scroll(function() {
-    $(".fader").css({
-    'opacity' : 1-(($(this).scrollTop())/ ($(window).height() -75) )
-    });          
-});
-
-/* Smooth scroll to point on page */
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
-      }
-    }
-  });
-});
-
-/* Sticky nav */
-
-$('.site-header').stickThis(); 
+  if (location.pathname !== '/') {
+    $("a[href*='" + location.pathname + "']").addClass("active");
+  } else {
+    var home = document.getElementById("home").getElementsByTagName('a')[0];
+    home.className = 'active';
+  }
 
 </script>
 

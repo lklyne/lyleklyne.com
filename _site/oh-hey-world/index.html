@@ -8,10 +8,11 @@
     <meta name="description" content="This is long overdue. For years, I have been making things, both digital and physical, and it’s time to make this process transparent. I’ve been reluctant to do so for some time. Partly because...">
     <meta name="author" content="Lyle Klyne">
     <meta name="keywords" content="blog, web-development">
-    <link rel="canonical" href="http://lyleklyne.com/oh-hey-world/">
+    <link rel="canonical" href="localhost:4000/oh-hey-world/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
+    <link href="/css/zoom.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
@@ -23,11 +24,14 @@
     <!-- Javascript -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
-    <script type="text/javascript" src="/js/rand.bg.js"></script> 
+
     <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
-    <script type="text/javascript" src="/js/html2canvas.js"></script>  
-    <script type="text/javascript" src="/js/html2canvas.svg.js"></script>  
-    <script type="text/javascript" src="/js/StackBlur.js"></script>  
+    <script type="text/javascript" src="/js/transition.js"></script>
+    <script type="text/javascript" src="/js/zoom.min.js"></script>
+
+    <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
+    <!--<script type="text/javascript" src="/js/html2canvas.svg.js"></script>-->
+    <!--&lt;!&ndash;<script type="text/javascript" src="/js/StackBlur.js"></script>  &ndash;&gt;-->
   
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
@@ -40,7 +44,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Oh hey, world!">
     <meta property="og:description" content="Design, development, documenting the process.">
-    <meta property="og:url" content="http://lyleklyne.com/oh-hey-world/">
+    <meta property="og:url" content="localhost:4000/oh-hey-world/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -58,24 +62,25 @@
 
 <body class="">
   <div class="site-wrap">
-    <header class="site-header px2 px-responsive blurheader">
-  <div class="mt1 wrap">
-    <div class="measure">
-   		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
-      	<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
-      	<nav class="site-nav right">
-        	<a href="/about/">About</a>
-<a class="scroll" href="/blog">Blog</a>
-<a href="/">Work</a>
+    
+<div class="header">
+	<header class="site-header px2 px-responsive">
+	  <div class="mt1 wrap">
+		<div class="measure">
+			<div class="fixed-header">
+				<a href="localhost:4000" class="site-title">Lyle Klyne</a>
+				<nav class="site-nav right">
+					<a href="/">Work</a>
+<a href="/blog">Blog</a>
+<a href="/about/">About</a>
 
-
-      	</nav>
-      
-      	<div class="clearfix"></div>
-    </div>
-  </div>
-</header>
-
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	  </div>
+	</header>
+</div>
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
@@ -188,40 +193,12 @@ ga('send', 'pageview');
 <!-- Main JS -->
 <script type="text/javascript">
 
-/* Call randbg jquery plugin for random background image */
-$(".randbg").RandBG({
-ClassPrefix: "bg",
-count: 5
-});
-
-/* Fade out header on scroll */
-
-  $(window).scroll(function() {
-    $(".fader").css({
-    'opacity' : 1-(($(this).scrollTop())/ ($(window).height() -75) )
-    });          
-});
-
-/* Smooth scroll to point on page */
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
-      }
-    }
-  });
-});
-
-/* Sticky nav */
-
-$('.site-header').stickThis(); 
+  if (location.pathname !== '/') {
+    $("a[href*='" + location.pathname + "']").addClass("active");
+  } else {
+    var home = document.getElementById("home").getElementsByTagName('a')[0];
+    home.className = 'active';
+  }
 
 </script>
 

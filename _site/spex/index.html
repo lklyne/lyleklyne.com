@@ -9,10 +9,11 @@
     <meta name="description" content="Design, development, documenting the process.">
     <meta name="author" content="Lyle Klyne">
     <meta name="keywords" content="portfolio, blog, web-development">
-    <link rel="canonical" href="http://lyleklyne.com/spex/">
+    <link rel="canonical" href="localhost:4000/spex/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
+    <link href="/css/zoom.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
@@ -24,11 +25,14 @@
     <!-- Javascript -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
-    <script type="text/javascript" src="/js/rand.bg.js"></script> 
+
     <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
-    <script type="text/javascript" src="/js/html2canvas.js"></script>  
-    <script type="text/javascript" src="/js/html2canvas.svg.js"></script>  
-    <script type="text/javascript" src="/js/StackBlur.js"></script>  
+    <script type="text/javascript" src="/js/transition.js"></script>
+    <script type="text/javascript" src="/js/zoom.min.js"></script>
+
+    <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
+    <!--<script type="text/javascript" src="/js/html2canvas.svg.js"></script>-->
+    <!--&lt;!&ndash;<script type="text/javascript" src="/js/StackBlur.js"></script>  &ndash;&gt;-->
   
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
@@ -41,7 +45,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Spex">
     <meta property="og:description" content="Keep the moments that matter to you — a mobile app to manage media recorded from a wearable camera.">
-    <meta property="og:url" content="http://lyleklyne.com/spex/">
+    <meta property="og:url" content="localhost:4000/spex/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -59,27 +63,28 @@
 
 <body class="">
   <div class="site-wrap">
-    <header class="site-header px2 px-responsive blurheader">
-  <div class="mt1 wrap">
-    <div class="measure">
-   		<!--<img src="/favicon.gif" class="site-header-logo center"> -->
-      	<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
-      	<nav class="site-nav right">
-        	<a href="/about/">About</a>
-<a class="scroll" href="/blog">Blog</a>
-<a href="/">Work</a>
+    
+<div class="header">
+	<header class="site-header px2 px-responsive">
+	  <div class="mt1 wrap">
+		<div class="measure">
+			<div class="fixed-header">
+				<a href="localhost:4000" class="site-title">Lyle Klyne</a>
+				<nav class="site-nav right">
+					<a href="/">Work</a>
+<a href="/blog">Blog</a>
+<a href="/about/">About</a>
 
-
-      	</nav>
-      
-      	<div class="clearfix"></div>
-    </div>
-  </div>
-</header>
-
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	  </div>
+	</header>
+</div>
 
     
-    <div class="project-header-container fader" style="background-image:url();background-color: #6495ED;">
+    <div class="project-header-container" style="background-image:url();background-color: #6495ED;">
       <div class="project-header">
         <div class="project-title post-header mb2">
           <h1>Spex</h1>
@@ -87,7 +92,9 @@
         </div>
 
         
-          <img src="/images/projects/spex/spex-ui-lg.png" class="project-hero center" alt="Spex hero image" />
+        <div class="project-hero-container">
+        <img src="/images/projects/spex/spex-ui-lg.png" class="project-hero center" alt="Spex hero image" data-action="zoom"/>
+        </div>
         
       </div>
 
@@ -100,7 +107,9 @@
     <div class="post p2 p-responsive wrap" role="main">
       <a name="project"></a>
       <div class="measure">
-        <!-- begin <h3 id="problem">Problem</h3>
+        <!-- begin <p><img src="../../../images/projects/spex/spex-overview.jpg" alt="Spex Overview" data-action="zoom" /></p>
+
+<h3 id="problem">Problem</h3>
 <p>Data and media creation are exploding. As cameras become smaller and wearable, how will we manage the massive amount of information they create?</p>
 
 <h4 id="the-glasses-are">The glasses are…</h4>
@@ -116,13 +125,13 @@
   </li>
 </ul>
 
-<h3 id="interaction-design">Interaction Design</h3>
-<p>I looked at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed.</p>
+<h3 id="ui-exploration">UI Exploration</h3>
+<p>I looked at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed. I explored several directions for the UI. Here are some of them:</p>
 
-<p><img src="../../../images/projects/spex/test-shots.png" alt="Spex UI Explorations" /></p>
+<p><img src="../../../images/projects/spex/test-shots.png" alt="Spex Overview" data-action="zoom" /></p>
 
 <h3 id="tiles--gesture">Tiles &amp; Gesture</h3>
-<p>With the goal of making the sorting process fun and intuitive, I settled on a gesture controlled tile system. Drag up (away) to delete, drag down (towards) to save, and drag right to expand. As the user holds their finger down, the tile expands to display larger photos or play videos. To communicate the interaction to my classmates, I created this prototype in a couple of minutes using Principle.</p>
+<p>With the goal of making the sorting process fun and intuitive, I settled on a gesture controlled tile system. Drag up (away) to delete, drag down (towards) to save, and drag right to expand. (My first version, displayed below, had this action reversed. After actually using it I realized it should be swapped.) As the user holds their finger down, the tile expands to display larger photos or play videos. To communicate the interaction to my classmates, I created this prototype in a couple of minutes using Principle.</p>
 
 <video width="100%" height="auto" autoplay="" loop="">
   <source src="../../../images/projects/spex/spex-prototype-motion.mp4" type="video/mp4" />
@@ -140,7 +149,7 @@
 </video>
 
 <h2 id="logo">Logo</h2>
-<p>The simple logo animates to mirror the home / save button on the mobile application.</p>
+<p>The logo animates to mirror the home / save button on the mobile application.</p>
 <video width="100%" height="auto" autoplay="" loop="">
   <source src="../../../images/projects/spex/spex-logo.mp4" type="video/mp4" />
   <source src="movie.ogg" type="video/ogg" />
@@ -167,7 +176,7 @@
           <div class="project-details">
             <h2>&nbsp;</h2>
             <h6>Timeline</h6>
-            <p>01/01/16 - 03/01/16</p>
+            <p>3 weeks</p>
             <h6>Role</h6>
             <p>- Concept Development<br>
 - Interaction Design<br>
@@ -178,7 +187,9 @@
         </div>
 
         <article class="post-content">
-            <h3 id="problem">Problem</h3>
+            <p><img src="../../../images/projects/spex/spex-overview.jpg" alt="Spex Overview" data-action="zoom" /></p>
+
+<h3 id="problem">Problem</h3>
 <p>Data and media creation are exploding. As cameras become smaller and wearable, how will we manage the massive amount of information they create?</p>
 
 <h4 id="the-glasses-are">The glasses are…</h4>
@@ -194,13 +205,13 @@
   </li>
 </ul>
 
-<h3 id="interaction-design">Interaction Design</h3>
-<p>I looked at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed.</p>
+<h3 id="ui-exploration">UI Exploration</h3>
+<p>I looked at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed. I explored several directions for the UI. Here are some of them:</p>
 
-<p><img src="../../../images/projects/spex/test-shots.png" alt="Spex UI Explorations" /></p>
+<p><img src="../../../images/projects/spex/test-shots.png" alt="Spex Overview" data-action="zoom" /></p>
 
 <h3 id="tiles--gesture">Tiles &amp; Gesture</h3>
-<p>With the goal of making the sorting process fun and intuitive, I settled on a gesture controlled tile system. Drag up (away) to delete, drag down (towards) to save, and drag right to expand. As the user holds their finger down, the tile expands to display larger photos or play videos. To communicate the interaction to my classmates, I created this prototype in a couple of minutes using Principle.</p>
+<p>With the goal of making the sorting process fun and intuitive, I settled on a gesture controlled tile system. Drag up (away) to delete, drag down (towards) to save, and drag right to expand. (My first version, displayed below, had this action reversed. After actually using it I realized it should be swapped.) As the user holds their finger down, the tile expands to display larger photos or play videos. To communicate the interaction to my classmates, I created this prototype in a couple of minutes using Principle.</p>
 
 <video width="100%" height="auto" autoplay="" loop="">
   <source src="../../../images/projects/spex/spex-prototype-motion.mp4" type="video/mp4" />
@@ -218,7 +229,7 @@
 </video>
 
 <h2 id="logo">Logo</h2>
-<p>The simple logo animates to mirror the home / save button on the mobile application.</p>
+<p>The logo animates to mirror the home / save button on the mobile application.</p>
 <video width="100%" height="auto" autoplay="" loop="">
   <source src="../../../images/projects/spex/spex-logo.mp4" type="video/mp4" />
   <source src="movie.ogg" type="video/ogg" />
@@ -228,11 +239,44 @@
 
         </article>
 
+        <section class="work">
+
+          <a href="/spex" class="normal">
+            <div class='title'><p>>Spex</p</div>
+          </a>
+
+          <a href="/canvas" class="normal">
+            <div class='title'>Canvas</div>
+          </a>
+
+          <a href="/food-is-free" class="normal">
+            <div class='title'>Food Is Free</div>
+          </a>
+
+
+          <a href="/relink" class="featured">
+            <div class='title'>Relink</div>
+          </a>
+
+          <a href="/daydream" class="featured">
+            <div class='title'>Daydream</div>
+          </a>
+
+
+          <!--<a href="/natural-disasters" class="full-width">-->
+            <!--<div class='title'>Natural Disaster Response</div>-->
+          <!--</a>-->
+
+        </section>
+
         
 
 
 
-        <!-- end <h3 id="problem">Problem</h3>
+
+        <!-- end <p><img src="../../../images/projects/spex/spex-overview.jpg" alt="Spex Overview" data-action="zoom" /></p>
+
+<h3 id="problem">Problem</h3>
 <p>Data and media creation are exploding. As cameras become smaller and wearable, how will we manage the massive amount of information they create?</p>
 
 <h4 id="the-glasses-are">The glasses are…</h4>
@@ -248,13 +292,13 @@
   </li>
 </ul>
 
-<h3 id="interaction-design">Interaction Design</h3>
-<p>I looked at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed.</p>
+<h3 id="ui-exploration">UI Exploration</h3>
+<p>I looked at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed. I explored several directions for the UI. Here are some of them:</p>
 
-<p><img src="../../../images/projects/spex/test-shots.png" alt="Spex UI Explorations" /></p>
+<p><img src="../../../images/projects/spex/test-shots.png" alt="Spex Overview" data-action="zoom" /></p>
 
 <h3 id="tiles--gesture">Tiles &amp; Gesture</h3>
-<p>With the goal of making the sorting process fun and intuitive, I settled on a gesture controlled tile system. Drag up (away) to delete, drag down (towards) to save, and drag right to expand. As the user holds their finger down, the tile expands to display larger photos or play videos. To communicate the interaction to my classmates, I created this prototype in a couple of minutes using Principle.</p>
+<p>With the goal of making the sorting process fun and intuitive, I settled on a gesture controlled tile system. Drag up (away) to delete, drag down (towards) to save, and drag right to expand. (My first version, displayed below, had this action reversed. After actually using it I realized it should be swapped.) As the user holds their finger down, the tile expands to display larger photos or play videos. To communicate the interaction to my classmates, I created this prototype in a couple of minutes using Principle.</p>
 
 <video width="100%" height="auto" autoplay="" loop="">
   <source src="../../../images/projects/spex/spex-prototype-motion.mp4" type="video/mp4" />
@@ -272,7 +316,7 @@
 </video>
 
 <h2 id="logo">Logo</h2>
-<p>The simple logo animates to mirror the home / save button on the mobile application.</p>
+<p>The logo animates to mirror the home / save button on the mobile application.</p>
 <video width="100%" height="auto" autoplay="" loop="">
   <source src="../../../images/projects/spex/spex-logo.mp4" type="video/mp4" />
   <source src="movie.ogg" type="video/ogg" />
@@ -344,40 +388,12 @@ ga('send', 'pageview');
 <!-- Main JS -->
 <script type="text/javascript">
 
-/* Call randbg jquery plugin for random background image */
-$(".randbg").RandBG({
-ClassPrefix: "bg",
-count: 5
-});
-
-/* Fade out header on scroll */
-
-  $(window).scroll(function() {
-    $(".fader").css({
-    'opacity' : 1-(($(this).scrollTop())/ ($(window).height() -75) )
-    });          
-});
-
-/* Smooth scroll to point on page */
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
-      }
-    }
-  });
-});
-
-/* Sticky nav */
-
-$('.site-header').stickThis(); 
+  if (location.pathname !== '/') {
+    $("a[href*='" + location.pathname + "']").addClass("active");
+  } else {
+    var home = document.getElementById("home").getElementsByTagName('a')[0];
+    home.className = 'active';
+  }
 
 </script>
 

@@ -665,7 +665,7 @@ img {
   max-width: 100%; }
 
 .measure {
-  max-width: 48rem; }
+  max-width: 50rem; }
 
 .site-wrap {
   min-height: 100%; }
@@ -692,6 +692,11 @@ li {
 .gist .lines {
   width: 100%; }
 
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 200; }
+
 .site-header {
   text-align: center;
   margin-left: 0;
@@ -703,25 +708,32 @@ li {
   background: -moz-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01)); 
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01));  */ }
 
-.site-header site-nav {
-  margin-bottom: 1rem; }
-
 .site-header a {
   color: #333;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: .086rem;
   font-size: .9rem;
-  font-weight: 300; }
+  font-weight: 300;
+  transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out; }
 
 .site-header nav a {
   font-size: .75rem;
   letter-spacing: .086rem;
   color: #666;
   text-transform: uppercase;
-  padding-bottom: .2rem; }
+  padding-bottom: .2rem;
+  padding-top: .175rem; }
 
 .site-header nav a:hover {
+  color: #444;
+  opacity: 1;
+  border-bottom: 1px solid #555; }
+
+.site-header nav a:active {
   color: #444;
   opacity: 1;
   border-bottom: 1px solid #555; }
@@ -733,6 +745,10 @@ li {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem; }
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #555; }
 
 .site-header a:hover,
 .posts .post a:hover .post-meta,
@@ -885,27 +901,6 @@ blockquote footer {
   border-color: transparent;
   text-align: right; }
 
-/*
-blockquote:before {
-  color: #7a7a7a;
-  content: "“";
-  font-family: "Georgia", serif;
-  font-size: 3em;
-  line-height: 0.5em;
-  margin-right: 0em;
-  margin-left: -0.7em;
-  vertical-align: -0.2em;
-}
-/*
-blockquote:after {
-  color: #333;
-  content: "”";
-  font-family: "Georgia", serif;
-  font-size: 3em;
-  line-height: 0.5em;
-  margin-right: 0em;
-  vertical-align: -0.2em;
-} */
 blockquote p {
   font-size: 2rem;
   display: inline; }
@@ -1048,14 +1043,6 @@ h6,
   border-bottom: 2px solid #fff;
   box-shadow: 0 2px 2px -2px #000; }
 
-.post-content img {
-  max-width: 62rem;
-  margin-left: -7rem; }
-
-.post-content video {
-  width: 62rem;
-  margin-left: -7rem; }
-
 /* Video Player responsiveness */
 .videoWrapper {
   position: relative;
@@ -1112,11 +1099,10 @@ h6,
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: left;
-  overflow-x: hidden; }
+  align-items: left; }
 
 .project-header {
-  max-width: 48rem;
+  max-width: 50rem;
   flex: 1 auto; }
 
 .project-title img {
@@ -1132,8 +1118,8 @@ h6,
 .project-title {
   color: #fff;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-  max-width: 40rem;
-  text-align: left;
+  max-width: 50rem;
+  text-align: center;
   z-index: 100; }
 
 .project-title-img {
@@ -1159,13 +1145,18 @@ h6,
   flex: 2;
   font-size: 0.5em; }
 
+.project-hero-container {
+  display: flex;
+  justify-content: center; }
+
 .project-hero {
-  width: 42rem;
-  margin-top: -27rem;
-  margin-left: 38rem; }
+  width: 36%;
+  height: 36%;
+  margin-top: -2rem; }
 
 .tagline {
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  padding-top: 2rem; }
 
 .tagline p {
   font-size: 1.9rem; }
@@ -1178,7 +1169,7 @@ h6,
 .work img {
   flex: 0 auto;
   margin-bottom: -2.5rem;
-  min-height: 100%;
+  height: 100%;
   border-radius: 5px;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -1190,10 +1181,6 @@ h6,
   transform: scale(1) !important;
   margin: 0 !important;
   opacity: 1 !important; }
-
-.work a {
-  flex: 1 auto;
-  width: 30%; }
 
 .box {
   height: 240px;
@@ -1253,8 +1240,30 @@ h6,
 .grow:hover {
   transform: scale(1.06); }
 
-.work .featured a {
-  width: 63%; }
+.work a {
+  flex: 1 auto;
+  -webkit-filter: grayscale(10%);
+  /* Chrome, Safari, Opera */
+  filter: grayscale(10%);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.work a:hover {
+  -webkit-filter: blur(0px) grayscale(0%);
+  /* Chrome, Safari, Opera */
+  filter: blur(0px) grayscale(0%); }
+
+.work .normal {
+  width: 30%; }
+
+.work .featured {
+  width: 48%; }
+
+.work .full-width {
+  width: 100%; }
 
 .last {
   flex: none;
@@ -1272,13 +1281,26 @@ h6,
 .portfolio-orange {
   background-color: #F87D09; }
 
+.img-collage {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -.1rem;
+  margin-right: .1rem; }
+
+.img-small {
+  flex: 1 auto;
+  width: 46%;
+  height: 15rem;
+  padding: .2rem; }
+
 /*********************
 
     Media Queries
 
 **********************/
 /* Medium/desktop screens */
-@media screen and (min-width: 49em) {
+@media screen and (min-width: 48em) {
   .site-header .site-title {
     float: left; }
 
@@ -1331,9 +1353,16 @@ h6,
     font-size: 1rem; }
 
   .project-header-container {
-    height: 22rem; } }
+    height: 22rem; }
+
+  .post-content img {
+    max-width: 100%;
+    margin-left: 0; }
+
+  .project-header {
+    margin: 1em 0 0.5em; } }
 /* Small/mobile screens */
-@media screen and (max-width: 49em) {
+@media screen and (max-width: 48em) {
   .site-header {
     text-align: center; }
 
@@ -1351,6 +1380,10 @@ h6,
     padding-bottom: 3rem;
     height: 240px;
     width: 240px; }
+
+  .post-content img {
+    max-width: 100%;
+    margin-left: 0; }
 
   .front-nav a {
     color: #fff;
@@ -1400,11 +1433,17 @@ h6,
   .work figure dl {
     font-size: .8em; }
 
-  .project-title h1 {
-    margin-top: 0rem; }
+  .project-title {
+    padding-top: 10rem; }
 
   .project-header-container {
-    height: 20rem; } }
+    height: 26rem; }
+
+  .tagline {
+    padding-top: 6rem; }
+
+  .work .normal {
+    width: 48%; } }
 /* Tiny Screens */
 @media screen and (max-width: 32em) {
   .work figure {
@@ -1417,7 +1456,7 @@ h6,
     font-size: 2rem; }
 
   .project-header-container {
-    height: 20rem; }
+    height: 23rem; }
 
   .project-title h1 {
     margin-top: 0rem; }
@@ -1426,7 +1465,10 @@ h6,
     margin-top: 0; }
 
   .social-icons {
-    font-size: .9rem; } }
+    font-size: .9rem; }
+
+  .work .normal {
+    width: 100%; } }
 /* Desktop/large Screens */
 @media screen and (min-width: 64em) {
   .container {
@@ -1481,7 +1523,16 @@ h6,
     display: block; }
 
   .project-header-container {
-    height: 28rem; } }
+    height: 28rem; }
+
+  .post-content .featured-img img {
+    max-width: 62rem;
+    margin-left: -7rem; }
+
+  .project-hero {
+    width: 50%;
+    height: 50%;
+    margin-top: -4rem; } }
 /* #Clearing */
 /* Self Clearing Goodness */
 .container:after {
@@ -1538,52 +1589,6 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-/*
-.box.grow {
-  .wave {
-    animation: drift-out 3000ms linear, fade-wave-out 300ms linear;
-  }
-
-  .wave.-two {
-    animation: drift-out 5000ms linear, fade-wave-out 300ms linear;
-  }
-
-  .wave.-three {
-    animation: drift-out 2500ms linear, fade-wave-out 300ms linear;
-
-  }
-}
-
-.box.grow:hover {
-  .wave {
-    animation: fade-wave 3000ms linear, drift 3000ms infinite linear;
-  }
-
-  .wave.-two {
-    animation: fade-wave 3000ms linear, drift 5000ms infinite linear;
-  }
-
-  .wave.-three {
-    animation: fade-wave 3000ms linear, drift 2500ms infinite linear;
-  }
-}
-
-.wave.-two:hover {
-  opacity: .1;
-  background: yellow;
-}
-
-.box:after {
-  content: '';
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 11;
-  transform: translate3d(0, 0, 0);
-  border-radius: 5px;
-} */
 .title {
   position: absolute;
   font-family: 'Lato', sans-serif;
@@ -1613,31 +1618,6 @@ Copyright (c) 2014 Daniel Eden
   margin-right: 15px;
   opacity: 0.2; }
 
-/*
-@keyframes drift {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
-
-}
-
-@keyframes drift-out {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
-
-}
-
-@keyframes fade-wave {
-
-  from { opacity: 0.4; }
-  from { opacity: 0.4; }
-}
-
-@keyframes fade-wave-out {
-
-  from { opacity: 0.4; }
-  from { opacity: 0.4; }
-}
-*/
 /* Solarized Light
 
 For use with Jekyll and Pygments

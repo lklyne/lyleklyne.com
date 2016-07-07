@@ -3,8 +3,8 @@
   <channel>
     <title>Lyle Klyne</title>
     <description>Design, development, documenting the process.</description>
-    <link>http://lyleklyne.com/</link>
-    <atom:link href="http://lyleklyne.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>localhost:4000/</link>
+    <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Laser Cutting</title>
@@ -56,8 +56,8 @@
 &lt;p&gt;I was please with the simplicity and functionality of the final product. What began as a basic design for a straightforward task actually became quite refined after several iterations. I found that as much as I could plan, a lot of my improvements were not realized until I actually cut something out and was able to hold it in my hand and use it. Because of the speed of laser cutting, this designing in this way is absolutely doable.&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Mar 2016 02:50:13 -0800</pubDate>
-        <link>http://lyleklyne.com/laser-cutting/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/laser-cutting/</guid>
+        <link>localhost:4000/laser-cutting/</link>
+        <guid isPermaLink="true">localhost:4000/laser-cutting/</guid>
       </item>
     
       <item>
@@ -82,7 +82,7 @@
 
 &lt;h3 id=&quot;sketch-code&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
 int photocellReading;     // the analog reading from the sensor divider
 void setup(void) {
   // Send debugging information via the Serial monitor
@@ -99,6 +99,7 @@ void loop(void) {
   delay(500);
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-output.png&quot; alt=&quot;PHotocell Output&quot; /&gt;&lt;/p&gt;
@@ -115,7 +116,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 &lt;h3 id=&quot;sketch-code-1&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;const int hallPin = 12;    
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int hallPin = 12;    
 int hallState = 0;      
 void setup() {
     
@@ -134,6 +135,7 @@ void loop(){
 
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output-1&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-output.png&quot; alt=&quot;Joystick Sketch&quot; /&gt;&lt;/p&gt;
@@ -152,7 +154,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 &lt;h3 id=&quot;sketch-code-2&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
 #define GREEN_PIN 10   // where the green pin is connected to
 #define BLUE_PIN 11    // where the blue pin is connected to
 #define DELAY 1       // 2ms internal delay; increase for slower fades
@@ -227,6 +229,7 @@ void loop() {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output-2&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-output.png&quot; alt=&quot;Disco Countdown Output&quot; /&gt;&lt;/p&gt;
@@ -243,7 +246,7 @@ void loop() {
 
 &lt;h3 id=&quot;sketch-code-3&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 int analogPin = 3;   // potentiometer connected to analog pin 3
@@ -274,6 +277,7 @@ void loop() {
   delay(30);
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output-3&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-output.png&quot; alt=&quot;Light Dimmer Output&quot; /&gt;&lt;/p&gt;
@@ -288,7 +292,7 @@ void loop() {
 
 &lt;h3 id=&quot;sketch-code-4&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;const int buttonPin = 2;    
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int buttonPin = 2;    
 const int buzzerPin =  3;      
 
 
@@ -313,14 +317,15 @@ void loop(){
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output-4&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-output.png&quot; alt=&quot;Buzzer Output&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 03 Mar 2016 02:50:13 -0800</pubDate>
-        <link>http://lyleklyne.com/physical-computing-prototyping/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/physical-computing-prototyping/</guid>
+        <link>localhost:4000/physical-computing-prototyping/</link>
+        <guid isPermaLink="true">localhost:4000/physical-computing-prototyping/</guid>
       </item>
     
       <item>
@@ -388,8 +393,8 @@ I found this last constraint to be especially compelling. As the assignment was 
 
 </description>
         <pubDate>Thu, 11 Feb 2016 02:50:13 -0800</pubDate>
-        <link>http://lyleklyne.com/model-prototyping/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/model-prototyping/</guid>
+        <link>localhost:4000/model-prototyping/</link>
+        <guid isPermaLink="true">localhost:4000/model-prototyping/</guid>
       </item>
     
       <item>
@@ -503,8 +508,8 @@ With behavioral prototyping, we were able to evaluate our gestures and determine
 
 </description>
         <pubDate>Thu, 28 Jan 2016 03:50:13 -0800</pubDate>
-        <link>http://lyleklyne.com/wizard-of-oz/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/wizard-of-oz/</guid>
+        <link>localhost:4000/wizard-of-oz/</link>
+        <guid isPermaLink="true">localhost:4000/wizard-of-oz/</guid>
       </item>
     
       <item>
@@ -550,8 +555,8 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Thu, 21 Jan 2016 03:50:13 -0800</pubDate>
-        <link>http://lyleklyne.com/one-bus-away/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/one-bus-away/</guid>
+        <link>localhost:4000/one-bus-away/</link>
+        <guid isPermaLink="true">localhost:4000/one-bus-away/</guid>
       </item>
     
       <item>
@@ -584,8 +589,8 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Wed, 13 Jan 2016 22:42:19 -0800</pubDate>
-        <link>http://lyleklyne.com/morse-messenger/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/morse-messenger/</guid>
+        <link>localhost:4000/morse-messenger/</link>
+        <guid isPermaLink="true">localhost:4000/morse-messenger/</guid>
       </item>
     
       <item>
@@ -705,8 +710,8 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Fri, 14 Aug 2015 04:42:19 -0700</pubDate>
-        <link>http://lyleklyne.com/making-sausages/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/making-sausages/</guid>
+        <link>localhost:4000/making-sausages/</link>
+        <guid isPermaLink="true">localhost:4000/making-sausages/</guid>
       </item>
     
       <item>
@@ -724,13 +729,15 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;p&gt;&lt;a class=&quot;center&quot; href=&quot;http://lyleklyne.com/#blog&quot;&gt;&amp;gt; Back to the blog&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 May 2015 04:42:19 -0700</pubDate>
-        <link>http://lyleklyne.com/design-school/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/design-school/</guid>
+        <link>localhost:4000/design-school/</link>
+        <guid isPermaLink="true">localhost:4000/design-school/</guid>
       </item>
     
       <item>
         <title>Spex</title>
-        <description>&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../../images/projects/spex/spex-overview.jpg&quot; alt=&quot;Spex Overview&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;Data and media creation are exploding. As cameras become smaller and wearable, how will we manage the massive amount of information they create?&lt;/p&gt;
 
 &lt;h4 id=&quot;the-glasses-are&quot;&gt;The glasses are…&lt;/h4&gt;
@@ -746,13 +753,13 @@ video of this nature, and I found writing copy that was simultaneously compellin
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;interaction-design&quot;&gt;Interaction Design&lt;/h3&gt;
-&lt;p&gt;I looked at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed.&lt;/p&gt;
+&lt;h3 id=&quot;ui-exploration&quot;&gt;UI Exploration&lt;/h3&gt;
+&lt;p&gt;I looked at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed. I explored several directions for the UI. Here are some of them:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/spex/test-shots.png&quot; alt=&quot;Spex UI Explorations&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/spex/test-shots.png&quot; alt=&quot;Spex Overview&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;tiles--gesture&quot;&gt;Tiles &amp;amp; Gesture&lt;/h3&gt;
-&lt;p&gt;With the goal of making the sorting process fun and intuitive, I settled on a gesture controlled tile system. Drag up (away) to delete, drag down (towards) to save, and drag right to expand. As the user holds their finger down, the tile expands to display larger photos or play videos. To communicate the interaction to my classmates, I created this prototype in a couple of minutes using Principle.&lt;/p&gt;
+&lt;p&gt;With the goal of making the sorting process fun and intuitive, I settled on a gesture controlled tile system. Drag up (away) to delete, drag down (towards) to save, and drag right to expand. (My first version, displayed below, had this action reversed. After actually using it I realized it should be swapped.) As the user holds their finger down, the tile expands to display larger photos or play videos. To communicate the interaction to my classmates, I created this prototype in a couple of minutes using Principle.&lt;/p&gt;
 
 &lt;video width=&quot;100%&quot; height=&quot;auto&quot; autoplay=&quot;&quot; loop=&quot;&quot;&gt;
   &lt;source src=&quot;../../../images/projects/spex/spex-prototype-motion.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -770,7 +777,7 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;/video&gt;
 
 &lt;h2 id=&quot;logo&quot;&gt;Logo&lt;/h2&gt;
-&lt;p&gt;The simple logo animates to mirror the home / save button on the mobile application.&lt;/p&gt;
+&lt;p&gt;The logo animates to mirror the home / save button on the mobile application.&lt;/p&gt;
 &lt;video width=&quot;100%&quot; height=&quot;auto&quot; autoplay=&quot;&quot; loop=&quot;&quot;&gt;
   &lt;source src=&quot;../../../images/projects/spex/spex-logo.mp4&quot; type=&quot;video/mp4&quot; /&gt;
   &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot; /&gt;
@@ -779,15 +786,22 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
-        <link>http://lyleklyne.com/spex/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/spex/</guid>
+        <link>localhost:4000/spex/</link>
+        <guid isPermaLink="true">localhost:4000/spex/</guid>
       </item>
     
       <item>
         <title>Relink</title>
-        <description>&lt;h2 id=&quot;research&quot;&gt;Research&lt;/h2&gt;
+        <description>&lt;h3 id=&quot;result&quot;&gt;Result&lt;/h3&gt;
+&lt;p&gt;The result is a concept for a smart pen, its gestural language, and companion software to view digitized notes. 
+&lt;img src=&quot;../../../images/projects/relink/relink-in-use.png&quot; alt=&quot;Relink In Use&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;notes-from-our-first-meeting-with-karl-bakeman&quot;&gt;Notes from our first meeting with Karl Bakeman&lt;/h4&gt;
+&lt;h3 id=&quot;process&quot;&gt;Process&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/relink-process.png&quot; alt=&quot;Canvas System Map&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;research&quot;&gt;Research&lt;/h2&gt;
+
+&lt;h4 id=&quot;meeting-with-karl-bakeman&quot;&gt;Meeting with Karl Bakeman&lt;/h4&gt;
 &lt;p&gt;There are a lot of players and competing voices in the educational system. One would think students would be prioritized from a content and publishing perspective, but this is not the case. For the most part publishers target teachers and in some cases administrators and deans — students, the end users, are largely forgotten.&lt;/p&gt;
 
 &lt;p&gt;This is due to corporate consolidation of the educational publishing industry and the fact that most organizations are publicly traded and owned by private equity firms. Because the people paying for a product (students) are not the ones making the decision to purchase the product (teachers / administrators), the &lt;strong&gt;educational publishing industry is very similar to the pharmaceutical industry.&lt;/strong&gt; Considering students are the ones paying for this content, it’s a shame that they are commoditized and their interests, receiving a quality and engaging education, are not the top priority.&lt;/p&gt;
@@ -855,7 +869,7 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 &lt;p&gt;We began to design our own pen that would fit perfectly in the classroom and reading environment. The first step was to storyboard out hero scenario.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/storyboard.jpg&quot; alt=&quot;Storyboard&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/storyboard.jpg&quot; alt=&quot;Relink Storyboard&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This breaks down into four specific tasks.
 1. Creation of artifacts (notes, diagrams) within the text.
@@ -863,11 +877,11 @@ video of this nature, and I found writing copy that was simultaneously compellin
 3. Interacting with new media types within the text.
 4. Reviewing, organizing, and searching captured information.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/scenarios.jpg&quot; alt=&quot;Scenarios&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/scenarios.jpg&quot; alt=&quot;Relink Scenarios&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Feedback was identified as a crucial aspect of the design. In addition to providing feedback via a nearby device, we opted to include an LED on the tip of the pen to reinsure the user that their notes and actions were being recorded.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/pen-sketch.jpg&quot; alt=&quot;Scenarios&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/pen-sketch.jpg&quot; alt=&quot;Relink Scenarios&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;gestural-language&quot;&gt;Gestural Language&lt;/h3&gt;
 
@@ -882,7 +896,7 @@ video of this nature, and I found writing copy that was simultaneously compellin
   &lt;li&gt;Interact: touch icon&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/gestures.jpg&quot; alt=&quot;Gestures&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/gestures.png&quot; alt=&quot;Relink Scenarios&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;interface&quot;&gt;Interface&lt;/h3&gt;
 &lt;p&gt;For the companion app, we wanted information to be viewable in two views: overlayed on the textbook as it was captured, as well as in a consolidated view. When shifting between these two views, animation helps the user keep track of how their notes are consolidated.&lt;/p&gt;
@@ -900,8 +914,8 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
-        <link>http://lyleklyne.com/relink/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/relink/</guid>
+        <link>localhost:4000/relink/</link>
+        <guid isPermaLink="true">localhost:4000/relink/</guid>
       </item>
     
   </channel>

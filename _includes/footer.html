@@ -30,39 +30,11 @@ ga('send', 'pageview');
 <!-- Main JS -->
 <script type="text/javascript">
 
-/* Call randbg jquery plugin for random background image */
-$(".randbg").RandBG({
-ClassPrefix: "bg",
-count: 5
-});
-
-/* Fade out header on scroll */
-
-  $(window).scroll(function() {
-    $(".fader").css({
-    'opacity' : 1-(($(this).scrollTop())/ ($(window).height() -75) )
-    });          
-});
-
-/* Smooth scroll to point on page */
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
-      }
-    }
-  });
-});
-
-/* Sticky nav */
-
-$('.site-header').stickThis(); 
+  if (location.pathname !== '/') {
+    $("a[href*='" + location.pathname + "']").addClass("active");
+  } else {
+    var home = document.getElementById("home").getElementsByTagName('a')[0];
+    home.className = 'active';
+  }
 
 </script>

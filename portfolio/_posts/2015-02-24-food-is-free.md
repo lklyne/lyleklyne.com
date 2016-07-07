@@ -33,38 +33,36 @@ role: |
 Their previous logos referenced growth and had a hand made aesthetic. They were appropriate for a small grass roots
 organization, but I believe failed to represent what the organization had become.
 
-![Food is Free Previous Logos](../../../images/projects/fif/fif1.jpg)
+<img src="../../../images/projects/fif/fif1.jpg" alt="Food is Free Previous Logo" data-action="zoom">
 
 #### Doodles
   I wanted the new logo to continue this tribute to organic growth but also to demonstrate that [Food is Free](https://www.facebook.com/foodisfree)
-  had become a global movement. The organization had grown up, and therefore I felt a
-  more polished and professional approach would best. I sought to create a monogram using leaves.
+  had become a global movement. The organization had grown up, and therefore I felt a more polished and professional approach would best. I sought to create a monogram using leaves.
 
-![First attempt - Food is Free](../../../images/projects/fif/fif2.jpg)
+<img src="../../../images/projects/fif/fif2.jpg" alt="Food is Free Previous Logo" data-action="zoom">
 
 
 #### Refinement
-This was a good start. I liked the top design the most and sought to further simplify it.
-I thickened everything up and removed the two-tone colors and gradients. Here are varying degrees of thickness.
+This was a good start. I liked the top design the most and sought to further simplify it. I thickened everything up and removed the two-tone colors and gradients. Here are varying degrees of thickness.
 
-![Redesign - Food is Free](../../../images/projects/fif/fif3.jpg)
+
+<img src="../../../images/projects/fif/fif3.jpg" alt="Food is Free Previous Logo" data-action="zoom">
 
 
 #### Final Monogram
-I rounded out the point where the leaves connect to the stem, and thickened the base
-of the stems. The rounded corners are more welcoming, and the thick base
+I rounded out the point where the leaves connect to the stem, and thickened the base of the stems. The rounded corners are more welcoming, and the thick base
 balances and grounds the design.
 
-![Monogram - Food is Free](../../../images/projects/fif/fif4.jpg)
+<img src="../../../images/projects/fif/fif4.jpg" alt="Food is Free Previous Logo" data-action="zoom">
 
 #### Incorporating text
 
-![Food is Free Text Logo](../../../images/projects/fif/fif5.jpg)
+<img src="../../../images/projects/fif/fif5.jpg" alt="Food is Free Text Logo" data-action="zoom">
 
 #### Final
 
-![Food is Free Final Logo](../../../images/projects/fif/fif6.jpg)
+<img src="../../../images/projects/fif/fif-crate.jpg" class="featured-img" alt="Food is Free Text Logo" data-action="zoom">
 
 #### Result
 
-The resulting logo is used by the Food is Free Project for their web and social media branding, reaching hundreds of thousands of users. 
+The resulting logo is used by the Food is Free Project for their web and social media branding, reaching hundreds of thousands of people. 
