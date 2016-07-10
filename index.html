@@ -2,98 +2,19 @@
 layout: main
 ---
 
-<!-- index for main website -->
-  <!--<div class="posts">-->
-    <!--{% for post in paginator.posts %}-->
-      <!--<div class="post">-->
-        <!--<a href="{{ post.url | prepend: site.baseurl }}" class="post-link">-->
-          <!--<h3 class="h2 post-title">{{ post.title }}</h3>-->
-          <!--<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>-->
-          <!--<p class="post-summary">{{ post.summary }}</p>-->
-        <!--</a>-->
-      <!--</div>-->
-    <!--{% endfor %}-->
-  <!--</div>-->
-    <!--{% include pagination.html %}-->
-  <!--</div>-->
-<!--</div>-->
+{% include shapes.html %}
 
 <div class="tagline">
-    <p>I’m <b>Lyle</b>, a product designer leveraging a background in visual & interactive design with an empathetic understanding of software development. </p>
+    <p>I’m <b>Lyle</b>, a product designer with a background in visual & interactive design. I'm driven by people's stories, a love of building things by hand, and tacos. </p>
 </div>
 
 <section class="work">
+    {% include projects.html %}
+</section>
 
-    <!--{% for post in site.categories.portfolio %}-->
-    <!--<a href="{{ post.url | prepend: site.baseurl }}" class="post-link">-->
-        <!--<div class='box grow featured image-bg'>>-->
-            <!--<h3 class="h2 post-title">{{ post.title }}</h3>-->
-            <!--<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>-->
-            <!--<p class="post-summary">{{ post.summary }}</p>-->
+<script type="text/javascript">
 
-        <!--</div>-->
-    <!--</a>-->
-    <!--{% endfor %}-->
-
-    <a href="/spex" class="normal">
-        <div class='box grow skew ui-shot'>
-            <img src="../images/projects/spex/spex-ui-lg.png" class="grow-big" alt="" />
-            <div class='title'>Spex</div>
-            <div class='description'> Mobile app to manage media recorded from a wearable camera.</div>
-        </div>
-    </a>
-
-    <a href="/canvas" class="normal">
-        <div class='box grow shrink ui-shot portfolio-orange'>
-            <img src="../images/projects/canvas/canvas-mockup.png" class="grow-big" alt="" />
-            <div class='title'>Canvas</div>
-            <div class='description'>Redesign of the popular Learning Management System.</div>
-        </div>
-    </a>
-
-    <a href="/food-is-free" class="normal">
-        <div class='box grow shrink ui-shot portfolio-green'>
-            <img src="../images/projects/fif/food-is-free-button.png" class="grow-big" alt="" />
-            <div class='title'>Food Is Free</div>
-            <div class='description'> Logo design for a global non-profit.</div>
-        </div>
-    </a>
-
-
-    <a href="/relink" class="featured">
-        <div class='box grow shrink ui-shot portfolio-purple'>
-            <img src="../images/projects/relink/ui-shot-lg.png" class="grow-big" alt="" />
-            <div class='title'>Relink</div>
-            <div class='description'> Mobile app to manage media recorded from a wearable camera.</div>
-        </div>
-    </a>
-
-    <a href="/daydream" class="featured">
-        <div class='box grow enlarge image-bg'>
-            <img src="../images/projects/daydream/final-03.jpg" class="grow-big" alt="" />
-            <div class='title'>Daydream</div>
-            <div class='description'> A physical prototype exploring adaptive lighting for commercial spaces.</div>
-        </div>
-    </a>
-
-
-    <!--<a href="/natural-disasters" class="full-width">-->
-        <!--<div class='box grow enlarge image-bg'>-->
-            <!--<img src="" class="grow-big" alt="" />-->
-            <!--<div class='title'>Natural Disaster Response</div>-->
-            <!--<div class='description'><i>In progress:</i> coordinating local response efforts after a large-scale natural disaster.</div>-->
-        <!--</div>-->
-    <!--</a>-->
-
-        <!--<div class='box grow ui-shot'>-->
-            <!--<img src="../images/projects/spex/spex-ui-lg.png" class="grow-big" alt="" />-->
-            <!--<div class='title'>Spex</div>-->
-            <!--<div class='description'> Mobile app to manage media recorded from a wearable camera.</div>-->
-        <!--</div>-->
-
-        <!--<div class='box grow featured image-bg'>-->
-            <!--<img src="../images/projects/daydream/final-03.jpg" class="grow-big" alt="" />-->
-            <!--<div class='title'>Daydream</div>-->
-            <!--<div class='description'> A physical prototype exploring adaptive lighting for commercial spaces.</div>-->
-        <!--</div>-->
-    </section>
+    $( document ).ready(function() {
+        $('#home-url').addClass("active");
+    });
+</script>

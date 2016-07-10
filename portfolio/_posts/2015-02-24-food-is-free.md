@@ -8,14 +8,14 @@ color: "#3EC8AC"
 image:
   url:        /images/projects/relink/relink_thumb.png
   bg_url: 
-  hero:        /images/projects/fif/food-is-free-button.png
+  hero:        /images/projects/fif/fif-crate.jpg
 categories:
 - blog
 - web-development
 overview: |
   Last year Food Is Free open-sourced a new logo, and I submitted a design. I was thrilled when they
     decided to use my design for the future identity of the organization.
-timeline: 03/26/16 - 04/11/16
+timeline: 3 weeks
 role: |
   - Concept development<br>
   - Sketching<br>
@@ -27,7 +27,10 @@ role: |
 [Food is Free](https://www.facebook.com/foodisfree) is a non-profit organization focused on urban gardening education and community organization. What started as a small grass roots movement in Austin, TX has gained global momentum — sister projects are popping up worldwide and their message reaches hundreds of thousands people online. 
 
 
-## Process
+#### Process
+
+<img src="../../../images/projects/fif/process-fif.png" alt="Food is Free Process" data-action="zoom">
+
 
 #### Previous Logos
 Their previous logos referenced growth and had a hand made aesthetic. They were appropriate for a small grass roots

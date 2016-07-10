@@ -6,7 +6,7 @@ description: "Design, development, documenting the process."
 baseurl:     ""
 
 # Change this to live site URL before posting
-url:        "localhost:4000"
+url:        "http://lyleklyne.com"
 
 # Google analytics
 google_analytics: UA-60172340-1

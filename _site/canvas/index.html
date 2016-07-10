@@ -9,7 +9,7 @@
     <meta name="description" content="Design, development, documenting the process.">
     <meta name="author" content="Lyle Klyne">
     <meta name="keywords" content="portfolio, blog, web-development">
-    <link rel="canonical" href="localhost:4000/canvas/">
+    <link rel="canonical" href="http://lyleklyne.com/canvas/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
@@ -23,7 +23,7 @@
     
 
     <!-- Javascript -->
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
 
     <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
@@ -45,7 +45,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Canvas">
     <meta property="og:description" content="A web re-design of the popular Learning Management System.">
-    <meta property="og:url" content="localhost:4000/canvas/">
+    <meta property="og:url" content="http://lyleklyne.com/canvas/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -69,11 +69,13 @@
 	  <div class="mt1 wrap">
 		<div class="measure">
 			<div class="fixed-header">
-				<a href="localhost:4000" class="site-title">Lyle Klyne</a>
-				<nav class="site-nav right">
-					<a href="/">Work</a>
-<a href="/blog">Blog</a>
-<a href="/about/">About</a>
+				<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
+				<nav id="site-nav-right" class="site-nav right">
+					<a href="/" id="home-url">Work</a>
+<a href="/blog" class="">Blog</a>
+<a href="/about/" class="">About</a>
+
+
 
 				</nav>
 			</div>
@@ -83,28 +85,10 @@
 	</header>
 </div>
 
-    
-    <div class="project-header-container" style="background-image:url();background-color: #F87D09;">
-      <div class="project-header">
-        <div class="project-title post-header mb2">
-          <h1>Canvas</h1>
-          <h3>A web re-design of the popular Learning Management System.</h3>
-        </div>
-
-        
-        <div class="project-hero-container">
-        <img src="/images/projects/canvas/canvas-mockup.png" class="project-hero center" alt="Canvas hero image" data-action="zoom"/>
-        </div>
-        
-      </div>
-
-    </div>
-
-
-
-    <A NAME="content"></a>
 
     <div class="post p2 p-responsive wrap" role="main">
+
+
       <a name="project"></a>
       <div class="measure">
         <!-- begin <h5 id="process">Process</h5>
@@ -185,18 +169,23 @@
 <p>After clarifying the features I wanted to add and their underlying goals, I mocked-up some wireframes and put them into a clickable Invision prototype. I guerrilla tested the prototype with friends, classmates, and strangers.</p>
 
 <h4 id="feedback">Feedback</h4>
-<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
+<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" class="project-hero-img" data-action="zoom" /></p>
 
 <h2 id="final-comp">Final Comp</h2>
 
-<p>I built upon the card-based system outlined in the wireframes to develop an interaction model 
-that would be customizable and modular. The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications. Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content. On single pages, these modules allow the user to interact with other students and teachers through in-line discussion.</p>
+<p>I built upon the card-based system outlined in the wireframes to develop an interaction model that would be customizable and modular.</p>
 
-<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
+<p>The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications.
+<img src="../../../images/projects/canvas/comp1.png" alt="Canvas Comp Screen 1" data-action="zoom" /></p>
+
+<p>Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content.
+<img src="../../../images/projects/canvas/comp4.png" alt="Canvas Comp Screen 2" data-action="zoom" /></p>
+
+<p>On single pages, these modules allow the user to interact with other students and teachers through in-line discussion. Here students and teachers interact publicly to clarify an assignment.
+<img src="../../../images/projects/canvas/comp3.png" alt="Canvas Comp Screen 4" data-action="zoom" /></p>
 
 <h4 id="animation">Animation</h4>
 
@@ -211,11 +200,18 @@ that would be customizable and modular. The front dashboard organizes courses by
  -->
         <div class="post-header mb2">
 
+          <h1>Canvas</h1>
+          <h4>A web re-design of the popular Learning Management System.</h4>
+
+
+
 
           
         </div>
 
         
+
+        <img src="/images/projects/canvas/canvas-mockup.png" class="project-hero-img" alt="Canvas hero image" data-action="zoom"/>
 
         <div class="project-summary">
           <div class="project-overview">
@@ -228,7 +224,7 @@ that would be customizable and modular. The front dashboard organizes courses by
           <div class="project-details">
             <h2>&nbsp;</h2>
             <h6>Timeline</h6>
-            <p>03/21/16 - 6/01/16</p>
+            <p>6 weeks</p>
             <h6>Role</h6>
             <p>- User Research<br>
 - Ideation<br>
@@ -318,18 +314,23 @@ that would be customizable and modular. The front dashboard organizes courses by
 <p>After clarifying the features I wanted to add and their underlying goals, I mocked-up some wireframes and put them into a clickable Invision prototype. I guerrilla tested the prototype with friends, classmates, and strangers.</p>
 
 <h4 id="feedback">Feedback</h4>
-<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
+<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" class="project-hero-img" data-action="zoom" /></p>
 
 <h2 id="final-comp">Final Comp</h2>
 
-<p>I built upon the card-based system outlined in the wireframes to develop an interaction model 
-that would be customizable and modular. The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications. Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content. On single pages, these modules allow the user to interact with other students and teachers through in-line discussion.</p>
+<p>I built upon the card-based system outlined in the wireframes to develop an interaction model that would be customizable and modular.</p>
 
-<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
+<p>The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications.
+<img src="../../../images/projects/canvas/comp1.png" alt="Canvas Comp Screen 1" data-action="zoom" /></p>
+
+<p>Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content.
+<img src="../../../images/projects/canvas/comp4.png" alt="Canvas Comp Screen 2" data-action="zoom" /></p>
+
+<p>On single pages, these modules allow the user to interact with other students and teachers through in-line discussion. Here students and teachers interact publicly to clarify an assignment.
+<img src="../../../images/projects/canvas/comp3.png" alt="Canvas Comp Screen 4" data-action="zoom" /></p>
 
 <h4 id="animation">Animation</h4>
 
@@ -344,35 +345,67 @@ that would be customizable and modular. The front dashboard organizes courses by
 
         </article>
 
+        <h2>More Projects</h2>
+        <br>
+
+
         <section class="work">
-
           <a href="/spex" class="normal">
-            <div class='title'><p>>Spex</p</div>
-          </a>
+    <div class='box grow shrink ui-shot portfolio-blue '>
 
-          <a href="/canvas" class="normal">
-            <div class='title'>Canvas</div>
-          </a>
+        <img src="../images/projects/spex/spex-angle-line.png" class="grow-big" alt="" />
+        <div class='title'>Spex </div>
+        <div class='description'> Mobile app to manage media recorded from a wearable camera.</div>
+    </div>
 
-          <a href="/food-is-free" class="normal">
-            <div class='title'>Food Is Free</div>
-          </a>
+</a>
+
+<a href="/canvas" class="normal">
+    <div class='box grow shrink ui-shot portfolio-red  current '>
+        <img src="../images/projects/canvas/canvas-line.png" class="grow-big" alt="" />
+        <div class='title'>Canvas  (current) </div>
+        <div class='description'>Redesign of the popular Learning Management System.</div>
+    </div>
+</a>
+
+<a href="/food-is-free" class="normal">
+    <div class='box grow shrink ui-shot portfolio-teal '>
+        <img src="../images/projects/fif/food-is-free-sign.png" class="grow-big" alt="" />
+        <div class='title'>Food Is Free </div>
+        <div class='description'> Logo design for a global non-profit.</div>
+    </div>
+</a>
 
 
-          <a href="/relink" class="featured">
-            <div class='title'>Relink</div>
-          </a>
+<a href="/relink" class="featured">
+    <div class='box grow shrink ui-shot portfolio-purple '>
+        <img src="../images/projects/relink/relink-line.png" class="grow-big" alt="" />
+        <div class='title'>Relink </div>
+        <div class='description'>A conceptual smartpen and companion app.</div>
+    </div>
+</a>
 
-          <a href="/daydream" class="featured">
-            <div class='title'>Daydream</div>
-          </a>
+<a href="/daydream" class="featured">
+    <div class='box grow shrink portfolio-blue '>
+        <img src="../images/projects/daydream/daydream-line.png" class="grow-big" alt="" />
+        <div class='title'>Daydream </div>
+        <div class='description'> Physical prototype exploring flexible, human-focused lighting for commercial spaces. </div>
+    </div>
+</a>
 
 
-          <!--<a href="/natural-disasters" class="full-width">-->
-            <!--<div class='title'>Natural Disaster Response</div>-->
-          <!--</a>-->
-
+<!--<a href="/natural-disasters" class="full-width">-->
+<!--<div class='box grow enlarge image-bg'>-->
+<!--<img src="" class="grow-big" alt="" />-->
+<!--<div class='title'>Natural Disaster Response</div>-->
+<!--<div class='description'><i>In progress:</i> coordinating local response efforts after a large-scale natural disaster.</div>-->
+<!--</div>-->
+<!--</a>-->
         </section>
+
+
+
+        <br>
 
         
 
@@ -457,18 +490,23 @@ that would be customizable and modular. The front dashboard organizes courses by
 <p>After clarifying the features I wanted to add and their underlying goals, I mocked-up some wireframes and put them into a clickable Invision prototype. I guerrilla tested the prototype with friends, classmates, and strangers.</p>
 
 <h4 id="feedback">Feedback</h4>
-<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" data-action="zoom" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
+<p><img src="../../../images/projects/canvas/annotated-screens-01.jpg" alt="Canvas Wireframe Screen 1" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-02.jpg" alt="Canvas Wireframe Screen 2" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-03.jpg" alt="Canvas Wireframe Screen 3" class="project-hero-img" data-action="zoom" />
+<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" class="project-hero-img" data-action="zoom" /></p>
 
 <h2 id="final-comp">Final Comp</h2>
 
-<p>I built upon the card-based system outlined in the wireframes to develop an interaction model 
-that would be customizable and modular. The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications. Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content. On single pages, these modules allow the user to interact with other students and teachers through in-line discussion.</p>
+<p>I built upon the card-based system outlined in the wireframes to develop an interaction model that would be customizable and modular.</p>
 
-<p><img src="../../../images/projects/canvas/canvas-comps.png" alt="Comps - Canvas" />
-<img src="../../../images/projects/canvas/annotated-screens-04.jpg" alt="Canvas Wireframe Screen 4" data-action="zoom" /></p>
+<p>The front dashboard organizes courses by cards, enabling the user to quickly survey grades, upcomoing assignments, and notifications.
+<img src="../../../images/projects/canvas/comp1.png" alt="Canvas Comp Screen 1" data-action="zoom" /></p>
+
+<p>Single pages allow for smaller modular cards to be displayed along the right side of the page, affording tools to get more information or interact with the content.
+<img src="../../../images/projects/canvas/comp4.png" alt="Canvas Comp Screen 2" data-action="zoom" /></p>
+
+<p>On single pages, these modules allow the user to interact with other students and teachers through in-line discussion. Here students and teachers interact publicly to clarify an assignment.
+<img src="../../../images/projects/canvas/comp3.png" alt="Canvas Comp Screen 4" data-action="zoom" /></p>
 
 <h4 id="animation">Animation</h4>
 
@@ -543,14 +581,153 @@ ga('send', 'pageview');
 
 
 <!-- Main JS -->
+
 <script type="text/javascript">
 
-  if (location.pathname !== '/') {
-    $("a[href*='" + location.pathname + "']").addClass("active");
-  } else {
-    var home = document.getElementById("home").getElementsByTagName('a')[0];
-    home.className = 'active';
+  // Randomly position shapes
+
+
+  $( document ).ready(function() {
+    var bodyWidth = document.body.clientWidth
+    var bodyHeight = document.body.clientHeight;
+
+    $('.random').each(function() {
+      var randPosX = Math.floor((Math.random() * bodyWidth));
+      var randPosY = Math.floor((Math.random() * bodyHeight));
+      var randomTime = Math.floor((Math.random() * 3000)) + 1000;
+      $(this).css('left', randPosX);
+      $(this).css('top', randPosY);
+      $(this).addClass("loaded");
+
+    });
+    $('.random').each(function() {
+      $(this).addClass("loaded");
+
+    });
+  });
+
+  /////////////////////////
+  // Background
+  /////////////////////////
+
+  var lFollowX3 = 0,
+          lFollowY3 = 0,
+          x3 = 0,
+          y3 = 0,
+          z3 = 0,
+          friction3 = 1 / 30;
+
+  function moveBackground() {
+    x3 += (lFollowX3 - x3) * friction3;
+    y3 += (lFollowY3 - y3) * friction3;
+    z3 = x3 + y3 * - 2 ;
+
+    translate = 'translate(' + (x3 * -1) + 'px, ' + (y3 * -1) + 'px) rotate(' + z3 + 'deg)';
+
+    $('.parallax-back').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveBackground);
   }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX3 = (5 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY3 = (2.5 * lMouseY) / 100;
+
+  });
+
+  moveBackground();
+
+
+  /////////////////////////
+  // middle
+  /////////////////////////
+
+  var lFollowX = 0,
+          lFollowY = 0,
+          x = 0,
+          y = 0,
+          z = 0,
+          friction = 1 / 30;
+
+  function moveMiddle() {
+    x += (lFollowX - x) * friction;
+    y += (lFollowY - y) * friction;
+    z = x + y * - 2 ;
+
+    translate = 'translate(' + (x * -1) + 'px, ' + (y * -1) + 'px) rotate(' + z + 'deg)';
+
+    $('.parallax-middle').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveMiddle);
+  }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX = (10 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY = (5 * lMouseY) / 100;
+
+  });
+
+  moveMiddle();
+
+
+  /////////////////////////
+  // Foreground
+  /////////////////////////
+
+  var lFollowX2 = 0,
+          lFollowY2 = 0,
+          x2 = 0,
+          y2 = 0,
+          z2 = 0,
+          friction2 = 1 / 30;
+
+  function moveForeground() {
+    x2 += (lFollowX2 - x2) * friction2;
+    y2 += (lFollowY2 - y2) * friction2;
+    z2 = x2 + y2 * - 2 ;
+
+    translate = 'translate(' + (x2 * -1) + 'px, ' + (y2 * -1) + 'px) rotate(' + z2 + 'deg)';
+
+    $('.parallax-front').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveForeground);
+  }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX2 = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY2 = (10 * lMouseY) / 100;
+
+  });
+
+  moveForeground();
+
 
 </script>
 

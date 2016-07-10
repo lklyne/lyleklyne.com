@@ -3,8 +3,8 @@
   <channel>
     <title>Lyle Klyne</title>
     <description>Design, development, documenting the process.</description>
-    <link>localhost:4000/</link>
-    <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://lyleklyne.com/</link>
+    <atom:link href="http://lyleklyne.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Laser Cutting</title>
@@ -56,8 +56,8 @@
 &lt;p&gt;I was please with the simplicity and functionality of the final product. What began as a basic design for a straightforward task actually became quite refined after several iterations. I found that as much as I could plan, a lot of my improvements were not realized until I actually cut something out and was able to hold it in my hand and use it. Because of the speed of laser cutting, this designing in this way is absolutely doable.&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Mar 2016 02:50:13 -0800</pubDate>
-        <link>localhost:4000/laser-cutting/</link>
-        <guid isPermaLink="true">localhost:4000/laser-cutting/</guid>
+        <link>http://lyleklyne.com/laser-cutting/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/laser-cutting/</guid>
       </item>
     
       <item>
@@ -82,7 +82,7 @@
 
 &lt;h3 id=&quot;sketch-code&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+&lt;pre&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
 int photocellReading;     // the analog reading from the sensor divider
 void setup(void) {
   // Send debugging information via the Serial monitor
@@ -99,7 +99,6 @@ void loop(void) {
   delay(500);
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-output.png&quot; alt=&quot;PHotocell Output&quot; /&gt;&lt;/p&gt;
@@ -116,7 +115,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 &lt;h3 id=&quot;sketch-code-1&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int hallPin = 12;    
+&lt;pre&gt;&lt;code&gt;const int hallPin = 12;    
 int hallState = 0;      
 void setup() {
     
@@ -135,7 +134,6 @@ void loop(){
 
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output-1&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-output.png&quot; alt=&quot;Joystick Sketch&quot; /&gt;&lt;/p&gt;
@@ -154,7 +152,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 &lt;h3 id=&quot;sketch-code-2&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
+&lt;pre&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
 #define GREEN_PIN 10   // where the green pin is connected to
 #define BLUE_PIN 11    // where the blue pin is connected to
 #define DELAY 1       // 2ms internal delay; increase for slower fades
@@ -229,7 +227,6 @@ void loop() {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output-2&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-output.png&quot; alt=&quot;Disco Countdown Output&quot; /&gt;&lt;/p&gt;
@@ -246,7 +243,7 @@ void loop() {
 
 &lt;h3 id=&quot;sketch-code-3&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
+&lt;pre&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 int analogPin = 3;   // potentiometer connected to analog pin 3
@@ -277,7 +274,6 @@ void loop() {
   delay(30);
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output-3&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-output.png&quot; alt=&quot;Light Dimmer Output&quot; /&gt;&lt;/p&gt;
@@ -292,7 +288,7 @@ void loop() {
 
 &lt;h3 id=&quot;sketch-code-4&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int buttonPin = 2;    
+&lt;pre&gt;&lt;code&gt;const int buttonPin = 2;    
 const int buzzerPin =  3;      
 
 
@@ -317,15 +313,14 @@ void loop(){
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output-4&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-output.png&quot; alt=&quot;Buzzer Output&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 03 Mar 2016 02:50:13 -0800</pubDate>
-        <link>localhost:4000/physical-computing-prototyping/</link>
-        <guid isPermaLink="true">localhost:4000/physical-computing-prototyping/</guid>
+        <link>http://lyleklyne.com/physical-computing-prototyping/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/physical-computing-prototyping/</guid>
       </item>
     
       <item>
@@ -393,8 +388,8 @@ I found this last constraint to be especially compelling. As the assignment was 
 
 </description>
         <pubDate>Thu, 11 Feb 2016 02:50:13 -0800</pubDate>
-        <link>localhost:4000/model-prototyping/</link>
-        <guid isPermaLink="true">localhost:4000/model-prototyping/</guid>
+        <link>http://lyleklyne.com/model-prototyping/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/model-prototyping/</guid>
       </item>
     
       <item>
@@ -508,8 +503,8 @@ With behavioral prototyping, we were able to evaluate our gestures and determine
 
 </description>
         <pubDate>Thu, 28 Jan 2016 03:50:13 -0800</pubDate>
-        <link>localhost:4000/wizard-of-oz/</link>
-        <guid isPermaLink="true">localhost:4000/wizard-of-oz/</guid>
+        <link>http://lyleklyne.com/wizard-of-oz/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/wizard-of-oz/</guid>
       </item>
     
       <item>
@@ -555,8 +550,8 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Thu, 21 Jan 2016 03:50:13 -0800</pubDate>
-        <link>localhost:4000/one-bus-away/</link>
-        <guid isPermaLink="true">localhost:4000/one-bus-away/</guid>
+        <link>http://lyleklyne.com/one-bus-away/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/one-bus-away/</guid>
       </item>
     
       <item>
@@ -589,8 +584,8 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Wed, 13 Jan 2016 22:42:19 -0800</pubDate>
-        <link>localhost:4000/morse-messenger/</link>
-        <guid isPermaLink="true">localhost:4000/morse-messenger/</guid>
+        <link>http://lyleklyne.com/morse-messenger/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/morse-messenger/</guid>
       </item>
     
       <item>
@@ -710,8 +705,8 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Fri, 14 Aug 2015 04:42:19 -0700</pubDate>
-        <link>localhost:4000/making-sausages/</link>
-        <guid isPermaLink="true">localhost:4000/making-sausages/</guid>
+        <link>http://lyleklyne.com/making-sausages/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/making-sausages/</guid>
       </item>
     
       <item>
@@ -729,22 +724,23 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;p&gt;&lt;a class=&quot;center&quot; href=&quot;http://lyleklyne.com/#blog&quot;&gt;&amp;gt; Back to the blog&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 May 2015 04:42:19 -0700</pubDate>
-        <link>localhost:4000/design-school/</link>
-        <guid isPermaLink="true">localhost:4000/design-school/</guid>
+        <link>http://lyleklyne.com/design-school/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/design-school/</guid>
       </item>
     
       <item>
         <title>Spex</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../images/projects/spex/spex-overview.jpg&quot; alt=&quot;Spex Overview&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+        <description>&lt;h4 id=&quot;process&quot;&gt;Process&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/spex/process-spex.png&quot; alt=&quot;Daydream Process&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;Data and media creation are exploding. As cameras become smaller and wearable, how will we manage the massive amount of information they create?&lt;/p&gt;
 
 &lt;h4 id=&quot;the-glasses-are&quot;&gt;The glasses are…&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/spex/spex-overview.jpg&quot; alt=&quot;Spex Overview&quot; data-action=&quot;zoom&quot; /&gt;
+- Unobtrusive and transparent: put them on and go about your normal day. Forget about them. They will pay attention to you, but you don’t have to return the favor.&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Unobtrusive and transparent: put them on and go about your normal day. Forget about them. They will pay attention to you, but you don’t have to return the favor.&lt;/p&gt;
-  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Encouraging of good behavior: don’t worry about taking your camera out when you see something interesting or beautiful. If you want to spex to capture something, pause and take it in. Smile. These are things we should all be doing — spex is a subtle reminder to stay present.&lt;/p&gt;
   &lt;/li&gt;
@@ -772,8 +768,6 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 &lt;video width=&quot;100%&quot; height=&quot;auto&quot; autoplay=&quot;&quot; loop=&quot;&quot;&gt;
   &lt;source src=&quot;../../../images/projects/spex/spex-angle-motion-comp.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-  &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot; /&gt;
-  Your browser does not support the video tag.
 &lt;/video&gt;
 
 &lt;h2 id=&quot;logo&quot;&gt;Logo&lt;/h2&gt;
@@ -786,17 +780,13 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
-        <link>localhost:4000/spex/</link>
-        <guid isPermaLink="true">localhost:4000/spex/</guid>
+        <link>http://lyleklyne.com/spex/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/spex/</guid>
       </item>
     
       <item>
         <title>Relink</title>
-        <description>&lt;h3 id=&quot;result&quot;&gt;Result&lt;/h3&gt;
-&lt;p&gt;The result is a concept for a smart pen, its gestural language, and companion software to view digitized notes. 
-&lt;img src=&quot;../../../images/projects/relink/relink-in-use.png&quot; alt=&quot;Relink In Use&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;process&quot;&gt;Process&lt;/h3&gt;
+        <description>&lt;h3 id=&quot;process&quot;&gt;Process&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/relink-process.png&quot; alt=&quot;Canvas System Map&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;research&quot;&gt;Research&lt;/h2&gt;
@@ -914,8 +904,8 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 </description>
         <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
-        <link>localhost:4000/relink/</link>
-        <guid isPermaLink="true">localhost:4000/relink/</guid>
+        <link>http://lyleklyne.com/relink/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/relink/</guid>
       </item>
     
   </channel>

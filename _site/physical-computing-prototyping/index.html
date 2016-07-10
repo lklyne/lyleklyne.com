@@ -8,7 +8,7 @@
     <meta name="description" content="This post covers my introduction to Arduino and physical computing. I did five simple builds to learn the basics of Arduino and where to find development resources.">
     <meta name="author" content="Lyle Klyne">
     <meta name="keywords" content="blog, prototyping, process, physical">
-    <link rel="canonical" href="localhost:4000/physical-computing-prototyping/">
+    <link rel="canonical" href="http://lyleklyne.com/physical-computing-prototyping/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
@@ -22,7 +22,7 @@
     
 
     <!-- Javascript -->
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
 
     <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
@@ -44,7 +44,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Physical Computational Prototyping">
     <meta property="og:description" content="Design, development, documenting the process.">
-    <meta property="og:url" content="localhost:4000/physical-computing-prototyping/">
+    <meta property="og:url" content="http://lyleklyne.com/physical-computing-prototyping/">
     <meta property="og:site_name" content="Lyle Klyne">
 
     <!-- Google Analytics -->
@@ -68,11 +68,13 @@
 	  <div class="mt1 wrap">
 		<div class="measure">
 			<div class="fixed-header">
-				<a href="localhost:4000" class="site-title">Lyle Klyne</a>
-				<nav class="site-nav right">
-					<a href="/">Work</a>
-<a href="/blog">Blog</a>
-<a href="/about/">About</a>
+				<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
+				<nav id="site-nav-right" class="site-nav right">
+					<a href="/" id="home-url">Work</a>
+<a href="/blog" class="">Blog</a>
+<a href="/about/" class="">About</a>
+
+
 
 				</nav>
 			</div>
@@ -91,7 +93,7 @@
   <h1>Physical Computational Prototyping</h1>
   <span class="post-meta">Mar 3, 2016</span><br>
   
-  <span class="post-meta small">10 minute read</span>
+  <span class="post-meta small">9 minute read</span>
 </div>
 
 <article class="post-content">
@@ -115,7 +117,7 @@
 
 <h3 id="sketch-code">Sketch Code</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+<pre><code>int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
 int photocellReading;     // the analog reading from the sensor divider
 void setup(void) {
   // Send debugging information via the Serial monitor
@@ -132,7 +134,6 @@ void loop(void) {
   delay(500);
 }
 </code></pre>
-</div>
 
 <h3 id="output">Output</h3>
 <p><img src="/images/blog/physical-computing/photocell-output.png" alt="PHotocell Output" /></p>
@@ -149,7 +150,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 <h3 id="sketch-code-1">Sketch Code</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>const int hallPin = 12;    
+<pre><code>const int hallPin = 12;    
 int hallState = 0;      
 void setup() {
     
@@ -168,7 +169,6 @@ void loop(){
 
 }
 </code></pre>
-</div>
 
 <h3 id="output-1">Output</h3>
 <p><img src="/images/blog/physical-computing/hall-effect-output.png" alt="Joystick Sketch" /></p>
@@ -187,7 +187,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 <h3 id="sketch-code-2">Sketch Code</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#define RED_PIN 9      // where the red pin is connected to
+<pre><code>#define RED_PIN 9      // where the red pin is connected to
 #define GREEN_PIN 10   // where the green pin is connected to
 #define BLUE_PIN 11    // where the blue pin is connected to
 #define DELAY 1       // 2ms internal delay; increase for slower fades
@@ -262,7 +262,6 @@ void loop() {
   }
 }
 </code></pre>
-</div>
 
 <h3 id="output-2">Output</h3>
 <p><img src="/images/blog/physical-computing/disco-output.png" alt="Disco Countdown Output" /></p>
@@ -279,7 +278,7 @@ void loop() {
 
 <h3 id="sketch-code-3">Sketch Code</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>int led = 9;           // the PWM pin the LED is attached to
+<pre><code>int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 int analogPin = 3;   // potentiometer connected to analog pin 3
@@ -310,7 +309,6 @@ void loop() {
   delay(30);
 }
 </code></pre>
-</div>
 
 <h3 id="output-3">Output</h3>
 <p><img src="/images/blog/physical-computing/dimmer-output.png" alt="Light Dimmer Output" /></p>
@@ -325,7 +323,7 @@ void loop() {
 
 <h3 id="sketch-code-4">Sketch Code</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>const int buttonPin = 2;    
+<pre><code>const int buttonPin = 2;    
 const int buzzerPin =  3;      
 
 
@@ -350,7 +348,6 @@ void loop(){
   }
 }
 </code></pre>
-</div>
 
 <h3 id="output-4">Output</h3>
 <p><img src="/images/blog/physical-computing/buzzer-output.png" alt="Buzzer Output" /></p>
@@ -438,14 +435,153 @@ ga('send', 'pageview');
 
 
 <!-- Main JS -->
+
 <script type="text/javascript">
 
-  if (location.pathname !== '/') {
-    $("a[href*='" + location.pathname + "']").addClass("active");
-  } else {
-    var home = document.getElementById("home").getElementsByTagName('a')[0];
-    home.className = 'active';
+  // Randomly position shapes
+
+
+  $( document ).ready(function() {
+    var bodyWidth = document.body.clientWidth
+    var bodyHeight = document.body.clientHeight;
+
+    $('.random').each(function() {
+      var randPosX = Math.floor((Math.random() * bodyWidth));
+      var randPosY = Math.floor((Math.random() * bodyHeight));
+      var randomTime = Math.floor((Math.random() * 3000)) + 1000;
+      $(this).css('left', randPosX);
+      $(this).css('top', randPosY);
+      $(this).addClass("loaded");
+
+    });
+    $('.random').each(function() {
+      $(this).addClass("loaded");
+
+    });
+  });
+
+  /////////////////////////
+  // Background
+  /////////////////////////
+
+  var lFollowX3 = 0,
+          lFollowY3 = 0,
+          x3 = 0,
+          y3 = 0,
+          z3 = 0,
+          friction3 = 1 / 30;
+
+  function moveBackground() {
+    x3 += (lFollowX3 - x3) * friction3;
+    y3 += (lFollowY3 - y3) * friction3;
+    z3 = x3 + y3 * - 2 ;
+
+    translate = 'translate(' + (x3 * -1) + 'px, ' + (y3 * -1) + 'px) rotate(' + z3 + 'deg)';
+
+    $('.parallax-back').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveBackground);
   }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX3 = (5 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY3 = (2.5 * lMouseY) / 100;
+
+  });
+
+  moveBackground();
+
+
+  /////////////////////////
+  // middle
+  /////////////////////////
+
+  var lFollowX = 0,
+          lFollowY = 0,
+          x = 0,
+          y = 0,
+          z = 0,
+          friction = 1 / 30;
+
+  function moveMiddle() {
+    x += (lFollowX - x) * friction;
+    y += (lFollowY - y) * friction;
+    z = x + y * - 2 ;
+
+    translate = 'translate(' + (x * -1) + 'px, ' + (y * -1) + 'px) rotate(' + z + 'deg)';
+
+    $('.parallax-middle').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveMiddle);
+  }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX = (10 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY = (5 * lMouseY) / 100;
+
+  });
+
+  moveMiddle();
+
+
+  /////////////////////////
+  // Foreground
+  /////////////////////////
+
+  var lFollowX2 = 0,
+          lFollowY2 = 0,
+          x2 = 0,
+          y2 = 0,
+          z2 = 0,
+          friction2 = 1 / 30;
+
+  function moveForeground() {
+    x2 += (lFollowX2 - x2) * friction2;
+    y2 += (lFollowY2 - y2) * friction2;
+    z2 = x2 + y2 * - 2 ;
+
+    translate = 'translate(' + (x2 * -1) + 'px, ' + (y2 * -1) + 'px) rotate(' + z2 + 'deg)';
+
+    $('.parallax-front').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveForeground);
+  }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX2 = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY2 = (10 * lMouseY) / 100;
+
+  });
+
+  moveForeground();
+
 
 </script>
 

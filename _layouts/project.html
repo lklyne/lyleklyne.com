@@ -6,32 +6,19 @@
   <div class="site-wrap">
     {% include header.html %}
 
-    
-    <div class="project-header-container" style="background-image:url({{ page.image.bg_url }});background-color: {{ page.color }};">
-      <div class="project-header">
-        <div class="project-title post-header mb2">
-          <h1>{{ page.title }}</h1>
-          <h3>{{ page.description }}</h3>
-        </div>
-
-        {% if page.image.hero %}
-        <div class="project-hero-container">
-        <img src="{{ page.image.hero }}" class="project-hero center" alt="{{ page.title }} hero image" data-action="zoom"/>
-        </div>
-        {% endif %}
-      </div>
-
-    </div>
-
-
-
-    <A NAME="content"></a>
 
     <div class="post p2 p-responsive wrap" role="main">
+
+
       <a name="project"></a>
       <div class="measure">
         <!-- begin {{ content }} -->
         <div class="post-header mb2">
+
+          <h1>{{ page.title }}</h1>
+          <h4>{{ page.description }}</h4>
+
+
 
 
           {% if page.website %}
@@ -50,6 +37,8 @@
             {% endfor %}
           </div>
         {% endif %}
+
+        <img src="{{ page.image.hero }}" class="project-hero-img" alt="{{ page.title }} hero image" data-action="zoom"/>
 
         <div class="project-summary">
           <div class="project-overview">
@@ -71,35 +60,17 @@
             {{ content }}
         </article>
 
+        <h2>More Projects</h2>
+        <br>
+
+
         <section class="work">
-
-          <a href="/spex" class="normal">
-            <div class='title'><p>>Spex</p</div>
-          </a>
-
-          <a href="/canvas" class="normal">
-            <div class='title'>Canvas</div>
-          </a>
-
-          <a href="/food-is-free" class="normal">
-            <div class='title'>Food Is Free</div>
-          </a>
-
-
-          <a href="/relink" class="featured">
-            <div class='title'>Relink</div>
-          </a>
-
-          <a href="/daydream" class="featured">
-            <div class='title'>Daydream</div>
-          </a>
-
-
-          <!--<a href="/natural-disasters" class="full-width">-->
-            <!--<div class='title'>Natural Disaster Response</div>-->
-          <!--</a>-->
-
+          {% include projects.html %}
         </section>
+
+
+
+        <br>
 
         {% if site.show_related_posts %}
         <h3 class="related-post-title">Related Posts</h3>

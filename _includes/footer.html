@@ -28,13 +28,152 @@ ga('send', 'pageview');
 {% endif %}
 
 <!-- Main JS -->
+
 <script type="text/javascript">
 
-  if (location.pathname !== '/') {
-    $("a[href*='" + location.pathname + "']").addClass("active");
-  } else {
-    var home = document.getElementById("home").getElementsByTagName('a')[0];
-    home.className = 'active';
+  // Randomly position shapes
+
+
+  $( document ).ready(function() {
+    var bodyWidth = document.body.clientWidth
+    var bodyHeight = document.body.clientHeight;
+
+    $('.random').each(function() {
+      var randPosX = Math.floor((Math.random() * bodyWidth));
+      var randPosY = Math.floor((Math.random() * bodyHeight));
+      var randomTime = Math.floor((Math.random() * 3000)) + 1000;
+      $(this).css('left', randPosX);
+      $(this).css('top', randPosY);
+      $(this).addClass("loaded");
+
+    });
+    $('.random').each(function() {
+      $(this).addClass("loaded");
+
+    });
+  });
+
+  /////////////////////////
+  // Background
+  /////////////////////////
+
+  var lFollowX3 = 0,
+          lFollowY3 = 0,
+          x3 = 0,
+          y3 = 0,
+          z3 = 0,
+          friction3 = 1 / 30;
+
+  function moveBackground() {
+    x3 += (lFollowX3 - x3) * friction3;
+    y3 += (lFollowY3 - y3) * friction3;
+    z3 = x3 + y3 * - 2 ;
+
+    translate = 'translate(' + (x3 * -1) + 'px, ' + (y3 * -1) + 'px) rotate(' + z3 + 'deg)';
+
+    $('.parallax-back').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveBackground);
   }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX3 = (5 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY3 = (2.5 * lMouseY) / 100;
+
+  });
+
+  moveBackground();
+
+
+  /////////////////////////
+  // middle
+  /////////////////////////
+
+  var lFollowX = 0,
+          lFollowY = 0,
+          x = 0,
+          y = 0,
+          z = 0,
+          friction = 1 / 30;
+
+  function moveMiddle() {
+    x += (lFollowX - x) * friction;
+    y += (lFollowY - y) * friction;
+    z = x + y * - 2 ;
+
+    translate = 'translate(' + (x * -1) + 'px, ' + (y * -1) + 'px) rotate(' + z + 'deg)';
+
+    $('.parallax-middle').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveMiddle);
+  }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX = (10 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY = (5 * lMouseY) / 100;
+
+  });
+
+  moveMiddle();
+
+
+  /////////////////////////
+  // Foreground
+  /////////////////////////
+
+  var lFollowX2 = 0,
+          lFollowY2 = 0,
+          x2 = 0,
+          y2 = 0,
+          z2 = 0,
+          friction2 = 1 / 30;
+
+  function moveForeground() {
+    x2 += (lFollowX2 - x2) * friction2;
+    y2 += (lFollowY2 - y2) * friction2;
+    z2 = x2 + y2 * - 2 ;
+
+    translate = 'translate(' + (x2 * -1) + 'px, ' + (y2 * -1) + 'px) rotate(' + z2 + 'deg)';
+
+    $('.parallax-front').css({
+      '-webit-transform': translate,
+      '-moz-transform': translate,
+      'transform': translate
+    });
+
+    window.requestAnimationFrame(moveForeground);
+  }
+
+  $(window).on('mousemove click', function(e) {
+
+    var lMouseX = Math.max(-100, Math.min(1000, $(window).width() / 2 - e.clientX));
+    var lMouseY = Math.max(-100, Math.min(1000, $(window).height() / 2 - e.clientY));
+
+
+    lFollowX2 = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY2 = (10 * lMouseY) / 100;
+
+  });
+
+  moveForeground();
+
 
 </script>
