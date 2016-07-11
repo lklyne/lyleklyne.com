@@ -8,7 +8,7 @@ permalink: /about/
 
 **For work,** I'm a designer with an understanding of how people from different cultures interact and connect. I enjoy all parts of the product development cycle, but I most enjoy meeting people, learning about their needs and how they see the world, and translating what I find into simple design solutions.
 
-**In my spare time** you can find me tromping around taking pictures ([Instagram](https://www.instagram.com/lyleklyne/)), making music ([Soundcloud](http://www.soundcloud.com/deepbrunch)), scavenging around for (well designed) junk, or trying to break the latest prototyping/design tool I downloaded ([💨.ws](http://xn--ks8h.ws/)).
+**In my spare time**, you can find me tromping around taking pictures ([Instagram](https://www.instagram.com/lyleklyne/)), making music ([Soundcloud](http://www.soundcloud.com/deepbrunch)), scavenging around for (well designed) junk, or trying to break the latest prototyping/design tool I downloaded ([💨.ws](http://xn--ks8h.ws/)).
 
 Thanks for stopping by,
 
