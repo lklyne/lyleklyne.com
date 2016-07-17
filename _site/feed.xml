@@ -25,32 +25,32 @@
 
 &lt;h4 id=&quot;sketches&quot;&gt;Sketches&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/laser-sketches.jpg&quot; alt=&quot;Phone Stand Sketches&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/laser-sketches.jpg&quot; alt=&quot;Phone Stand Sketches&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;first-iteration&quot;&gt;First Iteration&lt;/h3&gt;
 &lt;p&gt;The first stand had no bend in the wood and was unstable. I began by sketching a scale version, measuring it, and cutting it from birch. The initial attempt left the device too top heavy with a viewing angle that was tilted too far away from the user.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v1-01.jpg&quot; alt=&quot;Phone Stand V1&quot; /&gt;
-&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v1-02.jpg&quot; alt=&quot;Phone Stand V1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v1-01.jpg&quot; alt=&quot;Phone Stand V1&quot; data-action=&quot;zoom&quot; /&gt;
+&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v1-02.jpg&quot; alt=&quot;Phone Stand V1 Alt&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;second-iteration&quot;&gt;Second Iteration&lt;/h3&gt;
 
 &lt;p&gt;The second iteration had a curved base achieved through a pattern of hairline cuts all the way through the wood. The iPhone was still top heavy and wanted to slide off the stand in portrait mode. Landscape mode worked well, although I wanted the device to be well balanced in both positions. Also, the wood did not bend as much as I had hoped for.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v2-01.jpg&quot; alt=&quot;Phone Stand V2&quot; /&gt;
-&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v2-02.jpg&quot; alt=&quot;Phone Stand V2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v2-01.jpg&quot; alt=&quot;Phone Stand V2&quot; data-action=&quot;zoom&quot; /&gt;
+&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v2-02.jpg&quot; alt=&quot;Phone Stand V2 Alt&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;third--final-iteration&quot;&gt;Third &amp;amp; Final Iteration&lt;/h3&gt;
 
 &lt;p&gt;For the third iteration, I tightened the distance between the cuts and increased their number to make the bend longer and more flexible. To prevent the phone from slipping off, I etched a groove on the ledge, allowing the stand to grip the phone when placed in portrait mode. I also included a groove in the back to wrap a charging cord around.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-01.jpg&quot; alt=&quot;Phone Stand V3&quot; /&gt;
-&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-02.jpg&quot; alt=&quot;Phone Stand V3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-01.jpg&quot; alt=&quot;Phone Stand V3&quot; data-action=&quot;zoom&quot; /&gt;
+&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-02.jpg&quot; alt=&quot;Phone Stand V3 Alt&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The weight of the phone causes the wood to bend, acting as a scoop for the iPhone’s sound output.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-03.jpg&quot; alt=&quot;Phone Stand V3&quot; /&gt;
-&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-04.jpg&quot; alt=&quot;Phone Stand V3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-03.jpg&quot; alt=&quot;Phone Stand V3&quot; data-action=&quot;zoom&quot; /&gt;
+&lt;img src=&quot;/images/blog/laser-cutting-3d-printing/v3-04.jpg&quot; alt=&quot;Phone Stand V3 Alt&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;closing-thoughts&quot;&gt;Closing Thoughts&lt;/h2&gt;
 &lt;p&gt;I was please with the simplicity and functionality of the final product. What began as a basic design for a straightforward task actually became quite refined after several iterations. I found that as much as I could plan, a lot of my improvements were not realized until I actually cut something out and was able to hold it in my hand and use it. Because of the speed of laser cutting, this designing in this way is absolutely doable.&lt;/p&gt;
@@ -78,7 +78,7 @@
 
 &lt;h3 id=&quot;diagram&quot;&gt;Diagram&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-diagram.gif&quot; alt=&quot;Joystick Sketch&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-diagram.gif&quot; alt=&quot;Photocell Diagram &quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sketch-code&quot;&gt;Sketch Code&lt;/h3&gt;
 
@@ -101,7 +101,7 @@ void loop(void) {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;output&quot;&gt;Output&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-output.png&quot; alt=&quot;PHotocell Output&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-output.png&quot; alt=&quot;Photocell Output &quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;hall-effect-sensor&quot;&gt;02: Hall Effect Sensor&lt;/h2&gt;
 &lt;p&gt;The hall effect sensor has the ability to detect if a magnet is present. When the output voltage of the Hall Effect Sensor is high, there is a magnet present. With my build, this translated to a binary output, with 1 being no magnet present and a 0 indicating a magnetic field.
@@ -111,7 +111,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 &lt;h3 id=&quot;diagram-1&quot;&gt;Diagram&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-diagram.jpg&quot; alt=&quot;Hall Effect Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-diagram.jpg&quot; alt=&quot;Hall Effect Diagram&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sketch-code-1&quot;&gt;Sketch Code&lt;/h3&gt;
 
@@ -136,7 +136,7 @@ void loop(){
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;output-1&quot;&gt;Output&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-output.png&quot; alt=&quot;Joystick Sketch&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-output.png&quot; alt=&quot;Hall Effect Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;disco-countdown&quot;&gt;03: Disco Countdown&lt;/h2&gt;
 &lt;p&gt;For the third task I created an “interesting” combination of flashing lights using three independently controlled LEDs. I used two green LEDs and two RGB LEDs to create a countdown effect. The green LEDs alternate at an increasingly rapid rate.
@@ -148,7 +148,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 &lt;h3 id=&quot;diagram-2&quot;&gt;Diagram&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-diagram.jpg&quot; alt=&quot;Disco Countdown Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-diagram.jpg&quot; alt=&quot;Disco Countdown Diagram&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sketch-code-2&quot;&gt;Sketch Code&lt;/h3&gt;
 
@@ -229,7 +229,7 @@ void loop() {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;output-2&quot;&gt;Output&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-output.png&quot; alt=&quot;Disco Countdown Output&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-output.png&quot; alt=&quot;Disco Countdown Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;light-dimmer-switch&quot;&gt;04: Light Dimmer Switch&lt;/h2&gt;
 
@@ -239,7 +239,7 @@ void loop() {
 
 &lt;h3 id=&quot;diagram-3&quot;&gt;Diagram&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-diagram.png&quot; alt=&quot;Light Dimmer Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-diagram.png&quot; alt=&quot;Light Dimmer Diagram&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sketch-code-3&quot;&gt;Sketch Code&lt;/h3&gt;
 
@@ -276,7 +276,7 @@ void loop() {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;output-3&quot;&gt;Output&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-output.png&quot; alt=&quot;Light Dimmer Output&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-output.png&quot; alt=&quot;Light Dimmer Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;doorbell&quot;&gt;05: Doorbell&lt;/h2&gt;
 
@@ -284,7 +284,7 @@ void loop() {
 
 &lt;h3 id=&quot;diagram-4&quot;&gt;Diagram&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-diagram.jpg&quot; alt=&quot;Buzzer Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-diagram.jpg&quot; alt=&quot;Buzzer diagram&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sketch-code-4&quot;&gt;Sketch Code&lt;/h3&gt;
 
@@ -315,7 +315,7 @@ void loop(){
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;output-4&quot;&gt;Output&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-output.png&quot; alt=&quot;Buzzer Output&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-output.png&quot; alt=&quot;Buzzer Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 03 Mar 2016 02:50:13 -0800</pubDate>
@@ -349,28 +349,29 @@ I found this last constraint to be especially compelling. As the assignment was 
 &lt;h3 id=&quot;joystick&quot;&gt;Joystick&lt;/h3&gt;
 &lt;p&gt;The joystick was designed to control temperature on the X axis and flow on the Y axis. In an effort to make it easily accessible, the off action is placed in the center of the device. This creates another advantage in that both cold and hot can be quickly accessed when turning the shower on. The box shaped controller is designed to be placed lower on the wall so that you can see the top and front of the box easily. The top of the box includes a digital display that can be glanced at to get relevant information such as flow rate and current temperature.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/joystick.jpg&quot; alt=&quot;Joystick Sketch&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/joystick.jpg&quot; alt=&quot;Joystick Sketch&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sliders&quot;&gt;Sliders&lt;/h3&gt;
 
 &lt;p&gt;The slider is similar to the joystick model except that the X and Y axises have been broken and both placed along the X axis. The goal further simplify the control by employing the left-to-right, less-to-more analogy. Although I believe this design was successful in that regard, since the two sliders are identical it could be difficult to distinguish between them with soapy, closed eyes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/sliders.jpg&quot; alt=&quot;Sliders Sketch&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/sliders.jpg&quot; alt=&quot;Sliders Sketch&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;knob&quot;&gt;Knob&lt;/h3&gt;
 &lt;p&gt;This design is very similar to the &lt;a href=&quot;https://nest.com/?alt=1&quot;&gt;Nest thermostat system&lt;/a&gt; applied to shower control. I sought to make a knob that incorporated two actions, twisting and pushing. The twisting would utilize a digital indicator to mark position, and the pushing would be used to toggle modes and turn the shower on and off. I felt the knob was the most compelling idea because of its simplicity and power. The final prototype had a surprisingly pleasing feeling when you pushed it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/knob.jpg&quot; alt=&quot;Knob Sketch&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/knob.jpg&quot; alt=&quot;Know Sketch&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;builds&quot;&gt;Builds&lt;/h3&gt;
 
 &lt;p&gt;The joystick was built with matboard, a rubber band to allow the joystick to move, and an Allen wrench with a wooden button glued to the top. The slider prototype used a foam core with pins to simulate the sliders.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/joy-slide-photos.png&quot; alt=&quot;Knob Sketch&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/joy-slide-photos.png&quot; alt=&quot;Photos - Joystick &amp;amp; Slider&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The knob was built with laser cut mat board that was etched to allow it to bend in a circle. An alligator clip was used at the bottom to give a springy feeling when you pushed down on the nob, and several pieces of wood and crumpled tin foil were added to give the product more weight. I used colored construction paper and interchangeable sticky notes to create the interface.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/knob-photos.png&quot; alt=&quot;Knob Sketch&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/model-prototype/knob-photos.png&quot; alt=&quot;Knob Sketch&quot; /&gt;
+&lt;img src=&quot;/images/blog/model-prototype/knob-photos.png&quot; alt=&quot;Photos - Knob&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;user-test--reflections&quot;&gt;User Test &amp;amp; Reflections&lt;/h2&gt;
 
@@ -415,7 +416,7 @@ I found this last constraint to be especially compelling. As the assignment was 
 &lt;h3 id=&quot;gestural-interface&quot;&gt;Gestural Interface&lt;/h3&gt;
 &lt;p&gt;We created these gestures based on the traditional 2D touch interface for a media player as well as the current practice of industry leaders such as BMW and Google. Since a gesture-based interface allows the user to simulate the experience of interacting with a physical object intuitively and naturally, we revised our gestures to represent the physical interaction. For instance, we used the action of swiping from right to left to augment the reality when a user is physically pushing an item to the previous position of a queue.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/gesture-language.png&quot; alt=&quot;Gestural Interface Language&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/gesture-language.png&quot; alt=&quot;Gestural Interface Language&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;part-2-test-setup&quot;&gt;Part 2: Test Setup&lt;/h2&gt;
 
@@ -426,26 +427,29 @@ I found this last constraint to be especially compelling. As the assignment was 
 &lt;p&gt;The simulator consisted of a large TV displaying first person video of a car driving, a fake wheel and infotainment dashboard, and two independent Bluetooth speakers that were hidden within the “car”. One speaker was paired with the computer playing the driving video, and played ambient sounds of driving. This audio was run throughout the entire test. The other speaker was paired with a different computer with Spotify installed, and was used to play music and was controlled by our “Wizard of Oz.”.&lt;/p&gt;
 
 &lt;h4 id=&quot;planning&quot;&gt;Planning&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/00-planning.JPG&quot; alt=&quot;Planning the simulator and car&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/00-planning.JPG&quot; alt=&quot;Planning the simulator and car&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;layout&quot;&gt;Layout&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/room-diagram.jpg&quot; alt=&quot;Room Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/room-diagram.jpg&quot; alt=&quot;Room Diagram&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;the-car&quot;&gt;The “Car”&lt;/h4&gt;
 
 &lt;p&gt;The “car” included a fake yet rotatable driver’s wheel, as well as a center console with fake climate control and stereo.I built it using two cardboard boxes, a frisbee glued to the lid of a plastic jar with a screw-on lid, construction paper with a hand drawn UI, duct tape, gorilla glue, and black spray paint. A GoPro was mounted inside the “car” that pointed at the participant. The participant was told that the GoPro was connected to a computer via wifi which was capturing and processing their gestures. In actuality, the camera was just used to get another perspective of the participant to better aid the wizard.&lt;/p&gt;
 
 &lt;h4 id=&quot;beginnings-of-the-steering-column&quot;&gt;Beginnings of the steering column&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/01-peanut.jpg&quot; alt=&quot;Peanut Butter wheel&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/01-peanut.jpg&quot; alt=&quot;Peanut Butter wheel&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;beginnings-of-the-dashboard&quot;&gt;Beginnings of the dashboard&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/02-box.jpg&quot; alt=&quot;Room Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Room Diagram&quot; /&gt;
+&lt;img src=&quot;/images/blog/wizard-of-oz/02-box.jpg&quot; alt=&quot;Console - Box&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;beginnings-of-the-wheel&quot;&gt;Beginnings of the wheel&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/03-frisbee.jpg&quot; alt=&quot;Room Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Room Diagram&quot; /&gt;
+&lt;img src=&quot;/images/blog/wizard-of-oz/03-frisbee.jpg&quot; alt=&quot;Car - Steering wheel&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;mounted--painted-wheel&quot;&gt;Mounted &amp;amp; painted wheel&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/wizard-of-oz/04-wheel.jpg&quot; alt=&quot;Room Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Room Diagram&quot; /&gt;
+&lt;img src=&quot;/images/blog/wizard-of-oz/04-wheel.jpg&quot; alt=&quot;Car - Steering wheel&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-tasks&quot;&gt;The Tasks&lt;/h2&gt;
 
@@ -524,8 +528,8 @@ With behavioral prototyping, we were able to evaluate our gestures and determine
 &lt;h2 id=&quot;storyboard&quot;&gt;Storyboard&lt;/h2&gt;
 &lt;p&gt;I began by conceptualizing the story arc and then outlining the specific shots needed in a story board. Even though I didn’t stick to the storyboard completely while shooting, having it as a general guide was quite helpful. Specifically, it allowed me to not shoot the entire scene in order and get all the shots from specific vantage points in one take.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/one-bus-away/storyboard1.jpg&quot; alt=&quot;Storyboard Part 1&quot; /&gt;
-&lt;img src=&quot;/images/blog/one-bus-away/storyboard2.jpg&quot; alt=&quot;Storyboard Part 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/one-bus-away/storyboard1.jpg&quot; alt=&quot;Storyboard Part 1&quot; data-action=&quot;zoom&quot; /&gt;
+&lt;img src=&quot;/images/blog/one-bus-away/storyboard2.jpg&quot; alt=&quot;Storyboard Part 2&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;reflections&quot;&gt;Reflections&lt;/h2&gt;
 
@@ -571,10 +575,11 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;p&gt;I created two prototypes, which consisted of a cardboard Apple Watch iPhone. Each had a piece of Velcro allowing for screens to be quickly attached and interchanged as the user interacts with the prototypes. This allowed rapid prototyping of multiple screens and easy modification in the event a screen needed to be replaced. Haptic feedback was simulated by tapping a pencil on the prototype. The vibration patterns would have a learning curve, which was not be tested in this study.&lt;/p&gt;
 
 &lt;h4 id=&quot;devices&quot;&gt;Devices&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/morse-messenger/prototype.jpg&quot; alt=&quot;Morse Messenger - Prototypes&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Morse Messenger - Prototypes&quot; /&gt;
+&lt;img src=&quot;/images/blog/morse-messenger/prototype.jpg&quot; alt=&quot;Morse Messenger - Prototypes&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;flow&quot;&gt;Flow&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;/images/blog/morse-messenger/sketch-flow.jpg&quot; alt=&quot;Morse Messenger - App Flow&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/morse-messenger/sketch-flow.jpg&quot; alt=&quot;Morse Messenger - App Flow&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
 
@@ -591,7 +596,7 @@ video of this nature, and I found writing copy that was simultaneously compellin
       <item>
         <title>Making Sausages (Blogs)</title>
         <description>&lt;p class=&quot;regular&quot;&gt;
- &lt;strong&gt;An  overview of how I built this website&lt;/strong&gt; and some of the resources I consulted during construction. In this post I’ll talk about using the &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;&lt;/a&gt; blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what’s coming next for this website.
+ &lt;em&gt;Note: I have made significant updates to the layout and organization of this site since this blog post. Stay tuned for another post on the recent updates.&lt;/em&gt; &lt;strong&gt;An  overview of how I built this website&lt;/strong&gt; and some of the resources I consulted during construction. In this post I’ll talk about using the &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;&lt;/a&gt; blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what’s coming next for this website.
 &lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt; * * * &lt;/p&gt;
@@ -610,17 +615,17 @@ video of this nature, and I found writing copy that was simultaneously compellin
 
 &lt;p&gt;The front page features five rotating images that I took with my iPhone. I had the images, CSS, and Javascript for rotation ready to go from version 1.0, but I wanted to incorporate some interactivity into the logo. The menu I discussed at the beginning of this post provides this interactivity. It serves as a gateway to the rest of the site, and slowly shifts opacity in hopes of enticing the user to click on it. I built it with &lt;a href=&quot;http://tumult.com/hype/&quot;&gt;Tumult Hype 3&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/splash.jpg&quot; alt=&quot;Portfolio Titles&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/splash.jpg&quot; alt=&quot;Portfolio Tiles&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;For the portfolio, I used (surprise surprise) the &lt;a href=&quot;https://github.com/flatterline/jekyll-plugins&quot;&gt;Jekyll portfolio plugin&lt;/a&gt; written by Flatterline (now called &lt;a href=&quot;http://velocitylabs.io/&quot;&gt;Velocity Labs&lt;/a&gt;). They created a plugin that allowed me to style custom HTML and CSS templates for the portfolio page and individual items, which autogenerate as I add new projects. &lt;strong&gt;Cool!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;This section still needs some CSS fine tuning. The necessity to hover to see project titles is less than ideal on desktop and useless on mobile. I’m looking for an elegant solution:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/portfolio-hover.jpg&quot; alt=&quot;Portfolio Titles Hover Problem&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/portfolio-hover.jpg&quot; alt=&quot;Portfolio Titles Hover Problem&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Also, the titles and navigation on individual projects are inconsistant. &lt;strike&gt;This will be an easy fix:&lt;/strike&gt; Fixed!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/portfolio-controls.jpg&quot; alt=&quot;Portfolio Controls Problem&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/portfolio-controls.jpg&quot; alt=&quot;Portfolio Controls Problem&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;type--color&quot;&gt;Type &amp;amp; Color&lt;/h2&gt;
 
@@ -670,7 +675,7 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;h3 id=&quot;color&quot;&gt;Color&lt;/h3&gt;
 &lt;p&gt;The accent color used througout the site is &lt;a href=&quot;https://en.wikipedia.org/wiki/International_Klein_Blue&quot;&gt;International Klein Blue&lt;/a&gt;. It was developed by Yves Klein, who worked directly with a chemist to create this brilliant blue in the 1950’s. I feel the resulting monochrome painting highlights this collaboration while idiolizing the tools of creation. I like that, and I feel a kinship with Yves because we share a last name (albeit a different spelling). It’s also damn pretty on screens, although nothing like the canvas.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/klein-blue.jpg&quot; alt=&quot;Portfolio Titles&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/making-sausage/klein-blue.jpg&quot; alt=&quot;Klein Blue&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;whats-next&quot;&gt;Whats Next?&lt;/h2&gt;
 
@@ -797,7 +802,7 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;p&gt;This is due to corporate consolidation of the educational publishing industry and the fact that most organizations are publicly traded and owned by private equity firms. Because the people paying for a product (students) are not the ones making the decision to purchase the product (teachers / administrators), the &lt;strong&gt;educational publishing industry is very similar to the pharmaceutical industry.&lt;/strong&gt; Considering students are the ones paying for this content, it’s a shame that they are commoditized and their interests, receiving a quality and engaging education, are not the top priority.&lt;/p&gt;
 
 &lt;h4 id=&quot;opportunity&quot;&gt;Opportunity&lt;/h4&gt;
-&lt;p&gt;Because textbooks are slow, expensive, and not directly tailored to students, there is a lot of opportunity to make them better. Digital and interactive knowledge compendiums are simultaneously more accessible, more engaging, more easily updated, and more transparent to teachers. Educational institutions seem willing to adopt changes to the standard textbook, but there are some challenges when creating new systems. Frequently accuracy of information is at odds with making the experience fun and engaging. &lt;strong&gt;We wanted to the learning experience for students, and began researching to determine how.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Because textbooks are slow, expensive, and not directly tailored to students, there is a lot of opportunity to make them better. Digital and interactive knowledge compendiums are simultaneously more accessible, more engaging, more easily updated, and more transparent to teachers. Educational institutions seem willing to adopt changes to the standard textbook, but there are some challenges when creating new systems. Frequently accuracy of information is at odds with making the experience fun and engaging. &lt;strong&gt;We wanted to improve the learning experience for students, and began researching to determine how.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;interviews&quot;&gt;Interviews&lt;/h3&gt;
 &lt;p&gt;After meeting with Karl, we continued our research by speaking with teachers and students at the University of Washington. Initially, we were tasked with redesigning the music education experience, so we met with two PHD candidates in music education, a classically trained violinist, and a professor of computer music.&lt;/p&gt;
@@ -805,7 +810,7 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/interviewees.png&quot; alt=&quot;Interviewees&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;findings&quot;&gt;Findings&lt;/h4&gt;
-&lt;p&gt;We learned some interesting things about music education. For instance, most introductory, undergraduate level music education is based on classical training rooted in the 1800’s that has subsequently changed. Also, despite the fact that &lt;strong&gt;modern tools such as Youtube are widely used in music education, they are not recognized or embraced by the teaching community.&lt;/strong&gt; We considered designing a solution to address these concerns, but also heard that most music students had a difficult time with note taking. Music annotation is laborious with current software solutions, and note taking in gerneral was lacking on ebooks.&lt;/p&gt;
+&lt;p&gt;We learned some interesting things about music education. For instance, most introductory, undergraduate level music education is based on classical training rooted in the 1800’s that has subsequently changed very little. Also, despite the fact that &lt;strong&gt;modern tools such as Youtube are widely used in music education, they are not recognized or embraced by the teaching community.&lt;/strong&gt; We considered designing a solution to address these concerns, but also heard that most music students had a difficult time with note taking. Music annotation is laborious with current software solutions, and note taking in gerneral was lacking on ebooks.&lt;/p&gt;
 
 &lt;h4 id=&quot;survey&quot;&gt;Survey&lt;/h4&gt;
 &lt;p&gt;We were leaning towards improving the note taking experience and decided to conduct a survey to validate our idea that problems actually existed. We surveyed fourteen college students and graduates and asked how frequently they take notes in notebooks, on laptops, tablets, and in textbooks. Out of the fourteen people we surveyed, &lt;strong&gt;all of them took notes by hand in some fashion.&lt;/strong&gt; Comments suggested that people enjoyed this experience, but despite this fact, everyone said they took notes on a laptop.&lt;/p&gt;

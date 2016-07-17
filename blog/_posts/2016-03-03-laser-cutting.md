@@ -27,32 +27,33 @@ Finally, I wanted the stand to function in both portrait and landscape position,
 
 #### Sketches
 
-![Phone Stand Sketches](/images/blog/laser-cutting-3d-printing/laser-sketches.jpg)
+<img src="/images/blog/laser-cutting-3d-printing/laser-sketches.jpg" alt="Phone Stand Sketches" data-action="zoom">
+
 
 ### First Iteration
 The first stand had no bend in the wood and was unstable. I began by sketching a scale version, measuring it, and cutting it from birch. The initial attempt left the device too top heavy with a viewing angle that was tilted too far away from the user.
 
-![Phone Stand V1](/images/blog/laser-cutting-3d-printing/v1-01.jpg)
-![Phone Stand V1](/images/blog/laser-cutting-3d-printing/v1-02.jpg)
+<img src="/images/blog/laser-cutting-3d-printing/v1-01.jpg" alt="Phone Stand V1" data-action="zoom">
+<img src="/images/blog/laser-cutting-3d-printing/v1-02.jpg" alt="Phone Stand V1 Alt" data-action="zoom">
 
 ### Second Iteration 
 
 The second iteration had a curved base achieved through a pattern of hairline cuts all the way through the wood. The iPhone was still top heavy and wanted to slide off the stand in portrait mode. Landscape mode worked well, although I wanted the device to be well balanced in both positions. Also, the wood did not bend as much as I had hoped for.
 
-![Phone Stand V2](/images/blog/laser-cutting-3d-printing/v2-01.jpg)
-![Phone Stand V2](/images/blog/laser-cutting-3d-printing/v2-02.jpg)
+<img src="/images/blog/laser-cutting-3d-printing/v2-01.jpg" alt="Phone Stand V2" data-action="zoom">
+<img src="/images/blog/laser-cutting-3d-printing/v2-02.jpg" alt="Phone Stand V2 Alt" data-action="zoom">
 
 ### Third & Final Iteration
 
 For the third iteration, I tightened the distance between the cuts and increased their number to make the bend longer and more flexible. To prevent the phone from slipping off, I etched a groove on the ledge, allowing the stand to grip the phone when placed in portrait mode. I also included a groove in the back to wrap a charging cord around.
 
-![Phone Stand V3](/images/blog/laser-cutting-3d-printing/v3-01.jpg)
-![Phone Stand V3](/images/blog/laser-cutting-3d-printing/v3-02.jpg)
+<img src="/images/blog/laser-cutting-3d-printing/v3-01.jpg" alt="Phone Stand V3" data-action="zoom">
+<img src="/images/blog/laser-cutting-3d-printing/v3-02.jpg" alt="Phone Stand V3 Alt" data-action="zoom">
 
 The weight of the phone causes the wood to bend, acting as a scoop for the iPhone’s sound output.
 
-![Phone Stand V3](/images/blog/laser-cutting-3d-printing/v3-03.jpg)
-![Phone Stand V3](/images/blog/laser-cutting-3d-printing/v3-04.jpg)
+<img src="/images/blog/laser-cutting-3d-printing/v3-03.jpg" alt="Phone Stand V3" data-action="zoom">
+<img src="/images/blog/laser-cutting-3d-printing/v3-04.jpg" alt="Phone Stand V3 Alt" data-action="zoom">
 
 ## Closing Thoughts
 I was please with the simplicity and functionality of the final product. What began as a basic design for a straightforward task actually became quite refined after several iterations. I found that as much as I could plan, a lot of my improvements were not realized until I actually cut something out and was able to hold it in my hand and use it. Because of the speed of laser cutting, this designing in this way is absolutely doable. 

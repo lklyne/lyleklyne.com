@@ -25,21 +25,17 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
 
-    <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
     <script type="text/javascript" src="/js/transition.js"></script>
     <script type="text/javascript" src="/js/zoom.min.js"></script>
 
     <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
-    <!--<script type="text/javascript" src="/js/html2canvas.svg.js"></script>-->
-    <!--&lt;!&ndash;<script type="text/javascript" src="/js/StackBlur.js"></script>  &ndash;&gt;-->
+
   
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
         <![endif]-->
 
-
     <!-- Open Graph -->
-    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Making Sausages (Blogs)">
@@ -98,7 +94,7 @@
 
 <article class="post-content">
   <p class="regular">
- <strong>An  overview of how I built this website</strong> and some of the resources I consulted during construction. In this post I’ll talk about using the <a href="http://jekyllrb.com/"><strong>Jekyll</strong></a> blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what’s coming next for this website.
+ <em>Note: I have made significant updates to the layout and organization of this site since this blog post. Stay tuned for another post on the recent updates.</em> <strong>An  overview of how I built this website</strong> and some of the resources I consulted during construction. In this post I’ll talk about using the <a href="http://jekyllrb.com/"><strong>Jekyll</strong></a> blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what’s coming next for this website.
 </p>
 
 <p class="center"> * * * </p>
@@ -117,17 +113,17 @@
 
 <p>The front page features five rotating images that I took with my iPhone. I had the images, CSS, and Javascript for rotation ready to go from version 1.0, but I wanted to incorporate some interactivity into the logo. The menu I discussed at the beginning of this post provides this interactivity. It serves as a gateway to the rest of the site, and slowly shifts opacity in hopes of enticing the user to click on it. I built it with <a href="http://tumult.com/hype/">Tumult Hype 3</a>.</p>
 
-<p><img src="/images/blog/making-sausage/splash.jpg" alt="Portfolio Titles" /></p>
+<p><img src="/images/blog/making-sausage/splash.jpg" alt="Portfolio Tiles" data-action="zoom" /></p>
 
 <p>For the portfolio, I used (surprise surprise) the <a href="https://github.com/flatterline/jekyll-plugins">Jekyll portfolio plugin</a> written by Flatterline (now called <a href="http://velocitylabs.io/">Velocity Labs</a>). They created a plugin that allowed me to style custom HTML and CSS templates for the portfolio page and individual items, which autogenerate as I add new projects. <strong>Cool!</strong></p>
 
 <p>This section still needs some CSS fine tuning. The necessity to hover to see project titles is less than ideal on desktop and useless on mobile. I’m looking for an elegant solution:</p>
 
-<p><img src="/images/blog/making-sausage/portfolio-hover.jpg" alt="Portfolio Titles Hover Problem" /></p>
+<p><img src="/images/blog/making-sausage/portfolio-hover.jpg" alt="Portfolio Titles Hover Problem" data-action="zoom" /></p>
 
 <p>Also, the titles and navigation on individual projects are inconsistant. <strike>This will be an easy fix:</strike> Fixed!</p>
 
-<p><img src="/images/blog/making-sausage/portfolio-controls.jpg" alt="Portfolio Controls Problem" /></p>
+<p><img src="/images/blog/making-sausage/portfolio-controls.jpg" alt="Portfolio Controls Problem" data-action="zoom" /></p>
 
 <h2 id="type--color">Type &amp; Color</h2>
 
@@ -177,7 +173,7 @@
 <h3 id="color">Color</h3>
 <p>The accent color used througout the site is <a href="https://en.wikipedia.org/wiki/International_Klein_Blue">International Klein Blue</a>. It was developed by Yves Klein, who worked directly with a chemist to create this brilliant blue in the 1950’s. I feel the resulting monochrome painting highlights this collaboration while idiolizing the tools of creation. I like that, and I feel a kinship with Yves because we share a last name (albeit a different spelling). It’s also damn pretty on screens, although nothing like the canvas.</p>
 
-<p><img src="/images/blog/making-sausage/klein-blue.jpg" alt="Portfolio Titles" /></p>
+<p><img src="/images/blog/making-sausage/klein-blue.jpg" alt="Klein Blue" data-action="zoom" /></p>
 
 <h2 id="whats-next">Whats Next?</h2>
 
@@ -230,6 +226,8 @@
 
 
 
+
+<div class="push"></div>
 
       </div>
     </div>

@@ -26,8 +26,10 @@ The video storyline follows a bus traveler who has somewhere to be, misses his b
 ## Storyboard
 I began by conceptualizing the story arc and then outlining the specific shots needed in a story board. Even though I didn’t stick to the storyboard completely while shooting, having it as a general guide was quite helpful. Specifically, it allowed me to not shoot the entire scene in order and get all the shots from specific vantage points in one take.
 
-![Storyboard Part 1](/images/blog/one-bus-away/storyboard1.jpg)
-![Storyboard Part 2](/images/blog/one-bus-away/storyboard2.jpg)
+<img src="/images/blog/one-bus-away/storyboard1.jpg" alt="Storyboard Part 1" data-action="zoom">
+<img src="/images/blog/one-bus-away/storyboard2.jpg" alt="Storyboard Part 2" data-action="zoom">
+
+
  
 
 ## Reflections

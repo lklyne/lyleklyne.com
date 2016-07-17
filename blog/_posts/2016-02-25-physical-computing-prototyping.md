@@ -27,7 +27,8 @@ I was surprised at how well calibrated the photocell was to indoor light levels.
 
 ### Diagram
 
-![Joystick Sketch](/images/blog/physical-computing/photocell-diagram.gif)
+<img src="/images/blog/physical-computing/photocell-diagram.gif" alt="Photocell Diagram " data-action="zoom">
+
 
 ### Sketch Code  
 
@@ -49,7 +50,8 @@ I was surprised at how well calibrated the photocell was to indoor light levels.
 	}
 
 ### Output
-![PHotocell Output](/images/blog/physical-computing/photocell-output.png)
+<img src="/images/blog/physical-computing/photocell-output.png" alt="Photocell Output " data-action="zoom">
+
 
 
 ## 02: Hall Effect Sensor
@@ -60,7 +62,8 @@ The example code was modified and simplied from the [Hobby Electronics Hall Effe
 
 ### Diagram
 
-![Hall Effect Diagram](/images/blog/physical-computing/hall-effect-diagram.jpg)
+<img src="/images/blog/physical-computing/hall-effect-diagram.jpg" alt="Hall Effect Diagram" data-action="zoom">
+
 
 ### Sketch Code  
 
@@ -84,7 +87,8 @@ The example code was modified and simplied from the [Hobby Electronics Hall Effe
 	}
 
 ### Output
-![Joystick Sketch](/images/blog/physical-computing/hall-effect-output.png)
+<img src="/images/blog/physical-computing/hall-effect-output.png" alt="Hall Effect Output" data-action="zoom">
+
 
 ## 03: Disco Countdown
 For the third task I created an "interesting" combination of flashing lights using three independently controlled LEDs. I used two green LEDs and two RGB LEDs to create a countdown effect. The green LEDs alternate at an increasingly rapid rate.
@@ -97,7 +101,8 @@ The code for blinking LEDs was modi ed from the Arduino “Blink” tutorial, an
 
 ### Diagram
 
-![Disco Countdown Diagram](/images/blog/physical-computing/disco-diagram.jpg)
+<img src="/images/blog/physical-computing/disco-diagram.jpg" alt="Disco Countdown Diagram" data-action="zoom">
+
 
 ### Sketch Code  
 
@@ -177,7 +182,8 @@ The code for blinking LEDs was modi ed from the Arduino “Blink” tutorial, an
 	}
 
 ### Output
-![Disco Countdown Output](/images/blog/physical-computing/disco-output.png)
+<img src="/images/blog/physical-computing/disco-output.png" alt="Disco Countdown Output" data-action="zoom">
+
 
 ## 04: Light Dimmer Switch
 
@@ -187,7 +193,8 @@ The [Potentiometer tutorial on arduino.cc](https://www.arduino.cc/en/tutorial/po
 
 ### Diagram
 
-![Light Dimmer Diagram](/images/blog/physical-computing/dimmer-diagram.png)
+<img src="/images/blog/physical-computing/dimmer-diagram.png" alt="Light Dimmer Diagram" data-action="zoom">
+
 
 ### Sketch Code  
 
@@ -223,7 +230,8 @@ The [Potentiometer tutorial on arduino.cc](https://www.arduino.cc/en/tutorial/po
 	}
 
 ### Output
-![Light Dimmer Output](/images/blog/physical-computing/dimmer-output.png)
+<img src="/images/blog/physical-computing/dimmer-output.png" alt="Light Dimmer Output" data-action="zoom">
+
 
 ## 05: Doorbell
 
@@ -231,7 +239,7 @@ The doorbell I created is more akin to a morse code messenger than an actual doo
 
 ### Diagram
 
-![Buzzer Diagram](/images/blog/physical-computing/buzzer-diagram.jpg)
+<img src="/images/blog/physical-computing/buzzer-diagram.jpg" alt="Buzzer diagram" data-action="zoom">
 
 ### Sketch Code  
 
@@ -261,7 +269,8 @@ The doorbell I created is more akin to a morse code messenger than an actual doo
 	}
 
 ### Output
-![Buzzer Output](/images/blog/physical-computing/buzzer-output.png)
+<img src="/images/blog/physical-computing/buzzer-output.png" alt="Buzzer Output" data-action="zoom">
+
 
 
 

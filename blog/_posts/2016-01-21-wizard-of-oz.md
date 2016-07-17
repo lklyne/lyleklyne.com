@@ -31,7 +31,9 @@ Additionally, we considered allowing the user to switch between play modes such 
 ### Gestural Interface
 We created these gestures based on the traditional 2D touch interface for a media player as well as the current practice of industry leaders such as BMW and Google. Since a gesture-based interface allows the user to simulate the experience of interacting with a physical object intuitively and naturally, we revised our gestures to represent the physical interaction. For instance, we used the action of swiping from right to left to augment the reality when a user is physically pushing an item to the previous position of a queue.
 
-![Gestural Interface Language](/images/blog/wizard-of-oz/gesture-language.png)
+
+<img src="/images/blog/wizard-of-oz/gesture-language.png" alt="Gestural Interface Language" data-action="zoom">
+
  
 
 ## Part 2: Test Setup
@@ -44,26 +46,35 @@ Due to safety and time constraints, we did not have access to a real car or a le
 The simulator consisted of a large TV displaying first person video of a car driving, a fake wheel and infotainment dashboard, and two independent Bluetooth speakers that were hidden within the “car”. One speaker was paired with the computer playing the driving video, and played ambient sounds of driving. This audio was run throughout the entire test. The other speaker was paired with a different computer with Spotify installed, and was used to play music and was controlled by our “Wizard of Oz.”.
 
 #### Planning
-![Planning the simulator and car](/images/blog/wizard-of-oz/00-planning.JPG)
+<img src="/images/blog/wizard-of-oz/00-planning.JPG" alt="Planning the simulator and car" data-action="zoom">
+
 
 #### Layout
-![Room Diagram](/images/blog/wizard-of-oz/room-diagram.jpg)
+<img src="/images/blog/wizard-of-oz/room-diagram.jpg" alt="Room Diagram" data-action="zoom">
+
 
 #### The "Car"
 
 The “car” included a fake yet rotatable driver’s wheel, as well as a center console with fake climate control and stereo.I built it using two cardboard boxes, a frisbee glued to the lid of a plastic jar with a screw-on lid, construction paper with a hand drawn UI, duct tape, gorilla glue, and black spray paint. A GoPro was mounted inside the “car” that pointed at the participant. The participant was told that the GoPro was connected to a computer via wifi which was capturing and processing their gestures. In actuality, the camera was just used to get another perspective of the participant to better aid the wizard.
 
 #### Beginnings of the steering column
-![Peanut Butter wheel](/images/blog/wizard-of-oz/01-peanut.jpg)
+<img src="/images/blog/wizard-of-oz/01-peanut.jpg" alt="Peanut Butter wheel" data-action="zoom">
+
 
 #### Beginnings of the dashboard
-![Room Diagram](/images/blog/wizard-of-oz/02-box.jpg)
+![Room Diagram]()
+<img src="/images/blog/wizard-of-oz/02-box.jpg" alt="Console - Box" data-action="zoom">
+
 
 #### Beginnings of the wheel
-![Room Diagram](/images/blog/wizard-of-oz/03-frisbee.jpg)
+![Room Diagram]()
+<img src="/images/blog/wizard-of-oz/03-frisbee.jpg" alt="Car - Steering wheel" data-action="zoom">
+
 
 #### Mounted & painted wheel
-![Room Diagram](/images/blog/wizard-of-oz/04-wheel.jpg)
+![Room Diagram]()
+<img src="/images/blog/wizard-of-oz/04-wheel.jpg" alt="Car - Steering wheel" data-action="zoom">
+
 
 ## The Tasks
 

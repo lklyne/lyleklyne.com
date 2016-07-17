@@ -25,21 +25,17 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
 
-    <script type="text/javascript" src="/js/jq-sticky-anything.min.js"></script>
     <script type="text/javascript" src="/js/transition.js"></script>
     <script type="text/javascript" src="/js/zoom.min.js"></script>
 
     <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
-    <!--<script type="text/javascript" src="/js/html2canvas.svg.js"></script>-->
-    <!--&lt;!&ndash;<script type="text/javascript" src="/js/StackBlur.js"></script>  &ndash;&gt;-->
+
   
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
         <![endif]-->
 
-
     <!-- Open Graph -->
-    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Physical Computational Prototyping">
@@ -93,7 +89,7 @@
   <h1>Physical Computational Prototyping</h1>
   <span class="post-meta">Mar 3, 2016</span><br>
   
-  <span class="post-meta small">9 minute read</span>
+  <span class="post-meta small">10 minute read</span>
 </div>
 
 <article class="post-content">
@@ -113,7 +109,7 @@
 
 <h3 id="diagram">Diagram</h3>
 
-<p><img src="/images/blog/physical-computing/photocell-diagram.gif" alt="Joystick Sketch" /></p>
+<p><img src="/images/blog/physical-computing/photocell-diagram.gif" alt="Photocell Diagram " data-action="zoom" /></p>
 
 <h3 id="sketch-code">Sketch Code</h3>
 
@@ -136,7 +132,7 @@ void loop(void) {
 </code></pre>
 
 <h3 id="output">Output</h3>
-<p><img src="/images/blog/physical-computing/photocell-output.png" alt="PHotocell Output" /></p>
+<p><img src="/images/blog/physical-computing/photocell-output.png" alt="Photocell Output " data-action="zoom" /></p>
 
 <h2 id="hall-effect-sensor">02: Hall Effect Sensor</h2>
 <p>The hall effect sensor has the ability to detect if a magnet is present. When the output voltage of the Hall Effect Sensor is high, there is a magnet present. With my build, this translated to a binary output, with 1 being no magnet present and a 0 indicating a magnetic field.
@@ -146,7 +142,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 <h3 id="diagram-1">Diagram</h3>
 
-<p><img src="/images/blog/physical-computing/hall-effect-diagram.jpg" alt="Hall Effect Diagram" /></p>
+<p><img src="/images/blog/physical-computing/hall-effect-diagram.jpg" alt="Hall Effect Diagram" data-action="zoom" /></p>
 
 <h3 id="sketch-code-1">Sketch Code</h3>
 
@@ -171,7 +167,7 @@ void loop(){
 </code></pre>
 
 <h3 id="output-1">Output</h3>
-<p><img src="/images/blog/physical-computing/hall-effect-output.png" alt="Joystick Sketch" /></p>
+<p><img src="/images/blog/physical-computing/hall-effect-output.png" alt="Hall Effect Output" data-action="zoom" /></p>
 
 <h2 id="disco-countdown">03: Disco Countdown</h2>
 <p>For the third task I created an “interesting” combination of flashing lights using three independently controlled LEDs. I used two green LEDs and two RGB LEDs to create a countdown effect. The green LEDs alternate at an increasingly rapid rate.
@@ -183,7 +179,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 <h3 id="diagram-2">Diagram</h3>
 
-<p><img src="/images/blog/physical-computing/disco-diagram.jpg" alt="Disco Countdown Diagram" /></p>
+<p><img src="/images/blog/physical-computing/disco-diagram.jpg" alt="Disco Countdown Diagram" data-action="zoom" /></p>
 
 <h3 id="sketch-code-2">Sketch Code</h3>
 
@@ -264,7 +260,7 @@ void loop() {
 </code></pre>
 
 <h3 id="output-2">Output</h3>
-<p><img src="/images/blog/physical-computing/disco-output.png" alt="Disco Countdown Output" /></p>
+<p><img src="/images/blog/physical-computing/disco-output.png" alt="Disco Countdown Output" data-action="zoom" /></p>
 
 <h2 id="light-dimmer-switch">04: Light Dimmer Switch</h2>
 
@@ -274,7 +270,7 @@ void loop() {
 
 <h3 id="diagram-3">Diagram</h3>
 
-<p><img src="/images/blog/physical-computing/dimmer-diagram.png" alt="Light Dimmer Diagram" /></p>
+<p><img src="/images/blog/physical-computing/dimmer-diagram.png" alt="Light Dimmer Diagram" data-action="zoom" /></p>
 
 <h3 id="sketch-code-3">Sketch Code</h3>
 
@@ -311,7 +307,7 @@ void loop() {
 </code></pre>
 
 <h3 id="output-3">Output</h3>
-<p><img src="/images/blog/physical-computing/dimmer-output.png" alt="Light Dimmer Output" /></p>
+<p><img src="/images/blog/physical-computing/dimmer-output.png" alt="Light Dimmer Output" data-action="zoom" /></p>
 
 <h2 id="doorbell">05: Doorbell</h2>
 
@@ -319,7 +315,7 @@ void loop() {
 
 <h3 id="diagram-4">Diagram</h3>
 
-<p><img src="/images/blog/physical-computing/buzzer-diagram.jpg" alt="Buzzer Diagram" /></p>
+<p><img src="/images/blog/physical-computing/buzzer-diagram.jpg" alt="Buzzer diagram" data-action="zoom" /></p>
 
 <h3 id="sketch-code-4">Sketch Code</h3>
 
@@ -350,7 +346,7 @@ void loop(){
 </code></pre>
 
 <h3 id="output-4">Output</h3>
-<p><img src="/images/blog/physical-computing/buzzer-output.png" alt="Buzzer Output" /></p>
+<p><img src="/images/blog/physical-computing/buzzer-output.png" alt="Buzzer Output" data-action="zoom" /></p>
 
 
 </article>
@@ -372,6 +368,8 @@ void loop(){
 
 
 
+
+<div class="push"></div>
 
       </div>
     </div>

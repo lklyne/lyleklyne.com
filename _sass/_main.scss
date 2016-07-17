@@ -91,6 +91,10 @@ $website-width: 48rem;
 
 *********************/
 
+.push {
+  height: 10rem;
+}
+
 body {
   font-family: "aleo", "PT Serif", Georgia, "Times New Roman", serif;
   letter-spacing: 0.02rem;
@@ -110,6 +114,7 @@ img {
 
 .site-wrap {
   min-height: 100%;
+  margin-bottom: -10rem;
 }
 
 .site-wrap:after {
@@ -205,17 +210,11 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
-
-
 }
 
 .active {
   font-weight: bold;
   border-bottom: 1px solid #555;
-}
-
-.measure .post {
-  background: white;
 }
 
 .site-header a:hover,
@@ -272,6 +271,10 @@ body {
   margin: 2rem 0;
   width: 100px;
   border-radius: 50%;
+}
+
+.post-content p {
+  background: white;
 }
 
 .pagination,
@@ -440,7 +443,8 @@ h6,
 }
 .social-icons a.fa:hover {
     opacity: 1;
-    color: #002EA7;
+    //color: #002EA7;
+  border-bottom: 1px solid black;
 }
 .social-icons iframe[title=Flattr] {
     position: relative;
@@ -515,6 +519,8 @@ h6,
 
 .front {
   z-index: 999;
+  min-height: 100vh;
+  margin-bottom: -10rem;
 }
 
 .front-menu-container {
@@ -718,8 +724,8 @@ h6,
   content: "";
   border: 5px black;
   border-style: solid;
-  height: 5px;
-  width: 5px;
+  height: 4px;
+  width: 4px;
   border-radius: 10px;
 }
 
@@ -1361,6 +1367,10 @@ $portfolio-aqua-alt: #F07B3F;
     margin-bottom: 1.333em;
   }
 
+  .site-wrap {
+    overflow: hidden;
+  }
+
   .front-logo {
   padding-bottom: 3rem;
   height: 240px;
@@ -1570,13 +1580,11 @@ $portfolio-aqua-alt: #F07B3F;
     padding-bottom: 0;
   }
   footer {
-    border-top: thin solid #f3f3f3;
   }
 
   footer,
   footer .wrap {
     color: #7a7a7a;
-    background-color: #fafafa;
     font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
     font-weight: 300;
     clear: both;

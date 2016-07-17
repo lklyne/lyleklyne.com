@@ -9,7 +9,7 @@ categories:
 ---
 
 <p class='regular' markdown='1'>
- **An  overview of how I built this website** and some of the resources I consulted during construction. In this post I'll talk about using the [**Jekyll**](http://jekyllrb.com/) blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what's coming next for this website.
+ *Note: I have made significant updates to the layout and organization of this site since this blog post. Stay tuned for another post on the recent updates.* **An  overview of how I built this website** and some of the resources I consulted during construction. In this post I'll talk about using the [**Jekyll**](http://jekyllrb.com/) blogging platform, modifying it to serve as a portfolio generator, picking and styling type, and what's coming next for this website.
 </p>
 
 <p class="center"> * * * </p>
@@ -31,19 +31,23 @@ I separated the website into three sections. A landing page that houses the blog
 The front page features five rotating images that I took with my iPhone. I had the images, CSS, and Javascript for rotation ready to go from version 1.0, but I wanted to incorporate some interactivity into the logo. The menu I discussed at the beginning of this post provides this interactivity. It serves as a gateway to the rest of the site, and slowly shifts opacity in hopes of enticing the user to click on it. I built it with [Tumult Hype 3](http://tumult.com/hype/).
 
 
-![Portfolio Titles](/images/blog/making-sausage/splash.jpg)
+
+<img src="/images/blog/making-sausage/splash.jpg" alt="Portfolio Tiles" data-action="zoom">
+
  
 
 For the portfolio, I used (surprise surprise) the [Jekyll portfolio plugin](https://github.com/flatterline/jekyll-plugins) written by Flatterline (now called [Velocity Labs](http://velocitylabs.io/)). They created a plugin that allowed me to style custom HTML and CSS templates for the portfolio page and individual items, which autogenerate as I add new projects. **Cool!**
 
 This section still needs some CSS fine tuning. The necessity to hover to see project titles is less than ideal on desktop and useless on mobile. I’m looking for an elegant solution:  
 
-![Portfolio Titles Hover Problem](/images/blog/making-sausage/portfolio-hover.jpg)
+<img src="/images/blog/making-sausage/portfolio-hover.jpg" alt="Portfolio Titles Hover Problem" data-action="zoom">
+
 
 Also, the titles and navigation on individual projects are inconsistant. <strike>This will be an easy fix:</strike> Fixed!  
 
 
-![Portfolio Controls Problem](/images/blog/making-sausage/portfolio-controls.jpg)
+<img src="/images/blog/making-sausage/portfolio-controls.jpg" alt="Portfolio Controls Problem" data-action="zoom">
+
 
 ## Type & Color
 
@@ -92,7 +96,8 @@ Blockquotes required some streamlining and styling from their Pixyll roots. They
 ### Color
 The accent color used througout the site is [International Klein Blue](https://en.wikipedia.org/wiki/International_Klein_Blue). It was developed by Yves Klein, who worked directly with a chemist to create this brilliant blue in the 1950's. I feel the resulting monochrome painting highlights this collaboration while idiolizing the tools of creation. I like that, and I feel a kinship with Yves because we share a last name (albeit a different spelling). It's also damn pretty on screens, although nothing like the canvas. 
 
-![Portfolio Titles](/images/blog/making-sausage/klein-blue.jpg)
+<img src="/images/blog/making-sausage/klein-blue.jpg" alt="Klein Blue" data-action="zoom">
+
 
 
 ## Whats Next?

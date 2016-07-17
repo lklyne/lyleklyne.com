@@ -40,7 +40,7 @@ organization, but I believe failed to represent what the organization had become
 
 #### Doodles
   I wanted the new logo to continue this tribute to organic growth but also to demonstrate that [Food is Free](https://www.facebook.com/foodisfree)
-  had become a global movement. The organization had grown up, and therefore I felt a more polished and professional approach would best. I sought to create a monogram using leaves.
+  had become a global movement. The organization had grown up, and therefore I felt a more polished and professional approach would be best. I sought to create a monogram using leaves.
 
 <img src="../../../images/projects/fif/fif2.jpg" alt="Food is Free Previous Logo" data-action="zoom">
 

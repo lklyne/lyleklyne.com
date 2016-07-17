@@ -33,30 +33,37 @@ There are many benefits to a well-designed physical device: actions are memorabl
 ### Joystick
 The joystick was designed to control temperature on the X axis and flow on the Y axis. In an effort to make it easily accessible, the off action is placed in the center of the device. This creates another advantage in that both cold and hot can be quickly accessed when turning the shower on. The box shaped controller is designed to be placed lower on the wall so that you can see the top and front of the box easily. The top of the box includes a digital display that can be glanced at to get relevant information such as flow rate and current temperature.  
 
-![Joystick Sketch](/images/blog/model-prototype/joystick.jpg)
+
+<img src="/images/blog/model-prototype/joystick.jpg" alt="Joystick Sketch" data-action="zoom">
+
 
 ### Sliders
 
 The slider is similar to the joystick model except that the X and Y axises have been broken and both placed along the X axis. The goal further simplify the control by employing the left-to-right, less-to-more analogy. Although I believe this design was successful in that regard, since the two sliders are identical it could be difficult to distinguish between them with soapy, closed eyes.
 
-![Sliders Sketch](/images/blog/model-prototype/sliders.jpg)
+<img src="/images/blog/model-prototype/sliders.jpg" alt="Sliders Sketch" data-action="zoom">
+
 
  
 ### Knob
 This design is very similar to the [Nest thermostat system](https://nest.com/?alt=1) applied to shower control. I sought to make a knob that incorporated two actions, twisting and pushing. The twisting would utilize a digital indicator to mark position, and the pushing would be used to toggle modes and turn the shower on and off. I felt the knob was the most compelling idea because of its simplicity and power. The final prototype had a surprisingly pleasing feeling when you pushed it.
 
-![Knob Sketch](/images/blog/model-prototype/knob.jpg)
+<img src="/images/blog/model-prototype/knob.jpg" alt="Know Sketch" data-action="zoom">
+
 
 
 ### Builds
 
 The joystick was built with matboard, a rubber band to allow the joystick to move, and an Allen wrench with a wooden button glued to the top. The slider prototype used a foam core with pins to simulate the sliders.  
 
-![Knob Sketch](/images/blog/model-prototype/joy-slide-photos.png)
+<img src="/images/blog/model-prototype/joy-slide-photos.png" alt="Photos - Joystick & Slider" data-action="zoom">
+
 
 The knob was built with laser cut mat board that was etched to allow it to bend in a circle. An alligator clip was used at the bottom to give a springy feeling when you pushed down on the nob, and several pieces of wood and crumpled tin foil were added to give the product more weight. I used colored construction paper and interchangeable sticky notes to create the interface.  
 
 ![Knob Sketch](/images/blog/model-prototype/knob-photos.png)
+<img src="/images/blog/model-prototype/knob-photos.png" alt="Photos - Knob" data-action="zoom">
+
 
 ## User Test & Reflections
 
