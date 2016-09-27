@@ -1163,34 +1163,73 @@ h6,
 .portfolio-nav-top a {
   color: #fff; }
 
-/* Thumbnail Styles */
+/* Portfolio Thumbnail Styles */
 .work {
-  margin: 2em 0;
-  display: table;
-  text-align: center; }
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
 
+.work a {
+  margin-top: 4em; }
+
+.work a {
+  width: 50%; }
+
+.work .portfolio-info {
+  width: 100%;
+  color: #333; }
+
+.work .portfolio-item {
+  margin: 0;
+  color: #333; }
+
+.work .portfolio-item-title {
+  margin-left: 1em;
+  font-weight: bold; }
+
+.work .portfolio-item-type {
+  padding-top: 1em;
+  margin-left: 1em;
+  font-weight: italic;
+  text-transform: capitalize; }
+
+.work .portfolio-item-body {
+  margin-left: 1em;
+  font-weight: lighter;
+  padding-top: 1em; }
+
+/*
 .work figure {
-  float: left;
-  margin-top: 3%;
-  margin-right: 3%;
-  margin-bottom: 0;
-  margin-left: 0;
-  height: 30%;
-  width: 30%;
-  line-height: 30%;
-  background: none;
-  padding: 0 !important;
-  position: relative;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.6s;
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  -ms-transition: 0.6s; }
+    
+
+
+
+    float: left;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: 30%;
+    width: 30%;
+    line-height: 30%;
+    background: none;
+    padding: 0 !important;
+    position: relative;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);  
+ 
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -ms-transition: 0.6s;
+
+}
 
 .work figure a img {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 .work figure dl {
   opacity: 0;
@@ -1201,31 +1240,37 @@ h6,
   top: 0;
   padding-top: 20%;
   margin: 0 auto;
-  line-height: 2.5;
+  line-height: 2.5; 
   background: rgba(255, 255, 255, 0.9);
   color: white;
+
+
   transition: 0.6s;
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
-  -ms-transition: 0.6s; }
+  -ms-transition: 0.6s;
+}
 
 .work figure:hover dl {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .work figure dl dt {
-  font-family: "aleo", "PT Serif", Georgia, "Times New Roman", serif;
-  font-size: 3rem;
+  font-family: "aleo", "PT Serif", Georgia, "Times New Roman", serif;    font-size: 3rem;
   font-size: 1em;
   color: #333;
   padding-top: 12%;
-  margin-bottom: -16px; }
+  margin-bottom: -16px;
+}
 
 .work figure dl dd {
   margin-left: 0;
   color: #333;
-  font-weight: lighter; }
+  font-weight: lighter;
+}
 
+*/
 .current {
    /*
    -webkit-filter: sepia(0) !important;
@@ -1413,7 +1458,7 @@ h6,
 /* Desktop/large Screens */
 @media screen and (min-width: 64em) {
   .container {
-    width: 104%;
+    width: 100%;
     -webkit-transform: translateZ(0); }
 
   .h1,
