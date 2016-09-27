@@ -2,43 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8153ccd7-6dca-41bb-85fd-3dda785f651f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/_posts/2015-02-24-ping.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7cba50b6fe6f6efb70a522b79c60532f5816dec3/_basscss.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7cba50b6fe6f6efb70a522b79c60532f5816dec3/_basscss.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7cba50b6fe6f6efb70a522b79c60532f5816dec3/_main.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7cba50b6fe6f6efb70a522b79c60532f5816dec3/_main.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7cba50b6fe6f6efb70a522b79c60532f5816dec3/_solarized-light.scssc" afterPath="$PROJECT_DIR$/.sass-cache/7cba50b6fe6f6efb70a522b79c60532f5816dec3/_solarized-light.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/projects.html" afterPath="$PROJECT_DIR$/_includes/projects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/shapes.html" afterPath="$PROJECT_DIR$/_includes/shapes.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_main.scss" afterPath="$PROJECT_DIR$/_sass/_main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/404.html" afterPath="$PROJECT_DIR$/_site/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/blog/index.html" afterPath="$PROJECT_DIR$/_site/blog/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/canvas-(Lyle-s-iMac's-conflicted-copy-2016-06-21)/index.html" afterPath="$PROJECT_DIR$/_site/canvas-(Lyle-s-iMac's-conflicted-copy-2016-06-21)/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/canvas/index.html" afterPath="$PROJECT_DIR$/_site/canvas/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/css/stylish.css" afterPath="$PROJECT_DIR$/_site/css/stylish.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/daydream/index.html" afterPath="$PROJECT_DIR$/_site/daydream/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/design-school/index.html" afterPath="$PROJECT_DIR$/_site/design-school/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/food-is-free/index.html" afterPath="$PROJECT_DIR$/_site/food-is-free/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/lab/-mobile-concept/index.html" afterPath="$PROJECT_DIR$/_site/lab/-mobile-concept/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/lab/circle/index.html" afterPath="$PROJECT_DIR$/_site/lab/circle/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/lab/ee-basics/index.html" afterPath="$PROJECT_DIR$/_site/lab/ee-basics/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/lab/index.html" afterPath="$PROJECT_DIR$/_site/lab/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/laser-cutting/index.html" afterPath="$PROJECT_DIR$/_site/laser-cutting/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/making-sausages/index.html" afterPath="$PROJECT_DIR$/_site/making-sausages/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/model-prototyping/index.html" afterPath="$PROJECT_DIR$/_site/model-prototyping/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/morse-messenger/index.html" afterPath="$PROJECT_DIR$/_site/morse-messenger/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/oh-hey-world/index.html" afterPath="$PROJECT_DIR$/_site/oh-hey-world/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/one-bus-away/index.html" afterPath="$PROJECT_DIR$/_site/one-bus-away/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/page2/index.html" afterPath="$PROJECT_DIR$/_site/page2/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/page3/index.html" afterPath="$PROJECT_DIR$/_site/page3/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/physical-computing-prototyping/index.html" afterPath="$PROJECT_DIR$/_site/physical-computing-prototyping/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ping/index.html" afterPath="$PROJECT_DIR$/_site/ping/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/relink/index.html" afterPath="$PROJECT_DIR$/_site/relink/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/spex/index.html" afterPath="$PROJECT_DIR$/_site/spex/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/wizard-of-oz/index.html" afterPath="$PROJECT_DIR$/_site/wizard-of-oz/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/work/index.html" afterPath="$PROJECT_DIR$/_site/work/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/_posts/2015-02-24-canvas.md" afterPath="$PROJECT_DIR$/portfolio/_posts/2015-02-24-canvas.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/_posts/2015-02-24-ping.md" afterPath="$PROJECT_DIR$/portfolio/_posts/2015-02-24-ping.md" />
     </list>
     <ignored path="lyleklyne.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,11 +53,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="projects.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="projects.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/_includes/projects.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+                <state relative-caret-position="585">
+                  <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -97,12 +79,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="2015-02-24-ping.md" pinned="false" current-in-tab="false">
+          <file leaf-file-name="2015-02-24-ping.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/portfolio/_posts/2015-02-24-ping.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="982">
-                    <caret line="316" column="122" selection-start-line="316" selection-start-column="122" selection-end-line="316" selection-end-column="122" />
+                  <first_editor relative-caret-position="630">
+                    <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
                     <folding />
                   </first_editor>
                   <second_editor />
@@ -228,8 +210,8 @@
           <file leaf-file-name="_main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_sass/_main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="478">
-                  <caret line="793" column="12" selection-start-line="793" selection-start-column="12" selection-end-line="793" selection-end-column="12" />
+                <state relative-caret-position="808">
+                  <caret line="1328" column="45" selection-start-line="1328" selection-start-column="45" selection-end-line="1328" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -375,10 +357,10 @@
         <option value="$PROJECT_DIR$/blog/_posts/2015-08-14-making-sausages.md" />
         <option value="$PROJECT_DIR$/portfolio/_posts/2015-02-24-canvas.md" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
-        <option value="$PROJECT_DIR$/portfolio/_posts/2015-02-24-ping.md" />
-        <option value="$PROJECT_DIR$/_sass/_main.scss" />
         <option value="$PROJECT_DIR$/_includes/shapes.html" />
         <option value="$PROJECT_DIR$/_includes/projects.html" />
+        <option value="$PROJECT_DIR$/_sass/_main.scss" />
+        <option value="$PROJECT_DIR$/portfolio/_posts/2015-02-24-ping.md" />
       </list>
     </option>
   </component>
@@ -682,12 +664,12 @@
       <workItem from="1470163741618" duration="17000" />
       <workItem from="1474329925943" duration="14849000" />
       <workItem from="1474657619702" duration="4820000" />
-      <workItem from="1474827334788" duration="10427000" />
+      <workItem from="1474827334788" duration="11796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204435000" />
+    <option name="totallyTimeSpent" value="205804000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1175,14 +1157,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/_main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="793" column="12" selection-start-line="793" selection-start-column="12" selection-end-line="793" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1199,11 +1173,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="1328" column="45" selection-start-line="1328" selection-start-column="45" selection-end-line="1328" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio/_posts/2015-02-24-ping.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="982">
-            <caret line="316" column="122" selection-start-line="316" selection-start-column="122" selection-end-line="316" selection-end-column="122" />
+          <first_editor relative-caret-position="630">
+            <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1211,14 +1201,6 @@
       </provider>
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
       </provider>
     </entry>
   </component>
