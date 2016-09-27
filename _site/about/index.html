@@ -91,6 +91,9 @@
     <a href="http://xn--ks8h.ws/"><div class="circle random transparent parallax-front"></div></a>
     <div class="circle-small random transparent parallax-middle"></div>
     
+    <a href="http://xn--ks8h.ws/"><div class="circle random transparent parallax-front"></div></a>
+    <div class="circle-small random transparent parallax-middle"></div>
+    
 
 
     <img src="/images/other/zag-small.png" class ="random transparent parallax-middle">
@@ -100,12 +103,21 @@
 
     <div class="random transparent parallax-middle"><a href="http://xn--ks8h.ws/">+</a></div>
 
+    <div class="random transparent parallax-middle"><a href="http://xn--ks8h.ws/">+</a></div>
 
+    <div class="random transparent parallax-middle"><a href="http://xn--ks8h.ws/">+</a></div>
+
+
+
+    <div class="cross random transparent parallax-front"></div>
 
     <div class="cross random transparent parallax-front"></div>
 
 
 
+    <div class="triangle random transparent parallax-front"></div>
+    <div class="triangle-small random transparent parallax-middle"></div>
+    
     <div class="triangle random transparent parallax-front"></div>
     <div class="triangle-small random transparent parallax-middle"></div>
     
@@ -128,6 +140,10 @@
     <div class="square3 random transparent parallax-back"></div>
 
 
+    
+    <div class="circle-small random transparent parallax-back"></div>
+    
+    <div class="circle-small random transparent parallax-back"></div>
     
     <div class="circle-small random transparent parallax-back"></div>
     
@@ -238,8 +254,8 @@ ga('send', 'pageview');
     var bodyHeight = document.body.clientHeight;
 
     $('.random').each(function() {
-      var randPosX = Math.floor((Math.random() * bodyWidth));
-      var randPosY = Math.floor((Math.random() * bodyHeight));
+      var randPosX = Math.floor((Math.random() * bodyWidth)) + 'px';
+      var randPosY = Math.floor((Math.random() * bodyHeight)) + 'px';
       var randomTime = Math.floor((Math.random() * 3000)) + 1000;
       $(this).css('left', randPosX);
       $(this).css('top', randPosY);

@@ -113,7 +113,7 @@
 
 <h3 id="sketch-code">Sketch Code</h3>
 
-<pre><code>int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+<div class="highlighter-rouge"><pre class="highlight"><code>int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
 int photocellReading;     // the analog reading from the sensor divider
 void setup(void) {
   // Send debugging information via the Serial monitor
@@ -130,6 +130,7 @@ void loop(void) {
   delay(500);
 }
 </code></pre>
+</div>
 
 <h3 id="output">Output</h3>
 <p><img src="/images/blog/physical-computing/photocell-output.png" alt="Photocell Output " data-action="zoom" /></p>
@@ -146,7 +147,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 <h3 id="sketch-code-1">Sketch Code</h3>
 
-<pre><code>const int hallPin = 12;    
+<div class="highlighter-rouge"><pre class="highlight"><code>const int hallPin = 12;    
 int hallState = 0;      
 void setup() {
     
@@ -165,6 +166,7 @@ void loop(){
 
 }
 </code></pre>
+</div>
 
 <h3 id="output-1">Output</h3>
 <p><img src="/images/blog/physical-computing/hall-effect-output.png" alt="Hall Effect Output" data-action="zoom" /></p>
@@ -183,7 +185,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 <h3 id="sketch-code-2">Sketch Code</h3>
 
-<pre><code>#define RED_PIN 9      // where the red pin is connected to
+<div class="highlighter-rouge"><pre class="highlight"><code>#define RED_PIN 9      // where the red pin is connected to
 #define GREEN_PIN 10   // where the green pin is connected to
 #define BLUE_PIN 11    // where the blue pin is connected to
 #define DELAY 1       // 2ms internal delay; increase for slower fades
@@ -258,6 +260,7 @@ void loop() {
   }
 }
 </code></pre>
+</div>
 
 <h3 id="output-2">Output</h3>
 <p><img src="/images/blog/physical-computing/disco-output.png" alt="Disco Countdown Output" data-action="zoom" /></p>
@@ -274,7 +277,7 @@ void loop() {
 
 <h3 id="sketch-code-3">Sketch Code</h3>
 
-<pre><code>int led = 9;           // the PWM pin the LED is attached to
+<div class="highlighter-rouge"><pre class="highlight"><code>int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 int analogPin = 3;   // potentiometer connected to analog pin 3
@@ -305,6 +308,7 @@ void loop() {
   delay(30);
 }
 </code></pre>
+</div>
 
 <h3 id="output-3">Output</h3>
 <p><img src="/images/blog/physical-computing/dimmer-output.png" alt="Light Dimmer Output" data-action="zoom" /></p>
@@ -319,7 +323,7 @@ void loop() {
 
 <h3 id="sketch-code-4">Sketch Code</h3>
 
-<pre><code>const int buttonPin = 2;    
+<div class="highlighter-rouge"><pre class="highlight"><code>const int buttonPin = 2;    
 const int buzzerPin =  3;      
 
 
@@ -344,6 +348,7 @@ void loop(){
   }
 }
 </code></pre>
+</div>
 
 <h3 id="output-4">Output</h3>
 <p><img src="/images/blog/physical-computing/buzzer-output.png" alt="Buzzer Output" data-action="zoom" /></p>
@@ -444,8 +449,8 @@ ga('send', 'pageview');
     var bodyHeight = document.body.clientHeight;
 
     $('.random').each(function() {
-      var randPosX = Math.floor((Math.random() * bodyWidth));
-      var randPosY = Math.floor((Math.random() * bodyHeight));
+      var randPosX = Math.floor((Math.random() * bodyWidth)) + 'px';
+      var randPosY = Math.floor((Math.random() * bodyHeight)) + 'px';
       var randomTime = Math.floor((Math.random() * 3000)) + 1000;
       $(this).css('left', randPosX);
       $(this).css('top', randPosY);

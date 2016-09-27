@@ -181,8 +181,40 @@
 
 
         <section class="work">
-          <a href="/spex" class="normal">
-    <div class='box grow shrink ui-shot portfolio-blue  current '>
+          <a href="/ping" class="featured">
+    <div class='box grow ui-shot portfolio-white  current '>
+
+        <img src="../images/projects/ping/isometric-maps.png" class="grow-big" alt="" />
+        <div class='title'>Ping </div>
+        <div class='description'>Location-based communication app facilitating disaster response.</div>
+    </div>
+    <div class=''>Ping </div>
+    <div class=''>Location-based communication app facilitating disaster response.</div>
+</a>
+
+<a href="/daydream" class="featured">
+    <div class='box grow portfolio-white '>
+        <img src="../images/projects/daydream/daydream-line.png" class="grow-big" alt="" />
+        <div class='title'>Daydream </div>
+        <div class='description'> Physical prototype exploring flexible, human-focused lighting for commercial spaces. </div>
+    </div>
+
+    <div class=''>Daydream </div>
+    <div class=''> Physical prototype exploring flexible, human-focused lighting for commercial spaces. </div>
+</a>
+
+<a href="/relink" class="normal">
+    <div class='box grow ui-shot portfolio-white '>
+        <img src="../images/projects/relink/relink-line.png" class="grow-big" alt="" />
+        <div class='title'>Relink </div>
+        <div class='description'>A conceptual smartpen and companion app.</div>
+    </div>
+</a>
+
+
+
+<a href="/spex" class="normal">
+    <div class='box grow ui-shot portfolio-white  current '>
 
         <img src="../images/projects/spex/spex-angle-line.png" class="grow-big" alt="" />
         <div class='title'>Spex  (current) </div>
@@ -192,37 +224,24 @@
 </a>
 
 <a href="/canvas" class="normal">
-    <div class='box grow shrink ui-shot portfolio-red '>
+    <div class='box grow ui-shot portfolio-white '>
         <img src="../images/projects/canvas/canvas-line.png" class="grow-big" alt="" />
         <div class='title'>Canvas </div>
         <div class='description'>Redesign of the popular Learning Management System.</div>
     </div>
 </a>
 
-<a href="/food-is-free" class="normal">
-    <div class='box grow shrink ui-shot portfolio-teal '>
-        <img src="../images/projects/fif/food-is-free-sign.png" class="grow-big" alt="" />
-        <div class='title'>Food Is Free </div>
-        <div class='description'> Logo design for a global non-profit.</div>
-    </div>
-</a>
+
+<!--<a href="/food-is-free" class="normal">-->
+    <!--<div class='box grow shrink ui-shot portfolio-teal '>-->
+        <!--<img src="../images/projects/fif/food-is-free-sign.png" class="grow-big" alt="" />-->
+        <!--<div class='title'>Food Is Free </div>-->
+        <!--<div class='description'> Logo design for a global non-profit.</div>-->
+    <!--</div>-->
+<!--</a>-->
 
 
-<a href="/relink" class="featured">
-    <div class='box grow shrink ui-shot portfolio-purple '>
-        <img src="../images/projects/relink/relink-line.png" class="grow-big" alt="" />
-        <div class='title'>Relink </div>
-        <div class='description'>A conceptual smartpen and companion app.</div>
-    </div>
-</a>
 
-<a href="/daydream" class="featured">
-    <div class='box grow shrink portfolio-blue '>
-        <img src="../images/projects/daydream/daydream-line.png" class="grow-big" alt="" />
-        <div class='title'>Daydream </div>
-        <div class='description'> Physical prototype exploring flexible, human-focused lighting for commercial spaces. </div>
-    </div>
-</a>
 
 
 <!--<a href="/natural-disasters" class="full-width">-->
@@ -319,8 +338,8 @@ ga('send', 'pageview');
     var bodyHeight = document.body.clientHeight;
 
     $('.random').each(function() {
-      var randPosX = Math.floor((Math.random() * bodyWidth));
-      var randPosY = Math.floor((Math.random() * bodyHeight));
+      var randPosX = Math.floor((Math.random() * bodyWidth)) + 'px';
+      var randPosY = Math.floor((Math.random() * bodyHeight)) + 'px';
       var randomTime = Math.floor((Math.random() * 3000)) + 1000;
       $(this).css('left', randPosX);
       $(this).css('top', randPosY);

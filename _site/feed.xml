@@ -82,7 +82,7 @@
 
 &lt;h3 id=&quot;sketch-code&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
 int photocellReading;     // the analog reading from the sensor divider
 void setup(void) {
   // Send debugging information via the Serial monitor
@@ -99,6 +99,7 @@ void loop(void) {
   delay(500);
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-output.png&quot; alt=&quot;Photocell Output &quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -115,7 +116,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 &lt;h3 id=&quot;sketch-code-1&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;const int hallPin = 12;    
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int hallPin = 12;    
 int hallState = 0;      
 void setup() {
     
@@ -134,6 +135,7 @@ void loop(){
 
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output-1&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-output.png&quot; alt=&quot;Hall Effect Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -152,7 +154,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 &lt;h3 id=&quot;sketch-code-2&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
 #define GREEN_PIN 10   // where the green pin is connected to
 #define BLUE_PIN 11    // where the blue pin is connected to
 #define DELAY 1       // 2ms internal delay; increase for slower fades
@@ -227,6 +229,7 @@ void loop() {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output-2&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-output.png&quot; alt=&quot;Disco Countdown Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -243,7 +246,7 @@ void loop() {
 
 &lt;h3 id=&quot;sketch-code-3&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 int analogPin = 3;   // potentiometer connected to analog pin 3
@@ -274,6 +277,7 @@ void loop() {
   delay(30);
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output-3&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-output.png&quot; alt=&quot;Light Dimmer Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -288,7 +292,7 @@ void loop() {
 
 &lt;h3 id=&quot;sketch-code-4&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;const int buttonPin = 2;    
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int buttonPin = 2;    
 const int buzzerPin =  3;      
 
 
@@ -313,6 +317,7 @@ void loop(){
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;output-4&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-output.png&quot; alt=&quot;Buzzer Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
