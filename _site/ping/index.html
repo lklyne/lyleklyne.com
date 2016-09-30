@@ -14,6 +14,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
     <link href="/css/zoom.css" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="/css/magnific-popup.css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
@@ -25,11 +27,11 @@
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
-
     <script type="text/javascript" src="/js/transition.js"></script>
     <script type="text/javascript" src="/js/zoom.min.js"></script>
-
     <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
+    <!-- Magnific Popup core JS file -->
+    <script src="/js/jquery.magnific-popup.min.js"></script>
 
   
     <!--[if lt IE 9]>
@@ -40,7 +42,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Ping">
-    <meta property="og:description" content="Location-based communication app facilitating disaster response.">
+    <meta property="og:description" content="Location-based collaboration app facilitating disaster response.">
     <meta property="og:url" content="http://lyleklyne.com/ping/">
     <meta property="og:site_name" content="Lyle Klyne">
 
@@ -91,7 +93,11 @@
         <div class="post-header mb2">
 
           <h1>Ping</h1>
-          <h4>Location-based communication app facilitating disaster response.</h4>
+          <p>Location-based collaboration app facilitating disaster response.</p>
+
+          
+              <button class="center" id="video-modal">Play  Video</button>
+          
 
 
 
@@ -101,13 +107,16 @@
 
         
 
-        <img src="/images/projects/ping/ping-hero.png" class="project-hero-img" alt="Ping hero image" data-action="zoom"/>
 
-        <div class="project-summary">
+
+          <img src="/images/projects/ping/ping-hero.png" class="project-hero-img" alt="Ping hero image" data-action="zoom"/>
+
+
+          <div class="project-summary">
           <div class="project-overview">
             <h2>Overview</h2>
-            <h6>Summary</h6>
-            <p><b>Ping</b> is the result of asking one simple question: How can we reduce the negative impact of a natural disaster? After 10 weeks of research and 10 weeks of design in a team of three, we created an interactive prototype for a communication app. The resulting app allows people to ask questions, share information, and trade resources before and during crisis events, building community reseliance through location-based chat. 
+            <!--<h6>Summary</h6>-->
+            <p><b>Ping</b> is the result of asking one simple question: How can we reduce the negative impact of a natural disaster?  I worked in a team of three to create Ping, a hyper-local collaboration and communication app. The app allows people to ask questions, share information, and trade resources before and during crisis events, building community reseliance through location-based chat. 
 </p>
           </div>
 
@@ -127,8 +136,8 @@
         </div>
 
         <article class="post-content">
-            <h5 id="process">Process</h5>
-<p><img src="../../../images/projects/canvas/process-standard.png" alt="Canvas Process" data-action="zoom" /></p>
+            <!--##### Process-->
+<!--<img src="../../../images/projects/canvas/process-standard.png" alt="Canvas Process" data-action="zoom">-->
 
 <h2 id="problem">Problem</h2>
 
@@ -154,10 +163,7 @@
 
 <p><b>To find a solution,</b> we began by looking at the five phases of a natural disaster (preparedness, prevention, event, response and recovery). We quickly decided to focus on response to early recovery, which has a greater potential for improvement and a more sustained impact.</p>
 
-<p><br />
-<br /></p>
-<div class="center"><h5>*  *  *</h5></div>
-<p><br /></p>
+<div class="center section-break"><h5>*  *  *</h5></div>
 
 <h2 id="research">Research</h2>
 
@@ -209,11 +215,9 @@
 <p>Existing products for communication and organization work well for daily needs, but even the most popular ones leave a lot to be desired in the context of disaster response. We looked at expanding upon one of these platforms to improve where it falls short, but ultimately decided a standalone approach would be the best. The main reason for this was that we wanted to support two collaborative actives: list making and location-based information sharing.</p>
 
 <p><img src="../../../images/projects/ping/ping-competitive-analysis.png" class="project-hero-img" alt="Ping - Competitive Analysis" data-action="zoom" /></p>
+<div class="center img-caption">Competitive Analysis</div>
 
-<p><br />
-<br /></p>
-<div class="center"><h5>*  *  *</h5></div>
-<p><br /></p>
+<div class="center section-break"><h5>*  *  *</h5></div>
 
 <h2 id="ideation">Ideation</h2>
 
@@ -242,9 +246,12 @@
 <img src="../../../images/projects/ping/ideation-4.jpg" class="img-small" alt="Ping - Ideation 4" data-action="zoom" />
 </div>
 
+<div class="center img-caption">Moments from ideation</div>
+
 <p>After several ideation sessions, we had generated over 200 ideas. We then organized, grouped, and combined them wherever possible. From these ideas, we selected the thirteen most promising based on group consensus. We evaluated ideas based on each ones applicability, feasibility, and novelty.</p>
 
 <p><img src="../../../images/projects/ping/ideation-5.jpg" class="project-hero-img" alt="Ping - Ideation 5" data-action="zoom" /></p>
+<div class="center img-caption">Top 13 ideas and a snack</div>
 
 <h4 id="storyboarding">Storyboarding</h4>
 
@@ -252,10 +259,9 @@
 
 <p><img src="../../../images/projects/ping/ping-13-ideas.jpg" class="project-hero-img" alt="Ping - Competitive Analysis" data-action="zoom" /></p>
 
-<p><br />
-<br /></p>
-<div class="center"><h5>*  *  *</h5></div>
-<p><br /></p>
+<div class="center img-caption">Top 13 ideas</div>
+
+<div class="center section-break"><h5>*  *  *</h5></div>
 
 <h2 id="prototyping">Prototyping</h2>
 
@@ -275,14 +281,15 @@
   </li>
 </ol>
 
-<h3 id="privacy-and-trust">1. Privacy and Trust</h3>
+<h3 id="privacy-and-trust">Privacy and Trust</h3>
 
-<p><strong>Is there a balance between information that people are comfortable disclosing and information that is required to evaluate trustworthiness?</strong></p>
+<p>Is there a balance between information that people are comfortable disclosing and information that is required to evaluate trustworthiness?</p>
 
-<h4 id="card-sort">Card Sort</h4>
 <p>During the prototype evaluation we presented participants with example profile pages with varying levels of information and ask them to rate the profile’s trustworthiness based on a variety of actions. In a second phase, we asked how comfortable participants would be if the profile was their own and shared with the public. The final phase all attributes of the full profile are broken apart, and the participant was asked to rank how valuable this information is to them.</p>
 
-<p><img src="../../../images/projects/ping/ping-trust.jpg" class="project-hero-img" alt="Ping - Competitive Analysis" data-action="zoom" /></p>
+<p><img src="../../../images/projects/ping/ping-trust.jpg" class="project-hero-img" alt="Ping - Card Sort" data-action="zoom" /></p>
+
+<div class="center img-caption">Card sorting activity</div>
 
 <h4 id="findings">Findings</h4>
 <ul>
@@ -290,11 +297,10 @@
   <li>Sharing a persons current location is not useful for building trust and is a privacy concern as well.</li>
 </ul>
 
-<h3 id="collaborative-tools">2. Collaborative Tools</h3>
+<h3 id="collaborative-tools">Collaborative Tools</h3>
 
-<p><strong>How can we improve resource and information sharing within a local community &amp; where do existing tools fall short in collaborative decision making?</strong></p>
+<p>How can we improve resource and information sharing within a local community &amp; where do existing tools fall short in collaborative decision making?</p>
 
-<h4 id="camping-activity">Camping Activity</h4>
 <p>Since emulating an evacuation scenario would be inherently inaccurate, we sought out a parallel scenario: a group camping trip. A group of 4-6 people were asked to coordinate plans and supplies under time constraints. In the pilot version of the activity, the group was asked to complete this task with one member acting as the group leader. The leader was given a short checklist and asked to document the planning process using pen and paper and verbal communication. In the subsequent activity, a similar sized group was asked to complete the same task using a chat room and a shared google doc.</p>
 
 <div class="img-collage">
@@ -308,11 +314,10 @@
   <li>These bits of micro-information can be tedious to address and find group consensus on using verbal communication.</li>
 </ul>
 
-<h3 id="group-formation">3. Group Formation</h3>
+<h3 id="group-formation">Group Formation</h3>
 
-<p><strong>Do individuals feel more comfortable requesting favors from strangers in close proximity to strangers that are further away?</strong></p>
+<p>Do individuals feel more comfortable requesting favors from strangers in close proximity to strangers that are further away?</p>
 
-<h4 id="behavioral-prototype">Behavioral Prototype</h4>
 <p>We conducted a behavioral prototype to answer this question. For this prototype, we recruited three participants: two women and a man ages 23- 31. Participants went through a time-sensitive scavenger hunt to emulate the stress of disaster response. They had to find resources to survive a mock disaster. We used Slack so simulate the location-based groups. We modified Slack’s functionality in two ways to use it as a prototyping tool. We created channels labeled “five minutes away,” “30 minutes away,” etc, to emulate location-based groups. Second, we added distances to usernames to let the participant know how far away the people they were talking were. We also included a group titled “nearby friends” allowing participants to access people they had already connected with.</p>
 
 <div class="img-collage">
@@ -328,10 +333,7 @@
   <li>For information seeking that doesn’t require meeting in person, participants did not prefer friends to strangers.</li>
 </ul>
 
-<p><br />
-<br /></p>
-<div class="center"><h5>*  *  *</h5></div>
-<p><br /></p>
+<div class="center section-break"><h5>*  *  *</h5></div>
 
 <h2 id="design">Design</h2>
 
@@ -339,11 +341,8 @@
 
 <p>Our solution is a mobile communication application designed to support survivors in an urban environment before and during a crisis events. Ping allows people to ask questions and share resources, building community resilience through location based chat.</p>
 
-<h5 id="wireframes">WIREFRAMES</h5>
 <p><img src="../../../images/projects/ping/ping-wireframes.jpg" class="project-hero-img" alt="Ping - Wireframes" data-action="zoom" /></p>
-
-<h5 id="interaction-model">INTERACTION MODEL</h5>
-<p><img src="../../../images/projects/ping/interaction-model.png" class="project-hero-img" alt="Ping - Interaction Model" data-action="zoom" /></p>
+<div class="center img-caption">Wireframes</div>
 
 <h3 id="principles">Principles</h3>
 
@@ -362,9 +361,11 @@
 
 <p>Understanding your surroundings, or “situational awareness,” is one of the top priorities after a disaster. It is necessary to prevent further damages to property and to keep you safe. Due to the chaotic nature of disasters and infrastructure failures, it can be tough to get current information. An example of this from our research is disaster survivors who had difficulty knowing which stores were open to get the supplies they needed. TJ McDonald of the Seattle Office of Emergency Management remarked that situational awareness is especially low in the places that have the most damage and need the most aid.</p>
 
-<h5 id="info-discussions">INFO DISCUSSIONS</h5>
+<h5 id="map-based-discussions">MAP-BASED DISCUSSIONS</h5>
 
 <p>Information discussion groups are location specific groups for crowd-sourcing information. Nearby information groups can be viewed in either the list or map views. A combination search and add new input field was designed to aid in rapidly finding information while reducing duplicate discussions. Since Information Discussions are location specific, the participants in the thread are all local to the inquiry helping to reduce irrelevant and incorrect information.</p>
+
+<p><img src="../../../images/projects/ping/p1-bridge.png" class="project-hero-img" alt="Design Principle 1 - Location Based Discussions" data-action="zoom" /></p>
 
 <h4 id="design-principle-2---streamline-organization">Design Principle 2 - Streamline organization</h4>
 
@@ -373,6 +374,8 @@
 <h5 id="list-feature">LIST FEATURE</h5>
 
 <p>In the List Feature screen the chat input field has been repurposed to enter new items to the list. Each item has a quantity of people requesting this item. A swipe left on the item requests it, while a right swipe will mark a contribution. A dialogue to enter the quantity is shown for both requests and contributions. Finally, items can be discussed by tapping on the item.</p>
+
+<p><img src="../../../images/projects/ping/p2-lists.png" class="project-hero-img" alt="Design Principle 2 - Streamline organization" data-action="zoom" /></p>
 
 <h4 id="design-principle-3---reduce-noise">Design Principle 3 - Reduce noise</h4>
 
@@ -384,6 +387,12 @@
 <h5 id="location-based-group-chat">LOCATION BASED GROUP CHAT</h5>
 <p>Group chats are another method to reduce noise and further scope conversations. Groups are also searched for and created through the same input to reduce duplicates.</p>
 
+<video width="100%" height="auto" autoplay="" loop="" data-action="zoom">
+  <source src="../../../images/projects/ping/video-p3-pins.mp4" type="video/mp4" />
+  <source src="movie.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
 <h4 id="design-principle-4---graceful-degradation">Design Principle 4 - Graceful degradation</h4>
 
 <p>We designed Ping to be durable against infrastructure damages after a natural disaster. In the case of cellular network disruptions, Ping switches to a Bluetooth mesh network mode. We hope that Ping will be used before a disaster. This wont always be the case, so Ping has a SMS interface for people who don’t have it. SMS is one of the most robust communication protocols, meaning even those who do have the app can use it as a fallback.</p>
@@ -391,14 +400,18 @@
 <h5 id="sms-interface">SMS INTERFACE</h5>
 <p>Similar to Twitter, Ping also has a SMS interface. New messages are sent via text and the application can be interacted with special text based commands. The above example shows the interface in both the app and SMS for the Capitol Hill Volunteers group.</p>
 
+<p><img src="../../../images/projects/ping/p4-sms.png" class="project-hero-img" alt="Design Principle 4 - Graceful Degradation" data-action="zoom" /></p>
+
 <h4 id="design-principle-5---everyday-versatility">Design Principle 5 - Everyday Versatility</h4>
 
 <p>We were warned by our subject matter experts multiple times not to design a disaster only solution. Ping is at its core designed for natural disaster response, but also with day to day utility as well.</p>
 
 <h5 id="day-to-day-utility">DAY TO DAY UTILITY</h5>
-<p>Ping’s location based chat groups are not limited in anyway to disaster specific applica- tions, meaning groups can be created as people see fit. In the above example is a group for dog owners. This type of flexibility is necessary to help build a user base and ultimate- ly encourage Ping’s use for disaster scenarios as well.</p>
+<p>Ping’s location based chat groups are not limited in anyway to disaster specific applications, meaning groups can be created as people see fit. In the above example is a group for dog owners. This type of flexibility is necessary to help build a user base and ultimately encourage Ping’s use for disaster scenarios as well.</p>
 
 <p>The list feature is also generalizeable to daily use. The example above shows how lists can be used to plan a potluck with friends.</p>
+
+<p><img src="../../../images/projects/ping/p5-dog-owners.png" class="project-hero-img" alt="Design Principle 4 - Day-to-day Utility" data-action="zoom" /></p>
 
 <h4 id="design-principle-6---trust-and-privacy">Design Principle 6 - Trust and Privacy</h4>
 
@@ -410,23 +423,54 @@
 
 <p>The user profiles page use the actual first name of a user. Our test participants generally felt that first name and profile images were safe to share with the public. The Thanks ranking system shown in the far right screen allows individuals to receive thanks for good deeds and helpful information.</p>
 
-<p><br />
-<br /></p>
-<div class="center"><h5>*  *  *</h5></div>
-<p><br /></p>
+<p><img src="../../../images/projects/ping/p6-privacy-trust.png" class="project-hero-img" alt="Design Principle 6 - Privacy and trust" data-action="zoom" /></p>
+
+<div class="center section-break"><h5>*  *  *</h5></div>
 
 <h2 id="story--visuals">Story &amp; Visuals</h2>
 
-<p>Telling a story about delicate instances of tragedy requires tact, and it took some time to get this right. We wanted the tone and presentation to be considerate of people who have suffered from tragic events, avoid sensationalism, and encourage positivity. To do this we decided to use real-world imagery sparingly, and settled on a more abstract, isometric graphics. These were consistent across our presentation, poster, and video.</p>
+<p>Telling a story about instances of tragedy requires tact, and it took some time to get this right. We wanted the tone and presentation to be considerate of people who have suffered from tragic events, avoid sensationalism, and encourage positivity. To do this we decided to use real-world imagery sparingly, and settled on a more abstract, isometric graphics. These were consistent across our presentation, poster, and video.</p>
 
 <h4 id="video">Video</h4>
 <div class="videoWrapper">
 <iframe src="https://player.vimeo.com/video/179248839" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 </div>
-
-<p>For this project, we sought to create something that would reduce the terrible impact natural disasters often have. Critical to this was not only successful execution of the design, but also clear communication of how Ping works. This wouldn’t have been possible without a lot of hard work and close collaboration with my teammates. Fortunately, they were both fantastic and up for the task. We made everything ourselves. The interface, icons, branding, and presentation assets were all hand built.</p>
+<p><br />
+The interface, icons, branding, and presentation assets were all hand built.</p>
 
 <p><img src="../../../images/projects/ping/ping-visual-components.png" class="project-hero-img" alt="Ping - Visual Components" data-action="zoom" /></p>
+
+<div class="center img-caption">Logo and iconography</div>
+
+<p><img src="../../../images/projects/ping/ping-firetruck.jpg" class="project-hero-img" alt="Ping - Firetruck" data-action="zoom" /></p>
+
+<p><img src="../../../images/projects/ping/ping-police.jpg" class="project-hero-img" alt="Ping - Police" data-action="zoom" /></p>
+
+<p><img src="../../../images/projects/ping/ping-bridge.jpg" class="project-hero-img" alt="Ping - Bridge" data-action="zoom" /></p>
+
+<p><img src="../../../images/projects/ping/ping-people.jpg" class="project-hero-img" alt="Ping - People" data-action="zoom" /></p>
+
+<p><img src="../../../images/projects/ping/ping-houses.jpg" class="project-hero-img" alt="Ping - Houses" data-action="zoom" /></p>
+
+<p><img src="../../../images/projects/ping/ping-icons.jpg" class="project-hero-img" alt="Ping - Icons" data-action="zoom" /></p>
+
+<p><img src="../../../images/projects/ping/ping-poster.png" class="project-hero-img" alt="Ping - Poster" data-action="zoom" /></p>
+
+<h2 id="outcome">Outcome</h2>
+<p>This project culminated in a presentation to industry and faculty for the MHCI+D capstone. We received some fantastic feedback, especially regarding alternate ways to provide local networks in the event of infrastructure failures. For this project, we sought to create something that would reduce the terrible impact natural disasters often have. Critical to this was not only successful execution of the design, but also clear communication of how Ping works. This wouldn’t have been possible without a lot of hard work and close collaboration with my teammates. I was fortunate enough to work with a fantastic team, and they were both and up for the task.</p>
+
+<h4 id="next-steps">Next Steps</h4>
+<p>Our prototype is a solid first step towards evaluating our idea. Next steps would include simplifying some of the core features into an MVP, and testing it in some real-world scenarios. Metropolitan areas in the pacific northwest have been placing emphasis on earthquakes and disaster response in recent years. It would be great to put a prototype in front of the community groups preparing for earthquakes, as well as city groups and organizations conducting mock trials to prepare for a large-scale earthquake.</p>
+
+<script type="text/javascript">
+$('#video-modal').magnificPopup({
+    items: {
+      src: 'https://vimeo.com/179248839'
+    },
+    type: 'iframe' // this is default type
+  });
+</script>
+
 
         </article>
 
@@ -436,9 +480,9 @@
 
         <section class="work">
           <a href="/ping" class="featured">
-    <div class='box grow shrink ui-shot portfolio-blue '>
+    <div class='box grow shrink ui-shot portfolio-blue  current '>
 
-        <img src="../images/projects/ping/isometric-maps.png" class="grow-big" alt="" />
+        <img src="../images/projects/ping/ping-tile.png" class="grow-big" alt="" />
         <div class='title'>Ping  (current) </div>
         <div class='description'>Location-based communication app facilitating disaster response.</div>
     </div>
@@ -723,6 +767,7 @@ ga('send', 'pageview');
   });
 
   moveForeground();
+
 
 
 </script>

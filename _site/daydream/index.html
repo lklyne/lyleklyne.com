@@ -14,6 +14,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
     <link href="/css/zoom.css" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="/css/magnific-popup.css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
@@ -25,11 +27,11 @@
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="/js/js.js"></script>
-
     <script type="text/javascript" src="/js/transition.js"></script>
     <script type="text/javascript" src="/js/zoom.min.js"></script>
-
     <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
+    <!-- Magnific Popup core JS file -->
+    <script src="/js/jquery.magnific-popup.min.js"></script>
 
   
     <!--[if lt IE 9]>
@@ -91,7 +93,11 @@
         <div class="post-header mb2">
 
           <h1>Daydream</h1>
-          <h4>Physical prototype exploring flexible, human-focused lighting for commercial spaces. Awarded "Best Gizmo" in the 2016 UW Maker Summit.</h4>
+          <p>Physical prototype exploring flexible, human-focused lighting for commercial spaces. Awarded "Best Gizmo" in the 2016 UW Maker Summit.</p>
+
+          
+              <button class="center" id="video-modal">Play  Video</button>
+          
 
 
 
@@ -101,13 +107,16 @@
 
         
 
-        <img src="../../../images/projects/daydream/daydream01.jpg" class="project-hero-img" alt="Daydream hero image" data-action="zoom"/>
 
-        <div class="project-summary">
+
+          <img src="../../../images/projects/daydream/daydream-hero.jpg" class="project-hero-img" alt="Daydream hero image" data-action="zoom"/>
+
+
+          <div class="project-summary">
           <div class="project-overview">
             <h2>Overview</h2>
-            <h6>Summary</h6>
-            <p>Daydream is a prototyping platform designed to test alternatives to the overhead lighting typically found in commercial spaces. We tested various lighting scenarios with the following questions in mind: How can indoor lighting be improved to feel more organic and natural? Can a lighting array assist in emergency situations? What is the effect of lighting on mood, chronobiology, and health?
+            <!--<h6>Summary</h6>-->
+            <p>Daydream is a prototyping platform designed to test alternatives to the overhead lighting typically found in commercial spaces. I worked as a team of two to test various lighting scenarios with the following questions in mind: How can indoor lighting be improved to feel more organic and natural? Can a lighting array assist in emergency situations? What is the effect of lighting on mood, chronobiology, and health?
 </p>
           </div>
 
@@ -125,15 +134,13 @@
         </div>
 
         <article class="post-content">
-            <h4 id="process">Process</h4>
-<p><img src="../../../images/projects/daydream/process-daydream.png" alt="Daydream Process" data-action="zoom" /></p>
+            <!--#### Process-->
+<!--<img src="../../../images/projects/daydream/process-daydream.png" alt="Daydream Process" data-action="zoom">-->
 
 <h2 id="problem">Problem</h2>
 <p>Drop ceiling lighting is both ubiquitous and unsightly. With high rise buildings and public spaces regularly being renovated for modern use, architecture firms and the institutions they serve are seeking new lighting solutions that can work with existing infrastructure.</p>
 
 <p>LED lighting is quickly becoming a more affordable, more energy efficient alternative to fluorescent lighting. As we will prove out with our prototype and user testing, an LED array has the flexibility to provide a much wider selection of lighting scenarios, including more natural, humanistic lighting and special case lighting for emergencies. Companies such as Philips are looking at OLED technology that can make a light as thin as a sheet of paper that can bend - opening up a whole new world of potential smart lighting and smart ceilings. Our prototype is intended to be a first step towards this new technology.</p>
-
-<h3 id="reference-images">Reference images</h3>
 
 <div class="img-collage">
 <img src="../../../images/projects/daydream/inspiration-00.jpg" class="img-small" alt="Daydream inspiration 1" data-action="zoom" />
@@ -144,6 +151,10 @@
 
 <img src="../../../images/projects/daydream/inspiration-04.jpg" class="img-small" alt="Daydream inspiration 4" data-action="zoom" />
 </div>
+
+<div class="center img-caption">Reference images for inspiration</div>
+
+<div class="center section-break"><h5>*  *  *</h5></div>
 
 <h2 id="concept-exploration">Concept exploration</h2>
 <p>Before we had decided to focus on conventional fluorescent-box lighting, we generally knew we wanted to explore the realm of lights. We began by creating 2x2 matrices to find interesting new problem areas. The first explores matrix explores notions of portability. Is this something you carry on your person, plug in and occasionally move, or is it completely stationary?</p>
@@ -158,9 +169,11 @@
 
 <h3 id="refinement--planning">Refinement &amp; Planning</h3>
 
-<p>Knowing that we wanted to improve on conventional fluorescent-box lighting, we decided it would be best to build a scale model to prototype solutions. A full scale prototype would have been ideal but was out of scope for the time frame of the project. We sketched some ideas for a model that could be used to test initial ideas and assumptions.</p>
+<p>Knowing that we wanted to improve on conventional fluorescent-box lighting, we decided it would be best to build a scale model to prototype solutions. A full scale prototype would have been ideal but was out of scope for the time frame of the project. Here are some ideas I sketched for a model that could be used to test initial ideas and assumptions.</p>
 
 <p><img src="../../../images/projects/daydream/sketch-00.jpg" alt="Sketch 1 Daydream" data-action="zoom" /></p>
+
+<div class="center section-break"><h5>*  *  *</h5></div>
 
 <h2 id="construction">Construction</h2>
 <p>The first step was to build a model in Rhino, this model was then used for part-planning.</p>
@@ -211,33 +224,48 @@
 
 <p><img src="../../../images/projects/daydream/build-11.jpg" alt="Build 12 Daydream" data-action="zoom" /></p>
 
-<h2 id="future-work">Future work</h2>
+<div class="center section-break"><h5>*  *  *</h5></div>
 
-<p>Our physical prototype was focused on lighting of public spaces with drop ceiling lighting, however we can imagine a myriad of future applications- including warehouses, large department stores, outdoor covered platforms (such as that found at airports).</p>
+<h2 id="final-build">Final Build</h2>
+
+<p><img src="../../../images/projects/daydream/final-00.jpg" alt="Final 01 Daydream" data-action="zoom" />
+<img src="../../../images/projects/daydream/final-01.jpg" alt="Final 02 Daydream" data-action="zoom" />
+<img src="../../../images/projects/daydream/final-02.jpg" alt="Final 03 Daydream" data-action="zoom" />
+<img src="../../../images/projects/daydream/final-03.jpg" alt="Final 04 Daydream" data-action="zoom" />
+<img src="../../../images/projects/daydream/daydream01.jpg" alt="Final 05 Daydream" data-action="zoom" /></p>
+
+<div class="videoWrapper">
+    <iframe src="https://player.vimeo.com/video/159459798" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+<div class="center section-break"><h5>*  *  *</h5></div>
+
+<h2 id="outcome">Outcome</h2>
+<p>This project was presented at two design salons on University of Washington campus. The first was to the Design Use Build (DUB) community at the University of Washington Comotion Maker space along side other MHCI+D and Human-Centered Design and Engineering students. The second was the Area 01 Maker Summit, a yearly design competition at UW where <strong>we received first place for “Best Gizmo”</strong>. Engineers at Boeing remarked that this type of lighting could have a beneficial impact for long-distance travel, such as international flights or space travel. Many other mentioned the potential for smaller-scale commercial applications.</p>
+
+<h4 id="next-steps--future-work">Next Steps &amp; Future Work</h4>
+<p>Our physical prototype was focused on lighting public spaces with drop ceiling lighting, however we can imagine a myriad of future applications- including warehouses, large department stores, outdoor covered platforms (such as that found at airports), and long-distance travel. This design could also be scaled down to a more personal, consumer level device that could be placed in a room of a house without the need for costly installation.</p>
 
 <p>Another area of potential work is in creating the user interface for controlling the array - this would including a wall-mounted device (similar to nest) as well as a web-based interface where customers could create and share custom lighting scenarios.</p>
 
-<h4 id="amazon-warehouse--hong-kong-airport">Amazon warehouse &amp; Hong Kong Airport</h4>
 <div class="img-collage">
 <img src="../../../images/projects/daydream/amazon.jpg" class="img-small" alt="Amazon Warehouse" data-action="zoom" />
 
 <img src="../../../images/projects/daydream/airport.jpg" class="img-small" alt="2x2 2 Daydream" data-action="zoom" />
 </div>
 
-<h2 id="final-build">Final Build</h2>
+<div class="center img-caption">Potential locations: Amazon Warehouse &amp; Hong Kong Airport</div>
 
-<p><img src="../../../images/projects/daydream/final-04.jpg" alt="Final 00 Daydream" data-action="zoom" />
-<img src="../../../images/projects/daydream/final-00.jpg" alt="Final 01 Daydream" data-action="zoom" />
-<img src="../../../images/projects/daydream/final-01.jpg" alt="Final 02 Daydream" data-action="zoom" />
-<img src="../../../images/projects/daydream/final-02.jpg" alt="Final 03 Daydream" data-action="zoom" />
-<img src="../../../images/projects/daydream/final-03.jpg" alt="Final 04 Daydream" data-action="zoom" />
-<img src="../../../images/projects/daydream/daydream01.jpg" alt="Final 05 Daydream" data-action="zoom" /></p>
+<script type="text/javascript">
 
-<h2 id="video">Video</h2>
-
-<div class="videoWrapper">
-    <iframe src="https://player.vimeo.com/video/159459798" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-</div>
+$('#video-modal').magnificPopup({
+    items: {
+      src: 'https://vimeo.com/159459798'
+    },
+    type: 'iframe' // this is default type
+  });
+  
+</script>
 
 
         </article>
@@ -250,7 +278,7 @@
           <a href="/ping" class="featured">
     <div class='box grow shrink ui-shot portfolio-blue '>
 
-        <img src="../images/projects/ping/isometric-maps.png" class="grow-big" alt="" />
+        <img src="../images/projects/ping/ping-tile.png" class="grow-big" alt="" />
         <div class='title'>Ping </div>
         <div class='description'>Location-based communication app facilitating disaster response.</div>
     </div>
@@ -535,6 +563,7 @@ ga('send', 'pageview');
   });
 
   moveForeground();
+
 
 
 </script>

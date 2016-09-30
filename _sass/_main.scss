@@ -83,7 +83,8 @@
 
 $website-width: 52rem;
 
-$website-background: #FAFAFA;
+$website-background: white;
+
 
 
 /********************
@@ -128,10 +129,10 @@ img {
 
 body {
   font-size: 1.5rem;
-
           box-sizing: border-box;
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  background-color: $website-background;
 }
 
   .p,
@@ -159,7 +160,7 @@ body {
   text-align: center;
   margin-left: 0;
   padding-top: .1rem;
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba($website-background, 0.98);
   /*
   background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01));
   background: -o-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01)); 
@@ -277,10 +278,25 @@ body {
 }
 
 .post-content p {
-  background: white;
-  -webkit-box-shadow: 0px 0px 80px 20px rgba(255,255,255,1);
-  -moz-box-shadow: 0px 0px 80px 20px rgba(255,255,255,1);
-  box-shadow: 0px 0px 80px 20px rgba(255,255,255,1);
+  background: $website-background;
+  -webkit-box-shadow: 0px 0px 80px 20px rgba($website-background,1);
+  -moz-box-shadow: 0px 0px 80px 20px rgba($website-background,1);
+  box-shadow: 0px 0px 80px 20px rgba($website-background,1);
+}
+
+button {
+  border: .2rem solid;
+  width: 10rem;
+  height: 4rem;
+  font-family: 'Lato', Helvetica, sans-serif;
+  background: none;
+}
+
+button:hover {
+
+  background: black;
+  border-color: #000;
+  color: white;
 }
 
 .pagination,
@@ -361,7 +377,7 @@ p {
   font-weight: 300;
   line-height: 1.5;
   color: #333;
-  margin: 1.5em 0;
+  margin: 0 0 2rem 0;
 }
 
 abbr {
@@ -403,7 +419,7 @@ blockquote {
 blockquote footer {
   font-size: 1rem;
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;  font-style: normal;
-  background-color: #fff;
+  background-color: $website-background;
   padding-top: 1rem;
   color: #7a7a7a;
   display: block;
@@ -432,7 +448,7 @@ h6,
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 900;
   line-height: 1.2;
-  margin: 1em 0 0.5em;
+  margin: 2.25em 0 0.25em;
 }
 
 .social-icons {
@@ -767,10 +783,10 @@ h6,
 }
 
 .tagline p {
-  background: white;
-  -webkit-box-shadow: 0px 0px 80px 50px rgba(255,255,255,1);
-  -moz-box-shadow: 0px 0px 80px 50px rgba(255,255,255,1);
-  box-shadow: 0px 0px 80px 50px rgba(255,255,255,1);
+  background: $website-background;
+  -webkit-box-shadow: 0px 0px 80px 50px rgba($website-background,1);
+  -moz-box-shadow: 0px 0px 80px 50px rgba($website-background,1);
+  box-shadow: 0px 0px 80px 50px rgba($website-background,1);
 }
 
 .logo-shape {
@@ -794,6 +810,11 @@ h6,
   opacity: 1;
 }
 
+.section-break {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+
+}
 /******************/
 
 
@@ -801,6 +822,12 @@ h6,
 .project-hero-img {
   max-width: 140%;
   margin-left: -20%;
+}
+
+#video-modal {
+  cursor: pointer;
+  //position: absolute;
+  //margin-top: 21rem;
 }
 
 
@@ -818,9 +845,13 @@ h6,
 }
 
 .project-overview {
-  flex: 5;
+  flex: 3;
   margin-right: 3rem;
   min-width: 25rem;
+}
+
+.project-overview p {
+  margin-top: 2.1rem;
 }
 
 .project-details {
@@ -846,6 +877,7 @@ h6,
 
 .tagline p {
   font-size: 1.9rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .work {
@@ -1065,7 +1097,7 @@ h6,
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: $website-background;
   border-radius: 5px;
 }
 
@@ -1283,6 +1315,7 @@ $portfolio-aqua-alt: #F07B3F;
   flex-wrap: wrap;
   margin-left: -.1rem;
   margin-right: .1rem;
+  margin-bottom: 2.3rem;
 }
 
 .img-small {
