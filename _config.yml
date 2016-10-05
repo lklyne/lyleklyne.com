@@ -40,3 +40,6 @@ sass:
 # Gems
 gems:
   [jekyll-paginate]
+
+# Exclude
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Guardfile']
