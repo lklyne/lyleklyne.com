@@ -279,9 +279,6 @@ body {
 
 .post-content p {
   background: $website-background;
-}
-
-.bio p {
   -webkit-box-shadow: 0px 0px 80px 20px rgba($website-background,1);
   -moz-box-shadow: 0px 0px 80px 20px rgba($website-background,1);
   box-shadow: 0px 0px 80px 20px rgba($website-background,1);
@@ -289,11 +286,10 @@ body {
 
 button {
   border: .2rem solid;
-  width: 8rem;
-  height: 3rem;
+  width: 10rem;
+  height: 4rem;
   font-family: 'Lato', Helvetica, sans-serif;
   background: none;
-  font-size: 1.2rem;
 }
 
 button:hover {
@@ -425,7 +421,6 @@ blockquote footer {
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;  font-style: normal;
   background-color: $website-background;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   color: #7a7a7a;
   display: block;
   float: right;
@@ -434,7 +429,7 @@ blockquote footer {
 }
 
 blockquote p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: inline;
 }
 
@@ -1461,20 +1456,7 @@ $portfolio-aqua-alt: #F07B3F;
     margin: 1em 0 0.5em;
   }
 
-  blockquote {
-    padding: 1rem;
-  }
-
-  blockquote p {
-    font-size: 1.4rem;
-
-  }
-
-  blockquote footer {
-    padding-top: 0rem;
-  }
-
-  }
+}
 
 
 
@@ -1603,31 +1585,11 @@ $portfolio-aqua-alt: #F07B3F;
     font-size: 1.7rem;
   }
 
-  blockquote {
-    padding: 0.5rem;
-  }
-
-  blockquote p {
-    font-size: 1.3rem;
-  }
-
-  blockquote footer {
-    font-size: 0.8rem;
-    margin-top: -2rem;
-    padding: 0;
-  }
-
-  button {
-    font-size: 1rem;
-    width: 6rem;
-    height: 3rem;
-
-  }
 
 }
 
 /* Tiny Screens */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 32em) {
   .work figure {
     width: 98%;
     height: 98%;
@@ -1637,15 +1599,6 @@ $portfolio-aqua-alt: #F07B3F;
   .work figure dl dt {
     font-size: 2rem;
   }
-
-  button {
-    font-size: 1rem;
-    width: 6rem;
-    height: 3rem;
-
-  }
-
-
   .project-header-container {
     height: 23rem;
   }
@@ -1688,22 +1641,6 @@ $portfolio-aqua-alt: #F07B3F;
   .tagline p {
     font-size: 1.2rem;
   }
-
-  blockquote {
-    padding: 0;
-  }
-
-  blockquote p {
-    font-size: 1rem;
-
-  }
-
-  blockquote footer {
-    font-size: 0.8rem;
-    margin-top: -1rem;
-    padding: 0;
-  }
-
 }
 
 
@@ -1785,19 +1722,9 @@ $portfolio-aqua-alt: #F07B3F;
     margin-top: -4rem;
   }
 
-  blockquote {
-    padding: 1.46rem;
-    max-width: 40rem;
-  }
-
-  blockquote p {
-    font-size: 2rem;
-    max-width: 30rem;
-
-  }
-
 }
 
+@charset "UTF-8";
 
 
 
@@ -1832,4 +1759,31 @@ $portfolio-aqua-alt: #F07B3F;
   width: 0;
   height: 0;
 }
+
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2014 Daniel Eden
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+
 
