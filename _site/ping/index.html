@@ -8,8 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Design, development, documenting the process.">
     <meta name="author" content="Lyle Klyne">
-    <meta name="keywords" content="portfolio, mobile, web-development">
+    <meta name="keywords" content="portfolio">
     <link rel="canonical" href="http://lyleklyne.com/ping/">
+
+    <!--Animate on Scroll CSS -->
+    <link rel="stylesheet" href="/css/aos.css" />
+
+    <!--Unslider -->
+    <link rel="stylesheet" href="/css/unslider.css" />
+    <link rel="stylesheet" href="/css/unslider-dots.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
@@ -21,7 +28,7 @@
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 
     
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
 
     <!-- Javascript -->
@@ -30,10 +37,27 @@
     <script type="text/javascript" src="/js/transition.js"></script>
     <script type="text/javascript" src="/js/zoom.min.js"></script>
     <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
+
     <!-- Magnific Popup core JS file -->
     <script src="/js/jquery.magnific-popup.min.js"></script>
 
-  
+    <!-- AOS Javascript -->
+    <script src="/js/aos.js"></script>
+
+    <!-- Rellax Javascript -->
+    <script src="/js/rellax.min.js"></script>
+
+
+
+    <!-- Skrollr -->
+    <!--<script src="/js/skrollr.min.js"></script>-->
+
+    <!-- Unslider -->
+    <script src="/js/unslider.js"></script>
+
+
+
+
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
         <![endif]-->
@@ -42,7 +66,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Ping">
-    <meta property="og:description" content="Location-based collaboration app facilitating disaster response.">
+    <meta property="og:description" content="Helping communities organize after a natural disaster through location-based communication and collaboration.">
     <meta property="og:url" content="http://lyleklyne.com/ping/">
     <meta property="og:site_name" content="Lyle Klyne">
 
@@ -69,7 +93,7 @@
 			<div class="fixed-header">
 				<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
 				<nav id="site-nav-right" class="site-nav right">
-					<a href="/" id="home-url">Work</a>
+					<a href="/" id="home-url" >Work</a>
 <a href="/blog" class="">Blog</a>
 <a href="/about/" class="">About</a>
 
@@ -93,11 +117,11 @@
         <div class="post-header mb2">
 
           <h1>Ping</h1>
-          <p>Location-based collaboration app facilitating disaster response.</p>
+          <p>Helping communities organize after a natural disaster through location-based communication and collaboration.</p>
 
-          
-              <button class="center" id="video-modal">Play  Video</button>
-          
+          <!---->
+              <!--<button class="center" id="video-modal">Play  Video</button>-->
+          <!---->
 
 
 
@@ -109,119 +133,118 @@
 
 
 
-          <img src="/images/projects/ping/ping-hero.png" class="project-hero-img" alt="Ping hero image" data-action="zoom"/>
+          <img src="/images/projects/ping/ping-hero-3.jpg" id="video-modal" class="oversize-graphic" alt="Ping hero image"/>
 
 
-          <div class="project-summary">
-          <div class="project-overview">
-            <h2>Overview</h2>
-            <!--<h6>Summary</h6>-->
-            <p><b>Ping</b> is the result of asking one simple question: How can we reduce the negative impact of a natural disaster?  I worked in a team of three to create Ping, a hyper-local collaboration and communication app. The app allows people to ask questions, share information, and trade resources before and during crisis events, building community reseliance through location-based chat. 
-</p>
-          </div>
+          <!--<div class="project-summary">-->
+          <!--<div class="project-overview">-->
+            <!--<h2>Overview</h2>-->
+            <!--&lt;!&ndash;<h6>Summary</h6>&ndash;&gt;-->
+            <!--<p><b>Ping</b> is the result of asking one simple question: How can we reduce the negative impact of a natural disaster?  I worked in a team of three to create Ping, a hyper-local collaboration and communication app. The app allows people to ask questions, share information, and trade resources before and during crisis events, building community reseliance through location-based chat. 
+</p>-->
+          <!--</div>-->
 
-          <div class="project-details">
-            <h2 class="desktop-spacer">&nbsp;</h2>
-            <h6>Timeline</h6>
-            <p>3 months</p>
-            <h6>Role</h6>
-            <p>- User Research<br>
+          <!--<div class="project-details">-->
+            <!--<h2 class="desktop-spacer">&nbsp;</h2>-->
+            <!--<h6>Timeline</h6>-->
+            <!--<p>3 months</p>-->
+            <!--<h6>Role</h6>-->
+            <!--<p>- User Research<br>
 - Ideation<br>
 - Prototyping<br>
 - User Testing<br>
 - Interface Design<br>
 - Product Presentation<br>
-</p>
-          </div>
-        </div>
+</p>-->
+          <!--</div>-->
+        <!--</div>-->
 
         <article class="post-content">
-            <!--##### Process-->
-<!--<img src="../../../images/projects/canvas/process-standard.png" alt="Canvas Process" data-action="zoom">-->
+            <h3 id="tldr">tl;dr</h3>
+<p>I worked with a team of three to understand and improve disaster response. We spent three months researching, designing, and testing solutions. At the end, we created a product spec and consolidated our findings into a <a href="">10 minute presentation</a>. This case study shows some highlights of the process.</p>
 
-<h2 id="problem">Problem</h2>
+<p><br /></p>
 
-<p>In the recent past, there have been a series of devastating earthquakes around the world, and climate change is causing an increase in severe storms. These events have a profound impact on affected communities.</p>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/ping-elevator-ui.png" alt="Ping Poster Pitch" data-action="zoom" />
+</div>
 
-<blockquote>
-    <p>
-    In the past 20 years, there have been nearly 7,000 natural disasters which claimed over 1.35 million lives.
-    </p>
-    <footer><cite title="The Guardian"><br /><br />The Guardian<br />
-</cite></footer>
-</blockquote>
-
-<p>Many people are unprepared for these situations, and response efforts are frequently chaotic and disorganized, leading to unnecessary harm and loss of life.</p>
+<h3 id="st-discover">1st, Discover</h3>
+<p>Understanding the effects and impacts of natural disasters was a complex and daunting task. Fortunately, we had access to domain experts and a wealth of case studies on the subject through the University of Washington. Once we had a high-level understanding of what typically happens, we broke away form academic resources and spoke to first responders from the Nepal Earthquake and Oso landslide.</p>
 
 <blockquote>
     <p>
-    Over half of the US population is currently <b>unprepared</b> to handle a natural disaster.
+    What happens after a natural disaster? <br />
+    How do individuals and organizations respond?
     </p>
-    <footer><cite title="The Guardian"><br /><br />FEMA<br />
-</cite></footer>
 </blockquote>
 
-<p><b>To find a solution,</b> we began by looking at the five phases of a natural disaster (preparedness, prevention, event, response and recovery). We quickly decided to focus on response to early recovery, which has a greater potential for improvement and a more sustained impact.</p>
+<p><img src="../../../images/projects/ping/ping-smes.png" alt="Ping - Subject Matter Experts" data-action="zoom" /></p>
 
-<div class="center section-break"><h5>*  *  *</h5></div>
+<p><strong>Understanding the environment</strong> <br />
+Generalizing our findings for actionable information was a difficult task. In order to make sense of the complexity, we created a timeline to visualize how people, organizations, and infrastructure interact in the one week period immedietly following a natural disaster. This proved valuable for scoping the problem. We identified our target users (local survivors in urban areas) as well as timeframe (72 hours after the initial event).</p>
 
-<h2 id="research">Research</h2>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/ping-overview.png" alt="Ping - Experience Overview" data-action="zoom" />
+</div>
 
-<p>Understanding the effects and impacts of natural disasters was a complex and daunting task. When wading through the massive amount of articles, experts, and case studies on the subject, we quickly discovered the importance of remaining focused on the our initial research questions.</p>
+<div class="center img-caption">Stakeholder &amp; Infrastructure Overview</div>
 
-<h4 id="research-questions">Research Questions</h4>
+<p><strong>Understanding the people</strong> <br />
+To understand how local survivors react and respond, we created journey maps based on our findings from case studies and interviews. Using empathy mapping, we compared two distinctly different types of disasters, hurricanes and earthquakes, in an attempt to find overlap.</p>
+
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/ping-journey-map-earthquake.png" alt="Ping - Journey Map Earthquake" data-action="zoom" />
+</div>
+
+<div class="center img-caption">Earthquake</div>
+
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/ping-journey-map-hurricane.png" alt="Ping - Journey Map Earthquake" data-action="zoom" />
+</div>
+<div class="center img-caption">Hurricane</div>
+
+<p><strong>Understanding the competitive landscape</strong><br />
+Existing products for communication and organization work well for daily needs, but even the most popular ones leave a lot to be desired in the context of disaster response. We looked at expanding upon one of these platforms to improve where it falls short, but ultimately decided a standalone approach would be the best. The main reason for this was that we wanted to support two collaborative actives: list making and location-based information sharing.</p>
+
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/ping-competitive-analysis.png" class="project-hero-img" alt="Ping - Competitive Analysis" data-action="zoom" />
+</div>
+
+<div class="center img-caption">A few apps used for disaster response</div>
+
+<p><strong>Key findings to guide design</strong></p>
+
 <ul>
-  <li>What happens after a natural disaster?</li>
-  <li>How do individuals and organizations respond?</li>
-</ul>
-
-<p>The two most insightful research methods were speaking with subject matter experts and a review of case studies from previous natural disasters.</p>
-
-<p>Our SME interviews covered disaster response, mitigation, and volunteerism. To gain a better understanding of what the experience is like for civilians we also interviewed volunteers at the Nepal earthquake as well as community members in Oso, Washington. Our final round of research delved into first responders. Bruce Stedman gave us insights into the activities and strategies of professional responders, and his experience working with survivors of the largest landslide in US History: the <a href="https://en.wikipedia.org/wiki/2014_Oso_mudslide">Oso, Washington Mudslide</a>.</p>
-
-<p><img src="../../../images/projects/ping/ping-smes.jpg" alt="Ping - Subject Matter Experts" data-action="zoom" /></p>
-
-<div class="center img-caption">Subject Matter Experts</div>
-
-<h4 id="key-findings">Key Findings</h4>
-
-<ol>
   <li>One of the only guarantees after a natural disaster is that survivors and volunteers will come together to help each other out.</li>
   <li>Locals are more suited to respond than governments and external relief organizations because of their knowledge of the area or specialized skills.</li>
   <li>Even though people want to help, and are capable of doing so, sometimes they don’t have the right information to do so effectively.</li>
   <li>People improvise and use everyday digital tools that they have used before in response efforts.</li>
-</ol>
-
-<h4 id="synthesis">Synthesis</h4>
-
-<p>Based on our research, we created an experience map that helped visualize what happens after a natural disaster, how key players are involved, and what infrastructure is likely available. For this map we attempted to generalize all disasters.</p>
-
-<p><img src="../../../images/projects/ping/ping-overview.png" alt="Ping - Experience Overview" data-action="zoom" /></p>
-
-<div class="center img-caption">Stakeholder &amp; Infrastructure Overview</div>
-
-<p>We also created a journey map that identifies an individuals state of mind. We used empathy mapping – imagining what a person is doing, thinking, or feeling at a given time. This was mapped against what we found from case studies to be the largest priorities after a natural disaster. For this map, we created two versions. One was specifically for earthquakes and the other for hurricanes.</p>
-
-<p><img src="../../../images/projects/ping/ping-journey-map-earthquake.png" alt="Ping - Journey Map Earthquake" data-action="zoom" /></p>
-
-<div class="center img-caption">Earthquake Journey Map</div>
-
-<p><img src="../../../images/projects/ping/ping-journey-map-hurricane.png" alt="Ping - Journey Map Earthquake" data-action="zoom" /></p>
-
-<div class="center img-caption">Hurricane Journey Map</div>
-
-<h4 id="competitive-analysis">Competitive Analysis</h4>
-
-<p>Existing products for communication and organization work well for daily needs, but even the most popular ones leave a lot to be desired in the context of disaster response. We looked at expanding upon one of these platforms to improve where it falls short, but ultimately decided a standalone approach would be the best. The main reason for this was that we wanted to support two collaborative actives: list making and location-based information sharing.</p>
-
-<p><img src="../../../images/projects/ping/ping-competitive-analysis.png" class="project-hero-img" alt="Ping - Competitive Analysis" data-action="zoom" /></p>
-<div class="center img-caption">Competitive Analysis</div>
+</ul>
 
 <div class="center section-break"><h5>*  *  *</h5></div>
 
-<h2 id="ideation">Ideation</h2>
+<h3 id="nd-explore">2nd, Explore</h3>
 
 <p>Throughout the ideation process we aimed for breadth. We structured sessions around 15 minute individual sketching sessions targeting specific design prompts. After each session, we shared our ideas with the group using single-sentence descriptions. This helped avoid duplicate ideas and allowed other group members to expand on promising directions.</p>
+
+<!-- 
+<div class="work-container text-slider">
+    <div class="banner-auto-noarrows product-gallery flex-parent blue-gradient">
+        <h3>Design Prompts</h3>>
+        <div class="product-gallery-item">
+            <ul>
+                <li class="flex-parent"><p>How can we help supply donors make sure their donations are needed and delivered?</p></li>
+                <li class="flex-parent"><p>How can we help coordinate evacuation in urban areas after a natural disaster?</p></li>
+                <li class="flex-parent"><p>How can we coordinate skilled work through volunteers after a natural disaster?</p></li>
+                <li class="flex-parent"><p>How do you enable someone with a non-critical injury to get the help quickly?</p></li>
+                <li class="flex-parent"><p>How can we help disaster survivors gain information about risks in the environment?</p></li>
+                <li class="flex-parent"><p>How can we help disaster survivors quickly identify fact from rumors?</p></li>
+            </ul>
+        </div>
+    </div>
+</div>
+-->
 
 <h4 id="design-prompts">Design Prompts</h4>
 
@@ -251,15 +274,17 @@
 <p>After several ideation sessions, we had generated over 200 ideas. We then organized, grouped, and combined them wherever possible. From these ideas, we selected the thirteen most promising based on group consensus. We evaluated ideas based on each ones applicability, feasibility, and novelty.</p>
 
 <p><img src="../../../images/projects/ping/ideation-5.jpg" class="project-hero-img" alt="Ping - Ideation 5" data-action="zoom" /></p>
-<div class="center img-caption">Top 13 ideas and a snack</div>
+<div class="center img-caption">Top ideas and a snack</div>
 
 <h4 id="storyboarding">Storyboarding</h4>
 
 <p>The next step was to create a short document for each of the thirteen most promising concepts. We included a brief description, an overview of the interaction model, and a storyboard outlining its use. We also included the specific problem that the concept solved and how it could work from a technical standpoint.</p>
 
-<p><img src="../../../images/projects/ping/ping-13-ideas.jpg" class="project-hero-img" alt="Ping - Competitive Analysis" data-action="zoom" /></p>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/ping-13-ideas.jpg" class="project-hero-img" alt="Ping - Storyboards" data-action="zoom" />
+</div>
 
-<div class="center img-caption">Top 13 ideas</div>
+<div class="center img-caption">Top ideas storyboarded</div>
 
 <div class="center section-break"><h5>*  *  *</h5></div>
 
@@ -341,7 +366,9 @@
 
 <p>Our solution is a mobile communication application designed to support survivors in an urban environment before and during a crisis events. Ping allows people to ask questions and share resources, building community resilience through location based chat.</p>
 
-<p><img src="../../../images/projects/ping/ping-wireframes.jpg" class="project-hero-img" alt="Ping - Wireframes" data-action="zoom" /></p>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/ping-wireframes.jpg" class="project-hero-img" alt="Ping - Wireframes" data-action="zoom" />
+</div>
 <div class="center img-caption">Wireframes</div>
 
 <h3 id="principles">Principles</h3>
@@ -365,7 +392,9 @@
 
 <p>Information discussion groups are location specific groups for crowd-sourcing information. Nearby information groups can be viewed in either the list or map views. A combination search and add new input field was designed to aid in rapidly finding information while reducing duplicate discussions. Since Information Discussions are location specific, the participants in the thread are all local to the inquiry helping to reduce irrelevant and incorrect information.</p>
 
-<p><img src="../../../images/projects/ping/p1-bridge.png" class="project-hero-img" alt="Design Principle 1 - Location Based Discussions" data-action="zoom" /></p>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/p1-bridge.png" class="project-hero-img" alt="Design Principle 1 - Location Based Discussions" data-action="zoom" />
+</div>
 
 <h4 id="design-principle-2---streamline-organization">Design Principle 2 - Streamline organization</h4>
 
@@ -375,7 +404,9 @@
 
 <p>In the List Feature screen the chat input field has been repurposed to enter new items to the list. Each item has a quantity of people requesting this item. A swipe left on the item requests it, while a right swipe will mark a contribution. A dialogue to enter the quantity is shown for both requests and contributions. Finally, items can be discussed by tapping on the item.</p>
 
-<p><img src="../../../images/projects/ping/p2-lists.png" class="project-hero-img" alt="Design Principle 2 - Streamline organization" data-action="zoom" /></p>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/p2-lists.png" class="project-hero-img" alt="Design Principle 2 - Streamline organization" data-action="zoom" />
+</div>
 
 <h4 id="design-principle-3---reduce-noise">Design Principle 3 - Reduce noise</h4>
 
@@ -387,11 +418,13 @@
 <h5 id="location-based-group-chat">LOCATION BASED GROUP CHAT</h5>
 <p>Group chats are another method to reduce noise and further scope conversations. Groups are also searched for and created through the same input to reduce duplicates.</p>
 
+<div class="oversize-graphic">
 <video width="100%" height="auto" autoplay="" loop="" data-action="zoom">
   <source src="../../../images/projects/ping/video-p3-pins.mp4" type="video/mp4" />
   <source src="movie.ogg" type="video/ogg" />
   Your browser does not support the video tag.
 </video>
+</div>
 
 <h4 id="design-principle-4---graceful-degradation">Design Principle 4 - Graceful degradation</h4>
 
@@ -400,7 +433,9 @@
 <h5 id="sms-interface">SMS INTERFACE</h5>
 <p>Similar to Twitter, Ping also has a SMS interface. New messages are sent via text and the application can be interacted with special text based commands. The above example shows the interface in both the app and SMS for the Capitol Hill Volunteers group.</p>
 
-<p><img src="../../../images/projects/ping/p4-sms.png" class="project-hero-img" alt="Design Principle 4 - Graceful Degradation" data-action="zoom" /></p>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/p4-sms.png" class="project-hero-img" alt="Design Principle 4 - Graceful Degradation" data-action="zoom" />
+</div>
 
 <h4 id="design-principle-5---everyday-versatility">Design Principle 5 - Everyday Versatility</h4>
 
@@ -411,7 +446,9 @@
 
 <p>The list feature is also generalizeable to daily use. The example above shows how lists can be used to plan a potluck with friends.</p>
 
-<p><img src="../../../images/projects/ping/p5-dog-owners.png" class="project-hero-img" alt="Design Principle 4 - Day-to-day Utility" data-action="zoom" /></p>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/p5-dog-owners.png" class="project-hero-img" alt="Design Principle 4 - Day-to-day Utility" data-action="zoom" />
+</div>
 
 <h4 id="design-principle-6---trust-and-privacy">Design Principle 6 - Trust and Privacy</h4>
 
@@ -423,7 +460,9 @@
 
 <p>The user profiles page use the actual first name of a user. Our test participants generally felt that first name and profile images were safe to share with the public. The Thanks ranking system shown in the far right screen allows individuals to receive thanks for good deeds and helpful information.</p>
 
-<p><img src="../../../images/projects/ping/p6-privacy-trust.png" class="project-hero-img" alt="Design Principle 6 - Privacy and trust" data-action="zoom" /></p>
+<div class="oversize-graphic">
+<img src="../../../images/projects/ping/p6-privacy-trust.png" class="project-hero-img" alt="Design Principle 6 - Privacy and trust" data-action="zoom" />
+</div>
 
 <div class="center section-break"><h5>*  *  *</h5></div>
 
@@ -439,24 +478,28 @@
 The interface, icons, branding, and presentation assets were all hand built.</p>
 
 <p><img src="../../../images/projects/ping/ping-visual-components.png" class="project-hero-img" alt="Ping - Visual Components" data-action="zoom" /></p>
+<div class="img-collage">
 
-<div class="center img-caption">Logo and iconography</div>
+<img src="../../../images/projects/ping/ping-firetruck.jpg" class="img-small" alt="Ping - Firetruck" data-action="zoom" />
 
-<p><img src="../../../images/projects/ping/ping-firetruck.jpg" class="project-hero-img" alt="Ping - Firetruck" data-action="zoom" /></p>
+<img src="../../../images/projects/ping/ping-police.jpg" class="img-small" alt="Ping - Police" data-action="zoom" />
 
-<p><img src="../../../images/projects/ping/ping-police.jpg" class="project-hero-img" alt="Ping - Police" data-action="zoom" /></p>
+<img src="../../../images/projects/ping/ping-bridge.jpg" class="img-small" alt="Ping - Bridge" data-action="zoom" />
 
-<p><img src="../../../images/projects/ping/ping-bridge.jpg" class="project-hero-img" alt="Ping - Bridge" data-action="zoom" /></p>
+<img src="../../../images/projects/ping/ping-people.jpg" class="img-small" alt="Ping - People" data-action="zoom" />
 
-<p><img src="../../../images/projects/ping/ping-people.jpg" class="project-hero-img" alt="Ping - People" data-action="zoom" /></p>
+<img src="../../../images/projects/ping/ping-houses.jpg" class="img-small" alt="Ping - Houses" data-action="zoom" />
 
-<p><img src="../../../images/projects/ping/ping-houses.jpg" class="project-hero-img" alt="Ping - Houses" data-action="zoom" /></p>
+<img src="../../../images/projects/ping/ping-icons.jpg" class="img-small" alt="Ping - Icons" data-action="zoom" />
 
-<p><img src="../../../images/projects/ping/ping-icons.jpg" class="project-hero-img" alt="Ping - Icons" data-action="zoom" /></p>
+</div>
 
 <p><img src="../../../images/projects/ping/ping-poster.png" class="project-hero-img" alt="Ping - Poster" data-action="zoom" /></p>
 
 <h2 id="outcome">Outcome</h2>
+<div class="video-wrapper">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o6DR0vphnjA" frameborder="0" allowfullscreen=""></iframe>
+</div>
 <p>This project culminated in a presentation to industry and faculty for the MHCI+D capstone. We received some fantastic feedback, especially regarding alternate ways to provide local networks in the event of infrastructure failures. For this project, we sought to create something that would reduce the terrible impact natural disasters often have. Critical to this was not only successful execution of the design, but also clear communication of how Ping works. This wouldn’t have been possible without a lot of hard work and close collaboration with my teammates. I was fortunate enough to work with a fantastic team, and they were both and up for the task.</p>
 
 <h4 id="next-steps">Next Steps</h4>
@@ -478,73 +521,79 @@ $('#video-modal').magnificPopup({
         <br>
 
 
-        <section class="work">
-          <a href="/ping" class="featured">
-    <div class='box grow shrink ui-shot portfolio-blue  current '>
+        <section class="work-container">
+          <div class="portfolio-section-header" data-aos="fade-up">
+    <p class="center">Case Studies</p>
+</div>
 
-        <img src="../images/projects/ping/ping-tile.png" class="grow-big" alt="" />
-        <div class='title'>Ping  (current) </div>
-        <div class='description'>Location-based communication app facilitating disaster response.</div>
-    </div>
 
+<div class="portfolio-card" data-aos="fade-up">
+    <a href="/ping">
+    <img src="../images/projects/ping/ping-hero-2.jpg">
+        <p class="portfolio-title-text"><b>Ping</b> — helping communities organize after natural disasters</p>
 </a>
+</div>
 
-<a href="/daydream" class="featured">
-    <div class='box grow shrink portfolio-teal '>
-        <img src="../images/projects/daydream/daydream-line.png" class="grow-big" alt="" />
-        <div class='title'>Daydream </div>
-        <div class='description'> Physical prototype exploring flexible, human-focused lighting for commercial spaces. </div>
-    </div>
-</a>
+<div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+    <a href="/daydream">
+        <img src="../images/projects/daydream/daydream-angle.jpg">
+        <p class="portfolio-title-text"><b>Daydream</b> — adaptive lighting for commercial spaces</p>
+    </a>
+</div>
 
-<a href="/relink" class="normal">
-    <div class='box grow shrink ui-shot portfolio-purple '>
-        <img src="../images/projects/relink/relink-line.png" class="grow-big" alt="" />
-        <div class='title'>Relink </div>
-        <div class='description'>A conceptual smartpen and companion app.</div>
-    </div>
-</a>
+<div class="portfolio-card" data-aos="fade-up">
+    <a href="/canvas">
+        <img src="../images/projects/canvas/canvas-hero-2.jpg">
+        <p class="portfolio-title-text"><b>Canvas</b> — redesign of the learning management system</p>
+    </a>
+</div>
 
-
-
-<a href="/spex" class="normal">
-    <div class='box grow shrink ui-shot portfolio-blue '>
-
-        <img src="../images/projects/spex/spex-angle-line.png" class="grow-big" alt="" />
-        <div class='title'>Spex </div>
-        <div class='description'> Mobile app to manage media recorded from a wearable camera.</div>
-    </div>
-
-</a>
-
-<a href="/canvas" class="normal">
-    <div class='box grow shrink ui-shot portfolio-red '>
-        <img src="../images/projects/canvas/canvas-line.png" class="grow-big" alt="" />
-        <div class='title'>Canvas </div>
-        <div class='description'>Redesign of the popular Learning Management System.</div>
-    </div>
-</a>
-
-
-<!--<a href="/food-is-free" class="normal">-->
-    <!--<div class='box grow shrink ui-shot portfolio-teal '>-->
-        <!--<img src="../images/projects/fif/food-is-free-sign.png" class="grow-big" alt="" />-->
-        <!--<div class='title'>Food Is Free </div>-->
-        <!--<div class='description'> Logo design for a global non-profit.</div>-->
-    <!--</div>-->
-<!--</a>-->
+<div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+    <a href="/relink">
+        <img src="../images/projects/relink/relink-hero-2.jpg">
+        <p class="portfolio-title-text"><b>Relink</b> — a smart pen and a reimagined college textbook</p>
+    </a>
+</div>
 
 
 
+<div class="portfolio-section-header" data-aos="fade-up" >
+    <p class="center">For Fun</p>
+</div>
 
-
-<!--<a href="/natural-disasters" class="full-width">-->
-<!--<div class='box grow enlarge image-bg'>-->
-<!--<img src="" class="grow-big" alt="" />-->
-<!--<div class='title'>Natural Disaster Response</div>-->
-<!--<div class='description'><i>In progress:</i> coordinating local response efforts after a large-scale natural disaster.</div>-->
+<!--<div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">-->
+    <!--<a href="/oblique-strategies">-->
+        <!--<img src="../images/projects/oblique-strategies/oblique-strategies-hero.jpg">-->
+        <!--<p class="portfolio-title-text"><b>Oblique Strategies</b> by Brian Eno and Peter Schmidt</p>-->
+    <!--</a>-->
 <!--</div>-->
-<!--</a>-->
+
+<div class="portfolio-card" data-aos="fade-up">
+    <a href="/photos">
+        <img src="../images/projects/film/film-hawk.jpg">
+        <p class="portfolio-title-text"><b>Photos</b> — film</p>
+    </a>
+</div>
+
+<div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+    <a href="/frameworks">
+        <img src="../images/projects/frameworks/f-decisions.jpg">
+        <p class="portfolio-title-text"><b>Frameworks</b> and thoughts</p>
+    </a>
+</div>
+
+
+
+
+
+<!--<div class="portfolio-card">-->
+    <!--<div class="iphone-mockup-container">-->
+        <!--<img class="iphone-mockup" src="https://www.dropbox.com/s/30pvw38xvld4jou/iphone-poo-2.gif?raw=1">-->
+    <!--</div>-->
+    <!--<div class="portfolio-card-description"-->
+        <!--<p class="portfolio-title-text">This is a dank ass project</p>-->
+    <!--</div>-->
+<!--</div>-->
         </section>
 
 
@@ -624,27 +673,127 @@ ga('send', 'pageview');
 
 <script type="text/javascript">
 
+//  // SKROLLR
+
+//  $(function () {
+//      // Init function
+//      function skrollrInit() {
+//          skrollr.init({
+//              render: function(data) {
+//              //Debugging - Log the current scroll position.
+////              console.log(data.curTop);
+//          }});
+//      }
+//
+//      // If window width is large enough, initialize skrollr
+//      if ($(window).width() > 768) {
+//          skrollrInit();
+//      }
+//
+//      // On resize, check window width, if too small
+//      // and skrollr instance exists, destroy;
+//      // Otherwise, if window is large enough
+//      // and skrollr instance does not exist, initialize skrollr.
+//      $(window).on('resize', function () {
+//          var _skrollr = skrollr.get(); // get() returns the skrollr instance or undefined
+//          var windowWidth = $(window).width();
+//
+//          if ( windowWidth <= 768 && _skrollr !== undefined ) {
+//              _skrollr.destroy();
+//          } else if ( windowWidth > 768 && _skrollr === undefined ) {
+//              skrollrInit();
+//          }
+//      });
+//  });
+
+  // Initialize Animate on scroll
+  AOS.init();
+
+
+
+  //initialize unslider
+  $(function() { $('.banner').unslider() })
+  $(function() { $('.banner-auto').unslider({
+      autoplay: true,
+  })
+  })
+
+  $(function() { $('.banner-auto-noarrows').unslider({
+      autoplay: true,
+      arrows: false,
+      delay: 4000,
+      animation: 'fade',
+  })
+  })
+
+  // Initialize Rellax parallax Js
+//  var rellax = new Rellax('.rellax');
+
+
+  // Scrollmagic
+
+//  var fadein_tween = TweenMax.to('#fadein-trigger > div', .375,{opacity: 1});
+//
+//  var fadeout_tween = TweenMax.to('#fadein-trigger > div', .375, {opacity: 0});
+//
+//  // Init controller
+//  var controller = new ScrollMagic.Controller();
+//
+//  var fadein_scene = new ScrollMagic.Scene({
+//    triggerElement: '#fadein-trigger',
+//    reverse: true
+//  })
+//          .setTween(fadein_tween)
+//          .addTo(controller);
+//
+//  var fadeout_scene = new ScrollMagic.Scene({
+//    triggerElement: '#fadeout-trigger',
+//    reverse: true
+//  })
+//          .setTween(fadeout_tween)
+//          .addTo(controller);
+//
+
+
+
+
   // Randomly position shapes
+  $( document ).ready( randomShapes );
+  $(window).resize( randomShapes );
 
-
-  $( document ).ready(function() {
+function randomShapes() {
     var bodyWidth = document.body.clientWidth
     var bodyHeight = document.body.clientHeight;
 
     $('.random').each(function() {
-      var randPosX = Math.floor((Math.random() * bodyWidth)) + 'px';
-      var randPosY = Math.floor((Math.random() * bodyHeight)) + 'px';
-      var randomTime = Math.floor((Math.random() * 3000)) + 1000;
-      $(this).css('left', randPosX);
-      $(this).css('top', randPosY);
-      $(this).addClass("loaded");
+        var randPosX = Math.floor((Math.random() * bodyWidth)) + 'px';
+        var randPosY = Math.floor((Math.random() * bodyHeight)) + 'px';
+        var randomTime = Math.floor((Math.random() * 3000)) + 1000;
+        $(this).css('left', randPosX);
+        $(this).css('top', randPosY);
+        $(this).addClass("loaded");
 
     });
     $('.random').each(function() {
-      $(this).addClass("loaded");
+        $(this).addClass("loaded");
 
     });
-  });
+
+
+    var timer;
+    $(document).mousemove(function() {
+        if (timer) {
+            clearTimeout(timer);
+            timer = 0;
+        }
+
+        $('.parallax-back').fadeIn();
+        timer = setTimeout(function() {
+            $('#top').fadeOut()
+        }, 3000)
+    })
+
+}
 
   /////////////////////////
   // Background
@@ -769,6 +918,31 @@ ga('send', 'pageview');
   moveForeground();
 
 
+  $(document).ready(function() {
+    $('#shapeFade').fadeTo(0, '0.5').hover(function() {
+      $(this).fadeTo(500, 1);
+    }, function() {
+      $(this).fadeTo(350, '0.8');
+    });
+  });
+
+
+
+  // smooth scrolling from
+  $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                  $('html, body').animate({
+                      scrollTop: target.offset().top
+                  }, 500);
+                  return false;
+              }
+          }
+      });
+  });
 
 </script>
 

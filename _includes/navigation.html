@@ -1,6 +1,5 @@
-<a href="{{ site.baseurl }}/" id="home-url">Work</a>
+<a href="{{ site.baseurl }}/" id="home-url" {% if page.url == "/index.html" %} class="active" {% endif %}>Work</a>
 <a href="{{ site.baseurl }}/blog" class="{% if page.url contains '/blog' %} active {% endif %}">Blog</a>
 <a href="{{ site.baseurl }}/about/" class="{% if page.url contains '/about' %} active {% endif %}">About</a>
 
 
-{% if page.url == "/index.html" %} class="active" {% endif %}

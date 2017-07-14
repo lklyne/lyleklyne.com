@@ -8,6 +8,13 @@
     {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <!--Animate on Scroll CSS -->
+    <link rel="stylesheet" href="{{ "/css/aos.css" | prepend: site.baseurl }}" />
+
+    <!--Unslider -->
+    <link rel="stylesheet" href="{{ "/css/unslider.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ "/css/unslider-dots.css" | prepend: site.baseurl }}" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/stylish.css" | prepend: site.baseurl }}" type="text/css">
     <link href="{{ "/css/zoom.css" | prepend: site.baseurl }}" rel="stylesheet">
@@ -18,7 +25,7 @@
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 
     {% if site.show_social_icons %}
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
 
     <!-- Javascript -->
@@ -27,10 +34,27 @@
     <script type="text/javascript" src="{{ "/js/transition.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/js/zoom.min.js" | prepend: site.baseurl }}"></script>
     <!--<script type="text/javascript" src="{{ "/js/html2canvas.js" | prepend: site.baseurl }}"></script>-->
+
     <!-- Magnific Popup core JS file -->
     <script src="{{ "/js/jquery.magnific-popup.min.js" | prepend: site.baseurl }}"></script>
 
-  
+    <!-- AOS Javascript -->
+    <script src="{{ "/js/aos.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Rellax Javascript -->
+    <script src="{{ "/js/rellax.min.js" | prepend: site.baseurl }}"></script>
+
+
+
+    <!-- Skrollr -->
+    <!--<script src="{{ "/js/skrollr.min.js" | prepend: site.baseurl }}"></script>-->
+
+    <!-- Unslider -->
+    <script src="{{ "/js/unslider.js" | prepend: site.baseurl }}"></script>
+
+
+
+
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
         <![endif]-->

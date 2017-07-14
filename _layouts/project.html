@@ -18,9 +18,9 @@
           <h1>{{ page.title }}</h1>
           <p>{{ page.description }}</p>
 
-          {% if page.modal == true %}
-              <button class="center" id="video-modal">Play  Video</button>
-          {% endif %}
+          <!--{% if page.modal == true %}-->
+              <!--<button class="center" id="video-modal">Play  Video</button>-->
+          <!--{% endif %}-->
 
 
 
@@ -44,24 +44,24 @@
 
 
 
-          <img src="{{ page.image.hero }}" class="project-hero-img" alt="{{ page.title }} hero image" data-action="zoom"/>
+          <img src="{{ page.image.hero }}" id="video-modal" class="oversize-graphic" alt="{{ page.title }} hero image"/>
 
 
-          <div class="project-summary">
-          <div class="project-overview">
-            <h2>Overview</h2>
-            <!--<h6>Summary</h6>-->
-            <p>{{ page.overview }}</p>
-          </div>
+          <!--<div class="project-summary">-->
+          <!--<div class="project-overview">-->
+            <!--<h2>Overview</h2>-->
+            <!--&lt;!&ndash;<h6>Summary</h6>&ndash;&gt;-->
+            <!--<p>{{ page.overview }}</p>-->
+          <!--</div>-->
 
-          <div class="project-details">
-            <h2 class="desktop-spacer">&nbsp;</h2>
-            <h6>Timeline</h6>
-            <p>{{ page.timeline }}</p>
-            <h6>Role</h6>
-            <p>{{ page.role }}</p>
-          </div>
-        </div>
+          <!--<div class="project-details">-->
+            <!--<h2 class="desktop-spacer">&nbsp;</h2>-->
+            <!--<h6>Timeline</h6>-->
+            <!--<p>{{ page.timeline }}</p>-->
+            <!--<h6>Role</h6>-->
+            <!--<p>{{ page.role }}</p>-->
+          <!--</div>-->
+        <!--</div>-->
 
         <article class="post-content">
             {{ content }}
@@ -71,8 +71,8 @@
         <br>
 
 
-        <section class="work">
-          {% include projects.html %}
+        <section class="work-container">
+          {% include projects-grid.html %}
         </section>
 
 

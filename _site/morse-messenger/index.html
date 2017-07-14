@@ -10,6 +10,13 @@
     <meta name="keywords" content="blog, prototyping, process">
     <link rel="canonical" href="http://lyleklyne.com/morse-messenger/">
 
+    <!--Animate on Scroll CSS -->
+    <link rel="stylesheet" href="/css/aos.css" />
+
+    <!--Unslider -->
+    <link rel="stylesheet" href="/css/unslider.css" />
+    <link rel="stylesheet" href="/css/unslider-dots.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/stylish.css" type="text/css">
     <link href="/css/zoom.css" rel="stylesheet">
@@ -20,7 +27,7 @@
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 
     
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
 
     <!-- Javascript -->
@@ -29,10 +36,27 @@
     <script type="text/javascript" src="/js/transition.js"></script>
     <script type="text/javascript" src="/js/zoom.min.js"></script>
     <!--<script type="text/javascript" src="/js/html2canvas.js"></script>-->
+
     <!-- Magnific Popup core JS file -->
     <script src="/js/jquery.magnific-popup.min.js"></script>
 
-  
+    <!-- AOS Javascript -->
+    <script src="/js/aos.js"></script>
+
+    <!-- Rellax Javascript -->
+    <script src="/js/rellax.min.js"></script>
+
+
+
+    <!-- Skrollr -->
+    <!--<script src="/js/skrollr.min.js"></script>-->
+
+    <!-- Unslider -->
+    <script src="/js/unslider.js"></script>
+
+
+
+
     <!--[if lt IE 9]>
             <script src="../js/html5shiv.js"></script>
         <![endif]-->
@@ -68,7 +92,7 @@
 			<div class="fixed-header">
 				<a href="http://lyleklyne.com" class="site-title">Lyle Klyne</a>
 				<nav id="site-nav-right" class="site-nav right">
-					<a href="/" id="home-url">Work</a>
+					<a href="/" id="home-url" >Work</a>
 <a href="/blog" class="">Blog</a>
 <a href="/about/" class="">About</a>
 
@@ -210,27 +234,127 @@ ga('send', 'pageview');
 
 <script type="text/javascript">
 
+//  // SKROLLR
+
+//  $(function () {
+//      // Init function
+//      function skrollrInit() {
+//          skrollr.init({
+//              render: function(data) {
+//              //Debugging - Log the current scroll position.
+////              console.log(data.curTop);
+//          }});
+//      }
+//
+//      // If window width is large enough, initialize skrollr
+//      if ($(window).width() > 768) {
+//          skrollrInit();
+//      }
+//
+//      // On resize, check window width, if too small
+//      // and skrollr instance exists, destroy;
+//      // Otherwise, if window is large enough
+//      // and skrollr instance does not exist, initialize skrollr.
+//      $(window).on('resize', function () {
+//          var _skrollr = skrollr.get(); // get() returns the skrollr instance or undefined
+//          var windowWidth = $(window).width();
+//
+//          if ( windowWidth <= 768 && _skrollr !== undefined ) {
+//              _skrollr.destroy();
+//          } else if ( windowWidth > 768 && _skrollr === undefined ) {
+//              skrollrInit();
+//          }
+//      });
+//  });
+
+  // Initialize Animate on scroll
+  AOS.init();
+
+
+
+  //initialize unslider
+  $(function() { $('.banner').unslider() })
+  $(function() { $('.banner-auto').unslider({
+      autoplay: true,
+  })
+  })
+
+  $(function() { $('.banner-auto-noarrows').unslider({
+      autoplay: true,
+      arrows: false,
+      delay: 4000,
+      animation: 'fade',
+  })
+  })
+
+  // Initialize Rellax parallax Js
+//  var rellax = new Rellax('.rellax');
+
+
+  // Scrollmagic
+
+//  var fadein_tween = TweenMax.to('#fadein-trigger > div', .375,{opacity: 1});
+//
+//  var fadeout_tween = TweenMax.to('#fadein-trigger > div', .375, {opacity: 0});
+//
+//  // Init controller
+//  var controller = new ScrollMagic.Controller();
+//
+//  var fadein_scene = new ScrollMagic.Scene({
+//    triggerElement: '#fadein-trigger',
+//    reverse: true
+//  })
+//          .setTween(fadein_tween)
+//          .addTo(controller);
+//
+//  var fadeout_scene = new ScrollMagic.Scene({
+//    triggerElement: '#fadeout-trigger',
+//    reverse: true
+//  })
+//          .setTween(fadeout_tween)
+//          .addTo(controller);
+//
+
+
+
+
   // Randomly position shapes
+  $( document ).ready( randomShapes );
+  $(window).resize( randomShapes );
 
-
-  $( document ).ready(function() {
+function randomShapes() {
     var bodyWidth = document.body.clientWidth
     var bodyHeight = document.body.clientHeight;
 
     $('.random').each(function() {
-      var randPosX = Math.floor((Math.random() * bodyWidth)) + 'px';
-      var randPosY = Math.floor((Math.random() * bodyHeight)) + 'px';
-      var randomTime = Math.floor((Math.random() * 3000)) + 1000;
-      $(this).css('left', randPosX);
-      $(this).css('top', randPosY);
-      $(this).addClass("loaded");
+        var randPosX = Math.floor((Math.random() * bodyWidth)) + 'px';
+        var randPosY = Math.floor((Math.random() * bodyHeight)) + 'px';
+        var randomTime = Math.floor((Math.random() * 3000)) + 1000;
+        $(this).css('left', randPosX);
+        $(this).css('top', randPosY);
+        $(this).addClass("loaded");
 
     });
     $('.random').each(function() {
-      $(this).addClass("loaded");
+        $(this).addClass("loaded");
 
     });
-  });
+
+
+    var timer;
+    $(document).mousemove(function() {
+        if (timer) {
+            clearTimeout(timer);
+            timer = 0;
+        }
+
+        $('.parallax-back').fadeIn();
+        timer = setTimeout(function() {
+            $('#top').fadeOut()
+        }, 3000)
+    })
+
+}
 
   /////////////////////////
   // Background
@@ -355,6 +479,31 @@ ga('send', 'pageview');
   moveForeground();
 
 
+  $(document).ready(function() {
+    $('#shapeFade').fadeTo(0, '0.5').hover(function() {
+      $(this).fadeTo(500, 1);
+    }, function() {
+      $(this).fadeTo(350, '0.8');
+    });
+  });
+
+
+
+  // smooth scrolling from
+  $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                  $('html, body').animate({
+                      scrollTop: target.offset().top
+                  }, 500);
+                  return false;
+              }
+          }
+      });
+  });
 
 </script>
 

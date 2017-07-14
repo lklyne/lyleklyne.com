@@ -7,6 +7,49 @@
     <atom:link href="http://lyleklyne.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Help Systems</title>
+        <description>&lt;p&gt;Software should be so well designed that it needs no explanation! If it’s well made then you don’t have to explain it! These are the goals of a software designer, but they are often unrealistic ones. With a wide array of poeple using something comes a wide set of needs. Inevitably you will need to provide some sort of education or help.&lt;/p&gt;
+
+&lt;p&gt;Providing help and documentation is one of the &lt;a href=&quot;https://www.nngroup.com/articles/ten-usability-heuristics/&quot;&gt;The Neilson Norman Group’s 10 usability heuristics&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user’s task, list concrete steps to be carried out, and not be too large.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I wanted to explore some patterns for how help and educational material are &lt;strong&gt;delivered&lt;/strong&gt; to people. The delivery is interesting because it’s a bit of a balancing act. You never want to see it, but you always want it to be there when you need it. The Neilson Norman group puts it this way: Good help should be “available without interfereing, succinct yet descriptive, and unintrusive.”&lt;/p&gt;
+
+&lt;p&gt;All these examples fall somewhere along a spectrum of being system-initiated to user-initiated. Ideally, the system can infer when to provide help based on it’s understanding of the user. Although this is the ideal, you will inevitably find yourself where you have to provide feedback non-conditionally.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/blog/adaptive-help/2017-06-05-adaptive-help.png&quot; alt=&quot;2017-06-05-adaptive-help&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;delivering-help&quot;&gt;🚚  Delivering help&lt;/h3&gt;
+
+&lt;p&gt;These are quick prototypes used to illustrate common patterns. They are displayed in the context of a mobile web form, but a lot of these patterns can be applied in a variety of contexts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;System Initiated: Inline&lt;/strong&gt;
+&lt;img src=&quot;../images/blog/adaptive-help/adaptive-help-1-inline.gif&quot; class=&quot;project-hero-img&quot; alt=&quot;Adaptive Help - Inline&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;User-Initiated: On Select&lt;/strong&gt;
+&lt;img src=&quot;../images/blog/adaptive-help/adaptive-help-2-on-select.gif&quot; class=&quot;project-hero-img&quot; alt=&quot;Adaptive Help - On select&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;User-Initiated Overlay&lt;/strong&gt;
+&lt;img src=&quot;../images/blog/adaptive-help/adaptive-help-3-user-initiated-overlay.gif&quot; class=&quot;project-hero-img&quot; alt=&quot;Adaptive Help - User-initiated overlay&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conditional: On Error&lt;/strong&gt;
+&lt;img src=&quot;../images/blog/adaptive-help/adaptive-help-4-only-after-error.gif&quot; class=&quot;project-hero-img&quot; alt=&quot;Adaptive Help - User-initiated overlay&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;User-Initiated: Communication&lt;/strong&gt;
+&lt;img src=&quot;../images/blog/adaptive-help/adaptive-help-6-communication.gif&quot; class=&quot;project-hero-img&quot; alt=&quot;Adaptive Help - User-initiated overlay&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mixed: Expandable Overlay&lt;/strong&gt;
+&lt;img src=&quot;../images/blog/adaptive-help/adaptive-help-5-expandable.gif&quot; class=&quot;project-hero-img&quot; alt=&quot;Adaptive Help - User-initiated overlay&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Jun 2017 03:50:13 -0700</pubDate>
+        <link>http://lyleklyne.com/help-systems/</link>
+        <guid isPermaLink="true">http://lyleklyne.com/help-systems/</guid>
+      </item>
+    
+      <item>
         <title>Laser Cutting</title>
         <description>&lt;p class=&quot;regular&quot;&gt;
 	Laser cutting is a quick way of bringing an idea into the physical world. I’ll talk about my process of designing and cutting a simple iPhone stand.
@@ -82,7 +125,7 @@
 
 &lt;h3 id=&quot;sketch-code&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+&lt;pre&gt;&lt;code&gt;int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
 int photocellReading;     // the analog reading from the sensor divider
 void setup(void) {
   // Send debugging information via the Serial monitor
@@ -99,7 +142,6 @@ void loop(void) {
   delay(500);
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/photocell-output.png&quot; alt=&quot;Photocell Output &quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -116,7 +158,7 @@ I can imagine quite a few uses for this, including a sensor that determines if a
 
 &lt;h3 id=&quot;sketch-code-1&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int hallPin = 12;    
+&lt;pre&gt;&lt;code&gt;const int hallPin = 12;    
 int hallState = 0;      
 void setup() {
     
@@ -135,7 +177,6 @@ void loop(){
 
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output-1&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/hall-effect-output.png&quot; alt=&quot;Hall Effect Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -154,7 +195,7 @@ After a short period of time  flashing rapidly, the two RGB LEDs fade through al
 
 &lt;h3 id=&quot;sketch-code-2&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
+&lt;pre&gt;&lt;code&gt;#define RED_PIN 9      // where the red pin is connected to
 #define GREEN_PIN 10   // where the green pin is connected to
 #define BLUE_PIN 11    // where the blue pin is connected to
 #define DELAY 1       // 2ms internal delay; increase for slower fades
@@ -229,7 +270,6 @@ void loop() {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output-2&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/disco-output.png&quot; alt=&quot;Disco Countdown Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -246,7 +286,7 @@ void loop() {
 
 &lt;h3 id=&quot;sketch-code-3&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
+&lt;pre&gt;&lt;code&gt;int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 int analogPin = 3;   // potentiometer connected to analog pin 3
@@ -277,7 +317,6 @@ void loop() {
   delay(30);
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output-3&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/dimmer-output.png&quot; alt=&quot;Light Dimmer Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -292,7 +331,7 @@ void loop() {
 
 &lt;h3 id=&quot;sketch-code-4&quot;&gt;Sketch Code&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int buttonPin = 2;    
+&lt;pre&gt;&lt;code&gt;const int buttonPin = 2;    
 const int buzzerPin =  3;      
 
 
@@ -317,7 +356,6 @@ void loop(){
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;output-4&quot;&gt;Output&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blog/physical-computing/buzzer-output.png&quot; alt=&quot;Buzzer Output&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
@@ -746,19 +784,6 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Data and media creation are exploding. As cameras become smaller and wearable, how will we manage the massive amount of information they create?&lt;/p&gt;
 
-&lt;h4 id=&quot;the-glasses-are&quot;&gt;The glasses are…&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/spex/spex-overview.jpg&quot; alt=&quot;Spex Overview&quot; data-action=&quot;zoom&quot; /&gt;
-- Unobtrusive and transparent: put them on and go about your normal day. Forget about them. They will pay attention to you, but you don’t have to return the favor.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Encouraging of good behavior: don’t worry about taking your camera out when you see something interesting or beautiful. If you want to spex to capture something, pause and take it in. Smile. These are things we should all be doing — spex is a subtle reminder to stay present.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Easy on your personal time (and hard drive): Spex wont overload you with media, but if they miss something, don’t worry. There is a complete history of your day that you can dig through to find that special gem. This information is yours alone and available for 24 hours.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;div class=&quot;center section-break&quot;&gt;&lt;h5&gt;*  *  *&lt;/h5&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;research&quot;&gt;Research&lt;/h2&gt;
@@ -783,6 +808,22 @@ video of this nature, and I found writing copy that was simultaneously compellin
 &lt;/ul&gt;
 
 &lt;div class=&quot;center section-break&quot;&gt;&lt;h5&gt;*  *  *&lt;/h5&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/projects/spex/spex-overview.jpg&quot; alt=&quot;Spex Overview&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;the-glasses-are&quot;&gt;The glasses are…&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Unobtrusive and transparent: put them on and go about your normal day. Forget about them. They will pay attention to you, but you don’t have to return the favor.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Encouraging of good behavior: don’t worry about taking your camera out when you see something interesting or beautiful. If you want to spex to capture something, pause and take it in. Smile. These are things we should all be doing — spex is a subtle reminder to stay present.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Easy on your personal time (and hard drive): Spex wont overload you with media, but if they miss something, don’t worry. There is a complete history of your day that you can dig through to find that special gem. This information is yours alone and available for 24 hours.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;interface&quot;&gt;Interface&lt;/h2&gt;
 &lt;p&gt;I lead interaction design for my team. I began by looking at several options for displaying saved data. I decided that flagged moments should be the primary focus of the mobile interface, and the unedited stream should be tucked away and only viewable when it’s needed. I explored several directions for the UI. Here are some of them:&lt;/p&gt;
@@ -824,155 +865,6 @@ video of this nature, and I found writing copy that was simultaneously compellin
         <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
         <link>http://lyleklyne.com/spex/</link>
         <guid isPermaLink="true">http://lyleklyne.com/spex/</guid>
-      </item>
-    
-      <item>
-        <title>Relink</title>
-        <description>&lt;!--### Process--&gt;
-&lt;!--&lt;img src=&quot;../../../images/projects/relink/relink-process.png&quot; alt=&quot;Canvas System Map&quot; data-action=&quot;zoom&quot;&gt;--&gt;
-
-&lt;h2 id=&quot;research&quot;&gt;Research&lt;/h2&gt;
-
-&lt;h4 id=&quot;meeting-with-karl-bakeman&quot;&gt;Meeting with Karl Bakeman&lt;/h4&gt;
-&lt;p&gt;There are a lot of players and competing voices in the educational system. One would think students would be prioritized from a content and publishing perspective, but this is not the case. For the most part publishers target teachers and in some cases administrators and deans — students, the end users, are largely forgotten.&lt;/p&gt;
-
-&lt;p&gt;This is due to corporate consolidation of the educational publishing industry and the fact that most organizations are publicly traded and owned by private equity firms. Because the people paying for a product (students) are not the ones making the decision to purchase the product (teachers / administrators), the &lt;strong&gt;educational publishing industry is very similar to the pharmaceutical industry.&lt;/strong&gt; Considering students are the ones paying for this content, it’s a shame that they are commoditized and their interests, receiving a quality and engaging education, are not the top priority.&lt;/p&gt;
-
-&lt;h4 id=&quot;opportunity&quot;&gt;Opportunity&lt;/h4&gt;
-&lt;p&gt;Because textbooks are slow, expensive, and not directly tailored to students, there is a lot of opportunity to make them better. Digital and interactive knowledge compendiums are simultaneously more accessible, more engaging, more easily updated, and more transparent to teachers. Educational institutions seem willing to adopt changes to the standard textbook, but there are some challenges when creating new systems. Frequently accuracy of information is at odds with making the experience fun and engaging. &lt;strong&gt;We wanted to improve the learning experience for students, and began researching to determine how.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;interviews&quot;&gt;Interviews&lt;/h4&gt;
-&lt;p&gt;After meeting with Karl, we continued our research by speaking with teachers and students at the University of Washington. Initially, we were tasked with redesigning the music education experience, so we met with two PHD candidates in music education, a classically trained violinist, and a professor of computer music.&lt;/p&gt;
-
-&lt;!--![Interviewees](../../../images/projects/relink/interviewees.png)--&gt;
-
-&lt;h4 id=&quot;findings&quot;&gt;Findings&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;Modern tools such as Youtube are widely used in music education, they are not recognized or embraced by the teaching community.**&lt;/li&gt;
-  &lt;li&gt;Mmusic students had a difficult time with note taking.&lt;/li&gt;
-  &lt;li&gt;Music annotation was laborious with current software solutions, and note taking in general was lacking on ebooks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;survey&quot;&gt;Survey&lt;/h4&gt;
-&lt;p&gt;We were leaning towards improving the note taking experience and decided to conduct a survey to validate our idea that problems actually existed. We surveyed fourteen college students and graduates and asked how frequently they take notes in notebooks, on laptops, tablets, and in textbooks. Out of the fourteen people we surveyed, &lt;strong&gt;all of them took notes by hand in some fashion.&lt;/strong&gt; Comments suggested that people enjoyed this experience, but despite this fact, everyone said they took notes on a laptop.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;b&gt;How often do you take notes...&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/notes-graph.png&quot; alt=&quot;Hand-written notes survey&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Despite the fact that people actively took notes by hand and enjoyed the experience, many expressed frustration that these notes were harder to maintain and organize than notes taken on a computer.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“I’ve adapted to taking notes on my laptop because it’s easier to transfer them into a report later. ”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Participants mentioned that hand written notes allowed were easier and more flexible, but through secondary research we also found that they help with retention of information.&lt;/p&gt;
-
-&lt;blockquote&gt;
-    &lt;p&gt;
-    “Students who write out their notes on paper actually learn more.”
-    &lt;/p&gt;
-    &lt;footer&gt;&lt;cite title=&quot;Scientific American&quot;&gt;— Mueller and Oppenheimer&lt;br /&gt;
-  SCIENTIFIC AMERICAN&lt;/cite&gt;&lt;/footer&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;competative-analysis&quot;&gt;Competative analysis&lt;/h4&gt;
-
-&lt;p&gt;We had identified a key problem: people like to take notes by hand but make compromises to do so. The next step in our design process was to examine the current playing field.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/note-taking-apps.png&quot; alt=&quot;Note taking apps&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;shortcomings&quot;&gt;Shortcomings&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;Restrictive:&lt;/strong&gt; Current solutions don’t fully embrace handwriting. The user must learn new habits and write on a screen.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Complicated:&lt;/strong&gt; Note taking apps such as notability provide plenty of features but are overly complicated. Simple tasks like highlighting require wading through several options for customization and then highlights don’t align with the text.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.livescribe.com/en-us/&quot;&gt;Livescribe&lt;/a&gt; is a smart pen that comes closest to emulating the hand writing experience. The way it works is a pen uses a camera to read an invisible grid of dots on a screen to determine where a user is writing. These notes are then digitized. It is quite a cool system, yet is not a perfect fit for the academic experience.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Livescribe focuses mainly on interaction with a blank slate, not textbooks or other printed material.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Livescribe also does not fully embrace the potential of a classroom-based learning environment by fostering interactivity.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;center section-break&quot;&gt;&lt;h5&gt;*  *  *&lt;/h5&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
-
-&lt;p&gt;We began to design our own pen that would fit perfectly in the classroom and reading environment. The first step was to storyboard out hero scenario.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/storyboard.jpg&quot; alt=&quot;Relink Storyboard&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This breaks down into four specific tasks.
-1. Creation of artifacts (notes, diagrams) within the text.
-2. Marking and highlighting information within the text.
-3. Interacting with new media types within the text.
-4. Reviewing, organizing, and searching captured information.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/scenarios.jpg&quot; alt=&quot;Relink Scenarios&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Feedback was identified as a crucial aspect of the design. In addition to providing feedback via a nearby device, we opted to include an LED on the tip of the pen to reinsure the user that their notes and actions were being recorded.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/pen-sketch.jpg&quot; alt=&quot;Relink Scenarios&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;gestural-language&quot;&gt;Gestural Language&lt;/h3&gt;
-
-&lt;p&gt;We developed our gesture set through user studies. The study included four college students or recent graduates. The first step involved asking participants to take notes as they usually would with a pen. For the second step, we asked participants to imagine they had a smart pen and perform certain actions. We consolidated similarities in the gestures into a unified gesture set.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Highlight: underline&lt;/li&gt;
-  &lt;li&gt;Highlight large block: brackets&lt;/li&gt;
-  &lt;li&gt;Highlight important: star&lt;/li&gt;
-  &lt;li&gt;Tag: hashtag + tag&lt;/li&gt;
-  &lt;li&gt;Definte: touch + hold&lt;/li&gt;
-  &lt;li&gt;Interact: touch icon&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../images/projects/relink/gestures.png&quot; alt=&quot;Relink Scenarios&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;interface&quot;&gt;Interface&lt;/h3&gt;
-&lt;p&gt;For the companion app, we wanted information to be viewable in two views: overlayed on the textbook as it was captured, as well as in a consolidated view. When shifting between these two views, animation helps the user keep track of how their notes are consolidated.&lt;/p&gt;
-
-&lt;video width=&quot;100%&quot; height=&quot;auto&quot; autoplay=&quot;&quot; loop=&quot;&quot;&gt;
-  &lt;source src=&quot;../../../images/projects/relink/relink-comp.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-  &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot; /&gt;
-  Your browser does not support the video tag.
-&lt;/video&gt;
-
-&lt;div class=&quot;center section-break&quot;&gt;&lt;h5&gt;*  *  *&lt;/h5&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
-&lt;div class=&quot;videoWrapper&quot;&gt;
-  &lt;iframe src=&quot;https://player.vimeo.com/video/158553554&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;outcome&quot;&gt;Outcome&lt;/h2&gt;
-&lt;p&gt;We presented Relink to Karl Bakeman of A. A. Norton. We were asked why there had to be a physical pen to accomplish this task instead of using a smartphone camera. Although a product relying on existing devices could be more cost effective and accessible, we felt that the direct feedback provided by the pen would be enough benefit to warrant a physical product. Also, based on our research of existing products we assume that this device could be manufactured on a large scale for relatively low cost.&lt;/p&gt;
-
-&lt;p&gt;We had also pitched this product as a financial benefit for A. A. Norton. Our assumption was that since people would be marking up their textbooks, they would become a more personalized item the student would want to hold on to. This would provide the additional benefit of cutting down on the resale market, one of the biggest hurdles for textbook publishers revenue. Karl took a different approach. He said that if the textbooks were more like paperback workbooks, students wouldn’t feel bad about marking them up and the resale market would still be eliminated.&lt;/p&gt;
-
-&lt;h4 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h4&gt;
-&lt;p&gt;Due to time constraints, we spent the bulk of our time in concept development and focusing on the initial gestures. It would be interesting to further test and prototype new applications for this device. These could include interactive surveys, new approaches to composing music in a textbook, or access to interactive media.&lt;/p&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-
-$(&#39;#video-modal&#39;).magnificPopup({
-    items: {
-      src: &#39;https://vimeo.com/158553554&#39;
-    },
-    type: &#39;iframe&#39; // this is default type
-  });
-  
-&lt;/script&gt;
-
-</description>
-        <pubDate>Tue, 24 Feb 2015 07:31:19 -0800</pubDate>
-        <link>http://lyleklyne.com/relink/</link>
-        <guid isPermaLink="true">http://lyleklyne.com/relink/</guid>
       </item>
     
   </channel>
